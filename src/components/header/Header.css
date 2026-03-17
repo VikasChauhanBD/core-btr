@@ -35,6 +35,7 @@
 }
 
 .header-store img {
+  width: 180px;
   padding: 48px 8px;
 }
 
@@ -75,6 +76,10 @@
   .header-container h1 {
     font-size: 34px;
     padding: 2rem 1rem;
+  }
+
+  .header-store img {
+    width: 160px;
   }
 
   .header-image img {

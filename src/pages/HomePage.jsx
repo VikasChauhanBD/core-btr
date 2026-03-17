@@ -4,7 +4,7 @@ import FeaturesSection from "../components/featuresSection/FeaturesSection";
 import PricingSection from "../components/pricingSection/PricingSection";
 import LastSection from "../components/lastSection/LastSection";
 
-function Homepage() {
+function HomePage() {
   return (
     <div>
       <Header />
@@ -15,4 +15,4 @@ function Homepage() {
   );
 }
 
-export default Homepage;
+export default HomePage;
