@@ -3,6 +3,7 @@ import "./App.css";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Navbar from "./components/navbar/Navbar";
 import HomePage from "./pages/HomePage";
+import FaqsPage from "./pages/FaqsPage";
 import PrivacyPolicyPage from "./pages/PrivacyPolicyPage";
 import Footer from "./components/footer/Footer";
 import TermsAndConditions from "./components/Policies/TermsAndConditions";
@@ -30,6 +31,7 @@ function App() {
             element={<CancellationPolicy />}
           />
           {/* <Route path="/shipping-and-delivery-policy" element={<FaqsPage />} /> */}
+          <Route path="/faqs" element={<FaqsPage />} />
         </Routes>
         <Footer />
       </BrowserRouter>
