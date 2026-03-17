@@ -2,7 +2,6 @@
   width: 100%;
   background-color: #eeeaf8;
   padding: 4rem 0;
-  font-family: Arial, sans-serif;
 }
 
 .testimonials-container h2 {
@@ -128,10 +127,18 @@
   .testimonial-card {
     flex: 0 0 calc(100% / 2);
   }
+
+  .testimonials-navigation {
+    width: 80%;
+  }
 }
 
 @media (max-width: 568px) {
   .testimonials-container h2 {
     font-size: 32px;
+  }
+
+  .testimonials-navigation {
+    width: 100%;
   }
 }
