@@ -53,7 +53,7 @@ function Navbar() {
           Home
         </NavLink>
         <NavLink to="/about-books" onClick={handleCloseNav}>
-          About Dr. ZV
+          About Books
         </NavLink>
         <NavLink to="/plans" onClick={handleCloseNav}>
           Plans
