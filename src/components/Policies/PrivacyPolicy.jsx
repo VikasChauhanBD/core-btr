@@ -17,7 +17,8 @@ function PrivacyPolicy() {
         For privacy-related questions, rights requests, or complaints, please
         contact us at privacy@corebtr.com. For grievance redressal under
         applicable law, you may contact the Grievance Officer, Mr Ritesh Kapoor
-        at grievance@corebtr.com (Email: admin@corebtr.com). <br />
+        at grievance@corebtr.com (Email:
+        <a href="mailto:admin@corebtr.com"> admin@corebtr.com</a>). <br />
         <br />
         Registered office: Institutional Plot No. 6, Knowledge Park - 1, Greater
         Noida, Gautam Buddha Nagar, Uttar Pradesh 201310. CIN:
@@ -53,8 +54,7 @@ function PrivacyPolicy() {
         number (if you choose to provide it), target exam information, feedback,
         support messages, and other information you submit to us.
       </p>
-      <br />
-      <br />
+
       <h3>B. Account and authentication data</h3>
       <p>
         When you create or use an account, we may process username details,
@@ -62,8 +62,7 @@ function PrivacyPolicy() {
         timestamps, and other security-related account records required to
         authenticate you and protect the Services.
       </p>
-      <br />
-      <br />
+
       <h3>C. Learning and service usage data</h3>
       <p>
         We may collect data relating to your use of the Services, including
@@ -73,8 +72,6 @@ function PrivacyPolicy() {
         provide the Service features you use.
       </p>
 
-      <br />
-      <br />
       <h3>D. Automatically collected technical and device data</h3>
       <p>
         When you access the app or website, we may automatically collect
@@ -84,8 +81,6 @@ function PrivacyPolicy() {
         or screens visited. We use this information for service operation,
         security, analytics, troubleshooting, and product improvement.
       </p>
-      <br />
-      <br />
 
       <h3>E. Communications</h3>
       <p>
@@ -94,8 +89,6 @@ function PrivacyPolicy() {
         retain those communications and related metadata for support, training,
         quality assurance, dispute handling, and legal compliance.
       </p>
-      <br />
-      <br />
 
       <h3>F. Data Deletion</h3>
       <p>
@@ -383,9 +376,10 @@ function PrivacyPolicy() {
       <br />
 
       <h2>17. Contact details</h2>
+
       <p>
-        <b>Privacy contact:</b>{" "}
-        <a href="mailto:privacy@corebtr.com">privacy@corebtr.com</a>
+        <b>Privacy contact:</b>
+        <a href="mailto:privacy@corebtr.com"> privacy@corebtr.com</a>
         <br />
         <br />
         <b>Grievance Officer:</b> Mr. Ritesh Kapoor

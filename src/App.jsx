@@ -5,6 +5,8 @@ import Navbar from "./components/navbar/Navbar";
 import HomePage from "./pages/HomePage";
 import PrivacyPolicyPage from "./pages/PrivacyPolicyPage";
 import Footer from "./components/footer/Footer";
+import TermsAndConditions from "./components/Policies/TermsAndConditions";
+import CancellationPolicy from "./components/Policies/CancellationPolicy";
 
 function App() {
   return (
@@ -19,8 +21,14 @@ function App() {
           {/* <Route path="/gallery" element={<StudentsPage />} /> */}
           <Route path="/privacy-policy" element={<PrivacyPolicyPage />} />
           {/* <Route path="/pricing-details" element={<FaqsPage />} /> */}
-          {/* <Route path="/terms-and-conditions" element={<StudentsPage />} /> */}
-          {/* <Route path="/cancellation-and-refund-policy" element={<GalleryPage />} /> */}
+          <Route
+            path="/terms-and-conditions"
+            element={<TermsAndConditions />}
+          />
+          <Route
+            path="/cancellation-and-refund-policy"
+            element={<CancellationPolicy />}
+          />
           {/* <Route path="/shipping-and-delivery-policy" element={<FaqsPage />} /> */}
         </Routes>
         <Footer />
