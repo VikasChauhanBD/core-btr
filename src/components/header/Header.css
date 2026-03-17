@@ -1,4 +1,83 @@
 .header-container {
   width: 100%;
+  background-image: url(../../assets/images/header-bg.avif);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header-container h4 {
+  display: inline;
+  font-size: 18px;
+  color: #7d6beb;
+  padding: 8px 16px;
+  border: 1px solid #7d6beb;
+  border-radius: 8px;
+  margin-top: 5rem;
+}
+
+.header-container h1 {
+  font-size: 48px;
+  padding: 2rem;
   text-align: center;
+}
+
+.header-container p {
+  font-size: 18px;
+  font-weight: 600;
+  text-align: center;
+  padding: 0 10px;
+}
+
+.header-store img {
+  padding: 48px 8px;
+}
+
+.header-image {
+  width: 100%;
+  text-align: center;
+}
+
+.header-image img {
+  width: 60%;
+  margin-bottom: -4px;
+}
+
+/* ------------------------ Responsive Style --------------------- */
+@media (max-width: 1440px) {
+  .header-image img {
+    width: 70%;
+  }
+}
+
+@media (max-width: 1024px) {
+  .header-image img {
+    width: 80%;
+  }
+
+  .header-container h1 {
+    font-size: 42px;
+  }
+}
+
+@media (max-width: 868px) {
+  .header-image img {
+    width: 95%;
+  }
+}
+
+@media (max-width: 568px) {
+  .header-container h1 {
+    font-size: 34px;
+    padding: 2rem 1rem;
+  }
+
+  .header-image img {
+    height: 160px;
+  }
 }
