@@ -8,6 +8,9 @@ import PrivacyPolicyPage from "./pages/PrivacyPolicyPage";
 import Footer from "./components/footer/Footer";
 import TermsAndConditions from "./components/Policies/TermsAndConditions";
 import CancellationPolicy from "./components/Policies/CancellationPolicy";
+import AboutBooks from "./pages/AboutBooks";
+import Annotated from "./components/annotated/Annotated";
+import Unannotated from "./components/unannotated/Unannotated";
 
 function App() {
   return (
@@ -16,10 +19,12 @@ function App() {
         <Navbar />
         <Routes>
           <Route path="/" element={<HomePage />} />
-          {/* <Route path="/about-books" element={<AboutUsPage />} /> */}
+          <Route path="/about-books" element={<AboutBooks />} />
           {/* <Route path="/plans" element={<CRBooksPage />} /> */}
           {/* <Route path="/reviews" element={<CrispPage />} /> */}
           {/* <Route path="/gallery" element={<StudentsPage />} /> */}
+          <Route path="/annotated" element={<Annotated />} />
+          <Route path="/unannotated" element={<Unannotated />} />
           <Route path="/privacy-policy" element={<PrivacyPolicyPage />} />
           {/* <Route path="/pricing-details" element={<FaqsPage />} /> */}
           <Route
