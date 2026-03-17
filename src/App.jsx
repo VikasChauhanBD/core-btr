@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import "./App.css";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Navbar from "./components/navbar/Navbar";
@@ -11,10 +11,15 @@ import CancellationPolicy from "./components/Policies/CancellationPolicy";
 import AboutBooks from "./pages/AboutBooks";
 import Annotated from "./components/annotated/Annotated";
 import Unannotated from "./components/unannotated/Unannotated";
+import LoadingScreen from "./components/loadingScreen/LoadingScreen";
 
 function App() {
+  const [loading, setLoading] = useState(true);
+
   return (
     <>
+      {loading && <LoadingScreen onComplete={() => setLoading(false)} />}
+
       <BrowserRouter>
         <Navbar />
         <Routes>
