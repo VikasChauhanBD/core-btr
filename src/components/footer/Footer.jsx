@@ -40,10 +40,12 @@ function Footer() {
               <NavLink to="/">Home</NavLink>
             </li>
             <li>
-              <NavLink to="/about-books">About Books</NavLink>
+              <NavLink to="https://drzainabvora.com/about" target="_blank">
+                About Dr. ZV
+              </NavLink>
             </li>
             <li>
-              <NavLink to="/plans">Plans</NavLink>
+              <NavLink to="#">Buy New Plans</NavLink>
             </li>
             <li>
               <NavLink to="/reviews">Reviews</NavLink>
@@ -52,7 +54,22 @@ function Footer() {
               <NavLink to="/gallery">Gallery</NavLink>
             </li>
             <li>
-              <NavLink to="/faqs">Faqs</NavLink>
+              <NavLink to="/faqs">FAQ's</NavLink>
+            </li>
+          </ul>
+        </div>
+
+        <div className="footer-section">
+          <h3 className="footer-title">Programs for NEET/INI CET</h3>
+          <ul className="footer-links">
+            <li>
+              <NavLink to="/btr-online">BTR Online</NavLink>
+            </li>
+            <li>
+              <NavLink to="/btr-offline">BTR Offline</NavLink>
+            </li>
+            <li>
+              <NavLink to="/bootcamp">Bootcamp</NavLink>
             </li>
           </ul>
         </div>

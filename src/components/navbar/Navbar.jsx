@@ -22,21 +22,24 @@ function Navbar() {
   };
 
   const handleBTRClick = () => {
-    navigate("/btr");
+    navigate("#");
     handleCloseNav();
   };
 
   const handleBTRArrowClick = (e) => {
+    // Stop propagation to prevent triggering handleBTRClick
     e.stopPropagation();
     setShowBTRMenu(!showBTRMenu);
   };
 
   const handleCRClick = () => {
+    // Navigate to Conceptual Radiology page
     navigate("/conceptual-radiology");
     handleCloseNav();
   };
 
   const handleCRArrowClick = (e) => {
+    // Stop propagation to prevent triggering handleCRClick
     e.stopPropagation();
     setShowCRMenu(!showCRMenu);
   };
@@ -52,11 +55,57 @@ function Navbar() {
         <NavLink to="/" onClick={handleCloseNav}>
           Home
         </NavLink>
-        <NavLink to="/about-books" onClick={handleCloseNav}>
-          About Books
+        <NavLink
+          to="https://drzainabvora.com/about"
+          target="_blank"
+          onClick={handleCloseNav}
+        >
+          About Dr. ZV
         </NavLink>
-        <NavLink to="/plans" onClick={handleCloseNav}>
-          Plans
+
+        {/* BTR with dropdown */}
+        <div
+          className="dropdown-container"
+          onMouseEnter={() => !showNav && setShowBTRMenu(true)}
+          onMouseLeave={() => !showNav && setShowBTRMenu(false)}
+        >
+          <button className="dropdown-trigger" onClick={handleBTRClick}>
+            <span className="dropdown-text">BTR</span>
+            <IoIosArrowDown
+              className={`arrow-icon ${showBTRMenu ? "rotate" : ""}`}
+              onClick={handleBTRArrowClick}
+            />
+          </button>
+
+          {showBTRMenu && (
+            <div
+              className="dropdown-menu level-1"
+              onMouseEnter={() => !showNav && setShowBTRMenu(true)}
+              onMouseLeave={() => !showNav && setShowBTRMenu(false)}
+            >
+              <NavLink
+                to="/btr-online"
+                onClick={handleCloseNav}
+                className="dropdown-link"
+              >
+                BTR Online
+              </NavLink>
+              <NavLink
+                to="/btr-offline"
+                onClick={handleCloseNav}
+                className="dropdown-link"
+              >
+                BTR Offline
+              </NavLink>
+            </div>
+          )}
+        </div>
+
+        <NavLink to="/bootcamp" onClick={handleCloseNav}>
+          Bootcamp
+        </NavLink>
+        <NavLink to="#" onClick={handleCloseNav}>
+          Buy New Plans
         </NavLink>
         <NavLink to="/reviews" onClick={handleCloseNav}>
           Reviews
@@ -65,7 +114,7 @@ function Navbar() {
           Gallery
         </NavLink>
         <NavLink to="/faqs" onClick={handleCloseNav}>
-          Faqs
+          FAQ's
         </NavLink>
       </nav>
       <div className="hamburger">

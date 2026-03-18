@@ -7,12 +7,12 @@ import HeaderImage from "../../assets/images/header-image.png";
 function Header() {
   return (
     <div className="header-container">
-      <h4>Best Medical Service</h4>
-      <h1>Manage Your Health Anytime, Anywhere</h1>
-      <p>
-        Curely helps you book appointments, track wellness, consult doctors, and
-        manage reports – all in one simple app.
-      </p>
+      <h4>CORE BTR – Believe | Trust | Revise</h4>
+      <h1>
+        The Ultimate Revision App for <br />
+        NEET PG, INI-CET & FMGE
+      </h1>
+      <p>Revise smarter. Retain longer. Perform better.</p>
 
       <div className="header-store">
         <img src={AppStore} alt="App Store icon" />

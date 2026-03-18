@@ -5,16 +5,18 @@ import PricingSection from "../components/pricingSection/PricingSection";
 import Programs from "../components/programs/Programs";
 import Testimonials from "../components/testimonials/Testimonials";
 import LastSection from "../components/lastSection/LastSection";
+import CoreBTR from "../components/coreBTR/CoreBTR";
 
 function HomePage() {
   return (
     <div>
       <Header />
-      <FeaturesSection />
+      <CoreBTR />
+      {/* <FeaturesSection />
       <PricingSection />
       <Programs />
       <Testimonials />
-      <LastSection />
+      <LastSection /> */}
     </div>
   );
 }
