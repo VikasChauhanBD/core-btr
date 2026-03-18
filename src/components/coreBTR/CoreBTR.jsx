@@ -99,12 +99,6 @@ const whoFor = [
   },
 ];
 
-const additionalInfo = [
-  "CORE BTR is a next-generation revision platform built for medical aspirants who want clarity, speed, and results — without unnecessary overload.",
-  "Curated by Dr. Zainab Vora — MBBS, MD Radiology (Gold Medalist, AIIMS New Delhi), AIR 1 AIIMS & NIMHANS 2015.",
-  "Built on years of teaching experience and student trust, CORE BTR is crafted to deliver maximum output with minimum confusion.",
-];
-
 function CoreBTR() {
   return (
     <div className="core-btr-container">
@@ -123,6 +117,11 @@ function CoreBTR() {
           <span>MBBS, MD Radiology – Gold Medalist, AIIMS New Delhi</span>
           <span>AIR 1 – AIIMS &amp; NIMHANS 2015</span>
         </div>
+
+        <p>
+          Built on years of teaching experience and student trust, CORE BTR is
+          crafted to deliver maximum output with minimum confusion.
+        </p>
       </div>
 
       <div className="core-btr-sections">
