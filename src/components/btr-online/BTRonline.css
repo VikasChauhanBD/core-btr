@@ -1,37 +1,37 @@
-.online-btr-container {
+.btr-online-container {
   width: 100%;
 }
 
-.online-btr-banner {
+.btr-online-banner {
   width: 100%;
 }
 
-.online-btr-banner img {
+.btr-online-banner img {
   width: 100%;
   display: block;
 }
 
-.online-btr-content {
+.btr-online-content {
   width: 80%;
   margin: 2.5rem auto;
   text-align: center;
 }
 
-.online-btr-content h1 {
+.btr-online-content h1 {
   font-size: clamp(28px, 5vw, 48px);
   font-weight: 900;
   color: #27187e;
   margin-bottom: 10px;
 }
 
-.online-btr-content p {
+.btr-online-content p {
   font-size: 18px;
   line-height: 1.75;
   color: #444;
   margin: 0 auto 1.5rem;
 }
 
-.online-btr-content a {
+.btr-online-content a {
   text-decoration: none;
   font-size: 16px;
   font-weight: 600;
@@ -47,7 +47,7 @@
     background-color 0.2s ease;
 }
 
-.online-btr-content a:hover {
+.btr-online-content a:hover {
   color: #fff;
   background-color: #e35336;
 }
@@ -477,13 +477,13 @@
 
 /* ── Responsive ── */
 @media (max-width: 1440px) {
-  .online-btr-content {
+  .btr-online-content {
     width: 85%;
   }
 }
 
 @media (max-width: 1024px) {
-  .online-btr-content {
+  .btr-online-content {
     width: 95%;
   }
 }
@@ -495,7 +495,7 @@
 }
 
 @media (max-width: 500px) {
-  .online-btr-content {
+  .btr-online-content {
     padding: 1.5rem 0;
   }
   .btr-online-info {

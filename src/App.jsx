@@ -16,6 +16,7 @@ import PlansPage from "./pages/PlansPage";
 import BTRonline from "./components/btr-online/BTRonline";
 import BTRoffline from "./components/btr-offline/BTRoffline";
 import Bootcamp from "./components/bootcamp/Bootcamp";
+import ScrollToTop from "./pages/ScrollToTop";
 
 function App() {
   const [loading, setLoading] = useState(true);
@@ -26,6 +27,7 @@ function App() {
 
       <BrowserRouter>
         <Navbar />
+        <ScrollToTop />
         <Routes>
           <Route path="/" element={<HomePage />} />
           <Route path="/about-books" element={<AboutBooks />} />

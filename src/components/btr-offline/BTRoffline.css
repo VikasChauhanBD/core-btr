@@ -1,37 +1,37 @@
-.offline-btr-container {
+.btr-offline-container {
   width: 100%;
 }
 
-.offline-btr-banner {
+.btr-offline-banner {
   width: 100%;
 }
 
-.offline-btr-banner img {
+.btr-offline-banner img {
   width: 100%;
   display: block;
 }
 
-.offline-btr-content {
+.btr-offline-content {
   width: 80%;
   margin: 2.5rem auto;
   text-align: center;
 }
 
-.offline-btr-content h1 {
+.btr-offline-content h1 {
   font-size: clamp(28px, 5vw, 48px);
   font-weight: 900;
   color: #27187e;
   margin-bottom: 10px;
 }
 
-.offline-btr-content p {
+.btr-offline-content p {
   font-size: 18px;
   line-height: 1.75;
   color: #444;
   margin: 0 auto 1.5rem;
 }
 
-.offline-btr-content h6 {
+.btr-offline-content h6 {
   font-size: clamp(16px, 2.5vw, 22px);
   font-weight: 600;
   color: #27187e;
@@ -469,13 +469,13 @@
 
 /* ── Responsive ── */
 @media (max-width: 1440px) {
-  .offline-btr-content {
+  .btr-offline-content {
     width: 85%;
   }
 }
 
 @media (max-width: 1024px) {
-  .offline-btr-content {
+  .btr-offline-content {
     width: 95%;
   }
 }
@@ -491,7 +491,7 @@
 }
 
 @media (max-width: 500px) {
-  .offline-btr-content {
+  .btr-offline-content {
     padding: 1.5rem 0;
   }
 
