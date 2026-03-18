@@ -1,10 +1,10 @@
 import React from "react";
-import Workbook from "../components/workbook/Workbook";
+import BtrWorkBook from "../components/btrWorkBook/BtrWorkBook";
 
 function AboutBooks() {
   return (
     <div>
-      <Workbook />
+      <BtrWorkBook />
     </div>
   );
 }

@@ -52,25 +52,25 @@ function Unannotated() {
         </p>
       </div>
 
-      <div className="un-sections">
-        <section className="un-why">
-          <div className="un-eyebrow">
-            <span className="un-eyebrow-line" />
-            <span className="un-eyebrow-text">Purpose</span>
+      <div className="unannotated-sections">
+        <section className="unannotated-why">
+          <div className="unannotated-eyebrow">
+            <span className="unannotated-eyebrow-line" />
+            <span className="unannotated-eyebrow-text">Purpose</span>
           </div>
-          <h2 className="un-section-heading">
+          <h2 className="unannotated-section-heading">
             Why Choose <em>BTR Unannotated</em> Workbook?
           </h2>
-          <div className="un-features-table">
+          <div className="unannotated-features-table">
             {features.map((f) => (
-              <div className="un-feature-row" key={f.label}>
-                <div className="un-feature-label">
-                  <span className="un-feature-icon">{f.icon}</span>
-                  <span className="un-feature-name">{f.label}</span>
+              <div className="unannotated-feature-row" key={f.label}>
+                <div className="unannotated-feature-label">
+                  <span className="unannotated-feature-icon">{f.icon}</span>
+                  <span className="unannotated-feature-name">{f.label}</span>
                 </div>
-                <div className="un-feature-desc">
+                <div className="unannotated-feature-desc">
                   {f.points.map((p, i) => (
-                    <span key={i} className="un-feature-point">
+                    <span key={i} className="unannotated-feature-point">
                       {p}
                     </span>
                   ))}
@@ -80,12 +80,12 @@ function Unannotated() {
           </div>
         </section>
 
-        <section className="un-info">
-          <div className="un-info-label">What's Inside?</div>
-          <div className="un-info-items">
+        <section className="unannotated-info">
+          <div className="unannotated-info-label">What's Inside?</div>
+          <div className="unannotated-info-items">
             {whatsInside.map((item, i) => (
-              <div className="un-info-item" key={i}>
-                <span className="un-info-dot" />
+              <div className="unannotated-info-item" key={i}>
+                <span className="unannotated-info-dot" />
                 <span>{item}</span>
               </div>
             ))}

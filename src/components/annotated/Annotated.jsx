@@ -103,26 +103,26 @@ function Annotated() {
         </p>
       </div>
 
-      <div className="an-sections">
-        <section className="an-why">
-          <div className="an-eyebrow">
-            <span className="an-eyebrow-line" />
-            <span className="an-eyebrow-text">Purpose</span>
+      <div className="annotated-sections">
+        <section className="annotated-why">
+          <div className="annotated-eyebrow">
+            <span className="annotated-eyebrow-line" />
+            <span className="annotated-eyebrow-text">Purpose</span>
           </div>
-          <h2 className="an-section-heading">
+          <h2 className="annotated-section-heading">
             Why the <em>Annotated</em> BTR Workbook?
           </h2>
-          <p className="an-lead">
+          <p className="annotated-lead">
             The demand for an annotated version arose because many students are
             pressed for time and may not be able to annotate everything on their
             own. This workbook serves as a solution for:
           </p>
-          <div className="an-target-grid">
+          <div className="annotated-target-grid">
             {targets.map((t) => (
-              <div className="an-target-card" key={t.title}>
-                <span className="an-target-icon">{t.icon}</span>
-                <h3 className="an-target-title">{t.title}</h3>
-                <ul className="an-target-list">
+              <div className="annotated-target-card" key={t.title}>
+                <span className="annotated-target-icon">{t.icon}</span>
+                <h3 className="annotated-target-title">{t.title}</h3>
+                <ul className="annotated-target-list">
                   {t.points.map((p, i) => (
                     <li key={i}>{p}</li>
                   ))}
@@ -132,24 +132,24 @@ function Annotated() {
           </div>
         </section>
 
-        <section className="an-features">
-          <div className="an-eyebrow">
-            <span className="an-eyebrow-line" />
-            <span className="an-eyebrow-text">What's Inside</span>
+        <section className="annotated-features">
+          <div className="annotated-eyebrow">
+            <span className="annotated-eyebrow-line" />
+            <span className="annotated-eyebrow-text">What's Inside</span>
           </div>
-          <h2 className="an-section-heading">
+          <h2 className="annotated-section-heading">
             Key Features of the Annotated Workbook
           </h2>
-          <div className="an-features-table">
+          <div className="annotated-features-table">
             {features.map((f) => (
-              <div className="an-feature-row" key={f.label}>
-                <div className="an-feature-label">
-                  <span className="an-feature-icon">{f.icon}</span>
-                  <span className="an-feature-name">{f.label}</span>
+              <div className="annotated-feature-row" key={f.label}>
+                <div className="annotated-feature-label">
+                  <span className="annotated-feature-icon">{f.icon}</span>
+                  <span className="annotated-feature-name">{f.label}</span>
                 </div>
-                <div className="an-feature-desc">
+                <div className="annotated-feature-desc">
                   {f.points.map((p, i) => (
-                    <span key={i} className="an-feature-point">
+                    <span key={i} className="annotated-feature-point">
                       {p}
                     </span>
                   ))}
@@ -159,31 +159,31 @@ function Annotated() {
           </div>
         </section>
 
-        <section className="an-usage">
-          <div className="an-eyebrow">
-            <span className="an-eyebrow-line" />
-            <span className="an-eyebrow-text">How to Use</span>
+        <section className="annotated-usage">
+          <div className="annotated-eyebrow">
+            <span className="annotated-eyebrow-line" />
+            <span className="annotated-eyebrow-text">How to Use</span>
           </div>
-          <h2 className="an-section-heading">
+          <h2 className="annotated-section-heading">
             How to Use the Workbooks Effectively
           </h2>
-          <div className="an-usage-grid">
+          <div className="annotated-usage-grid">
             {usages.map((u) => (
-              <div className="an-usage-card" key={u.num}>
-                <span className="an-usage-num">{u.num}</span>
-                <h3 className="an-usage-title">{u.title}</h3>
-                <p className="an-usage-body">{u.body}</p>
+              <div className="annotated-usage-card" key={u.num}>
+                <span className="annotated-usage-num">{u.num}</span>
+                <h3 className="annotated-usage-title">{u.title}</h3>
+                <p className="annotated-usage-body">{u.body}</p>
               </div>
             ))}
           </div>
         </section>
 
-        <section className="an-info">
-          <div className="an-info-label">Additional Info</div>
-          <div className="an-info-items">
+        <section className="annotated-info">
+          <div className="annotated-info-label">Additional Info</div>
+          <div className="annotated-info-items">
             {additionalInfo.map((item, i) => (
-              <div className="an-info-item" key={i}>
-                <span className="an-info-dot" />
+              <div className="annotated-info-item" key={i}>
+                <span className="annotated-info-dot" />
                 <span>{item}</span>
               </div>
             ))}

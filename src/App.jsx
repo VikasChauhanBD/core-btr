@@ -12,6 +12,10 @@ import AboutBooks from "./pages/AboutBooks";
 import Annotated from "./components/annotated/Annotated";
 import Unannotated from "./components/unannotated/Unannotated";
 import LoadingScreen from "./components/loadingScreen/LoadingScreen";
+import PlansPage from "./pages/PlansPage";
+import BTRonline from "./components/btr-online/BTRonline";
+import BTRoffline from "./components/btr-offline/BTRoffline";
+import Bootcamp from "./components/bootcamp/Bootcamp";
 
 function App() {
   const [loading, setLoading] = useState(true);
@@ -25,11 +29,18 @@ function App() {
         <Routes>
           <Route path="/" element={<HomePage />} />
           <Route path="/about-books" element={<AboutBooks />} />
-          {/* <Route path="/plans" element={<CRBooksPage />} /> */}
-          {/* <Route path="/reviews" element={<CrispPage />} /> */}
-          {/* <Route path="/gallery" element={<StudentsPage />} /> */}
           <Route path="/annotated" element={<Annotated />} />
           <Route path="/unannotated" element={<Unannotated />} />
+          <Route path="/plans" element={<PlansPage />} />
+          <Route path="/btr-online" element={<BTRonline />} />
+          <Route path="/btr-offline" element={<BTRoffline />} />
+          <Route path="/neet-pg-bootcamp" element={<Bootcamp />} />
+          {/* <Route path="/gallery" element={<StudentsPage />} /> */}
+          {/* <Route path="/reviews" element={<CrispPage />} /> */}
+          {/* <Route path="/gallery" element={<StudentsPage />} /> */}
+          <Route path="/faqs" element={<FaqsPage />} />
+
+          {/* ------------------------ privacy Routes --------------------------- */}
           <Route path="/privacy-policy" element={<PrivacyPolicyPage />} />
           {/* <Route path="/pricing-details" element={<FaqsPage />} /> */}
           <Route
@@ -41,7 +52,6 @@ function App() {
             element={<CancellationPolicy />}
           />
           {/* <Route path="/shipping-and-delivery-policy" element={<FaqsPage />} /> */}
-          <Route path="/faqs" element={<FaqsPage />} />
         </Routes>
         <Footer />
       </BrowserRouter>
