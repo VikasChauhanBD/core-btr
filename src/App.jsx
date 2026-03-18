@@ -65,7 +65,7 @@ function App() {
           <Route path="/plans" element={<PlansPage />} />
           <Route path="/btr-online" element={<BTRonline />} />
           <Route path="/btr-offline" element={<BTRoffline />} />
-          <Route path="/neet-pg-bootcamp" element={<Bootcamp />} />
+          <Route path="/bootcamp" element={<Bootcamp />} />
           {/* <Route path="/gallery" element={<StudentsPage />} /> */}
           {/* <Route path="/reviews" element={<CrispPage />} /> */}
           {/* <Route path="/gallery" element={<StudentsPage />} /> */}

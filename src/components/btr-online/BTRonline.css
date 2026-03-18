@@ -12,15 +12,15 @@
 }
 
 .btr-online-content {
-  width: 80%;
-  margin: 2.5rem auto;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2.5rem 1rem;
   text-align: center;
 }
 
 .btr-online-content h1 {
-  font-size: clamp(28px, 5vw, 48px);
-  font-weight: 900;
-  color: #27187e;
+  font-size: 42px;
+  color: #7d6beb;
   margin-bottom: 10px;
 }
 
@@ -74,7 +74,7 @@
 .btr-online-highlights,
 .btr-online-features,
 .btr-online-what-you-get {
-  max-width: 1024px;
+  max-width: 1200px;
   margin: 0 auto 80px;
   position: relative;
   z-index: 1;
@@ -90,7 +90,7 @@
 .btr-online-eyebrow-line {
   width: 36px;
   height: 2px;
-  background: linear-gradient(to right, #27187e, #6b6fc5);
+  background: linear-gradient(to right, #7d6beb, #6b6fc5);
   border-radius: 2px;
   flex-shrink: 0;
 }
@@ -100,7 +100,7 @@
   font-weight: 700;
   letter-spacing: 0.22em;
   text-transform: uppercase;
-  color: #27187e;
+  color: #7d6beb;
 }
 
 .btr-online-section-heading {
@@ -113,7 +113,7 @@
 
 .btr-online-section-heading em {
   font-style: italic;
-  color: #27187e;
+  color: #7d6beb;
 }
 
 .btr-online-lead {
@@ -175,7 +175,7 @@
   left: 0;
   right: 0;
   height: 3px;
-  background: linear-gradient(to right, #27187e, #5b5fcf);
+  background: linear-gradient(to right, #7d6beb, #5b5fcf);
 }
 
 .btr-online-highlight-card:hover {
@@ -188,7 +188,7 @@
 .btr-online-highlight-card h3 {
   font-size: 18px;
   font-weight: 700;
-  color: #27187e;
+  color: #7d6beb;
   margin-bottom: 16px;
 }
 
@@ -270,7 +270,7 @@
 .btr-online-feature-name {
   font-size: 13.5px;
   font-weight: 700;
-  color: #27187e;
+  color: #7d6beb;
   line-height: 1.3;
 }
 
@@ -294,7 +294,7 @@
 
 .btr-online-feature-point::before {
   content: "·";
-  color: #27187e;
+  color: #7d6beb;
   font-size: 22px;
   line-height: 1.25;
   flex-shrink: 0;
@@ -370,9 +370,9 @@
 }
 
 .btr-online-info {
-  max-width: 900px;
+  max-width: 1200px;
   margin: 0 auto;
-  background: linear-gradient(135deg, #1a0f5e 0%, #27187e 50%, #3e31a8 100%);
+  background: linear-gradient(135deg, #1a0f5e 0%, #7d6beb 50%, #3e31a8 100%);
   border-radius: 12px;
   padding: 40px 44px;
   position: relative;
@@ -475,29 +475,20 @@
   animation: btr-online-fadeUp 0.55s 0.35s ease both;
 }
 
-/* ── Responsive ── */
-@media (max-width: 1440px) {
-  .btr-online-content {
-    width: 85%;
-  }
+/* ---------------------------- Responsive Style ------------------------ */
+/* @media (max-width: 1440px) {
 }
 
 @media (max-width: 1024px) {
-  .btr-online-content {
-    width: 95%;
-  }
-}
+} */
 
-@media (max-width: 800px) {
+@media (max-width: 868px) {
   .btr-online-info {
-    padding: 28px 24px;
+    padding: 28px 22px;
   }
 }
 
 @media (max-width: 500px) {
-  .btr-online-content {
-    padding: 1.5rem 0;
-  }
   .btr-online-info {
     padding: 24px 18px;
   }
