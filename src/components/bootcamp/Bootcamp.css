@@ -102,7 +102,7 @@
 }
 
 .bootcamp-eyebrow-text {
-  font-size: 11px;
+  font-size: 16px;
   font-weight: 700;
   letter-spacing: 0.22em;
   text-transform: uppercase;
@@ -123,10 +123,9 @@
 }
 
 .bootcamp-lead {
-  font-size: 15.5px;
+  font-size: 16px;
   line-height: 1.78;
   color: #555;
-  font-weight: 300;
   max-width: 640px;
   margin-bottom: 36px;
 }
@@ -208,7 +207,7 @@
 }
 
 .bootcamp-highlight-list li {
-  font-size: 14px;
+  font-size: 16px;
   line-height: 1.65;
   color: #444;
   padding-left: 24px;
@@ -286,7 +285,7 @@
 }
 
 .bootcamp-feature-name {
-  font-size: 13.5px;
+  font-size: 16px;
   font-weight: 700;
   color: #7d6beb;
   line-height: 1.3;
@@ -305,7 +304,7 @@
   display: flex;
   align-items: flex-start;
   gap: 10px;
-  font-size: 13.5px;
+  font-size: 16px;
   line-height: 1.72;
   color: #555;
 }
@@ -375,14 +374,14 @@
 }
 
 .bootcamp-get-title {
-  font-size: 14.5px;
+  font-size: 16px;
   font-weight: 700;
   color: #1a1a2e;
   margin-bottom: 8px;
 }
 
 .bootcamp-get-body {
-  font-size: 13px;
+  font-size: 16px;
   line-height: 1.72;
   color: #666;
 }
@@ -424,7 +423,7 @@
 }
 
 .bootcamp-info-label {
-  font-size: 11px;
+  font-size: 16px;
   font-weight: 700;
   letter-spacing: 0.22em;
   text-transform: uppercase;
@@ -454,7 +453,7 @@
   display: flex;
   align-items: flex-start;
   gap: 14px;
-  font-size: 14px;
+  font-size: 16px;
   line-height: 1.78;
   color: rgba(255, 255, 255, 0.82);
 }
@@ -505,6 +504,10 @@
 } */
 
 @media (max-width: 868px) {
+  .bootcamp-content h1 {
+    font-size: 32px;
+  }
+
   .bootcamp-info {
     padding: 28px 24px;
   }

@@ -109,7 +109,7 @@ function CoreBTR() {
   return (
     <div className="core-btr-container">
       <div className="core-btr-content">
-        <h1>CORE BTR</h1>
+        <h2>CORE BTR</h2>
         <p>
           A next-generation revision platform built for medical aspirants who
           want <b>clarity, speed, and results</b> — without unnecessary
