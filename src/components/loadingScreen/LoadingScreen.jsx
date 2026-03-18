@@ -1,62 +1,19 @@
 import React, { useEffect, useState, useRef } from "react";
 import "./LoadingScreen.css";
 
-const STORAGE_KEY = "corebtr_tab_open";
-const DURATION = 3800; // total loading duration in ms
+const DURATION = 3800;
 
 export default function LoadingScreen({ onComplete }) {
-  const [visible, setVisible] = useState(false);
   const [progress, setProgress] = useState(0);
-  const [phase, setPhase] = useState("enter"); // enter | loading | exit
+  const [phase, setPhase] = useState("enter");
   const progressRef = useRef(null);
-  const channelRef = useRef(null);
 
   useEffect(() => {
-    // ── Tab detection via BroadcastChannel ──
-    // If another tab of this site is already open, skip the loader
-    const channel = new BroadcastChannel(STORAGE_KEY);
-    channelRef.current = channel;
-
-    let alreadyOpen = false;
-
-    channel.onmessage = (e) => {
-      if (e.data === "ping") {
-        // Another tab just opened — tell it we're alive
-        channel.postMessage("alive");
-      }
-      if (e.data === "alive") {
-        // We got a response — a tab was already open, skip loader
-        alreadyOpen = true;
-        setVisible(false);
-        onComplete?.();
-      }
-    };
-
-    // Broadcast a ping to see if any tab responds
-    channel.postMessage("ping");
-
-    // Give 80ms for a response before deciding to show loader
-    const tabCheckTimer = setTimeout(() => {
-      if (!alreadyOpen) {
-        setVisible(true);
-        startLoading();
-      }
-    }, 80);
-
-    return () => {
-      clearTimeout(tabCheckTimer);
-      channel.close();
-    };
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, []);
-
-  const startLoading = () => {
     const startTime = performance.now();
 
     const tick = (now) => {
       const elapsed = now - startTime;
       const raw = Math.min(elapsed / DURATION, 1);
-      // ease-out curve for natural feel
       const eased = 1 - Math.pow(1 - raw, 3);
       setProgress(Math.floor(eased * 100));
 
@@ -66,30 +23,23 @@ export default function LoadingScreen({ onComplete }) {
         setProgress(100);
         setPhase("exit");
         setTimeout(() => {
-          setVisible(false);
           onComplete?.();
         }, 900);
       }
     };
 
     progressRef.current = requestAnimationFrame(tick);
-  };
 
-  useEffect(() => {
     return () => {
       if (progressRef.current) cancelAnimationFrame(progressRef.current);
     };
   }, []);
 
-  if (!visible) return null;
-
-  // Build letter spans for "Core BTR"
   const word1 = "Core".split("");
   const word2 = "BTR".split("");
 
   return (
     <div className={`ls-root ${phase === "exit" ? "ls-exit" : ""}`}>
-      {/* ── Animated background layers ── */}
       <div className="ls-bg-base" />
       <div className="ls-orb ls-orb-1" />
       <div className="ls-orb ls-orb-2" />
@@ -97,16 +47,13 @@ export default function LoadingScreen({ onComplete }) {
       <div className="ls-grid" />
       <div className="ls-vignette" />
 
-      {/* ── Floating particles ── */}
       <div className="ls-particles">
         {Array.from({ length: 22 }).map((_, i) => (
           <span key={i} className="ls-particle" style={{ "--i": i }} />
         ))}
       </div>
 
-      {/* ── Center content ── */}
       <div className="ls-center">
-        {/* Logo mark */}
         <div className="ls-logo-mark">
           <svg
             viewBox="0 0 64 64"
@@ -195,10 +142,8 @@ export default function LoadingScreen({ onComplete }) {
           </div>
         </div>
 
-        {/* Tagline */}
         <p className="ls-tagline">Your Ultimate Medical Exam Companion</p>
 
-        {/* Progress bar */}
         <div className="ls-progress-wrap">
           <div className="ls-progress-track">
             <div className="ls-progress-fill" style={{ width: `${progress}%` }}>
@@ -208,7 +153,6 @@ export default function LoadingScreen({ onComplete }) {
           <span className="ls-progress-num">{progress}%</span>
         </div>
 
-        {/* Loading dots */}
         <div className="ls-dots">
           <span className="ls-dot" />
           <span className="ls-dot" />
@@ -216,7 +160,6 @@ export default function LoadingScreen({ onComplete }) {
         </div>
       </div>
 
-      {/* Corner decorations */}
       <div className="ls-corner ls-corner-tl" />
       <div className="ls-corner ls-corner-tr" />
       <div className="ls-corner ls-corner-bl" />

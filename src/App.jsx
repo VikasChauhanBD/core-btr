@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import "./App.css";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Navbar from "./components/navbar/Navbar";
@@ -18,12 +18,41 @@ import BTRoffline from "./components/btr-offline/BTRoffline";
 import Bootcamp from "./components/bootcamp/Bootcamp";
 import ScrollToTop from "./pages/ScrollToTop";
 
+const TAB_COUNT_KEY = "corebtr_tab_count";
+
 function App() {
-  const [loading, setLoading] = useState(true);
+  const [showLoading, setShowLoading] = useState(false);
+
+  useEffect(() => {
+    const currentCount = parseInt(localStorage.getItem(TAB_COUNT_KEY) || "0");
+    const newCount = currentCount + 1;
+    localStorage.setItem(TAB_COUNT_KEY, newCount.toString());
+
+    const handleUnload = () => {
+      const count = parseInt(localStorage.getItem(TAB_COUNT_KEY) || "1");
+      const updated = Math.max(count - 1, 0);
+      localStorage.setItem(TAB_COUNT_KEY, updated.toString());
+    };
+    window.addEventListener("beforeunload", handleUnload);
+
+    const hasSeen = sessionStorage.getItem("hasSeenLoading");
+    if (currentCount === 0 && !hasSeen) {
+      setShowLoading(true);
+    }
+
+    return () => {
+      window.removeEventListener("beforeunload", handleUnload);
+    };
+  }, []);
+
+  const handleLoadingComplete = () => {
+    sessionStorage.setItem("hasSeenLoading", "true");
+    setShowLoading(false);
+  };
 
   return (
     <>
-      {loading && <LoadingScreen onComplete={() => setLoading(false)} />}
+      {showLoading && <LoadingScreen onComplete={handleLoadingComplete} />}
 
       <BrowserRouter>
         <Navbar />
