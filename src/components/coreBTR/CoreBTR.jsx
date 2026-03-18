@@ -1,6 +1,5 @@
 import React from "react";
 import "./CoreBTR.css";
-import { NavLink } from "react-router-dom";
 
 const whatYouGet = [
   {
@@ -105,10 +104,10 @@ function CoreBTR() {
       <div className="core-btr-content">
         <h2>CORE BTR</h2>
         <p>
-          A next-generation revision platform built for medical aspirants who
-          want <b>clarity, speed, and results</b> — without unnecessary
-          overload. Designed with a student-first approach, CORE BTR transforms
-          the way you revise by focusing only on{" "}
+          CORE BTR is a next-generation revision platform built for medical
+          aspirants who want <b>clarity, speed, and results</b> — without
+          unnecessary overload. Designed with a student-first approach, CORE BTR
+          transforms the way you revise by focusing only on{" "}
           <b>what truly matters in the exam.</b>
         </p>
 
@@ -152,7 +151,6 @@ function CoreBTR() {
           </div>
         </section>
 
-        {/* ── What Makes It Different ── */}
         <section className="core-btr-features">
           <div className="core-btr-eyebrow">
             <span className="core-btr-eyebrow-line" />
@@ -181,7 +179,6 @@ function CoreBTR() {
           </div>
         </section>
 
-        {/* ── Who Is It For ── */}
         <section className="core-btr-who-for">
           <div className="core-btr-eyebrow">
             <span className="core-btr-eyebrow-line" />
@@ -210,7 +207,6 @@ function CoreBTR() {
           </div>
         </section>
 
-        {/* ── Vision & CTA info panel ── */}
         <section className="core-btr-info">
           <div className="core-btr-info-label">Our Vision</div>
 
@@ -234,15 +230,6 @@ function CoreBTR() {
               Revise Smart. Revise CORE.
             </strong>
           </p>
-
-          {/* <a
-            href="https://dashboard.cerebellumacademy.com/plans"
-            target="_blank"
-            rel="noreferrer"
-            className="core-btr-info-cta"
-          >
-            Start Your Smart Revision Today
-          </a> */}
         </section>
       </div>
     </div>
