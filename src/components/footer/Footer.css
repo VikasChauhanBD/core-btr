@@ -144,7 +144,8 @@
 }
 
 .footer-bottom {
-  background: linear-gradient(135deg, #8b5cf6, #6d28d9);
+  /* background: linear-gradient(135deg, #8b5cf6, #6d28d9); */
+  background-color: #7d6beb;
   padding: 1.5rem 10px;
   text-align: center;
 }

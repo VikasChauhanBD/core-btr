@@ -17,6 +17,7 @@ import BTRonline from "./components/btr-online/BTRonline";
 import BTRoffline from "./components/btr-offline/BTRoffline";
 import Bootcamp from "./components/bootcamp/Bootcamp";
 import ScrollToTop from "./pages/ScrollToTop";
+import StudentReviewsPage from "./pages/StudentReviewsPage";
 
 const TAB_COUNT_KEY = "corebtr_tab_count";
 
@@ -66,8 +67,7 @@ function App() {
           <Route path="/btr-online" element={<BTRonline />} />
           <Route path="/btr-offline" element={<BTRoffline />} />
           <Route path="/bootcamp" element={<Bootcamp />} />
-          {/* <Route path="/gallery" element={<StudentsPage />} /> */}
-          {/* <Route path="/reviews" element={<CrispPage />} /> */}
+          <Route path="/reviews" element={<StudentReviewsPage />} />
           {/* <Route path="/gallery" element={<StudentsPage />} /> */}
           <Route path="/faqs" element={<FaqsPage />} />
 

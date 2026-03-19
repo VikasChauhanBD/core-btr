@@ -51,7 +51,9 @@ function Footer() {
               <NavLink to="/reviews">Reviews</NavLink>
             </li>
             <li>
-              <NavLink to="/gallery">Gallery</NavLink>
+              <NavLink to="https://drzainabvora.com/gallery" target="_blank">
+                Gallery
+              </NavLink>
             </li>
             <li>
               <NavLink to="/faqs">FAQ's</NavLink>

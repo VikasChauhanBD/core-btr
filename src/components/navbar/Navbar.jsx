@@ -110,7 +110,11 @@ function Navbar() {
         <NavLink to="/reviews" onClick={handleCloseNav}>
           Reviews
         </NavLink>
-        <NavLink to="/gallery" onClick={handleCloseNav}>
+        <NavLink
+          to="https://drzainabvora.com/gallery"
+          target="_blank"
+          onClick={handleCloseNav}
+        >
           Gallery
         </NavLink>
         <NavLink to="/faqs" onClick={handleCloseNav}>
