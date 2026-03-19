@@ -28,10 +28,10 @@
 
 .reviews-hero-bg-quote {
   position: absolute;
-  top: 20px;
+  top: 50px;
   left: 50%;
   transform: translateX(-50%);
-  font-size: 320px;
+  font-size: 200px;
   font-weight: 900;
   color: #e7e3ff;
   line-height: 1;
@@ -191,7 +191,7 @@
   display: flex;
   flex-direction: column;
   gap: 18px;
-  width: 340px;
+  width: 450px;
   flex-shrink: 0;
   transition:
     transform 0.3s ease,
@@ -225,9 +225,9 @@
 
 .review-card-quote-mark {
   position: absolute;
-  top: 14px;
+  top: 25px;
   right: 20px;
-  font-size: 72px;
+  font-size: 20px;
   font-weight: 900;
   color: #000;
   line-height: 1;
@@ -242,7 +242,7 @@
 
 .review-card-stars span {
   color: #7d6beb;
-  font-size: 16px;
+  font-size: 18px;
 }
 
 .review-card-text {
@@ -251,10 +251,10 @@
   color: #4d4d4d;
   font-style: italic;
   flex: 1;
-  display: -webkit-box;
+  /* display: -webkit-box;
   -webkit-line-clamp: 4;
   -webkit-box-orient: vertical;
-  overflow: hidden;
+  overflow: hidden; */
 }
 
 .review-card-divider {
@@ -383,7 +383,7 @@
   }
 
   .review-card {
-    width: 280px;
+    width: 350px;
   }
 
   .reviews-cta-btn {

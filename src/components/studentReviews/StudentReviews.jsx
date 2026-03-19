@@ -1,5 +1,6 @@
 import React from "react";
 import "./StudentReviews.css";
+import { FaQuoteRight } from "react-icons/fa";
 import { NavLink } from "react-router-dom";
 import DrShrutiRawat from "../../assets/studentsImages/Dr-Shruti-Rawat.png";
 import DrSnehaRani from "../../assets/studentsImages/Dr-Sneha-Rani.png";
@@ -157,7 +158,7 @@ function ReviewCard({ t }) {
   return (
     <div className="review-card">
       <span className="review-card-quote-mark" aria-hidden="true">
-        "
+        <FaQuoteRight />
       </span>
       <StarRating count={t.stars} />
       <p className="review-card-text">"{t.feedback}"</p>
@@ -180,7 +181,7 @@ function StudentReviews() {
     <div className="reviews-page">
       <header className="reviews-hero">
         <div className="reviews-hero-bg-quote" aria-hidden="true">
-          "
+          <FaQuoteRight />
         </div>
 
         <div className="reviews-eyebrow">
