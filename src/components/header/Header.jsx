@@ -7,7 +7,7 @@ import HeaderImage from "../../assets/images/header-image.png";
 function Header({ animationReady }) {
   return (
     <div className={`header-container ${animationReady ? "animate" : ""}`}>
-      <h4>CORE BTR – Believe | Trust | Revise</h4>
+      <h4>CoreBTR – Believe | Trust | Revise</h4>
       <h1>
         The Ultimate Revision App for <br />
         NEET PG, INI-CET & FMGE

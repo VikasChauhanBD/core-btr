@@ -104,7 +104,7 @@ function Footer() {
 
       <div className="footer-bottom">
         <p>
-          &copy; 2026 Core BTR, All rights reserved. | Designed & Managed By:{" "}
+          &copy; 2026 CoreBTR, All rights reserved. | Designed & Managed By:{" "}
           <NavLink to="https://believersdestination.com/" target="_blank">
             Believers Destination Pvt Ltd
           </NavLink>

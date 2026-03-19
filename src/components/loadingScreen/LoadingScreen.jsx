@@ -35,8 +35,7 @@ export default function LoadingScreen({ onComplete }) {
     };
   }, []);
 
-  const word1 = "Core".split("");
-  const word2 = "BTR".split("");
+  const word = "CoreBTR".split("");
 
   return (
     <div className={`ls-root ${phase === "exit" ? "ls-exit" : ""}`}>
@@ -122,18 +121,11 @@ export default function LoadingScreen({ onComplete }) {
 
         {/* Brand name */}
         <div className="ls-brand">
-          <div className="ls-word ls-word-1">
-            {word1.map((l, i) => (
-              <span key={i} className="ls-letter" style={{ "--li": i }}>
-                {l}
-              </span>
-            ))}
-          </div>
-          <div className="ls-word ls-word-2">
-            {word2.map((l, i) => (
+          <div className="ls-word">
+            {word.map((l, i) => (
               <span
                 key={i}
-                className="ls-letter ls-letter-btr"
+                className={`ls-letter ${i >= 4 ? "ls-letter-btr" : ""}`}
                 style={{ "--li": i }}
               >
                 {l}

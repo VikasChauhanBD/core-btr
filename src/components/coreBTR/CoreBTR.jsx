@@ -102,11 +102,11 @@ function CoreBTR() {
   return (
     <div className="core-btr-container">
       <div className="core-btr-content">
-        <h2>CORE BTR</h2>
+        <h2>CoreBTR</h2>
         <p>
-          CORE BTR is a next-generation revision platform built for medical
+          CoreBTR is a next-generation revision platform built for medical
           aspirants who want <b>clarity, speed, and results</b> — without
-          unnecessary overload. Designed with a student-first approach, CORE BTR
+          unnecessary overload. Designed with a student-first approach, CoreBTR
           transforms the way you revise by focusing only on{" "}
           <b>what truly matters in the exam.</b>
         </p>
@@ -118,7 +118,7 @@ function CoreBTR() {
         </div>
 
         <p>
-          Built on years of teaching experience and student trust, CORE BTR is
+          Built on years of teaching experience and student trust, CoreBTR is
           crafted to deliver maximum output with minimum confusion.
         </p>
       </div>
@@ -130,7 +130,7 @@ function CoreBTR() {
             <span className="core-btr-eyebrow-text">The Platform</span>
           </div>
           <h2 className="core-btr-section-heading">
-            What You Get with <em>CORE BTR</em>
+            What You Get with <em>CoreBTR</em>
           </h2>
           <p className="core-btr-lead">
             Everything you need for a complete, structured, high-yield revision
@@ -154,10 +154,10 @@ function CoreBTR() {
         <section className="core-btr-features">
           <div className="core-btr-eyebrow">
             <span className="core-btr-eyebrow-line" />
-            <span className="core-btr-eyebrow-text">Why CORE BTR</span>
+            <span className="core-btr-eyebrow-text">Why CoreBTR</span>
           </div>
           <h2 className="core-btr-section-heading">
-            What Makes CORE BTR <em>Different?</em>
+            What Makes CoreBTR <em>Different?</em>
           </h2>
 
           <div className="core-btr-features-table">
@@ -185,11 +185,11 @@ function CoreBTR() {
             <span className="core-btr-eyebrow-text">Target Audience</span>
           </div>
           <h2 className="core-btr-section-heading">
-            Who Is <em>CORE BTR</em> For?
+            Who Is <em>CoreBTR</em> For?
           </h2>
           <p className="core-btr-lead">
             Whether you are just starting your revision or entering the final
-            stretch before the exam, CORE BTR is built for you.
+            stretch before the exam, CoreBTR is built for you.
           </p>
 
           <div className="core-btr-who-grid">
