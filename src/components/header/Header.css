@@ -1,3 +1,25 @@
+@keyframes fadeSlideUp {
+  from {
+    opacity: 0;
+    transform: translateY(60px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeSlideUpFar {
+  from {
+    opacity: 0;
+    transform: translateY(100px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
 .header-container {
   width: 100%;
   background-image: url(../../assets/images/header-bg.avif);
@@ -19,12 +41,18 @@
   border: 1px solid #7d6beb;
   border-radius: 8px;
   margin-top: 5rem;
+  opacity: 0;
+  animation: fadeSlideUp 0.6s ease forwards;
+  animation-delay: 0.1s;
 }
 
 .header-container h1 {
   font-size: 48px;
   padding: 2rem;
   text-align: center;
+  opacity: 0;
+  animation: fadeSlideUp 0.6s ease forwards;
+  animation-delay: 0.3s;
 }
 
 .header-container p {
@@ -32,6 +60,15 @@
   font-weight: 600;
   text-align: center;
   padding: 0 10px;
+  opacity: 0;
+  animation: fadeSlideUp 0.6s ease forwards;
+  animation-delay: 0.5s;
+}
+
+.header-store {
+  opacity: 0;
+  animation: fadeSlideUp 0.6s ease forwards;
+  animation-delay: 0.7s;
 }
 
 .header-store img {
@@ -42,6 +79,10 @@
 .header-image {
   width: 100%;
   text-align: center;
+
+  opacity: 0;
+  animation: fadeSlideUpFar 0.8s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+  animation-delay: 0.95s;
 }
 
 .header-image img {
@@ -84,5 +125,16 @@
 
   .header-image img {
     height: 160px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .header-container h4,
+  .header-container h1,
+  .header-container p,
+  .header-store,
+  .header-image {
+    opacity: 1;
+    animation: none;
   }
 }
