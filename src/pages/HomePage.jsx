@@ -7,10 +7,10 @@ import Testimonials from "../components/testimonials/Testimonials";
 import LastSection from "../components/lastSection/LastSection";
 import CoreBTR from "../components/coreBTR/CoreBTR";
 
-function HomePage() {
+function HomePage({ animationReady }) {
   return (
     <div>
-      <Header />
+      <Header animationReady={animationReady} />
       <CoreBTR />
       {/* <FeaturesSection />
       <PricingSection />

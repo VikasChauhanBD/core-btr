@@ -22,10 +22,14 @@ import StudentReviewsPage from "./pages/StudentReviewsPage";
 const TAB_COUNT_KEY = "corebtr_tab_count";
 
 function App() {
-  const [showLoading, setShowLoading] = useState(false);
+  const hasSeen = sessionStorage.getItem("hasSeenLoading");
+  const currentCount = parseInt(localStorage.getItem(TAB_COUNT_KEY) || "0");
+  const shouldShowLoading = currentCount === 0 && !hasSeen;
+
+  const [showLoading, setShowLoading] = useState(shouldShowLoading);
+  const [loadingDone, setLoadingDone] = useState(!shouldShowLoading);
 
   useEffect(() => {
-    const currentCount = parseInt(localStorage.getItem(TAB_COUNT_KEY) || "0");
     const newCount = currentCount + 1;
     localStorage.setItem(TAB_COUNT_KEY, newCount.toString());
 
@@ -36,11 +40,6 @@ function App() {
     };
     window.addEventListener("beforeunload", handleUnload);
 
-    const hasSeen = sessionStorage.getItem("hasSeenLoading");
-    if (currentCount === 0 && !hasSeen) {
-      setShowLoading(true);
-    }
-
     return () => {
       window.removeEventListener("beforeunload", handleUnload);
     };
@@ -49,6 +48,7 @@ function App() {
   const handleLoadingComplete = () => {
     sessionStorage.setItem("hasSeenLoading", "true");
     setShowLoading(false);
+    setLoadingDone(true);
   };
 
   return (
@@ -59,7 +59,7 @@ function App() {
         <Navbar />
         <ScrollToTop />
         <Routes>
-          <Route path="/" element={<HomePage />} />
+          <Route path="/" element={<HomePage animationReady={loadingDone} />} />
           <Route path="/about-books" element={<AboutBooks />} />
           <Route path="/annotated" element={<Annotated />} />
           <Route path="/unannotated" element={<Unannotated />} />
