@@ -13,7 +13,7 @@
 }
 
 .navbar-logo img {
-  width: 60px;
+  width: 160px;
 }
 
 .web-nav {
@@ -27,7 +27,7 @@
 .navbar-container a {
   font-size: 16px;
   font-weight: 500;
-  color: #15304c;
+  color: #1d204b;
   text-decoration: none;
   padding: 0.5rem 1rem;
   transition:
@@ -39,7 +39,6 @@
   color: #1676e4;
 }
 
-/* Dropdown Styles */
 .dropdown-container {
   position: relative;
 }
@@ -48,7 +47,7 @@
   font-size: 16px;
   font-weight: 500;
   font-family: inherit;
-  color: #15304c;
+  color: #1d204b;
   text-decoration: none;
   padding: 0.5rem 1rem;
   background: none;
@@ -95,7 +94,7 @@
   margin-top: 0;
   padding-top: 0.5rem;
   background: transparent;
-  min-width: 220px;
+  min-width: 180px;
   z-index: 9;
   display: flex;
   flex-direction: column;
@@ -118,29 +117,6 @@
 
 .dropdown-menu.level-1 > .dropdown-link:last-child {
   margin-bottom: 0;
-}
-
-/* Dropdown Menu Styles - Level 2 (BTR submenu) */
-.dropdown-menu.level-2 {
-  position: absolute;
-  top: 0;
-  left: 100%;
-  margin-left: 0;
-  background: white;
-  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.15);
-  min-width: 180px;
-  padding: 0.5rem 0;
-  z-index: 10;
-}
-
-.dropdown-menu.level-2::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 0.5rem;
-  bottom: 0;
-  background: transparent;
 }
 
 @keyframes slideDown {
@@ -186,13 +162,7 @@
 
 /* -------------------------- Responsive Style -------------------------- */
 
-@media (max-width: 1440px) {
-  /* .navbar-logo img {
-    width: 260px;
-  } */
-}
-
-@media (max-width: 1140px) {
+@media (max-width: 1024px) {
   .navbar-container {
     box-shadow: none;
   }
@@ -211,7 +181,7 @@
     font-size: 2rem;
     border: none;
     cursor: pointer;
-    color: #15304c;
+    color: #1d204b;
   }
 
   .mobile-nav {
@@ -279,16 +249,16 @@
   }
 }
 
-@media (max-width: 800px) {
-  /* .navbar-logo img {
-    width: 260px;
-  } */
+@media (max-width: 868px) {
+  .navbar-logo img {
+    width: 140px;
+  }
 }
 
-@media (max-width: 500px) {
-  /* .navbar-logo img {
-    width: 240px;
-  } */
+@media (max-width: 568px) {
+  .navbar-logo img {
+    width: 120px;
+  }
 
   .hamburger {
     padding-right: 1.5rem;

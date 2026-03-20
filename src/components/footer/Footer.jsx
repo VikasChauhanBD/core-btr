@@ -1,7 +1,7 @@
 import React from "react";
 import "./Footer.css";
 import { NavLink } from "react-router-dom";
-import Logo from "../../assets/react.svg";
+import Logo from "../../assets/images/coreBTR-logo.svg";
 import { FaFacebookF, FaInstagram, FaYoutube } from "react-icons/fa";
 import { MdEmail, MdPhone, MdLocationOn } from "react-icons/md";
 
@@ -104,7 +104,7 @@ function Footer() {
 
       <div className="footer-bottom">
         <p>
-          &copy; 2026 CoreBTR, All rights reserved. | Designed & Managed By:{" "}
+          &copy; 2026 coreBTR, All rights reserved. | Designed & Managed By:{" "}
           <NavLink to="https://believersdestination.com/" target="_blank">
             Believers Destination Pvt Ltd
           </NavLink>
