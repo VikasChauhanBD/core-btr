@@ -22,7 +22,7 @@
 }
 
 .the-platform-what-you-get {
-  max-width: 1200px;
+  width: 80%;
   margin: 0 auto 80px;
   position: relative;
   z-index: 1;
@@ -74,126 +74,117 @@
 
 .the-platform-get-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   gap: 18px;
 }
 
-@media (max-width: 700px) {
-  .the-platform-get-grid {
-    grid-template-columns: 1fr;
-  }
-}
-
-@media (max-width: 1024px) and (min-width: 701px) {
-  .the-platform-get-grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-
 .the-platform-get-card {
-  border: 1px solid #c8ccee;
-  border-radius: 10px;
-  padding: 28px 22px 24px;
-  background: #fff;
-  box-shadow:
-    0 4px 16px rgba(39, 24, 126, 0.1),
-    0 1px 4px rgba(39, 24, 126, 0.06);
   position: relative;
+  border-radius: 14px;
   overflow: hidden;
+  min-height: 350px;
+  background-size: cover;
+  background-position: center;
+  cursor: pointer;
   transition:
-    transform 0.24s ease,
-    box-shadow 0.24s ease;
-}
-
-.the-platform-get-card::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  height: 3px;
-  background: linear-gradient(to right, #7d6beb, #5b5fcf);
-}
-
-.the-platform-get-card::after {
-  content: "";
-  position: absolute;
-  bottom: -28px;
-  right: -28px;
-  width: 90px;
-  height: 90px;
-  border-radius: 50%;
-  background: radial-gradient(
-    circle,
-    rgba(39, 24, 126, 0.07) 0%,
-    transparent 70%
-  );
-  pointer-events: none;
+    transform 0.28s ease,
+    box-shadow 0.28s ease;
+  box-shadow: 0 4px 20px rgba(39, 24, 126, 0.12);
 }
 
 .the-platform-get-card:hover {
-  transform: translateY(-4px);
-  box-shadow:
-    0 12px 40px rgba(39, 24, 126, 0.18),
-    0 4px 12px rgba(39, 24, 126, 0.1);
+  transform: translateY(-5px) scale(1.01);
+  box-shadow: 0 14px 40px rgba(39, 24, 126, 0.22);
 }
 
-.the-platform-get-icon {
-  display: block;
-  font-size: 22px;
-  margin-bottom: 10px;
+.the-platform-get-card-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to bottom,
+    rgba(10, 6, 40, 0.08) 0%,
+    rgba(10, 6, 40, 0.55) 45%,
+    rgba(10, 6, 40, 0.92) 100%
+  );
+  transition: background 0.28s ease;
+}
+
+.the-platform-get-card:hover .the-platform-get-card-overlay {
+  background: linear-gradient(
+    to bottom,
+    rgba(10, 6, 40, 0.1) 0%,
+    rgba(10, 6, 40, 0.6) 40%,
+    rgba(10, 6, 40, 0.95) 100%
+  );
+}
+
+.the-platform-get-card-content {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 24px 22px 22px;
+  z-index: 1;
 }
 
 .the-platform-get-title {
-  font-size: 16px;
-  font-weight: 700;
-  color: #7d6beb;
+  font-size: 20px;
+  font-weight: 800;
+  color: #ffffff;
   margin-bottom: 8px;
+  line-height: 1.25;
+  text-shadow: 0 1px 6px rgba(0, 0, 0, 0.4);
 }
 
 .the-platform-get-body {
   font-size: 16px;
-  line-height: 1.72;
-  color: #666;
+  line-height: 1.65;
+  color: rgba(255, 255, 255, 0.82);
+  text-shadow: 0 1px 4px rgba(0, 0, 0, 0.35);
 }
 
 .the-platform-get-badge {
-  display: inline-block;
-  margin-top: 10px;
-  font-size: 16px;
-  font-weight: 700;
-  letter-spacing: 0.08em;
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  z-index: 2;
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 0.1em;
   text-transform: uppercase;
-  color: #e35336;
-  background: #fff3f1;
-  border: 1px solid #f0c4bb;
-  border-radius: 4px;
-  padding: 2px 8px;
+  color: #fff;
+  background: #e35336;
+  border-radius: 6px;
+  padding: 4px 10px;
+  box-shadow: 0 2px 8px rgba(227, 83, 54, 0.45);
 }
 
-/* ---------------------------- Responsive Style ------------------------ */
-/* @media (max-width: 1440px) {
+/* -------------------------- Responsive --------------------- */
+@media (max-width: 1440px) {
+  .the-platform-what-you-get {
+    width: 85%;
+  }
 }
 
 @media (max-width: 1024px) {
-} */
-
-@media (max-width: 868px) {
-  .the-platform-content h2 {
-    font-size: 32px;
-  }
-
-  .the-platform-info {
-    padding: 28px 22px;
+  .the-platform-what-you-get {
+    width: 95%;
   }
 }
 
-@media (max-width: 500px) {
-  .the-platform-info {
-    padding: 24px 18px;
+/* @media (max-width: 868px) {
+} */
+
+@media (max-width: 568px) {
+  .the-platform-what-you-get {
+    width: 100%;
   }
 
-  .the-platform-info-exams {
-    gap: 8px;
+  .the-platform-get-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .the-platform-get-card {
+    min-height: 250px;
   }
 }
