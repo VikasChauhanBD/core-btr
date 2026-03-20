@@ -1,0 +1,151 @@
+.our-vision-container {
+  width: 100%;
+}
+
+.our-vision-sections {
+  background: #f5f6ff;
+  color: #1a1a2e;
+  padding: 2.5rem 1rem;
+  position: relative;
+}
+
+.our-vision-sections::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image:
+    linear-gradient(#d6d8f5 1px, transparent 1px),
+    linear-gradient(90deg, #d6d8f5 1px, transparent 1px);
+  background-size: 48px 48px;
+  opacity: 0.3;
+  pointer-events: none;
+}
+
+.our-vision-info {
+  max-width: 1200px;
+  margin: 0 auto;
+  background: linear-gradient(135deg, #1a0f5e 0%, #7d6beb 50%, #3e31a8 100%);
+  border-radius: 12px;
+  padding: 40px 44px;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 24px 64px rgba(27, 18, 100, 0.32);
+  z-index: 1;
+  text-align: center;
+}
+
+.our-vision-info::before {
+  content: "";
+  position: absolute;
+  top: -60px;
+  right: -60px;
+  width: 220px;
+  height: 220px;
+  border: 1.5px solid rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+  pointer-events: none;
+}
+
+.our-vision-info::after {
+  content: "";
+  position: absolute;
+  bottom: -80px;
+  left: -50px;
+  width: 260px;
+  height: 260px;
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  border-radius: 50%;
+  pointer-events: none;
+}
+
+.our-vision-info-label {
+  font-size: 16px;
+  font-weight: 700;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: #a8b3ff;
+  margin-bottom: 22px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+}
+
+.our-vision-info-label::before,
+.our-vision-info-label::after {
+  content: "";
+  flex: 1;
+  height: 1px;
+  background: rgba(255, 255, 255, 0.16);
+}
+
+.our-vision-info-vision {
+  font-size: clamp(18px, 3vw, 26px);
+  font-weight: 700;
+  color: #fff;
+  line-height: 1.5;
+  margin-bottom: 20px;
+  position: relative;
+  z-index: 1;
+}
+
+.our-vision-info-vision em {
+  font-style: italic;
+  color: #c9adfb;
+}
+
+.our-vision-info-exams {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  flex-wrap: wrap;
+  margin-bottom: 24px;
+  position: relative;
+  z-index: 1;
+}
+
+.our-vision-info-exam-tag {
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #1a0f5e;
+  background: #c9adfb;
+  border-radius: 20px;
+  padding: 5px 14px;
+}
+
+.our-vision-info-tagline {
+  font-size: 16px;
+  line-height: 1.9;
+  color: rgba(255, 255, 255, 0.75);
+  margin-bottom: 28px;
+  position: relative;
+  z-index: 1;
+}
+/* ---------------------------- Responsive Style ------------------------ */
+/* @media (max-width: 1440px) {
+}
+
+@media (max-width: 1024px) {
+} */
+
+@media (max-width: 868px) {
+  .our-vision-content h2 {
+    font-size: 32px;
+  }
+
+  .our-vision-info {
+    padding: 28px 22px;
+  }
+}
+
+@media (max-width: 500px) {
+  .our-vision-info {
+    padding: 24px 18px;
+  }
+
+  .our-vision-info-exams {
+    gap: 8px;
+  }
+}
