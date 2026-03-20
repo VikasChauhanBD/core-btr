@@ -1,9 +1,8 @@
 import React from "react";
 import "./Footer.css";
 import { NavLink } from "react-router-dom";
-import Logo from "../../assets/images/coreBTR-logo.svg";
-import { FaFacebookF, FaInstagram, FaYoutube } from "react-icons/fa";
-import { MdEmail, MdPhone, MdLocationOn } from "react-icons/md";
+import Logo from "../../assets/images/coreBTR-white-logo.svg";
+import { FaInstagram, FaYoutube } from "react-icons/fa";
 
 function Footer() {
   return (
@@ -82,9 +81,9 @@ function Footer() {
             <li>
               <NavLink to="/privacy-policy">Privacy Policy</NavLink>
             </li>
-            <li>
+            {/* <li>
               <NavLink to="/pricing-details">Pricing Details</NavLink>
-            </li>
+            </li> */}
             <li>
               <NavLink to="/terms-and-conditions">Terms & Conditions</NavLink>
             </li>
@@ -93,11 +92,11 @@ function Footer() {
                 Cancellation & Refund Policy
               </NavLink>
             </li>
-            <li>
+            {/* <li>
               <NavLink to="/shipping-and-delivery-policy">
                 Shipping & Delivery Policy
               </NavLink>
-            </li>
+            </li> */}
           </ul>
         </div>
       </div>

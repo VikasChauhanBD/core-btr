@@ -19,7 +19,7 @@
 }
 
 .footer-logo img {
-  width: 80px;
+  width: 120px;
 }
 
 .footer-social {
@@ -152,10 +152,6 @@
     width: 100%;
     gap: 1rem;
   }
-
-  /* .footer-logo img {
-    width: 180px;
-  } */
 
   .footer-bottom-links {
     padding-top: 10px;
