@@ -1,29 +1,11 @@
 .why-core-btr-container {
   width: 100%;
-}
-
-.why-core-btr-sections {
-  background: #f5f6ff;
-  color: #1a1a2e;
-  padding: 2.5rem 1rem;
-  position: relative;
-}
-
-.why-core-btr-sections::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background-image:
-    linear-gradient(#d6d8f5 1px, transparent 1px),
-    linear-gradient(90deg, #d6d8f5 1px, transparent 1px);
-  background-size: 48px 48px;
-  opacity: 0.3;
-  pointer-events: none;
+  padding: 4rem 1rem;
 }
 
 .why-core-btr-features {
-  max-width: 1200px;
-  margin: 0 auto 80px;
+  width: 80%;
+  margin: 0 auto;
   position: relative;
   z-index: 1;
 }
@@ -39,8 +21,6 @@
   width: 36px;
   height: 2px;
   background: linear-gradient(to right, #7d6beb, #6b6fc5);
-  border-radius: 2px;
-  flex-shrink: 0;
 }
 
 .why-core-btr-eyebrow-text {
@@ -54,121 +34,79 @@
 .why-core-btr-section-heading {
   font-size: clamp(24px, 4vw, 38px);
   font-weight: 900;
-  line-height: 1.15;
   color: #1a1a2e;
   margin-bottom: 14px;
 }
 
-.why-core-btr-section-heading em {
-  font-style: italic;
-  color: #7d6beb;
-}
-
-.why-core-btr-features-table {
-  border: 1px solid #c8ccee;
-  border-radius: 10px;
-  overflow: hidden;
-  box-shadow: 0 2px 8px rgba(39, 24, 126, 0.1);
-}
-
-.why-core-btr-feature-row {
-  display: grid;
-  grid-template-columns: 200px 1fr;
-  border-bottom: 1px solid #c8ccee;
-  transition: background 0.18s ease;
-}
-
-.why-core-btr-feature-row:last-child {
-  border-bottom: none;
-}
-
-.why-core-btr-feature-row:hover {
-  background: #eef0fb;
-}
-
-@media (max-width: 640px) {
-  .why-core-btr-feature-row {
-    grid-template-columns: 1fr;
-  }
-}
-
-.why-core-btr-feature-label {
+.why-core-btr-cards {
+  width: 100%;
+  margin: 0 auto;
   display: flex;
-  align-items: center;
-  gap: 10px;
-  padding: 20px 22px;
-  background: #eaecf8;
-  border-right: 1px solid #c8ccee;
+  justify-content: space-between;
+  gap: 20px;
 }
 
-@media (max-width: 640px) {
-  .why-core-btr-feature-label {
-    border-right: none;
-    border-bottom: 1px solid #c8ccee;
-  }
+.why-core-btr-card {
+  width: 23%;
+  padding: 2rem;
+  margin-top: 2.5rem;
+  color: #fff;
+  background-color: #27187e;
+  border-radius: 22px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  opacity: 0;
+  transform: translateY(50px);
+  transition: all 0.6s ease;
 }
 
-.why-core-btr-feature-icon {
+.why-core-btr-card.animate {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.why-core-btr-icon {
+  font-size: 50px;
+  margin-bottom: 10px;
+}
+
+.why-core-btr-card h4 {
+  font-size: 20px;
+}
+
+.why-core-btr-card p {
   font-size: 16px;
-  flex-shrink: 0;
+  line-height: 1.5;
 }
 
-.why-core-btr-feature-name {
-  font-size: 14px;
-  font-weight: 700;
-  color: #7d6beb;
-  line-height: 1.3;
-}
-
-.why-core-btr-feature-desc {
-  padding: 20px 28px;
-  display: flex;
-  flex-direction: column;
-  gap: 8px;
-  justify-content: center;
-  background: #fff;
-}
-
-.why-core-btr-feature-point {
-  display: flex;
-  align-items: flex-start;
-  gap: 10px;
-  font-size: 16px;
-  line-height: 1.72;
-  color: #555;
-}
-
-.why-core-btr-feature-point::before {
-  content: "·";
-  color: #7d6beb;
-  font-size: 22px;
-  line-height: 1.25;
-  flex-shrink: 0;
-}
-
-/* ---------------------------- Responsive Style ------------------------ */
-/* @media (max-width: 1440px) {
+/* -------------------------- Responsive --------------------- */
+@media (max-width: 1440px) {
+  .why-core-btr-features {
+    width: 85%;
+  }
 }
 
 @media (max-width: 1024px) {
-} */
-
-@media (max-width: 868px) {
-  .why-core-btr-content h2 {
-    font-size: 32px;
-  }
-
-  .why-core-btr-info {
-    padding: 28px 22px;
+  .why-core-btr-features {
+    width: 95%;
   }
 }
 
-@media (max-width: 500px) {
-  .why-core-btr-info {
-    padding: 24px 18px;
+@media (max-width: 868px) {
+  .why-core-btr-cards {
+    flex-wrap: wrap;
   }
 
-  .why-core-btr-info-exams {
-    gap: 8px;
+  .why-core-btr-card {
+    width: 48%;
+  }
+}
+
+@media (max-width: 568px) {
+  .why-core-btr-features {
+    width: 100%;
+  }
+
+  .why-core-btr-card {
+    width: 100%;
   }
 }
