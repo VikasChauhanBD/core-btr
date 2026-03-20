@@ -5,7 +5,7 @@
 .the-platform-sections {
   background: #f5f6ff;
   color: #1a1a2e;
-  padding: 2.5rem 1rem;
+  padding: 4rem 1rem;
   position: relative;
 }
 
@@ -23,7 +23,7 @@
 
 .the-platform-what-you-get {
   width: 80%;
-  margin: 0 auto 80px;
+  margin: 0 auto;
   position: relative;
   z-index: 1;
 }
@@ -38,36 +38,32 @@
 .the-platform-eyebrow-line {
   width: 36px;
   height: 2px;
-  background: linear-gradient(to right, #7d6beb, #6b6fc5);
+  background: #feb122;
   border-radius: 2px;
   flex-shrink: 0;
 }
 
 .the-platform-eyebrow-text {
-  font-size: 16px;
+  font-size: 18px;
   font-weight: 700;
   letter-spacing: 0.22em;
-  text-transform: uppercase;
-  color: #7d6beb;
+  color: #feb122;
 }
 
 .the-platform-section-heading {
-  font-size: clamp(24px, 4vw, 38px);
-  font-weight: 900;
+  font-size: 48px;
   line-height: 1.15;
-  color: #1a1a2e;
+  color: #1d204b;
   margin-bottom: 14px;
 }
 
-.the-platform-section-heading em {
-  font-style: italic;
-  color: #7d6beb;
+.the-platform-section-heading span {
+  color: #1b54ff;
 }
 
 .the-platform-lead {
   font-size: 16px;
   line-height: 1.78;
-  color: #555;
   max-width: 640px;
   margin-bottom: 36px;
 }
@@ -172,8 +168,11 @@
   }
 }
 
-/* @media (max-width: 868px) {
-} */
+@media (max-width: 868px) {
+  .the-platform-section-heading {
+    font-size: 32px;
+  }
+}
 
 @media (max-width: 568px) {
   .the-platform-what-you-get {

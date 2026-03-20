@@ -7,12 +7,14 @@ import HeaderImage from "../../assets/images/header-image.png";
 function Header({ animationReady }) {
   return (
     <div className={`header-container ${animationReady ? "animate" : ""}`}>
-      <h4>CoreBTR – Believe | Trust | Revise</h4>
+      <h4>
+        <span>core</span>BTR – Believe. Trust. Revise
+      </h4>
       <h1>
         The Ultimate Revision App for <br />
-        NEET PG, INI-CET & FMGE
+        NEET PG | INI-CET | FMGE
       </h1>
-      <p>Revise smarter. Retain longer. Perform better.</p>
+      <p>From Revision to Revolution</p>
       <div className="header-store">
         <img src={AppStore} alt="App Store icon" />
         <img src={PlayStore} alt="Play Store icon" />

@@ -1,30 +1,12 @@
 .our-vision-container {
   width: 100%;
-}
-
-.our-vision-sections {
-  background: #f5f6ff;
-  color: #1a1a2e;
-  padding: 2.5rem 1rem;
-  position: relative;
-}
-
-.our-vision-sections::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background-image:
-    linear-gradient(#d6d8f5 1px, transparent 1px),
-    linear-gradient(90deg, #d6d8f5 1px, transparent 1px);
-  background-size: 48px 48px;
-  opacity: 0.3;
-  pointer-events: none;
+  padding: 4rem 1rem;
 }
 
 .our-vision-info {
-  max-width: 1200px;
+  width: 80%;
   margin: 0 auto;
-  background: linear-gradient(135deg, #1a0f5e 0%, #7d6beb 50%, #3e31a8 100%);
+  background: linear-gradient(135deg, #1d204b 0%, #1b54ff 50%, #feb122 100%);
   border-radius: 12px;
   padding: 40px 44px;
   position: relative;
@@ -59,11 +41,11 @@
 }
 
 .our-vision-info-label {
-  font-size: 16px;
+  font-size: 18px;
   font-weight: 700;
   letter-spacing: 0.22em;
   text-transform: uppercase;
-  color: #a8b3ff;
+  color: #feb122;
   margin-bottom: 22px;
   display: flex;
   align-items: center;
@@ -76,22 +58,16 @@
   content: "";
   flex: 1;
   height: 1px;
-  background: rgba(255, 255, 255, 0.16);
+  background: #feb122;
 }
 
 .our-vision-info-vision {
-  font-size: clamp(18px, 3vw, 26px);
-  font-weight: 700;
+  font-size: 20px;
   color: #fff;
   line-height: 1.5;
   margin-bottom: 20px;
   position: relative;
   z-index: 1;
-}
-
-.our-vision-info-vision em {
-  font-style: italic;
-  color: #c9adfb;
 }
 
 .our-vision-info-exams {
@@ -109,43 +85,30 @@
   font-weight: 700;
   letter-spacing: 0.1em;
   text-transform: uppercase;
-  color: #1a0f5e;
-  background: #c9adfb;
+  color: #1d204b;
+  background: #fff;
   border-radius: 20px;
   padding: 5px 14px;
 }
 
-.our-vision-info-tagline {
-  font-size: 16px;
-  line-height: 1.9;
-  color: rgba(255, 255, 255, 0.75);
-  margin-bottom: 28px;
-  position: relative;
-  z-index: 1;
-}
 /* ---------------------------- Responsive Style ------------------------ */
-/* @media (max-width: 1440px) {
+@media (max-width: 1440px) {
+  .our-vision-info {
+    width: 85%;
+  }
 }
 
 @media (max-width: 1024px) {
-} */
-
-@media (max-width: 868px) {
-  .our-vision-content h2 {
-    font-size: 32px;
-  }
-
   .our-vision-info {
-    padding: 28px 22px;
+    width: 95%;
   }
 }
 
-@media (max-width: 500px) {
-  .our-vision-info {
-    padding: 24px 18px;
-  }
+/* @media (max-width: 868px) {
+} */
 
-  .our-vision-info-exams {
-    gap: 8px;
+@media (max-width: 568px) {
+  .our-vision-info {
+    width: 100%;
   }
 }

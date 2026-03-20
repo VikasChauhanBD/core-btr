@@ -5,11 +5,13 @@ function CoreBTR() {
   return (
     <div className="core-btr-container">
       <div className="core-btr-content">
-        <h2>CoreBTR</h2>
+        <h2>
+          <span>core</span>BTR
+        </h2>
         <p>
-          CoreBTR is a next-generation revision platform built for medical
+          coreBTR is a next-generation revision platform built for medical
           aspirants who want <b>clarity, speed, and results</b> — without
-          unnecessary overload. Designed with a student-first approach, CoreBTR
+          unnecessary overload. Designed with a student-first approach, coreBTR
           transforms the way you revise by focusing only on{" "}
           <b>what truly matters in the exam.</b>
         </p>
@@ -21,7 +23,7 @@ function CoreBTR() {
         </div>
 
         <p>
-          Built on years of teaching experience and student trust, CoreBTR is
+          Built on years of teaching experience and student trust, coreBTR is
           crafted to deliver maximum output with minimum confusion.
         </p>
       </div>

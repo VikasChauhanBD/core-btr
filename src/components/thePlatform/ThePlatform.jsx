@@ -66,10 +66,10 @@ function ThePlatform() {
         <section className="the-platform-what-you-get">
           <div className="the-platform-eyebrow">
             <span className="the-platform-eyebrow-line" />
-            <span className="the-platform-eyebrow-text">The Platform</span>
+            <span className="the-platform-eyebrow-text">THE PLATFORM</span>
           </div>
           <h2 className="the-platform-section-heading">
-            What You Get with <em>CoreBTR</em>
+            What You Get with core<span>BTR</span>
           </h2>
           <p className="the-platform-lead">
             Everything you need for a complete, structured, high-yield revision

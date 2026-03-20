@@ -3,22 +3,25 @@
 }
 
 .core-btr-content {
-  max-width: 1200px;
+  width: 80%;
   margin: 0 auto;
   padding: 2.5rem 1rem;
   text-align: center;
 }
 
 .core-btr-content h2 {
-  font-size: 42px;
-  color: #7d6beb;
+  font-size: 48px;
+  color: #1b54ff;
   margin-bottom: 10px;
+}
+
+.core-btr-content span {
+  color: #1d204b;
 }
 
 .core-btr-content p {
   font-size: 18px;
   line-height: 1.75;
-  color: #444;
   margin: 0 auto 1rem;
 }
 
@@ -36,38 +39,35 @@
 
 .core-btr-curator strong {
   font-size: 17px;
-  color: #7d6beb;
+  color: #feb122;
 }
 
 .core-btr-curator span {
   font-size: 16px;
-  color: #666;
   line-height: 1.6;
 }
 
 /* ---------------------------- Responsive Style ------------------------ */
-/* @media (max-width: 1440px) {
+@media (max-width: 1440px) {
+  .core-btr-content {
+    width: 85%;
+  }
 }
 
 @media (max-width: 1024px) {
-} */
+  .core-btr-content {
+    width: 95%;
+  }
+}
 
 @media (max-width: 868px) {
   .core-btr-content h2 {
     font-size: 32px;
   }
-
-  .core-btr-info {
-    padding: 28px 22px;
-  }
 }
 
-@media (max-width: 500px) {
-  .core-btr-info {
-    padding: 24px 18px;
-  }
-
-  .core-btr-info-exams {
-    gap: 8px;
+@media (max-width: 568px) {
+  .core-btr-content {
+    width: 100%;
   }
 }

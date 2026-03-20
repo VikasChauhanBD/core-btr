@@ -20,22 +20,34 @@
 .why-core-btr-eyebrow-line {
   width: 36px;
   height: 2px;
-  background: linear-gradient(to right, #7d6beb, #6b6fc5);
+  background: #feb122;
 }
 
 .why-core-btr-eyebrow-text {
-  font-size: 16px;
+  font-size: 18px;
   font-weight: 700;
   letter-spacing: 0.22em;
-  text-transform: uppercase;
-  color: #7d6beb;
+  color: #feb122;
+}
+
+.why-core-btr-eyebrow-text span {
+  color: #1d204b;
+}
+
+.why-core-btr-eyebrow-text em {
+  color: #1b54ff;
+  font-style: normal;
 }
 
 .why-core-btr-section-heading {
-  font-size: clamp(24px, 4vw, 38px);
-  font-weight: 900;
-  color: #1a1a2e;
+  font-size: 48px;
+  line-height: 1.15;
+  color: #1d204b;
   margin-bottom: 14px;
+}
+
+.why-core-btr-section-heading span {
+  color: #1b54ff;
 }
 
 .why-core-btr-cards {
@@ -51,7 +63,7 @@
   padding: 2rem;
   margin-top: 2.5rem;
   color: #fff;
-  background-color: #27187e;
+  background-color: #1b54ff;
   border-radius: 22px;
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
   opacity: 0;
@@ -92,6 +104,10 @@
 }
 
 @media (max-width: 868px) {
+  .why-core-btr-section-heading {
+    font-size: 32px;
+  }
+
   .why-core-btr-cards {
     flex-wrap: wrap;
   }

@@ -1,14 +1,16 @@
 import React from "react";
 import "./TargetAudience.css";
+import { FaUserMd } from "react-icons/fa";
+import { GiFinishLine } from "react-icons/gi";
 
 const whoFor = [
   {
-    icon: "🩺",
+    icon: <FaUserMd />,
     title: "Exam Aspirants",
     points: ["NEET PG aspirants", "INI-CET aspirants", "FMGE aspirants"],
   },
   {
-    icon: "🏁",
+    icon: <GiFinishLine />,
     title: "Revision Stage",
     points: [
       "Students aiming for last-mile high-yield revision",
@@ -26,16 +28,12 @@ function TargetAudience() {
           <div className="target-audience-eyebrow">
             <span className="target-audience-eyebrow-line" />
             <span className="target-audience-eyebrow-text">
-              Target Audience
+              TARGET AUDIENCE
             </span>
           </div>
           <h2 className="target-audience-section-heading">
-            Who Is <em>CoreBTR</em> For?
+            Who Is core<span>BTR</span> For?
           </h2>
-          <p className="target-audience-lead">
-            Whether you are just starting your revision or entering the final
-            stretch before the exam, CoreBTR is built for you.
-          </p>
 
           <div className="target-audience-who-grid">
             {whoFor.map((w) => (
