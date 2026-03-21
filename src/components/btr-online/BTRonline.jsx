@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useRef } from "react";
 import "./BTRonline.css";
 import {
   BookOpen,
@@ -24,52 +24,85 @@ const highlights = [
   },
 ];
 
-const features = [
-  {
-    icon: <BookOpen size={24} />,
-    label: "19 Subjects",
-    points: [
-      "Complete crash revision across all 19 subjects — structured, high-yield, and exam-relevant.",
-    ],
-  },
-  {
-    icon: <Target size={24} />,
-    label: "PYQ-Based Focus",
-    points: [
-      "Every session is anchored in previous year questions, ensuring you revise only what actually gets asked.",
-    ],
-  },
-  {
-    icon: <Video size={24} />,
-    label: "Recorded Videos",
-    points: [
-      "Quick revision recorded videos for all 19 subjects — watch, pause, and rewatch at your own pace.",
-    ],
-  },
-  {
-    icon: <Layers size={24} />,
-    label: "Integrated Systems",
-    points: [
-      "Pathology, Pharmacology, Physiology & Medicine taught as Integrated Systems for a holistic conceptual foundation.",
-    ],
-  },
-  {
-    icon: <FileText size={24} />,
-    label: "Annotated PDFs",
-    points: [
-      "In-app annotated PDFs serve as ready-to-use revision notes, saving you annotation time.",
-    ],
-  },
-  {
-    icon: <NotebookPen size={24} />,
-    label: "Free BTR Booklet",
-    points: [
-      "FREE hardcopy BTR booklet/workbook included for personal note-making and last-minute revision.",
-    ],
-  },
-];
-
 function BTRonline() {
+  const sectionRef = useRef(null);
+  const headerRef = useRef(null);
+  const cardRefs = useRef([]);
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            headerRef.current?.classList.add("animate");
+
+            cardRefs.current.forEach((card, index) => {
+              setTimeout(() => {
+                card?.classList.add("animate");
+              }, index * 150);
+            });
+          }
+        });
+      },
+      { threshold: 0.3 },
+    );
+
+    if (sectionRef.current) {
+      observer.observe(sectionRef.current);
+    }
+
+    return () => {
+      if (sectionRef.current) {
+        observer.unobserve(sectionRef.current);
+      }
+    };
+  }, []);
+
+  const addToCardRefs = (el) => {
+    if (el && !cardRefs.current.includes(el)) {
+      cardRefs.current.push(el);
+    }
+  };
+
+  const keyFeatures = [
+    {
+      id: 1,
+      icon: BookOpen,
+      title: "19 Subjects",
+      desp: "Complete crash revision across all 19 subjects — structured, high-yield, and exam-relevant.",
+    },
+    {
+      id: 2,
+      icon: Target,
+      title: "PYQ-Based Focus",
+      desp: "Every session is anchored in previous year questions, ensuring you revise only what actually gets asked.",
+    },
+    {
+      id: 3,
+      icon: Video,
+      title: "Recorded Videos",
+      desp: "Quick revision recorded videos for all 19 subjects — watch, pause, and rewatch at your own pace.",
+    },
+    {
+      id: 4,
+      icon: Layers,
+      title: "Integrated Systems",
+      desp: "Pathology, Pharmacology, Physiology & Medicine taught as Integrated Systems for a holistic conceptual foundation.",
+    },
+    {
+      id: 5,
+      icon: FileText,
+      title: "Annotated PDFs",
+      desp: "In-app annotated PDFs serve as ready-to-use revision notes, saving you annotation time.",
+    },
+    {
+      id: 6,
+      icon: NotebookPen,
+      title: "Free BTR Booklet",
+      desp: "FREE hardcopy BTR booklet/workbook included for personal note-making and last-minute revision.",
+    },
+  ];
+
   return (
     <div className="btr-online-container">
       <div className="btr-online-banner">
@@ -135,31 +168,34 @@ function BTRonline() {
       </div>
 
       <div className="btr-online-features-section">
-        <section className="btr-online-features">
+        <section className="btr-online-features" ref={sectionRef}>
           <div className="btr-online-eyebrow">
             <span className="btr-online-eyebrow-line" />
-            <span className="btr-online-eyebrow-text">What's Inside</span>
+            <p className="btr-online-eyebrow-text">
+              WHY <span>core</span>
+              <em>BTR</em>
+            </p>
           </div>
-          <h2 className="btr-online-section-heading">
-            Key Features of <span>BTR Online</span>
+
+          <h2 className="btr-online-section-heading" ref={headerRef}>
+            What Makes core<span>BTR</span> Different?
           </h2>
 
-          <div className="btr-online-features-table">
-            {features.map((f) => (
-              <div className="btr-online-feature-row" key={f.label}>
-                <div className="btr-online-feature-label">
-                  <span className="btr-online-feature-icon">{f.icon}</span>
-                  <span className="btr-online-feature-name">{f.label}</span>
+          <div className="btr-online-grid">
+            {keyFeatures.map((data) => {
+              const Icon = data.icon;
+              return (
+                <div
+                  key={data.id}
+                  className="btr-online-card"
+                  ref={addToCardRefs}
+                >
+                  <Icon className="btr-online-icon" />
+                  <h4>{data.title}</h4>
+                  <p>{data.desp}</p>
                 </div>
-                <div className="btr-online-feature-desc">
-                  {f.points.map((p, i) => (
-                    <span key={i} className="btr-online-feature-point">
-                      {p}
-                    </span>
-                  ))}
-                </div>
-              </div>
-            ))}
+              );
+            })}
           </div>
         </section>
       </div>
