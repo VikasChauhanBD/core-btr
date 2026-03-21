@@ -35,7 +35,7 @@ export default function LoadingScreen({ onComplete }) {
     };
   }, []);
 
-  const word = "CoreBTR".split("");
+  const word = "coreBTR".split("");
 
   return (
     <div className={`ls-root ${phase === "exit" ? "ls-exit" : ""}`}>
@@ -46,19 +46,9 @@ export default function LoadingScreen({ onComplete }) {
       <div className="ls-grid" />
       <div className="ls-vignette" />
 
-      <div className="ls-particles">
-        {Array.from({ length: 22 }).map((_, i) => (
-          <span key={i} className="ls-particle" style={{ "--i": i }} />
-        ))}
-      </div>
-
       <div className="ls-center">
         <div className="ls-logo-mark">
-          <svg
-            viewBox="0 0 64 64"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-          >
+          <svg viewBox="0 0 64 64" fill="none">
             <circle
               cx="32"
               cy="32"
@@ -74,59 +64,28 @@ export default function LoadingScreen({ onComplete }) {
               strokeWidth="1"
               strokeDasharray="4 3"
             />
-            <path
-              d="M20 32 C20 24 26 18 32 18 C38 18 44 24 44 32"
-              stroke="url(#lg3)"
-              strokeWidth="2"
-              strokeLinecap="round"
-            />
             <circle cx="32" cy="32" r="4" fill="url(#lg1)" />
+
             <defs>
-              <linearGradient
-                id="lg1"
-                x1="0"
-                y1="0"
-                x2="64"
-                y2="64"
-                gradientUnits="userSpaceOnUse"
-              >
-                <stop offset="0%" stopColor="#8a5af5" />
-                <stop offset="100%" stopColor="#c9adfb" />
+              <linearGradient id="lg1">
+                <stop offset="0%" stopColor="#1767BE" />
+                <stop offset="100%" stopColor="#FEB122" />
               </linearGradient>
-              <linearGradient
-                id="lg2"
-                x1="64"
-                y1="0"
-                x2="0"
-                y2="64"
-                gradientUnits="userSpaceOnUse"
-              >
-                <stop offset="0%" stopColor="#8a5af5" stopOpacity="0.5" />
-                <stop offset="100%" stopColor="#c9adfb" stopOpacity="0.2" />
-              </linearGradient>
-              <linearGradient
-                id="lg3"
-                x1="20"
-                y1="18"
-                x2="44"
-                y2="32"
-                gradientUnits="userSpaceOnUse"
-              >
-                <stop offset="0%" stopColor="#6b38e0" />
-                <stop offset="100%" stopColor="#a97cf8" />
+
+              <linearGradient id="lg2">
+                <stop offset="0%" stopColor="#1767BE" stopOpacity="0.5" />
+                <stop offset="100%" stopColor="#FEB122" stopOpacity="0.2" />
               </linearGradient>
             </defs>
           </svg>
         </div>
 
-        {/* Brand name */}
         <div className="ls-brand">
           <div className="ls-word">
             {word.map((l, i) => (
               <span
                 key={i}
                 className={`ls-letter ${i >= 4 ? "ls-letter-btr" : ""}`}
-                style={{ "--li": i }}
               >
                 {l}
               </span>
@@ -134,7 +93,7 @@ export default function LoadingScreen({ onComplete }) {
           </div>
         </div>
 
-        <p className="ls-tagline">Your Ultimate Medical Exam Companion</p>
+        <p className="ls-tagline">From Revision to Revolution</p>
 
         <div className="ls-progress-wrap">
           <div className="ls-progress-track">
@@ -151,11 +110,6 @@ export default function LoadingScreen({ onComplete }) {
           <span className="ls-dot" />
         </div>
       </div>
-
-      <div className="ls-corner ls-corner-tl" />
-      <div className="ls-corner ls-corner-tr" />
-      <div className="ls-corner ls-corner-bl" />
-      <div className="ls-corner ls-corner-br" />
     </div>
   );
 }
