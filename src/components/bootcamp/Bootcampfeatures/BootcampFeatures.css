@@ -212,12 +212,11 @@
   font-size: clamp(13px, 1.4vw, 15px);
   line-height: 1.65;
   color: #555;
-  padding-left: 18px;
-  position: relative;
+  
 }
 
 .bcf-card__point::before {
-  content: "•";
+  content: "";
   position: absolute;
   left: 4px;
   top: 0;
