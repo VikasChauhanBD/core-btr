@@ -1,5 +1,19 @@
 import React from "react";
 import "./BTRonline.css";
+import {
+  BookOpen,
+  Target,
+  Video,
+  Layers,
+  FileText,
+  NotebookPen,
+  Brain,
+  Lightbulb,
+  Link2,
+  Smartphone,
+  Package,
+  Trophy,
+} from "lucide-react";
 
 const highlights = [
   {
@@ -18,42 +32,42 @@ const highlights = [
 
 const features = [
   {
-    icon: "📚",
+    icon: <BookOpen size={24} />,
     label: "19 Subjects",
     points: [
       "Complete crash revision across all 19 subjects — structured, high-yield, and exam-relevant.",
     ],
   },
   {
-    icon: "🎯",
+    icon: <Target size={24} />,
     label: "PYQ-Based Focus",
     points: [
       "Every session is anchored in previous year questions, ensuring you revise only what actually gets asked.",
     ],
   },
   {
-    icon: "🎬",
+    icon: <Video size={24} />,
     label: "Recorded Videos",
     points: [
       "Quick revision recorded videos for all 19 subjects — watch, pause, and rewatch at your own pace.",
     ],
   },
   {
-    icon: "🧩",
+    icon: <Layers size={24} />,
     label: "Integrated Systems",
     points: [
       "Pathology, Pharmacology, Physiology & Medicine taught as Integrated Systems for a holistic conceptual foundation.",
     ],
   },
   {
-    icon: "📋",
+    icon: <FileText size={24} />,
     label: "Annotated PDFs",
     points: [
       "In-app annotated PDFs serve as ready-to-use revision notes, saving you annotation time.",
     ],
   },
   {
-    icon: "📒",
+    icon: <NotebookPen size={24} />,
     label: "Free BTR Booklet",
     points: [
       "FREE hardcopy BTR booklet/workbook included for personal note-making and last-minute revision.",
@@ -63,32 +77,32 @@ const features = [
 
 const whatYouGet = [
   {
-    icon: "🧠",
+    icon: <Brain size={24} />,
     title: "Smart Revision",
     body: "Revise smarter, faster, and with clarity using a proven system built around high-yield, exam-relevant content.",
   },
   {
-    icon: "💡",
+    icon: <Lightbulb size={24} />,
     title: "Topper Mindset",
     body: "Test-discussion videos teach you how to think like a topper — mastering the art of solving MCQs.",
   },
   {
-    icon: "🔗",
+    icon: <Link2 size={24} />,
     title: "Integrated Learning",
     body: "Key subjects taught as integrated systems, giving you a holistic conceptual basis for the most important PG topics.",
   },
   {
-    icon: "📱",
+    icon: <Smartphone size={24} />,
     title: "In-App Notes",
     body: "Access annotated PDFs directly in-app — no need to write everything from scratch, just read and revise.",
   },
   {
-    icon: "📦",
+    icon: <Package size={24} />,
     title: "Physical Booklet",
     body: "Receive a free hardcopy BTR workbook for offline note-making, self-study, and last-minute revision.",
   },
   {
-    icon: "🏆",
+    icon: <Trophy size={24} />,
     title: "Proven Results",
     body: "One of the most successful revision programs for NEET PG and INI-CET aspirants, with a consistent track record.",
   },
@@ -129,14 +143,14 @@ function BTRonline() {
         </p>
       </div>
 
-      <div className="btr-online-sections">
+      <div className="btr-online-highlights-sections">
         <section className="btr-online-highlights">
           <div className="btr-online-eyebrow">
             <span className="btr-online-eyebrow-line" />
             <span className="btr-online-eyebrow-text">Overview</span>
           </div>
           <h2 className="btr-online-section-heading">
-            Program <em>Highlights</em>
+            Program <span>Highlights</span>
           </h2>
           <p className="btr-online-lead">
             A complete 19-subject online revision program built around PYQs,
@@ -163,14 +177,16 @@ function BTRonline() {
             ))}
           </div>
         </section>
+      </div>
 
+      <div className="btr-online-features-section">
         <section className="btr-online-features">
           <div className="btr-online-eyebrow">
             <span className="btr-online-eyebrow-line" />
             <span className="btr-online-eyebrow-text">What's Inside</span>
           </div>
           <h2 className="btr-online-section-heading">
-            Key Features of <em>BTR Online</em>
+            Key Features of <span>BTR Online</span>
           </h2>
 
           <div className="btr-online-features-table">
@@ -191,14 +207,16 @@ function BTRonline() {
             ))}
           </div>
         </section>
+      </div>
 
+      <div className="btr-online-what-you-get-section">
         <section className="btr-online-what-you-get">
           <div className="btr-online-eyebrow">
             <span className="btr-online-eyebrow-line" />
             <span className="btr-online-eyebrow-text">Benefits</span>
           </div>
           <h2 className="btr-online-section-heading">
-            What You <em>Get</em>
+            What You <span>Get</span>
           </h2>
 
           <div className="btr-online-get-grid">
@@ -211,7 +229,9 @@ function BTRonline() {
             ))}
           </div>
         </section>
+      </div>
 
+      <div className="btr-online-info-section">
         <section className="btr-online-info">
           <div className="btr-online-info-label">Additional Info</div>
           <div className="btr-online-info-items">
