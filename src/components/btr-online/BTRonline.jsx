@@ -7,12 +7,6 @@ import {
   Layers,
   FileText,
   NotebookPen,
-  Brain,
-  Lightbulb,
-  Link2,
-  Smartphone,
-  Package,
-  Trophy,
 } from "lucide-react";
 
 const highlights = [
@@ -73,45 +67,6 @@ const features = [
       "FREE hardcopy BTR booklet/workbook included for personal note-making and last-minute revision.",
     ],
   },
-];
-
-const whatYouGet = [
-  {
-    icon: <Brain size={24} />,
-    title: "Smart Revision",
-    body: "Revise smarter, faster, and with clarity using a proven system built around high-yield, exam-relevant content.",
-  },
-  {
-    icon: <Lightbulb size={24} />,
-    title: "Topper Mindset",
-    body: "Test-discussion videos teach you how to think like a topper — mastering the art of solving MCQs.",
-  },
-  {
-    icon: <Link2 size={24} />,
-    title: "Integrated Learning",
-    body: "Key subjects taught as integrated systems, giving you a holistic conceptual basis for the most important PG topics.",
-  },
-  {
-    icon: <Smartphone size={24} />,
-    title: "In-App Notes",
-    body: "Access annotated PDFs directly in-app — no need to write everything from scratch, just read and revise.",
-  },
-  {
-    icon: <Package size={24} />,
-    title: "Physical Booklet",
-    body: "Receive a free hardcopy BTR workbook for offline note-making, self-study, and last-minute revision.",
-  },
-  {
-    icon: <Trophy size={24} />,
-    title: "Proven Results",
-    body: "One of the most successful revision programs for NEET PG and INI-CET aspirants, with a consistent track record.",
-  },
-];
-
-const additionalInfo = [
-  "BTR Online is a one-of-its-kind 19-subject complete revision program designed specifically for the final phase of medical entrance exam preparation.",
-  "The program focuses on high-yield, exam-relevant concepts instead of overwhelming students with excess content.",
-  "With a proven track record and consistent results, BTR Online has emerged as one of the most successful revision plans for NEET PG and INI-CET aspirants.",
 ];
 
 function BTRonline() {
@@ -203,42 +158,6 @@ function BTRonline() {
                     </span>
                   ))}
                 </div>
-              </div>
-            ))}
-          </div>
-        </section>
-      </div>
-
-      <div className="btr-online-what-you-get-section">
-        <section className="btr-online-what-you-get">
-          <div className="btr-online-eyebrow">
-            <span className="btr-online-eyebrow-line" />
-            <span className="btr-online-eyebrow-text">Benefits</span>
-          </div>
-          <h2 className="btr-online-section-heading">
-            What You <span>Get</span>
-          </h2>
-
-          <div className="btr-online-get-grid">
-            {whatYouGet.map((item) => (
-              <div className="btr-online-get-card" key={item.title}>
-                <span className="btr-online-get-icon">{item.icon}</span>
-                <h3 className="btr-online-get-title">{item.title}</h3>
-                <p className="btr-online-get-body">{item.body}</p>
-              </div>
-            ))}
-          </div>
-        </section>
-      </div>
-
-      <div className="btr-online-info-section">
-        <section className="btr-online-info">
-          <div className="btr-online-info-label">Additional Info</div>
-          <div className="btr-online-info-items">
-            {additionalInfo.map((item, i) => (
-              <div className="btr-online-info-item" key={i}>
-                <span className="btr-online-info-dot" />
-                <span>{item}</span>
               </div>
             ))}
           </div>
