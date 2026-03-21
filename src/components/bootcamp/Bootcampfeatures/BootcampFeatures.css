@@ -1,0 +1,311 @@
+/* ================================================================
+   BootcampFeatures.css
+   Prefix: bcf__  bcf-card__   (zero conflicts)
+   ================================================================ */
+
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,700&display=swap");
+
+/* ================================================================
+   SECTION
+   ================================================================ */
+
+
+/* subtle dot-grid texture — matches Bootcamp.css */
+.bci {
+  position: relative;
+  width: 100%;
+  background: #f5f6ff;
+  padding: 64px 24px 88px;
+  overflow: hidden;
+  font-family: "DM Sans", sans-serif;
+  color: #1a1a2e;
+}
+
+
+/* ── Decorative blobs (match reference pastel BG) ── */
+.bcf__blob {
+  position: absolute;
+  border-radius: 50%;
+  pointer-events: none;
+  z-index: 0;
+  filter: blur(80px);
+  opacity: 0.45;
+}
+
+.bcf__blob--1 {
+  width: 520px;
+  height: 520px;
+  background: radial-gradient(circle, #c3d4f8 0%, transparent 70%);
+  top: -120px;
+  left: -100px;
+}
+
+.bcf__blob--2 {
+  width: 400px;
+  height: 400px;
+  background: radial-gradient(circle, #e2d5f8 0%, transparent 70%);
+  bottom: -80px;
+  right: -80px;
+}
+
+/* ================================================================
+   INNER WRAPPER
+   ================================================================ */
+.bcf__inner {
+  position: relative;
+  z-index: 1;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* ================================================================
+   EYEBROW
+   ================================================================ */
+.bcf__eyebrow {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 14px;
+  margin-bottom: 14px;
+}
+
+.bcf__eyebrow-line {
+
+  width: 36px;
+  height: 2px;
+  background: linear-gradient(to right, #7d6beb, #6b6fc5);
+  opacity: 0.6;
+  border-radius: 2px;
+}
+
+.bcf__eyebrow-text {
+  font-size: 16px;
+  font-weight: 700;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: #7d6beb;
+}
+
+/* ================================================================
+   HEADING
+   ================================================================ */
+.bcf__heading {
+  text-align: left;
+  font-size: clamp(24px, 4vw, 38px);
+  font-weight: 900;
+  color: #1a1a2e;
+  line-height: 1.15;
+  margin-bottom: 14px;
+}
+
+.bcf__heading em {
+  font-style: italic;
+  color: #7d6beb;
+}
+
+/* ================================================================
+   GRID  —  3 rows: 2 | 2 | 1 (centred)
+   ================================================================ */
+.bcf__grid {
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+}
+
+.bcf__row {
+  display: grid;
+  gap: 22px;
+}
+
+.bcf__row--2 { grid-template-columns: 1fr 1fr; }
+
+.bcf__row--1 {
+  grid-template-columns: 1fr;
+  max-width: 580px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+/* ================================================================
+   CARD
+   ================================================================ */
+.bcf-card {
+  background: #fff;
+  border-radius: 18px;
+  border: 1px solid rgba(125, 107, 235, 0.12);
+  box-shadow:
+    0 4px 20px rgba(39, 24, 126, 0.08),
+    0 1px 4px rgba(39, 24, 126, 0.05);
+  padding: 30px 28px 28px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 16px;
+  position: relative;
+  overflow: hidden;
+  transition:
+    transform  0.26s cubic-bezier(0.22, 1, 0.36, 1),
+    box-shadow 0.26s ease;
+}
+
+.bcf-card::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 18px;
+  background: linear-gradient(
+    135deg,
+    rgba(195, 212, 248, 0.18) 0%,
+    transparent 60%
+  );
+  pointer-events: none;
+}
+
+.bcf-card:hover {
+  transform: translateY(-5px);
+  box-shadow:
+    0 16px 40px rgba(39, 24, 126, 0.14),
+    0 4px 10px rgba(39, 24, 126, 0.08);
+}
+
+/* ── Card body (text side) ── */
+.bcf-card__body {
+  flex: 1;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+/* ── Icon ── */
+.bcf-card__icon {
+  width: 44px;
+  height: 44px;
+  flex-shrink: 0;
+}
+
+.bcf-card__icon svg {
+  width: 44px;
+  height: 44px;
+}
+
+/* ── Title ── */
+.bcf-card__title {
+  font-size: clamp(16px, 2vw, 20px);
+  font-weight: 800;
+  color: #1a1a2e;
+  line-height: 1.2;
+  margin: 0;
+}
+
+/* ── Bullet list ── */
+.bcf-card__list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.bcf-card__point {
+  font-size: clamp(13px, 1.4vw, 15px);
+  line-height: 1.65;
+  color: #555;
+  padding-left: 18px;
+  position: relative;
+}
+
+.bcf-card__point::before {
+  content: "•";
+  position: absolute;
+  left: 4px;
+  top: 0;
+  color: #7d6beb;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+/* ================================================================
+   ILLUSTRATIONS  (right side of each card)
+   ================================================================ */
+.bcf-card__illo {
+  flex-shrink: 0;
+  align-self: flex-end;
+  pointer-events: none;
+  user-select: none;
+}
+
+.bcf-card__illo svg {
+  display: block;
+}
+
+.bcf-card__illo--mentorship  svg { width: 100px; height: 116px; }
+.bcf-card__illo--revision    svg { width: 100px; height: 100px; }
+.bcf-card__illo--library     svg { width: 100px; height: 110px; }
+.bcf-card__illo--desktop     svg { width: 110px; height: 100px; }
+.bcf-card__illo--borderline  svg { width: 110px; height: 110px; }
+
+/* ================================================================
+   RESPONSIVE
+   ================================================================ */
+
+/* ── Tablet 768px ── */
+@media (max-width: 860px) {
+  .bcf { padding: 56px 20px 72px; }
+
+  .bcf__heading { margin-bottom: 36px; }
+
+  /* 2-col rows stay but illustrations shrink */
+  .bcf-card__illo--mentorship  svg,
+  .bcf-card__illo--revision    svg,
+  .bcf-card__illo--library     svg { width: 80px; height: 88px; }
+
+  .bcf-card__illo--desktop     svg,
+  .bcf-card__illo--borderline  svg { width: 88px; height: 80px; }
+
+  .bcf-card { padding: 22px 20px 20px; }
+}
+
+/* ── Mobile 580px — stack all cards single column ── */
+@media (max-width: 580px) {
+  .bcf { padding: 48px 16px 64px; }
+
+  .bcf__row--2 { grid-template-columns: 1fr; }
+
+  .bcf__row--1 {
+    max-width: 100%;
+  }
+
+  .bcf-card {
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 22px 18px 18px;
+    gap: 12px;
+  }
+
+  /* On mobile illustration sits bottom-right, smaller */
+  .bcf-card__illo {
+    align-self: flex-end;
+  }
+
+  .bcf-card__illo--mentorship  svg,
+  .bcf-card__illo--revision    svg,
+  .bcf-card__illo--library     svg,
+  .bcf-card__illo--desktop     svg,
+  .bcf-card__illo--borderline  svg {
+    width: 70px;
+    height: 70px;
+  }
+
+  .bcf__heading { margin-bottom: 28px; }
+  .bcf__grid    { gap: 16px; }
+}
+
+/* ── Very small 380px ── */
+@media (max-width: 380px) {
+  /* hide illustration to give text room */
+  .bcf-card__illo { display: none; }
+
+  .bcf-card { padding: 20px 16px; }
+}

@@ -84,6 +84,19 @@ export default function BootcampHero() {
 
       {/* ── Scroll line ── */}
       <div className="bch__scroll"><span /></div>
+      {/* MOBILE ONLY: "NEET PG / BOOTCAMP" top-centre (like "ELEVATING BHARAT") */}
+<div className="bch__mob-top">
+  <span className="bch__mob-top-text">NEET PG</span>
+  <span className="bch__mob-top-text">BOOTCAMP</span>
+</div>
+ 
+{/* MOBILE ONLY: "Dr. Zainab Vora" bottom-left (like "BEERBICEPS MEDIA WORLD") */}
+<div className="bch__mob-bottom">
+  <span className="bch__mob-bottom-name">Dr. Zainab<br />Vora</span>
+  <span className="bch__mob-bottom-sub">at Vidya Jeevan, Greater Noida</span>
+  <span className="bch__mob-cta">NEW BATCH STARTED</span>
+</div>
+ 
 
     </section>
   );

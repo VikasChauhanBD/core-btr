@@ -2,6 +2,9 @@ import React from "react";
 import "./Bootcamp.css";
 import { NavLink } from "react-router-dom";
 import BootcampHero from "./hero-section/BootcampHero";
+import BootcampFeatures from "./Bootcampfeatures/BootcampFeatures";
+import BootcampIntro from "./BootcampIntro/BootcampIntro";
+
 
 const highlights = [
   {
@@ -101,25 +104,12 @@ function Bootcamp() {
           alt="NEET PG BootCamp 2026 by Dr. Zainab Vora"
         />
       </div> */}
+      
 
-      <div className="bootcamp-content">
-        <h1>NEET PG Bootcamp 2026</h1>
-        <h3>
-          An Intensive, Personalised Offline Crash Course for NEET PG &amp;
-          INI-CET Aspirants
-        </h3>
-        <p>
-          The <b>NEET PG Bootcamp</b> is a{" "}
-          <b>4-month, high-intensity offline crash program</b> designed for
-          students who want focused revision, expert mentorship, and real exam
-          readiness under one roof. With mentorship from{" "}
-          <b>Dr. Zainab Vora, Dr. Ravi Sharma, and Dr. Apurv Mehra,</b> the
-          Bootcamp is built for serious aspirants targeting{" "}
-          <b>NEET PG &amp; INI-CET 2026.</b>
-        </p>
-      </div>
+      
 
       <div className="bootcamp-sections">
+        <BootcampIntro />
         <section className="bootcamp-highlights">
           <div className="bootcamp-eyebrow">
             <span className="bootcamp-eyebrow-line" />
@@ -157,66 +147,9 @@ function Bootcamp() {
             ))}
           </div>
         </section>
+        <BootcampFeatures  />
 
-        <section className="bootcamp-features">
-          <div className="bootcamp-eyebrow">
-            <span className="bootcamp-eyebrow-line" />
-            <span className="bootcamp-eyebrow-text">What's Inside</span>
-          </div>
-          <h2 className="bootcamp-section-heading">
-            Key Features of the <em>Bootcamp</em>
-          </h2>
-
-          <div className="bootcamp-features-table">
-            {features.map((f) => (
-              <div className="bootcamp-feature-row" key={f.label}>
-                <div className="bootcamp-feature-label">
-                  <span className="bootcamp-feature-icon">{f.icon}</span>
-                  <span className="bootcamp-feature-name">{f.label}</span>
-                </div>
-                <div className="bootcamp-feature-desc">
-                  {f.points.map((p, i) => (
-                    <span key={i} className="bootcamp-feature-point">
-                      {p}
-                    </span>
-                  ))}
-                </div>
-              </div>
-            ))}
-          </div>
-        </section>
-
-        <section className="bootcamp-what-you-get">
-          <div className="bootcamp-eyebrow">
-            <span className="bootcamp-eyebrow-line" />
-            <span className="bootcamp-eyebrow-text">Benefits</span>
-          </div>
-          <h2 className="bootcamp-section-heading">
-            What You <em>Get</em>
-          </h2>
-
-          <div className="bootcamp-get-grid">
-            {whatYouGet.map((item) => (
-              <div className="bootcamp-get-card" key={item.title}>
-                <span className="bootcamp-get-icon">{item.icon}</span>
-                <h3 className="bootcamp-get-title">{item.title}</h3>
-                <p className="bootcamp-get-body">{item.body}</p>
-              </div>
-            ))}
-          </div>
-        </section>
-
-        <section className="bootcamp-info">
-          <div className="bootcamp-info-label">Additional Info</div>
-          <div className="bootcamp-info-items">
-            {additionalInfo.map((item, i) => (
-              <div className="bootcamp-info-item" key={i}>
-                <span className="bootcamp-info-dot" />
-                <span>{item}</span>
-              </div>
-            ))}
-          </div>
-        </section>
+        
       </div>
     </div>
   );
