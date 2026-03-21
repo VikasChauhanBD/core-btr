@@ -36,14 +36,14 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  color: #1b54ff;
+  color: #1767be;
   font-size: 18px;
   transition: all 0.3s ease;
   text-decoration: none;
 }
 
 .social-icon:hover {
-  background: #1b54ff;
+  background: #1767be;
   color: #ffffff;
   transform: translateY(-3px);
   box-shadow: 0 5px 15px rgba(22, 118, 228, 0.4);
@@ -72,7 +72,7 @@
   bottom: 0;
   width: 50px;
   height: 4px;
-  background: #1b54ff;
+  background: #1767be;
   border-radius: 2px;
 }
 
@@ -100,11 +100,11 @@
   left: -20px;
   opacity: 0;
   transition: all 0.3s ease;
-  color: #1b54ff;
+  color: #1767be;
 }
 
 .footer-links li a:hover {
-  color: #1b54ff;
+  color: #1767be;
   padding-left: 20px;
 }
 
