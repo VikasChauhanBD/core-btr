@@ -1,6 +1,7 @@
 import React from "react";
 import "./Bootcamp.css";
 import { NavLink } from "react-router-dom";
+import BootcampHero from "./hero-section/BootcampHero";
 
 const highlights = [
   {
@@ -93,12 +94,13 @@ const additionalInfo = [
 function Bootcamp() {
   return (
     <div className="bootcamp-container">
-      <div className="bootcamp-banner">
+      <BootcampHero />
+      {/* <div className="bootcamp-banner">
         <img
           src="https://cdn.dribbble.com/userupload/46428531/file/ec15c4c33447539de5d8ff7c659bea8d.png"
           alt="NEET PG BootCamp 2026 by Dr. Zainab Vora"
         />
-      </div>
+      </div> */}
 
       <div className="bootcamp-content">
         <h1>NEET PG Bootcamp 2026</h1>

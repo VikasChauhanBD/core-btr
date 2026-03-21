@@ -1,0 +1,370 @@
+/* ================================================================
+   BootcampHero.css
+   Prefix: bch__  bch--    (zero conflicts with other pages)
+   ================================================================ */
+
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:ital,wght@0,300;0,400;0,600;1,300&display=swap");
+
+/* ================================================================
+   SECTION — full viewport, pure black like BeerBiceps
+   ================================================================ */
+.bch {
+  position: relative;
+  width: 100%;
+  height: 100svh;
+  min-height: 520px;
+  max-height: 1000px;
+  overflow: hidden;
+  background: #000;           /* ← pure black, same as ref site */
+  font-family: "DM Sans", sans-serif;
+  color: #fff;
+}
+
+.bch__base {
+  position: absolute;
+  inset: 0;
+  background: #000;
+  z-index: 0;
+}
+
+/* ================================================================
+   IMAGE WRAPPER
+   — right-anchored, bottom-anchored
+   — intro/hold: only top portion visible (face peeking)
+   — expand: full image slides up into view
+   ================================================================ */
+.bch__img-wrap {
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  z-index: 2;
+  width: 48%;
+  height: 100%;
+
+  will-change: transform;
+  transition: transform 1.2s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+/* INTRO / HOLD — centred, only face/shoulders peeking from bottom */
+.bch--intro .bch__img-wrap,
+.bch--hold  .bch__img-wrap {
+  transform: translateX(-50%) translateY(52%);
+}
+
+/* EXPAND — full image slides up, stays centred */
+.bch--expand .bch__img-wrap {
+  transform: translateX(-50%) translateY(0%);
+}
+
+.bch__img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  object-position: bottom center;
+  display: block;
+}
+
+/* ── Edge fades — blend image naturally into black ── */
+.bch__img-fade {
+  position: absolute;
+  pointer-events: none;
+  z-index: 3;
+}
+
+/* Top of image fades to black (most important — hides edge in intro) */
+.bch__img-fade--top {
+  inset: 0 0 auto 0;
+  height: 35%;
+  background: linear-gradient(to bottom, #000 0%, transparent 100%);
+}
+
+/* Left of image → merges into dark bg */
+.bch__img-fade--left {
+  inset: 0 auto 0 0;
+  width: 35%;
+  background: linear-gradient(to right, #000 0%, transparent 100%);
+}
+
+/* Right edge — mirror of left */
+.bch__img-fade--right {
+  inset: 0 0 0 auto;
+  width: 35%;
+  background: linear-gradient(to left, #000 0%, transparent 100%);
+}
+
+/* Bottom — ground merge */
+.bch__img-fade--bottom {
+  inset: auto 0 0 0;
+  height: 22%;
+  background: linear-gradient(to top, #000 0%, transparent 100%);
+}
+
+/* ================================================================
+   INTRO NAME — centred, visible during intro/hold
+   ================================================================ */
+.bch__intro-name {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  z-index: 5;
+  text-align: center;
+
+  will-change: opacity, transform;
+  transition:
+    opacity   0.6s ease,
+    transform 0.6s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+/* intro → fade in from below */
+.bch--intro .bch__intro-name {
+  opacity: 0;
+  transform: translateY(18px);
+}
+
+/* hold → fully visible */
+.bch--hold .bch__intro-name {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* expand → fade out upward */
+.bch--expand .bch__intro-name {
+  opacity: 0;
+  transform: translateY(-20px);
+  pointer-events: none;
+}
+
+.bch__intro-sub {
+  display: block;
+  font-size: clamp(9px, 1.8vw, 13px);
+  font-weight: 600;
+  letter-spacing: 0.32em;
+  text-transform: uppercase;
+  color: rgba(255,255,255,0.38);
+}
+
+.bch__intro-doc {
+  display: block;
+  font-family: "Noto Sans", sans-serif;
+  font-size: clamp(52px, 13vw, 108px);
+  letter-spacing: 0.04em;
+  line-height: 0.9;
+  color: #fff;
+}
+
+/* ================================================================
+   LEFT BLOCK — "by / Dr. Zainab Vora / place / cta"
+   Slides in from left on expand
+   ================================================================ */
+.bch__right {
+  position: absolute;
+  right: 52px;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 6;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+
+  opacity: 0;
+  translate: -30px 0;
+  pointer-events: none;
+  will-change: opacity, translate;
+  transition:
+    opacity   0.72s 0.12s ease,
+    translate 0.80s 0.12s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.bch--expand .bch__right {
+  opacity: 1;
+  translate: 0 0;
+  pointer-events: auto;
+}
+
+.bch__r-by {
+  font-size: 25px;
+  font-weight: 300;
+  font-style: italic;
+  letter-spacing: 0.12em;
+  color: rgba(255,255,255,0.45);
+}
+
+.bch__r-name {
+  font-family: "Noto Sans", sans-serif;
+  font-size: clamp(32px, 3.8vw, 48px);
+  letter-spacing: 0.06em;
+  font-weight: 500;
+  line-height: 1;
+  color: #fff;
+}
+
+.bch__r-place {
+  font-size: 20px;
+  font-weight: 400;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: rgba(255,255,255,0.42);
+  line-height: 1.7;
+  margin-bottom: 8px;
+}
+
+.bch__r-cta {
+  display: inline-block;
+  font-size: 20px;
+  font-weight: 700;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: #fff;
+  border: 1px solid rgba(255,255,255,0.65);
+  padding: 5px 12px;
+  border-radius: 2px;
+  align-self: flex-start;
+}
+
+/* ================================================================
+   TITLE "NEET PG BOOTCAMP" — RIGHT side, slides in from right
+   ================================================================ */
+.bch__left-title {
+  position: absolute;
+  left: 32px;
+  top: 50%;
+  transform: translateY(-52%);
+  z-index: 6;
+  text-align: right;
+font-weight: 600;
+  opacity: 0;
+  translate: 30px 0;
+  will-change: opacity, translate;
+  transition:
+    opacity   0.72s 0.08s ease,
+    translate 0.80s 0.08s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.bch--expand .bch__left-title {
+  opacity: 1;
+  translate: 0 0;
+}
+
+.bch__left-title-text {
+  display: block;
+  font-family: "Noto Sans", sans-serif;
+  font-size: clamp(40px, 7vw, 80px);
+  letter-spacing: 0.03em;
+  line-height: 0.88;
+  color: #fff;
+  text-align: right;
+}
+
+/* ================================================================
+   TAGLINE
+   ================================================================ */
+.bch__tagline {
+  position: absolute;
+  bottom: 28px;
+  left: 0; right: 0;
+  text-align: center;
+  z-index: 6;
+  margin: 0;
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: 0.30em;
+  text-transform: uppercase;
+  color: rgba(255,255,255,0.20);
+
+  opacity: 0;
+  translate: 0 8px;
+  transition:
+    opacity   0.6s 0.35s ease,
+    translate 0.6s 0.35s ease;
+}
+
+.bch--expand .bch__tagline {
+  opacity: 1;
+  translate: 0 0;
+}
+
+/* ================================================================
+   SCROLL INDICATOR
+   ================================================================ */
+.bch__scroll {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  translate: -50% 0;
+  z-index: 6;
+  opacity: 0;
+  transition: opacity 0.5s 0.6s ease;
+}
+
+.bch--expand .bch__scroll { opacity: 1; }
+
+.bch__scroll span {
+  display: block;
+  width: 1px;
+  height: 28px;
+  background: rgba(255,255,255,0.2);
+  margin: 0 auto;
+  animation: bch-pulse 1.8s ease-in-out infinite;
+}
+
+@keyframes bch-pulse {
+  0%,100% { transform: scaleY(1);   opacity: 0.2; }
+  50%      { transform: scaleY(1.8); opacity: 0.55; }
+}
+
+/* ================================================================
+   RESPONSIVE
+   ================================================================ */
+
+/* ── Mobile ── */
+@media (max-width: 500px) {
+  .bch--intro .bch__img-wrap,
+  .bch--hold  .bch__img-wrap {
+    width: 90%;
+    transform: translateX(-50%) translateY(55%);
+  }
+
+  .bch--expand .bch__img-wrap {
+    width: 80%;
+    transform: translateX(-50%) translateY(0);
+  }
+
+  .bch__title {
+    right: 20px;
+  }
+
+  .bch__title-text {
+    font-size: clamp(32px, 12vw, 48px);
+  }
+
+  .bch__left {
+    top: 28%;
+    transform: none;
+  }
+}
+
+/* ── Tablet ── */
+@media (min-width: 501px) and (max-width: 860px) {
+  .bch__title-text { font-size: clamp(36px, 7vw, 62px); }
+}
+
+/* ── Desktop ── */
+@media (min-width: 1024px) {
+  .bch { max-height: 860px; }
+
+  .bch__left { left: 52px; }
+  .bch__l-by     { font-size: 13px; }
+  .bch__l-place  { font-size: 11px; }
+  .bch__l-cta    { font-size: 10.5px; }
+
+  .bch__title  { right: 52px; }
+}
+
+@media (min-width: 1440px) {
+  .bch__left   { left: 72px; }
+  .bch__title  { right: 72px; }
+}
