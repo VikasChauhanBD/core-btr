@@ -106,10 +106,24 @@ function Bootcamp() {
       </div> */}
       
 
-      
+      <div className="bootcamp-content">
+        <h1>NEET PG Bootcamp 2026</h1>
+        <h3>
+          An Intensive, Personalised Offline Crash Course for NEET PG &amp;
+          INI-CET Aspirants
+        </h3>
+        <p>
+          The <b>NEET PG Bootcamp</b> is a{" "}
+          <b>4-month, high-intensity offline crash program</b> designed for
+          students who want focused revision, expert mentorship, and real exam
+          readiness under one roof. With mentorship from{" "}
+          <b>Dr. Zainab Vora, Dr. Ravi Sharma, and Dr. Apurv Mehra,</b> the
+          Bootcamp is built for serious aspirants targeting{" "}
+          <b>NEET PG &amp; INI-CET 2026.</b>
+        </p>
+      </div>
 
       <div className="bootcamp-sections">
-        <BootcampIntro />
         <section className="bootcamp-highlights">
           <div className="bootcamp-eyebrow">
             <span className="bootcamp-eyebrow-line" />
@@ -147,10 +161,11 @@ function Bootcamp() {
             ))}
           </div>
         </section>
-        <BootcampFeatures  />
+        
 
         
       </div>
+      <BootcampFeatures  />
     </div>
   );
 }

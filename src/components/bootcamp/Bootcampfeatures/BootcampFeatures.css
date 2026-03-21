@@ -11,10 +11,10 @@
 
 
 /* subtle dot-grid texture — matches Bootcamp.css */
-.bci {
+.bcf {
   position: relative;
   width: 100%;
-  background: #f5f6ff;
+  background: #ffffff;
   padding: 64px 24px 88px;
   overflow: hidden;
   font-family: "DM Sans", sans-serif;
@@ -83,7 +83,7 @@
   font-weight: 700;
   letter-spacing: 0.22em;
   text-transform: uppercase;
-  color: #7d6beb;
+  color: #feb122;
 }
 
 /* ================================================================
@@ -100,7 +100,7 @@
 
 .bcf__heading em {
   font-style: italic;
-  color: #7d6beb;
+  color:  #1767be;
 }
 
 /* ================================================================

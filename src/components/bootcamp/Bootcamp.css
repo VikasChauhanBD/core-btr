@@ -20,7 +20,7 @@
 
 .bootcamp-content h1 {
   font-size: 42px;
-  color: #7d6beb;
+  color:  #1767be;
   margin-bottom: 10px;
 }
 
@@ -106,7 +106,7 @@
   font-weight: 700;
   letter-spacing: 0.22em;
   text-transform: uppercase;
-  color: #7d6beb;
+  color: #feb122;
 }
 
 .bootcamp-section-heading {
@@ -119,7 +119,7 @@
 
 .bootcamp-section-heading em {
   font-style: italic;
-  color: #7d6beb;
+  color:  #1767be;
 }
 
 .bootcamp-lead {
