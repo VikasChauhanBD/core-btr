@@ -81,9 +81,6 @@ function Footer() {
             <li>
               <NavLink to="/privacy-policy">Privacy Policy</NavLink>
             </li>
-            {/* <li>
-              <NavLink to="/pricing-details">Pricing Details</NavLink>
-            </li> */}
             <li>
               <NavLink to="/terms-and-conditions">Terms & Conditions</NavLink>
             </li>
@@ -92,11 +89,9 @@ function Footer() {
                 Cancellation & Refund Policy
               </NavLink>
             </li>
-            {/* <li>
-              <NavLink to="/shipping-and-delivery-policy">
-                Shipping & Delivery Policy
-              </NavLink>
-            </li> */}
+            <li>
+              <NavLink to="/device-policy">Device Policy</NavLink>
+            </li>
           </ul>
         </div>
       </div>

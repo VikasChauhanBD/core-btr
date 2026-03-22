@@ -17,6 +17,7 @@ import BTROfflinePage from "./pages/BTROfflinePage";
 import BTROnlinePage from "./pages/BTROnlinePage";
 import ScrollToTop from "./pages/ScrollToTop";
 import StudentReviewsPage from "./pages/StudentReviewsPage";
+import DevicePolicyPage from "./pages/DevicePolicyPage";
 
 function App() {
   const [showIntro, setShowIntro] = useState(false);
@@ -94,6 +95,7 @@ function App() {
             path="/cancellation-and-refund-policy"
             element={<CancellationPolicy />}
           />
+          <Route path="/device-policy" element={<DevicePolicyPage />} />
         </Routes>
         <Footer />
       </BrowserRouter>

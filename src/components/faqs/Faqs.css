@@ -20,9 +20,9 @@
 .faq-header h4 {
   display: inline;
   font-size: 18px;
-  color: #7d6beb;
+  color: #1767be;
   padding: 8px 16px;
-  border: 1px solid #7d6beb;
+  border: 1px solid #1767be;
   border-radius: 8px;
 }
 
@@ -89,7 +89,7 @@
 .faq-item-number {
   font-size: 1rem;
   font-weight: 700;
-  color: #7d6beb;
+  color: #1767be;
   letter-spacing: 0.06em;
   min-width: 28px;
 }
@@ -105,7 +105,7 @@
 .faq-item-icon {
   font-size: 1.5rem;
   font-weight: 300;
-  color: #6366f1;
+  color: #1767be;
   line-height: 1;
   transition: transform 0.3s ease;
   min-width: 24px;
@@ -140,7 +140,7 @@
 }
 
 .faq-item-answer a {
-  color: #6366f1;
+  color: #1767be;
   text-decoration: underline;
   text-underline-offset: 3px;
   font-weight: 500;
@@ -171,7 +171,7 @@
   width: 6px;
   height: 6px;
   border-radius: 50%;
-  background: #6366f1;
+  background: #1767be;
   opacity: 0.7;
 }
 
