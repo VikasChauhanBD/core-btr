@@ -6,31 +6,25 @@ const whatYouGet = [
     title: "Expert Mentorship",
     body: "Mentorship sessions by Dr. Zainab Vora, Dr. Ravi Sharma & Dr. Apurv Mehra.",
     image:
-      "https://images.unsplash.com/photo-1588196749597-9ff075ee6b5b?w=600&q=80",
+      "https://cdn.dribbble.com/userupload/47131946/file/3407472911a39d6e886b3f41fed1c00f.jpeg",
   },
   {
     title: "Subject-wise Revision",
     body: "Dedicated revision classes covering all 19 subjects.",
     image:
-      "https://images.unsplash.com/photo-1516979187457-637abb4f9353?w=600&q=80",
+      "https://cdn.dribbble.com/userupload/47132002/file/367c57699e92e2ba8ff6bf24f744f46f.jpeg",
   },
   {
     title: "Library & Self-Study",
     body: "Dedicated library cubicles for focused self-study sessions.",
     image:
-      "https://images.unsplash.com/photo-1434030216411-0b793f4b4173?w=600&q=80",
+      "https://cdn.dribbble.com/userupload/47132128/file/3f749b3457361dd64021686aeeedce11.webp",
   },
   {
     title: "Personal Desktop",
     body: "Personal desktop with internet access strictly for academic use.",
     image:
-      "https://images.unsplash.com/photo-1606326608606-aa0b62935f2b?w=600&q=80",
-  },
-  {
-    title: "Borderline Student Focus",
-    body: "Special attention given to borderline students who need guided, targeted improvement.",
-    image:
-      "https://images.unsplash.com/photo-1576091160550-2173dba999ef?w=600&q=80",
+      "https://cdn.dribbble.com/userupload/47132129/file/55b639e65e7711c709d57b27a69b9c88.webp",
   },
 ];
 
