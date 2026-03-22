@@ -1,5 +1,7 @@
+import { useEffect, useState } from "react";
 import "./App.css";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
+import IntroVideo from "./components/introVideo/IntroVideo";
 import Navbar from "./components/navbar/Navbar";
 import HomePage from "./pages/HomePage";
 import FaqsPage from "./pages/FaqsPage";
@@ -17,29 +19,85 @@ import ScrollToTop from "./pages/ScrollToTop";
 import StudentReviewsPage from "./pages/StudentReviewsPage";
 
 function App() {
+  const [showIntro, setShowIntro] = useState(false);
+
+  useEffect(() => {
+    const CHANNEL_NAME = "coreBTR";
+    let channel;
+
+    try {
+      channel = new BroadcastChannel(CHANNEL_NAME);
+      let otherTabExists = false;
+
+      const handleMessage = (event) => {
+        if (event.data.type === "tab_exists") {
+          otherTabExists = true;
+        } else if (event.data.type === "checking") {
+          channel.postMessage({ type: "tab_exists" });
+        }
+      };
+
+      channel.addEventListener("message", handleMessage);
+      channel.postMessage({ type: "checking" });
+
+      const timeoutId = setTimeout(() => {
+        if (!otherTabExists) {
+          const hasSeenVideo = sessionStorage.getItem("hasSeenIntro");
+          if (!hasSeenVideo) {
+            setShowIntro(true);
+          }
+        }
+      }, 100);
+
+      return () => {
+        clearTimeout(timeoutId);
+        if (channel) {
+          channel.removeEventListener("message", handleMessage);
+          channel.close();
+        }
+      };
+    } catch (error) {
+      const hasSeenVideo = sessionStorage.getItem("hasSeenIntro");
+      if (!hasSeenVideo) {
+        setShowIntro(true);
+      }
+    }
+  }, []);
+
+  const handleVideoEnd = () => {
+    sessionStorage.setItem("hasSeenIntro", "true");
+    setShowIntro(false);
+  };
+
   return (
-    <BrowserRouter>
-      <Navbar />
-      <ScrollToTop />
-      <Routes>
-        <Route path="/" element={<HomePage />} />
-        <Route path="/about-books" element={<AboutBooks />} />
-        <Route path="/annotated" element={<Annotated />} />
-        <Route path="/unannotated" element={<Unannotated />} />
-        <Route path="/btr-online" element={<BTRonline />} />
-        <Route path="/btr-offline" element={<BTRoffline />} />
-        <Route path="/bootcamp" element={<Bootcamp />} />
-        <Route path="/reviews" element={<StudentReviewsPage />} />
-        <Route path="/faqs" element={<FaqsPage />} />
-        <Route path="/privacy-policy" element={<PrivacyPolicyPage />} />
-        <Route path="/terms-and-conditions" element={<TermsAndConditions />} />
-        <Route
-          path="/cancellation-and-refund-policy"
-          element={<CancellationPolicy />}
-        />
-      </Routes>
-      <Footer />
-    </BrowserRouter>
+    <>
+      {showIntro && <IntroVideo onEnd={handleVideoEnd} />}
+      <BrowserRouter>
+        <Navbar />
+        <ScrollToTop />
+        <Routes>
+          <Route path="/" element={<HomePage />} />
+          <Route path="/about-books" element={<AboutBooks />} />
+          <Route path="/annotated" element={<Annotated />} />
+          <Route path="/unannotated" element={<Unannotated />} />
+          <Route path="/btr-online" element={<BTRonline />} />
+          <Route path="/btr-offline" element={<BTRoffline />} />
+          <Route path="/bootcamp" element={<Bootcamp />} />
+          <Route path="/reviews" element={<StudentReviewsPage />} />
+          <Route path="/faqs" element={<FaqsPage />} />
+          <Route path="/privacy-policy" element={<PrivacyPolicyPage />} />
+          <Route
+            path="/terms-and-conditions"
+            element={<TermsAndConditions />}
+          />
+          <Route
+            path="/cancellation-and-refund-policy"
+            element={<CancellationPolicy />}
+          />
+        </Routes>
+        <Footer />
+      </BrowserRouter>
+    </>
   );
 }
 
