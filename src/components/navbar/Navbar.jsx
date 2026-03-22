@@ -53,7 +53,11 @@ function Navbar() {
           Home
         </NavLink>
 
-        <div
+        <NavLink to="https://drzainabvora.com/about" target="_blank">
+          About Dr. ZV
+        </NavLink>
+
+        {/* <div
           className="dropdown-container"
           onMouseEnter={() => !showNav && setShowAbout(true)}
           onMouseLeave={() => !showNav && setShowAbout(false)}
@@ -90,7 +94,7 @@ function Navbar() {
               </NavLink>
             </div>
           )}
-        </div>
+        </div> */}
 
         <div
           className="dropdown-container"
