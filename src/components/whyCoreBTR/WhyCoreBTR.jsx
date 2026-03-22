@@ -81,7 +81,7 @@ function WhyCoreBTR() {
         </div>
 
         <h2 className="why-core-btr-section-heading" ref={headerRef}>
-          What Makes core<span>BTR</span> Different?
+          What makes core<span>BTR</span> different?
         </h2>
 
         <div className="why-core-btr-cards">

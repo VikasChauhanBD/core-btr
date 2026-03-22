@@ -32,7 +32,7 @@ function TargetAudience() {
             </span>
           </div>
           <h2 className="target-audience-section-heading">
-            Who Is core<span>BTR</span> For?
+            Who is core<span>BTR</span> designed For?
           </h2>
 
           <div className="target-audience-who-grid">
