@@ -2,66 +2,35 @@
   width: 100%;
 }
 
-.bootcamp-banner {
-  width: 100%;
-}
-
-.bootcamp-banner img {
-  width: 100%;
-  display: block;
-}
-
 .bootcamp-content {
-  max-width: 1200px;
+  width: 80%;
   margin: 0 auto;
-  padding: 2.5rem 1rem;
+  padding: 4rem 1rem;
   text-align: center;
 }
 
 .bootcamp-content h1 {
   font-size: 42px;
-  color:  #1767be;
+  color: #1767be;
   margin-bottom: 10px;
 }
 
 .bootcamp-content h3 {
-  font-size: clamp(16px, 2.5vw, 22px);
-  font-weight: 600;
+  font-size: 20px;
   margin-bottom: 1rem;
+  color: #1d204b;
 }
 
 .bootcamp-content p {
   font-size: 18px;
   line-height: 1.75;
-  color: #444;
-  margin: 0 auto 1.5rem;
-}
-
-.bootcamp-content a {
-  text-decoration: none;
-  font-size: 16px;
-  font-weight: 600;
-  padding: 10px 22px;
-  color: #e35336;
-  border: 2px solid #e35336;
-  background-color: transparent;
-  cursor: pointer;
-  border-radius: 4px;
-  display: inline-block;
-  transition:
-    color 0.2s ease,
-    background-color 0.2s ease;
-}
-
-.bootcamp-content a:hover {
-  color: #fff;
-  background-color: #e35336;
+  color: #1d204b;
 }
 
 .bootcamp-sections {
   background: #f5f6ff;
   color: #1a1a2e;
-  padding: 64px 24px 88px;
+  padding: 4rem 1rem;
   position: relative;
 }
 
@@ -77,11 +46,9 @@
   pointer-events: none;
 }
 
-.bootcamp-highlights,
-.bootcamp-features,
-.bootcamp-what-you-get {
-  max-width: 1200px;
-  margin: 0 auto 80px;
+.bootcamp-highlights {
+  width: 80%;
+  margin: 0 auto;
   position: relative;
   z-index: 1;
 }
@@ -96,7 +63,7 @@
 .bootcamp-eyebrow-line {
   width: 36px;
   height: 2px;
-  background: linear-gradient(to right, #7d6beb, #6b6fc5);
+  background: #feb122;
   border-radius: 2px;
   flex-shrink: 0;
 }
@@ -110,22 +77,20 @@
 }
 
 .bootcamp-section-heading {
-  font-size: clamp(24px, 4vw, 38px);
-  font-weight: 900;
+  font-size: 48px;
   line-height: 1.15;
-  color: #1a1a2e;
+  color: #1d204b;
   margin-bottom: 14px;
 }
 
-.bootcamp-section-heading em {
-  font-style: italic;
-  color:  #1767be;
+.bootcamp-section-heading span {
+  color: #1767be;
 }
 
 .bootcamp-lead {
   font-size: 16px;
   line-height: 1.78;
-  color: #555;
+  color: #1d204b;
   max-width: 640px;
   margin-bottom: 36px;
 }
@@ -134,12 +99,6 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 20px;
-}
-
-@media (max-width: 600px) {
-  .bootcamp-highlight-grid {
-    grid-template-columns: 1fr;
-  }
 }
 
 .bootcamp-highlight-image {
@@ -160,7 +119,7 @@
 
 .bootcamp-highlight-card {
   background: #fff;
-  border: 1px solid #c8ccee;
+  border: 1px solid #1767be;
   border-radius: 10px;
   padding: 28px 26px;
   position: relative;
@@ -180,7 +139,7 @@
   left: 0;
   right: 0;
   height: 3px;
-  background: linear-gradient(to right, #7d6beb, #5b5fcf);
+  background: #1767be;
 }
 
 .bootcamp-highlight-card:hover {
@@ -193,7 +152,7 @@
 .bootcamp-highlight-card h3 {
   font-size: 18px;
   font-weight: 700;
-  color: #7d6beb;
+  color: #1767be;
   margin-bottom: 16px;
 }
 
@@ -209,7 +168,7 @@
 .bootcamp-highlight-list li {
   font-size: 16px;
   line-height: 1.65;
-  color: #444;
+  color: #1d204b;
   padding-left: 24px;
   position: relative;
 }
@@ -235,240 +194,7 @@
   padding: 4px 12px;
 }
 
-.bootcamp-features-table {
-  border: 1px solid #c8ccee;
-  border-radius: 10px;
-  overflow: hidden;
-  box-shadow: 0 2px 8px rgba(39, 24, 126, 0.1);
-}
-
-.bootcamp-feature-row {
-  display: grid;
-  grid-template-columns: 200px 1fr;
-  border-bottom: 1px solid #c8ccee;
-  transition: background 0.18s ease;
-}
-
-.bootcamp-feature-row:last-child {
-  border-bottom: none;
-}
-
-.bootcamp-feature-row:hover {
-  background: #eef0fb;
-}
-
-@media (max-width: 640px) {
-  .bootcamp-feature-row {
-    grid-template-columns: 1fr;
-  }
-}
-
-.bootcamp-feature-label {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  padding: 20px 22px;
-  background: #eaecf8;
-  border-right: 1px solid #c8ccee;
-}
-
-@media (max-width: 640px) {
-  .bootcamp-feature-label {
-    border-right: none;
-    border-bottom: 1px solid #c8ccee;
-  }
-}
-
-.bootcamp-feature-icon {
-  font-size: 16px;
-  flex-shrink: 0;
-}
-
-.bootcamp-feature-name {
-  font-size: 16px;
-  font-weight: 700;
-  color: #7d6beb;
-  line-height: 1.3;
-}
-
-.bootcamp-feature-desc {
-  padding: 20px 28px;
-  display: flex;
-  flex-direction: column;
-  gap: 8px;
-  justify-content: center;
-  background: #fff;
-}
-
-.bootcamp-feature-point {
-  display: flex;
-  align-items: flex-start;
-  gap: 10px;
-  font-size: 16px;
-  line-height: 1.72;
-  color: #555;
-}
-
-.bootcamp-feature-point::before {
-  content: "·";
-  color: #7d6beb;
-  font-size: 22px;
-  line-height: 1.25;
-  flex-shrink: 0;
-}
-
-.bootcamp-get-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 18px;
-}
-
-@media (max-width: 700px) {
-  .bootcamp-get-grid {
-    grid-template-columns: 1fr;
-  }
-}
-
-.bootcamp-get-card {
-  border: 1px solid #c8ccee;
-  border-radius: 10px;
-  padding: 28px 22px 24px;
-  background: #fff;
-  box-shadow:
-    0 4px 16px rgba(39, 24, 126, 0.1),
-    0 1px 4px rgba(39, 24, 126, 0.06);
-  position: relative;
-  overflow: hidden;
-  transition:
-    transform 0.24s ease,
-    box-shadow 0.24s ease;
-}
-
-.bootcamp-get-card::after {
-  content: "";
-  position: absolute;
-  bottom: -28px;
-  right: -28px;
-  width: 90px;
-  height: 90px;
-  border-radius: 50%;
-  background: radial-gradient(
-    circle,
-    rgba(39, 24, 126, 0.08) 0%,
-    transparent 70%
-  );
-  pointer-events: none;
-}
-
-.bootcamp-get-card:hover {
-  transform: translateY(-4px);
-  box-shadow:
-    0 12px 40px rgba(39, 24, 126, 0.18),
-    0 4px 12px rgba(39, 24, 126, 0.1);
-}
-
-.bootcamp-get-icon {
-  display: block;
-  font-size: 22px;
-  margin-bottom: 10px;
-}
-
-.bootcamp-get-title {
-  font-size: 16px;
-  font-weight: 700;
-  color: #1a1a2e;
-  margin-bottom: 8px;
-}
-
-.bootcamp-get-body {
-  font-size: 16px;
-  line-height: 1.72;
-  color: #666;
-}
-
-.bootcamp-info {
-  max-width: 1200px;
-  margin: 0 auto;
-  background: linear-gradient(135deg, #1a0f5e 0%, #7d6beb 50%, #3e31a8 100%);
-  border-radius: 12px;
-  padding: 40px 44px;
-  position: relative;
-  overflow: hidden;
-  box-shadow: 0 24px 64px rgba(27, 18, 100, 0.32);
-  z-index: 1;
-}
-
-.bootcamp-info::before {
-  content: "";
-  position: absolute;
-  top: -60px;
-  right: -60px;
-  width: 220px;
-  height: 220px;
-  border: 1.5px solid rgba(255, 255, 255, 0.1);
-  border-radius: 50%;
-  pointer-events: none;
-}
-
-.bootcamp-info::after {
-  content: "";
-  position: absolute;
-  bottom: -80px;
-  left: -50px;
-  width: 260px;
-  height: 260px;
-  border: 1px solid rgba(255, 255, 255, 0.06);
-  border-radius: 50%;
-  pointer-events: none;
-}
-
-.bootcamp-info-label {
-  font-size: 16px;
-  font-weight: 700;
-  letter-spacing: 0.22em;
-  text-transform: uppercase;
-  color: #a8b3ff;
-  margin-bottom: 22px;
-  display: flex;
-  align-items: center;
-  gap: 12px;
-}
-
-.bootcamp-info-label::after {
-  content: "";
-  flex: 1;
-  height: 1px;
-  background: rgba(255, 255, 255, 0.16);
-}
-
-.bootcamp-info-items {
-  display: flex;
-  flex-direction: column;
-  gap: 18px;
-  position: relative;
-  z-index: 1;
-}
-
-.bootcamp-info-item {
-  display: flex;
-  align-items: flex-start;
-  gap: 14px;
-  font-size: 16px;
-  line-height: 1.78;
-  color: rgba(255, 255, 255, 0.82);
-}
-
-.bootcamp-info-dot {
-  width: 7px;
-  height: 7px;
-  border-radius: 50%;
-  background: #a8b3ff;
-  flex-shrink: 0;
-  margin-top: 7px;
-  box-shadow: 0 0 8px rgba(168, 179, 255, 0.55);
-}
-
-/* ── Animations (mirrors an-fadeUp) ── */
+/* ── Animations ── */
 @keyframes bootcamp-fadeUp {
   from {
     opacity: 0;
@@ -484,37 +210,35 @@
   animation: bootcamp-fadeUp 0.55s 0.05s ease both;
 }
 
-.bootcamp-features {
-  animation: bootcamp-fadeUp 0.55s 0.15s ease both;
-}
-
-.bootcamp-what-you-get {
-  animation: bootcamp-fadeUp 0.55s 0.25s ease both;
-}
-
-.bootcamp-info {
-  animation: bootcamp-fadeUp 0.55s 0.35s ease both;
-}
-
-/* ---------------------------- Responsive Style ------------------------ */
-/* @media (max-width: 1440px) {
+/* ---------------------------- Responsive Styles ------------------------ */
+@media (max-width: 1440px) {
+  .bootcamp-content,
+  .bootcamp-highlights {
+    width: 85%;
+  }
 }
 
 @media (max-width: 1024px) {
-} */
-
-@media (max-width: 868px) {
-  .bootcamp-content h1 {
-    font-size: 32px;
-  }
-
-  .bootcamp-info {
-    padding: 28px 24px;
+  .bootcamp-content,
+  .bootcamp-highlights {
+    width: 95%;
   }
 }
 
-@media (max-width: 500px) {
-  .bootcamp-info {
-    padding: 24px 18px;
+@media (max-width: 868px) {
+  .bootcamp-content h1,
+  .bootcamp-section-heading {
+    font-size: 32px;
+  }
+
+  .bootcamp-highlight-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 568px) {
+  .bootcamp-content,
+  .bootcamp-highlights {
+    width: 100%;
   }
 }
