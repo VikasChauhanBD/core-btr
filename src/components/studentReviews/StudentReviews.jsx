@@ -278,8 +278,6 @@ import DrGarimaSharma from "../../assets/studentsImages/dr-garima-sharma.jpg";
 
 const HERO_BG =
   "https://cdn.dribbble.com/userupload/46355808/file/f2274fc9ca13235e117b03ebf82f2320.jpg";
-// ↑ Replace with your actual hosted URL:
-// "https://yourcdn.com/f2274fc9ca13235e117b03ebf82f2320.jpg"
 
 const testimonials = [
   {
@@ -319,7 +317,8 @@ const testimonials = [
     image: DrShravya,
   },
   {
-    feedback: "Loved every bit of BTR. Super helpful and enough for preparation.",
+    feedback:
+      "Loved every bit of BTR. Super helpful and enough for preparation.",
     name: "Dr. Arshiya Garg",
     image: DrArshiyaGarg,
   },
@@ -441,7 +440,6 @@ function StudentReviews() {
 
   return (
     <div className="reviews-page">
-
       {/* ══════════════════════════════════════════
           HERO  —  full-bleed background image
       ══════════════════════════════════════════ */}
@@ -461,31 +459,27 @@ function StudentReviews() {
             <span>Student Stories</span>
           </div>
 
-          <h1>
-            Real Results.
-            <br />
-            <em>Real Voices.</em>
-          </h1>
+          <h1>Real Results. Real Voices</h1>
 
           <p className="reviews-hero-sub">
             Thousands of NEET PG, INI-CET &amp; FMGE aspirants have transformed
             their preparation with BTR. Here is what they have to say.
           </p>
 
-          <div className="reviews-stats">
+          {/* <div className="reviews-stats">
             <div className="reviews-stat">
               <span className="reviews-stat-num">115,221+</span>
               <span className="reviews-stat-label">Students</span>
             </div>
-            {/* <div className="reviews-stat">
+            <div className="reviews-stat">
               <span className="reviews-stat-num">4.9★</span>
               <span className="reviews-stat-label">Avg Rating</span>
             </div>
             <div className="reviews-stat">
               <span className="reviews-stat-num">95%</span>
               <span className="reviews-stat-label">Recommend</span>
-            </div> */}
-          </div>
+            </div>
+          </div> */}
         </div>
       </header>
 
@@ -493,7 +487,6 @@ function StudentReviews() {
           CAROUSEL  —  static + arrow scroll
       ══════════════════════════════════════════ */}
       <div className="reviews-scroll-section">
-
         {/* Arrow buttons */}
         <button
           className="reviews-arrow reviews-arrow--left"
@@ -520,7 +513,7 @@ function StudentReviews() {
       </div>
 
       {/* CTA */}
-      <div className="reviews-cta">
+      {/* <div className="reviews-cta">
         <NavLink to="#" className="reviews-cta-btn">
           Start Your Smart Revision
           <svg
@@ -535,7 +528,7 @@ function StudentReviews() {
             <polyline points="12 5 19 12 12 19" />
           </svg>
         </NavLink>
-      </div>
+      </div> */}
     </div>
   );
 }
