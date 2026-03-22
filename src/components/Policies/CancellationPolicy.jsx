@@ -6,7 +6,7 @@ function CancellationPolicy() {
     <div className="main-container">
       <h1>Cancellation and Refund Policy</h1>{" "}
       <p>
-        At CoreBTR, a brand owned and operated by SABRSHUKR COCARE PRIVATE
+        At coreBTR, a brand owned and operated by SABRSHUKR COCARE PRIVATE
         LIMITED, we strive to offer the best experience to our users. This
         Cancellation & Refund Policy outlines the terms under which
         cancellations, reschedules, and refunds (if applicable) are processed.
