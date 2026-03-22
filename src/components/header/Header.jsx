@@ -1,12 +1,11 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 import "./Header.css";
 import AppStore from "../../assets/images/app-store-icon.png";
 import PlayStore from "../../assets/images/play-store-icon.png";
-import HeaderImage from "../../assets/images/header-image.png";
 
-function Header({ animationReady }) {
+function Header() {
   return (
-    <div className={`header-container ${animationReady ? "animate" : ""}`}>
+    <div className="header-container animate">
       <h4>
         <span>core</span>BTR – Believe. Trust. Revise
       </h4>

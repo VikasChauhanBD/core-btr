@@ -6,10 +6,10 @@ import WhyCoreBTR from "../components/whyCoreBTR/WhyCoreBTR";
 import TargetAudience from "../components/targetAudience/TargetAudience";
 import OurVision from "../components/ourVision/OurVision";
 
-function HomePage({ animationReady }) {
+function HomePage() {
   return (
     <div>
-      <Header animationReady={animationReady} />
+      <Header />
       <CoreBTR />
       <ThePlatform />
       <WhyCoreBTR />
