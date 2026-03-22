@@ -8,16 +8,17 @@ function CoreBTR() {
         <h2>
           <span>core</span>BTR
         </h2>
+        <h4>From Revision to Revolution</h4>
         <p>
-          coreBTR is a next-generation <b>medical revision platform</b> built
-          for medical aspirants who want clarity, speed, and results —without
-          unnecessary overload. Designed with a student-first approach, coreBTR
-          transforms the way you revise by focusing only on what truly matters
-          in the exam, making it ideal for{" "}
-          <b>NEET PG, INI CET, and FMGE exams.</b>
+          Not just another app or another lecture series, but a space where
+          concepts finally make sense, where revision stops feeling
+          overwhelming, and where preparation becomes clear, structured, and
+          truly doable. Built by Dr. Zainab Vora for students who are tired of
+          confusion and ready for clarity, coreBTR is designed with one simple
+          goal-learning that is simpler, smarter, and always student-first.
         </p>
 
-        <div className="core-btr-curator">
+        {/* <div className="core-btr-curator">
           <strong>Curated by Dr. Zainab Vora</strong>
           <span>MBBS, MD Radiology - Gold Medalist, AIIMS New Delhi</span>
           <span>AIR 1 - AIIMS &amp; NIMHANS 2015</span>
@@ -27,7 +28,7 @@ function CoreBTR() {
           Built on years of teaching experience and student trust,{" "}
           <b>CoreBTR by Dr. Zainab Vora</b> is crafted to deliver maximum output
           with minimum confusion.
-        </p>
+        </p> */}
       </div>
     </div>
   );

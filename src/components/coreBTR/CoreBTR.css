@@ -5,24 +5,27 @@
 .core-btr-content {
   width: 80%;
   margin: 0 auto;
-  padding: 2.5rem 1rem;
+  padding: 5rem 1rem;
   text-align: center;
 }
 
 .core-btr-content h2 {
   font-size: 48px;
   color: #1767be;
-  margin-bottom: 10px;
 }
 
 .core-btr-content span {
   color: #1d204b;
 }
 
+.core-btr-content h4 {
+  font-size: 24px;
+}
+
 .core-btr-content p {
   font-size: 18px;
   line-height: 1.75;
-  margin: 0 auto 1rem;
+  margin-top: 1rem;
 }
 
 .core-btr-curator {
@@ -61,6 +64,10 @@
 }
 
 @media (max-width: 868px) {
+  .core-btr-content {
+    padding: 2.5rem 1rem;
+  }
+
   .core-btr-content h2 {
     font-size: 32px;
   }
