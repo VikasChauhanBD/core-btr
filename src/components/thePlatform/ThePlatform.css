@@ -70,7 +70,7 @@
 
 .the-platform-get-grid {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   gap: 18px;
 }
 
@@ -80,7 +80,7 @@
   overflow: hidden;
   min-height: 350px;
   background-size: cover;
-  background-position: center;
+  background-position: center top;
   cursor: pointer;
   transition:
     transform 0.28s ease,
@@ -172,6 +172,10 @@
   .the-platform-section-heading {
     font-size: 32px;
   }
+
+  .the-platform-get-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 
 @media (max-width: 568px) {
@@ -181,9 +185,5 @@
 
   .the-platform-get-grid {
     grid-template-columns: 1fr;
-  }
-
-  .the-platform-get-card {
-    min-height: 250px;
   }
 }

@@ -20,7 +20,10 @@ function Header({ animationReady }) {
         <img src={PlayStore} alt="Play Store icon" />
       </div>
       <div className="header-image">
-        <img src={HeaderImage} alt="App mock-ups" />
+        <img
+          src="https://cdn.dribbble.com/userupload/47131956/file/a46228b741eadc654b1cd0323eb48723.png"
+          alt="App mock-ups"
+        />
       </div>
     </div>
   );

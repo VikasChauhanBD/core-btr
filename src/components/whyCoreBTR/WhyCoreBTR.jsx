@@ -47,7 +47,7 @@ function WhyCoreBTR() {
       id: 1,
       icon: BiLayer,
       title: "Complete System",
-      desp: "Built as a complete revision system — not just scattered content.",
+      desp: "Built as a complete revision system — not just scattered content, evolving from Cerebellum to BTR.",
     },
     {
       id: 2,
@@ -59,13 +59,13 @@ function WhyCoreBTR() {
       id: 3,
       icon: BiTimer,
       title: "Fast Revision",
-      desp: "Designed for fast revision with clarity.",
+      desp: "Designed for fast revision with clarity, ideal for NEET PG, INI CET, and FMGE rapid revision. ",
     },
     {
       id: 4,
       icon: BiCheckShield,
       title: "Exam-Pattern Aligned",
-      desp: "Aligned with latest NEET PG & INI-CET patterns.",
+      desp: "Aligned with the latest NEET PG, INI-CET, and FMG exam patterns.",
     },
   ];
 
