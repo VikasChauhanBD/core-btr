@@ -22,15 +22,16 @@ function BTRoffline() {
     <div className="btr-offline-container">
       <div className="btr-offline-banner">
         <img
-          src="https://cdn.dribbble.com/userupload/47138330/file/e21c64b4f46cfe8529fec7ae0a481586.jpg"
+          src="https://cdn.dribbble.com/userupload/47138330/file/ffddb40d45652907e2ae188cea3a0460.jpeg"
           alt="coreBTR Offline (Offline Crash Course) by Dr. Zainab Vora"
         />
       </div>
 
       <div className="btr-offline-content">
         <h1>
-          <span>Core</span>BTR Offline: Revise Smart. Recall Fast. Rank Better
+          <span>Core</span>BTR Offline
         </h1>
+        <h4>Revise Smart. Recall Fast. Rank Better</h4>
         <p>
           <b>CoreBTR Offline</b> is a focused, face-to-face crash revision
           program designed for NEET PG aspirants who want clarity, confidence,

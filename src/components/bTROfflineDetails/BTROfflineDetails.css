@@ -127,8 +127,8 @@
 }
 
 .offline-details-city-circle.highlight {
-  border-color: #8b1a1a;
-  box-shadow: 0 0 0 3px rgba(139, 26, 26, 0.15);
+  border-color: #cc0000;
+  border-width: 2px;
 }
 
 .offline-details-city-card:hover .offline-details-city-circle {

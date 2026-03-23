@@ -19,6 +19,7 @@ const cities = [
   {
     name: "Rajkot",
     date: "28th - 30th June",
+    highlight: true,
     image:
       "https://cdn.dribbble.com/userupload/47138863/file/6f65331c71b26b1d0aa46bca4673d329.jpg",
   },
@@ -57,7 +58,7 @@ export default function BTROfflineDetails() {
             BTR NEET PG Offline Cities &amp; Schedule 2026
           </h2>
           <div className="offline-details-tagline">
-            <h4>Best for: Students close to the exam who need a final push</h4>
+            <h4>Best for Students close to the exam who need a final push</h4>
           </div>
         </div>
 

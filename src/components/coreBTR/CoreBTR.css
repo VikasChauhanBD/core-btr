@@ -20,12 +20,14 @@
 
 .core-btr-content h4 {
   font-size: 24px;
+  color: #3f3f3f;
 }
 
 .core-btr-content p {
   font-size: 18px;
   line-height: 1.75;
   margin-top: 1rem;
+  color: #3f3f3f;
 }
 
 .core-btr-curator {

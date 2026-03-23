@@ -21,6 +21,11 @@
 .btr-offline-content h1 {
   font-size: 48px;
   color: #1767be;
+}
+
+.btr-offline-content h4 {
+  font-size: 24px;
+  color: #1d204b;
   margin-bottom: 10px;
 }
 
