@@ -12,7 +12,7 @@ const whatYouGet = [
     title: "Structured Notes & Workbooks",
     body: "5 books designed for rapid revision and long-term retention, perfectly aligned with video content.",
     image:
-      "https://cdn.dribbble.com/userupload/47131997/file/6a3f49b1422e081046a2830db39b46e9.jpeg",
+      "https://cdn.dribbble.com/userupload/47131997/file/03369f55b4b26160b30aeece8c067731.jpg",
   },
   {
     title: "PYQs",
