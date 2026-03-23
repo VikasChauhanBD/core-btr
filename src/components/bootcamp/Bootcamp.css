@@ -15,6 +15,10 @@
   margin-bottom: 10px;
 }
 
+.bootcamp-content span {
+  color: #1d204b;
+}
+
 .bootcamp-content h3 {
   font-size: 20px;
   margin-bottom: 1rem;

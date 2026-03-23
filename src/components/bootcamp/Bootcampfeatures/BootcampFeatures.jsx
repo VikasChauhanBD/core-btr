@@ -40,11 +40,11 @@ export default function BootcampFeatures() {
             </span>
           </div>
           <h2 className="bootcamp-features-section-heading">
-            Key Features of the<span>Bootcamp</span>
+            Key Features of the<span> Bootcamp</span>
           </h2>
           <p className="bootcamp-features-lead">
             Everything you need for a complete, structured, high-yield revision
-            — all in one place.
+            - all in one place.
           </p>
 
           <div className="bootcamp-features-get-grid">

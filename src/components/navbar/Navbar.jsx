@@ -45,7 +45,10 @@ function Navbar() {
     <header className="navbar-container">
       <div className="navbar-logo">
         <NavLink to="/">
-          <img src={Logo} alt="website logo" />
+          <img
+            src="https://cdn.dribbble.com/userupload/47136926/file/f77686c97121b5cd4268f9979f308699.png"
+            alt="website logo"
+          />
         </NavLink>
       </div>
       <nav className={showNav ? "mobile-nav" : "web-nav"}>
@@ -53,7 +56,11 @@ function Navbar() {
           Home
         </NavLink>
 
-        <NavLink to="https://drzainabvora.com/about" target="_blank">
+        <NavLink
+          to="https://drzainabvora.com/about"
+          onClick={handleCloseNav}
+          target="_blank"
+        >
           About Dr. ZV
         </NavLink>
 
@@ -96,7 +103,7 @@ function Navbar() {
           )}
         </div> */}
 
-        <div
+        {/* <div
           className="dropdown-container"
           onMouseEnter={() => !showNav && setShowBTRMenu(true)}
           onMouseLeave={() => !showNav && setShowBTRMenu(false)}
@@ -131,10 +138,17 @@ function Navbar() {
               </NavLink>
             </div>
           )}
-        </div>
+        </div> */}
 
-        <NavLink to="/bootcamp" onClick={handleCloseNav}>
-          Bootcamp
+        <NavLink
+          to="/corebtr-offline"
+          onClick={handleCloseNav}
+          className="dropdown-link"
+        >
+          coreBTR Offline
+        </NavLink>
+        <NavLink to="/corebtr-bootcamp" onClick={handleCloseNav}>
+          coreBTR Bootcamp
         </NavLink>
         <NavLink to="#" onClick={handleCloseNav}>
           Buy New Plans

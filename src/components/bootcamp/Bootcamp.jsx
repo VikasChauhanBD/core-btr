@@ -3,7 +3,6 @@ import "./Bootcamp.css";
 import { NavLink } from "react-router-dom";
 import BootcampHero from "./hero-section/BootcampHero";
 import BootcampFeatures from "./Bootcampfeatures/BootcampFeatures";
-import BootcampIntro from "./BootcampIntro/BootcampIntro";
 
 const highlights = [
   {
@@ -26,13 +25,15 @@ function Bootcamp() {
       <BootcampHero />
 
       <div className="bootcamp-content">
-        <h1>NEET PG Bootcamp 2026</h1>
+        <h1>
+          <span>core</span>BTR Bootcamp 2026
+        </h1>
         <h3>
           An Intensive, Personalised Offline Crash Course for NEET PG &amp;
           INI-CET Aspirants
         </h3>
         <p>
-          The <b>NEET PG Bootcamp</b> is a{" "}
+          The <b>coreBTR Bootcamp</b> is a{" "}
           <b>4-month, high-intensity offline crash program</b> designed for
           students who want focused revision, expert mentorship, and real exam
           readiness under one roof. With mentorship from{" "}
@@ -61,7 +62,7 @@ function Bootcamp() {
             <div className="bootcamp-highlight-image">
               <img
                 src="https://cdn.dribbble.com/userupload/46394035/file/bd0a89a0a1b12002437146371728adee.webp"
-                alt="NEET PG BootCamp Class 2026"
+                alt="coreBTR BootCamp Class 2026"
               />
             </div>
 

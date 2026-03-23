@@ -19,7 +19,10 @@
 }
 
 .footer-logo img {
-  width: 120px;
+  width: 250px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  padding: 10px;
 }
 
 .footer-social {
@@ -158,6 +161,12 @@
   }
 }
 
+@media (max-width: 868px) {
+  .footer-logo img {
+    width: 200px;
+  }
+}
+
 @media (max-width: 620px) {
   .footer-content {
     grid-template-columns: repeat(2, 1fr);
@@ -167,5 +176,9 @@
 @media (max-width: 500px) {
   .footer-content {
     grid-template-columns: 1fr;
+  }
+
+  .footer-logo img {
+    width: 250px;
   }
 }

@@ -82,8 +82,8 @@ function App() {
           <Route path="/annotated" element={<Annotated />} />
           <Route path="/unannotated" element={<Unannotated />} />
           <Route path="/btr-online" element={<BTROnlinePage />} />
-          <Route path="/btr-offline" element={<BTROfflinePage />} />
-          <Route path="/bootcamp" element={<BootcampPage />} />
+          <Route path="/corebtr-offline" element={<BTROfflinePage />} />
+          <Route path="/corebtr-bootcamp" element={<BootcampPage />} />
           <Route path="/reviews" element={<StudentReviewsPage />} />
           <Route path="/faqs" element={<FaqsPage />} />
           <Route path="/privacy-policy" element={<PrivacyPolicyPage />} />

@@ -10,7 +10,10 @@ function Footer() {
       <div className="footer-content">
         <div className="footer-section footer-about">
           <div className="footer-logo">
-            <img src={Logo} alt="website logo" />
+            <img
+              src="https://cdn.dribbble.com/userupload/47136926/file/f77686c97121b5cd4268f9979f308699.png"
+              alt="website logo"
+            />
           </div>
           <div className="footer-social">
             <NavLink
@@ -63,14 +66,14 @@ function Footer() {
         <div className="footer-section">
           <h3 className="footer-title">Programs for NEET/INI CET</h3>
           <ul className="footer-links">
-            <li>
+            {/* <li>
               <NavLink to="/btr-online">BTR Online</NavLink>
+            </li> */}
+            <li>
+              <NavLink to="/corebtr-offline">coreBTR Offline</NavLink>
             </li>
             <li>
-              <NavLink to="/btr-offline">BTR Offline</NavLink>
-            </li>
-            <li>
-              <NavLink to="/bootcamp">Bootcamp</NavLink>
+              <NavLink to="/corebtr-bootcamp">coreBTR Bootcamp</NavLink>
             </li>
           </ul>
         </div>
