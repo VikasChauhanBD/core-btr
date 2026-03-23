@@ -156,7 +156,7 @@
   z-index: 3;
   display: flex;
   align-items: center;
-  padding: 80px 6% 40px;
+  padding: 80px 40px 0 40px;
   gap: 40px;
 
   will-change: opacity;
@@ -265,9 +265,9 @@
 /* Store buttons */
 .hdr__p2-store {
   display: flex;
-  gap: 12px;
+ 
   flex-wrap: wrap;
-  margin-top: 8px;
+  
 
   opacity: 0;
   translate: 0 20px;
@@ -282,7 +282,7 @@
 }
 
 .hdr__p2-store img {
-  width: clamp(130px, 18vw, 180px);
+  width: 180px;
   filter: drop-shadow(0 4px 12px rgba(0,0,0,0.3));
   transition: transform 0.2s ease;
   cursor: pointer;
@@ -296,7 +296,8 @@
   width: clamp(240px, 38vw, 480px);
   /* align-self: flex-start; */
   display: flex;
-  justify-content: start;
+  justify-content: end;
+  align-items: end;
 
   opacity: 0;
   translate: 80px 0;
@@ -311,8 +312,8 @@
 }
 
 .hdr__p2-phone img {
-  height: 70vh;
- margin-right: 200px;
+  height: 78vh;
+ 
   /* display: block; */
   filter: drop-shadow(0 32px 64px rgba(13,27,75,0.6));
 }
@@ -335,53 +336,10 @@
    ================================================================ */
 
 /* ── Tablet ≤ 900px ── */
-@media (max-width: 900px) {
 
-  /* Phase 2: stack vertically — phone on top, text below */
-  .hdr__p2 {
-    flex-direction: column-reverse; /* phone renders last in DOM = bottom, reverse = top */
-    align-items: center;
-    justify-content: flex-end;
-    padding: 80px 24px 40px;
-    gap: 20px;
-  }
-
-  /* phone comes in from top on tablet/mobile instead of right */
-  .hdr--phase1 .hdr__p2-phone {
-    translate: 0 -60px;
-    opacity: 0;
-  }
-  .hdr--phase2 .hdr__p2-phone {
-    translate: 0 0;
-    opacity: 1;
-    transition:
-      opacity   0.85s 0.45s cubic-bezier(0.22, 1, 0.36, 1),
-      translate 0.95s 0.45s cubic-bezier(0.22, 1, 0.36, 1);
-  }
-
-  .hdr__p2-phone {
-    width: clamp(180px, 55vw, 320px);
-    align-self: center;
-    flex-shrink: 0;
-  }
-
-  .hdr__p2-left {
-    align-items: center;
-    text-align: center;
-    width: 100%;
-  }
-
-  .hdr__p2-store { justify-content: center; }
-
-  .hdr__p2-badge {
-    font-size: 11px;
-    padding: 6px 14px;
-    top: 18px;
-  }
-}
 
 /* ── Mobile ≤ 568px ── */
-@media (max-width: 568px) {
+@media (max-width: 900px) {
 
   /* ── Phase 1 mobile:
        text centred at top, phone sticks to bottom ── */
@@ -432,14 +390,16 @@
   }
 
   .hdr__p2-phone {
-    width: clamp(160px, 60vw, 260px);
-    align-self: center;
+    /* width: clamp(160px, 60vw, 260px); */
+    align-self: self-end;
     flex-shrink: 0;
+    height: 73vh;
   }
 
   /* Text slides up from bottom */
   .hdr--phase1 .hdr__p2-left {
-    translate: 0 40px;
+    /* translate: 0 40px; */
+    max-width: 520px;
     opacity: 0;
   }
   .hdr--phase2 .hdr__p2-left {
@@ -459,7 +419,7 @@
 
   .hdr__p2-store {
     justify-content: center;
-    gap: 8px;
+    /* gap: 8px; */
   }
 
   .hdr__p2-store img { width: 130px; }
@@ -476,8 +436,13 @@
 }
 
 /* ── Very small ≤ 380px ── */
-@media (max-width: 380px) {
+@media (max-width: 580px) {
   .hdr__p1-brand { font-size: clamp(44px, 18vw, 72px); }
   .hdr__p2-phone { width: 55vw; }
   .hdr__p2-store img { width: 115px; }
 }
+
+.hdr__p2-phone {
+    flex-shrink: 0;
+    height: 73vh;
+  }

@@ -38,10 +38,10 @@ import AppStore from "../../assets/images/app.png";
 import PlayStore from "../../assets/images/ps1.png";
 
 // Phase 1 image — centred, rises from bottom
-const PHONE_P1 = "https://cdn.dribbble.com/userupload/47131956/file/a46228b741eadc654b1cd0323eb48723.png";
+const PHONE_P1 = "https://cdn.dribbble.com/userupload/47131956/file/b1dfddec8c1f06343042ab674e285bad.png";
 
 // Phase 2 image — slides in from right (desktop) / top (mobile)
-const PHONE_P2 = "https://cdn.dribbble.com/userupload/47139790/file/8f85c56bfe883eebf55b764cf39b5ffe.png";
+const PHONE_P2 = "https://cdn.dribbble.com/userupload/47141861/file/7757976714bf700226573f15bafa5f64.png";
 
 export default function Header() {
   const [phase, setPhase] = useState("phase1");
@@ -95,12 +95,7 @@ export default function Header() {
       <div className="hdr__p2">
 
         {/* Top centre badge */}
-        <div className="hdr__p2-badge">
-          
-          Core<strong>BTR</strong>
-          <span className="hdr__badge-sep">–</span>
-          Believe. Trust. Revise.
-        </div>
+        
 
         {/* Left content (desktop) / Bottom content (mobile) */}
         <div className="hdr__p2-left">
