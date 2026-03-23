@@ -145,10 +145,10 @@ function Navbar() {
           onClick={handleCloseNav}
           className="dropdown-link"
         >
-          coreBTR Offline
+          CoreBTR Offline
         </NavLink>
         <NavLink to="/corebtr-bootcamp" onClick={handleCloseNav}>
-          coreBTR Bootcamp
+          CoreBTR Bootcamp
         </NavLink>
         <NavLink to="#" onClick={handleCloseNav}>
           Buy New Plans

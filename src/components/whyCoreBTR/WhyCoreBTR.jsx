@@ -75,13 +75,13 @@ function WhyCoreBTR() {
         <div className="why-core-btr-eyebrow">
           <span className="why-core-btr-eyebrow-line" />
           <p className="why-core-btr-eyebrow-text">
-            WHY <span>core</span>
+            WHY <span>Core</span>
             <em>BTR</em>
           </p>
         </div>
 
         <h2 className="why-core-btr-section-heading" ref={headerRef}>
-          What makes core<span>BTR</span> different?
+          What makes Core<span>BTR</span> different?
         </h2>
 
         <div className="why-core-btr-cards">

@@ -70,10 +70,10 @@ function Footer() {
               <NavLink to="/btr-online">BTR Online</NavLink>
             </li> */}
             <li>
-              <NavLink to="/corebtr-offline">coreBTR Offline</NavLink>
+              <NavLink to="/corebtr-offline">CoreBTR Offline</NavLink>
             </li>
             <li>
-              <NavLink to="/corebtr-bootcamp">coreBTR Bootcamp</NavLink>
+              <NavLink to="/corebtr-bootcamp">CoreBTR Bootcamp</NavLink>
             </li>
           </ul>
         </div>
@@ -101,7 +101,7 @@ function Footer() {
 
       <div className="footer-bottom">
         <p>
-          &copy; 2026 coreBTR, All rights reserved. | Designed & Managed By:{" "}
+          &copy; 2026 CoreBTR, All rights reserved. | Designed & Managed By:{" "}
           <NavLink to="https://believersdestination.com/" target="_blank">
             Believers Destination Pvt Ltd
           </NavLink>

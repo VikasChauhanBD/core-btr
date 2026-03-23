@@ -57,7 +57,7 @@ export default function BootcampHero() {
 
       {/* ── CENTRE NAME — intro/hold only ── */}
       <div className="bch__intro-name">
-        <span className="bch__intro-sub">coreBTR BOOTCAMP</span>
+        <span className="bch__intro-sub">CoreBTR BOOTCAMP</span>
         <span className="bch__intro-doc">Dr. Zainab Vora</span>
       </div>
 
@@ -73,10 +73,10 @@ export default function BootcampHero() {
         <span className="bch__r-cta">NEW BATCH STARTED</span>
       </div>
 
-      {/* ── LEFT: coreBTR BOOTCAMP big — expand only ── */}
+      {/* ── LEFT: CoreBTR BOOTCAMP big — expand only ── */}
       <div className="bch__left-title">
         <span className="bch__left-title-text">
-          coreBTR
+          CoreBTR
           <br />
           BOOTCAMP
         </span>
@@ -91,7 +91,7 @@ export default function BootcampHero() {
       </div>
       {/* MOBILE ONLY: "NEET PG / BOOTCAMP" top-centre (like "ELEVATING BHARAT") */}
       <div className="bch__mob-top">
-        <span className="bch__mob-top-text">coreBTR</span>
+        <span className="bch__mob-top-text">CoreBTR</span>
         <span className="bch__mob-top-text">BOOTCAMP</span>
       </div>
 

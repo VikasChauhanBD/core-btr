@@ -24,7 +24,7 @@ const whatYouGet = [
     title: "Curated QBank",
     body: "Application-based MCQs to sharpen your problem-solving skills and build exam.",
     image:
-      "https://cdn.dribbble.com/userupload/47132001/file/5a5f5537445e0b34a9d82156755e6026.jpeg",
+      "https://cdn.dribbble.com/userupload/47132000/file/a7308653c1c7b7cdd6afd4128010c67c.jpeg",
   },
   {
     title: "Video Solutions by Dr. Zainab Vora",
@@ -69,10 +69,10 @@ function ThePlatform() {
             <span className="the-platform-eyebrow-text">THE PLATFORM</span>
           </div>
           <h2 className="the-platform-section-heading">
-            What you get with core<span>BTR</span>
+            What you get with Core<span>BTR</span>
           </h2>
           <p className="the-platform-lead">
-            coreBTR: All-in-One Medical Learning & Revision System designed for
+            CoreBTR: All-in-One Medical Learning & Revision System designed for
             NEET PG, INI-CET and FMGE aspirants who want a simpler, smarter way
             to prepare & bring everything you need into one clear, structured
             system.

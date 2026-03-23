@@ -26,14 +26,14 @@ function Bootcamp() {
 
       <div className="bootcamp-content">
         <h1>
-          <span>core</span>BTR Bootcamp 2026
+          <span>Core</span>BTR Bootcamp 2026
         </h1>
         <h3>
           An Intensive, Personalised Offline Crash Course for NEET PG &amp;
           INI-CET Aspirants
         </h3>
         <p>
-          The <b>coreBTR Bootcamp</b> is a{" "}
+          The <b>CoreBTR Bootcamp</b> is a{" "}
           <b>4-month, high-intensity offline crash program</b> designed for
           students who want focused revision, expert mentorship, and real exam
           readiness under one roof. With mentorship from{" "}

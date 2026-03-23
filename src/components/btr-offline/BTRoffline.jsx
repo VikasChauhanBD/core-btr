@@ -29,14 +29,14 @@ function BTRoffline() {
 
       <div className="btr-offline-content">
         <h1>
-          <span>core</span>BTR Offline: Revise Smart. Recall Fast. Rank Better
+          <span>Core</span>BTR Offline: Revise Smart. Recall Fast. Rank Better
         </h1>
         <p>
-          <b>coreBTR Offline</b> is a focused, face-to-face crash revision
+          <b>CoreBTR Offline</b> is a focused, face-to-face crash revision
           program designed for NEET PG aspirants who want clarity, confidence,
           and quick recall before the exam. Built strictly around{" "}
-          <b>PYQs and high-yield facts,</b> BTR helps you revise all 19 subjects
-          in a structured, no-nonsense manner.
+          <b>PYQs and high-yield facts,</b> CoreBTR helps you revise all 19
+          subjects in a structured, no-nonsense manner.
           <br />
           <br />
           This is not theory overload — it's about{" "}

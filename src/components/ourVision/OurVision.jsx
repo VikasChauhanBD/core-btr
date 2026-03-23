@@ -23,7 +23,7 @@ function OurVision() {
         <p className="our-vision-info-vision">
           Your preparation needs focus. Your rank needs strategy.
           <br />
-          <strong>Revise Smart. Revise CORE.</strong>
+          <strong>Revise Smart. Revise Core.</strong>
         </p>
       </section>
     </div>
