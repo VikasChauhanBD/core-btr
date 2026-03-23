@@ -248,6 +248,15 @@
   margin: 0;
   letter-spacing: -0.01em;
 }
+.hdr__p2-heading2{
+  font-size: clamp(28px, 4.5vw, 52px);
+  font-weight: 900;
+  line-height: 1.12;
+  color: #1d204b;
+  margin-bottom: -20px;
+  letter-spacing: -0.01em;
+
+}
 
 .hdr__p2-sub {
   font-size: clamp(15px, 2vw, 20px);
@@ -255,6 +264,17 @@
   color: #1d204b;
   margin: 0;
   letter-spacing: 0.04em;
+  
+}
+.hdr__p2-sub2 {
+  font-size: clamp(15px, 2vw, 20px);
+  font-weight: 600;
+  color: #1d204b;
+  margin: 0;
+  margin-left: 4%;
+  margin-bottom: -10px;
+  letter-spacing: 0.04em;
+  
 }
 
 /* Store buttons */
@@ -447,7 +467,7 @@
   }
 
   .hdr__p2-heading { font-size: clamp(22px, 6vw, 32px); }
-  .hdr__p2-sub     { font-size: 15px; }
+  .hdr__p2-sub     { font-size: 15px;}
 
   .hdr__p2-badge {
     top: 14px;
