@@ -28,11 +28,13 @@ function BTRoffline() {
       </div>
 
       <div className="btr-offline-content">
-        <h1>BTR Offline: Revise Smart. Recall Fast. Rank Better</h1>
+        <h1>
+          <span>core</span>BTR Offline: Revise Smart. Recall Fast. Rank Better
+        </h1>
         <p>
-          <b>BTR Offline</b> is a focused, face-to-face crash revision program
-          designed for NEET PG aspirants who want clarity, confidence, and quick
-          recall before the exam. Built strictly around{" "}
+          <b>coreBTR Offline</b> is a focused, face-to-face crash revision
+          program designed for NEET PG aspirants who want clarity, confidence,
+          and quick recall before the exam. Built strictly around{" "}
           <b>PYQs and high-yield facts,</b> BTR helps you revise all 19 subjects
           in a structured, no-nonsense manner.
           <br />
@@ -45,17 +47,20 @@ function BTRoffline() {
 
       <div className="btr-offline-highlights-sections">
         <section className="btr-offline-highlights">
-          <div className="btr-offline-eyebrow">
-            <span className="btr-offline-eyebrow-line" />
-            <span className="btr-offline-eyebrow-text">Overview</span>
+          <div className="btr-offline-highlights-content">
+            <div className="btr-offline-eyebrow">
+              <span className="btr-offline-eyebrow-line" />
+              <span className="btr-offline-eyebrow-text">Overview</span>
+            </div>
+            <h2 className="btr-offline-section-heading">
+              What You'll <span>Learn</span>
+            </h2>
+            <p className="btr-offline-lead">
+              A PYQ-focused crash revision program covering all 19 subjects with
+              high-yield facts, must-know images, and live face-to-face
+              sessions.
+            </p>
           </div>
-          <h2 className="btr-offline-section-heading">
-            What You'll <span>Learn</span>
-          </h2>
-          <p className="btr-offline-lead">
-            A PYQ-focused crash revision program covering all 19 subjects with
-            high-yield facts, must-know images, and live face-to-face sessions.
-          </p>
 
           <div className="btr-offline-highlight-grid">
             {highlights.map((h) => (
@@ -68,15 +73,15 @@ function BTRoffline() {
                 </ul>
               </div>
             ))}
-
-            <div className="btr-offline-highlight-image">
-              <img
-                src="https://cdn.dribbble.com/userupload/46394037/file/779239c41dca64941a9c00383e17cfcd.webp"
-                alt="BTR Offline Course"
-              />
-            </div>
           </div>
         </section>
+      </div>
+
+      <div className="btr-offline-highlight-image">
+        <img
+          src="https://cdn.dribbble.com/userupload/47137540/file/eef588e412551d711f440360f36f5963.jpg"
+          alt="coreBTR Offline Course images"
+        />
       </div>
     </div>
   );
