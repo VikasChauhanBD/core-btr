@@ -241,7 +241,7 @@ import "./HeroHeader.css";
 
 import AppStoreImg  from "../../assets/images/app-store-icon.png";
 import PlayStoreImg from "../../assets/images/play-store-icon.png";
-import MockupImg    from "../../assets/images/mockup.png";
+import MockupImg    from "../../assets/images/Phone.png";
 
 export default function HeroHeader() {
   const [phase, setPhase] = useState("intro"); // "intro" | "side"

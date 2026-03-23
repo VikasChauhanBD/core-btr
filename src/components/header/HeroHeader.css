@@ -70,7 +70,7 @@
 
 .hh-p1-mockup img {
   /* Big enough to dominate the screen */
-  height: 90vh;
+  height: 70vh;
   max-height: 900px;
   width: auto;
   object-fit: contain;
@@ -208,7 +208,7 @@
 }
 
 .hh-p2-mockup {
-  height: 90vh;
+  height: 70vh;
   width: 100%;
   object-fit: cover;
   transform: scale(1.05);
