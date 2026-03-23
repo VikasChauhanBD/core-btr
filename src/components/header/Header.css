@@ -1,90 +1,483 @@
-.header-container {
+/* ================================================================
+   Header.css  —  2-phase animated hero
+   All classes prefixed  hdr__  to avoid conflicts
+   ================================================================ */
+
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,300;0,400;0,600;0,700;0,900;1,700&display=swap");
+
+/* ================================================================
+   ROOT CONTAINER
+   ================================================================ */
+.hdr {
+  position: relative;
   width: 100%;
-  background-image: url(../../assets/images/header-bg.avif);
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
+  min-height: 85vh;
+  overflow: hidden;
+  font-family: "DM Sans", sans-serif;
+}
+
+/* ================================================================
+   BACKGROUND  — existing bg image, kept exactly as before
+   ================================================================ */
+.hdr__bg {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;   /* 🔥 makes it zoom & fill */
+  z-index: 0;
+  transform: scale(1.1); /* 🔥 slight zoom for premium feel */
+}
+
+/* Phase 2: bg zooms out slightly for depth */
+/* .hdr--phase2 .hdr__bg {
+  transform: scale(1.04);
+  filter: brightness(0.72);
+} */
+
+/* .hdr__bg-overlay {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  background: linear-gradient(
+    to bottom,
+    rgba(13, 27, 75, 0.45) 0%,
+    rgba(13, 27, 75, 0.2)  40%,
+    rgba(13, 27, 75, 0.65) 100%
+  );
+  transition: background 1s ease;
+} */
+
+.hdr--phase2 .hdr__bg-overlay {
+  background: linear-gradient(
+    to right,
+    rgba(13, 27, 75, 0.88) 0%,
+    rgba(13, 27, 75, 0.55) 55%,
+    rgba(13, 27, 75, 0.2)  100%
+  );
+}
+
+/* ================================================================
+   PHASE 1  —  centred intro
+   ================================================================ */
+.hdr__p1 {
+  position: absolute;
+  inset: 0;
+  z-index: 3;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
+  padding: 60px 24px 0;
+  gap: 32px;
+
+  /* transition OUT on phase2 */
+  will-change: opacity, transform;
+  transition:
+    opacity   0.65s cubic-bezier(0.4, 0, 0.2, 1),
+    transform 0.65s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.header-container h4 {
-  display: inline;
-  font-size: 20px;
+.hdr--phase1 .hdr__p1 {
+  opacity: 1;
+  transform: translateY(0);
+  pointer-events: auto;
+}
+
+.hdr--phase2 .hdr__p1 {
+  opacity: 0;
+  transform: translateY(-32px);
+  pointer-events: none;
+}
+
+/* ── Phase 1 text ── */
+.hdr__p1-text {
+  text-align: center;
+  animation: hdr-fadeUp 0.7s 0.1s ease both;
+}
+
+.hdr__p1-welcome {
+  font-size: clamp(16px, 3vw, 22px);
+  font-weight: 400;
+  color: #1d204b;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  margin: 0 0 8px;
+}
+
+.hdr__p1-brand {
+  font-size: clamp(56px, 14vw, 120px);
+  font-weight: 900;
+  line-height: 0.9;
+  color: #1d204b;
+  margin: 0 0 12px;
+}
+
+.hdr__p1-brand span {
   color: #1767be;
-  padding: 8px 16px;
-  border: 1px solid #1767be;
-  border-radius: 8px;
-  margin-top: 5rem;
 }
 
-.header-container span {
-  color: #1d204b;
+.hdr__p1-brand sup {
+  font-size: 0.35em;
+  color: #f0c040;
+  vertical-align: super;
 }
 
-.header-container h1 {
-  font-size: 48px;
-  padding: 2rem;
-  text-align: center;
-  color: #1d204b;
-}
-
-.header-container p {
-  font-size: 24px;
+.hdr__p1-tagline {
+  font-size: clamp(14px, 2.2vw, 18px);
   font-weight: 600;
-  text-align: center;
-  padding: 0 10px;
+  color: #1d204b;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+/* ── Phase 1 phone ── */
+.hdr__p1-phone {
+  width: 60%;
+  margin-bottom: -120px;
+  animation: hdr-riseUp 0.9s 0.25s cubic-bezier(0.22, 1, 0.36, 1) both;
+}
+
+.hdr__p1-phone img {
+  height: 100%;
+  width: 100%;
+  
+  /* display: block; */
+  filter: drop-shadow(0 24px 48px rgba(13,27,75,0.55));
+}
+
+/* ================================================================
+   PHASE 2  —  split layout
+   ================================================================ */
+.hdr__p2 {
+  position: absolute;
+  inset: 0;
+  z-index: 3;
+  display: flex;
+  align-items: center;
+  padding: 80px 6% 40px;
+  gap: 40px;
+
+  will-change: opacity;
+  transition: opacity 0.7s 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.hdr--phase1 .hdr__p2 {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.hdr--phase2 .hdr__p2 {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+/* ── Top badge ── */
+.hdr__p2-badge {
+  position: absolute;
+  top: 28px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: inline-flex;
+  align-items: center;
+  font-size: clamp(12px, 1.4vw, 14px);
+  font-weight: 500;
+  color: #1d204b;
+  background: rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(8px);
+  border: 1px solid #1767be;
+  border-radius: 99px;
+  padding: 7px 18px;
+  white-space: nowrap;
+  letter-spacing: 0.06em;
+
+  opacity: 0;
+  translate: 0 -16px;
+  transition:
+    opacity   0.6s 0.55s ease,
+    translate 0.6s 0.55s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.hdr--phase2 .hdr__p2-badge {
+  opacity: 1;
+  translate: 0 0;
+}
+
+.hdr__p2-badge strong { color: #1767be; }
+.hdr__p2-badge sup    { font-size: 0.65em; color: #1767be; vertical-align: super; }
+.hdr__badge-dot {
+  width: 7px; height: 7px;
+  border-radius: 50%;
+  background: #1d204b;
+  flex-shrink: 0;
+  box-shadow: 0 0 6px #1d204b;
+}
+.hdr__badge-sep { color: #1767be; }
+
+/* ── Left content ── */
+.hdr__p2-left {
+  flex: 1;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  z-index: 1;
+
+  opacity: 0;
+  translate: -48px 0;
+  transition:
+    opacity   0.75s 0.5s ease,
+    translate 0.85s 0.5s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.hdr--phase2 .hdr__p2-left {
+  opacity: 1;
+  translate: 0 0;
+}
+
+.hdr__p2-eyebrow {
+  font-size: clamp(11px, 1.5vw, 13px);
+  font-weight: 700;
+  letter-spacing: 0.28em;
+  text-transform: uppercase;
   color: #1d204b;
 }
 
-.header-store img {
-  width: 180px;
-  padding: 48px 8px;
-}
-.header-image {
-  width: 100%;
-  text-align: center;
-}
-
-.header-image img {
-  width: 60%;
-  margin-bottom: -4px;
+.hdr__p2-heading {
+  font-size: clamp(28px, 4.5vw, 52px);
+  font-weight: 900;
+  line-height: 1.12;
+  color: #1767be;
+  margin: 0;
+  letter-spacing: -0.01em;
 }
 
-/* ----------------------------- Responsive ------------------------ */
-@media (max-width: 1440px) {
-  .header-image img {
-    width: 70%;
+
+.hdr__p2-sub {
+  font-size: clamp(15px, 2vw, 20px);
+  font-weight: 600;
+  color: #1d204b;
+  margin: 0;
+  letter-spacing: 0.04em;
+}
+
+/* Store buttons */
+.hdr__p2-store {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+  margin-top: 8px;
+
+  opacity: 0;
+  translate: 0 20px;
+  transition:
+    opacity   0.65s 0.75s ease,
+    translate 0.65s 0.75s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.hdr--phase2 .hdr__p2-store {
+  opacity: 1;
+  translate: 0 0;
+}
+
+.hdr__p2-store img {
+  width: clamp(130px, 18vw, 180px);
+  filter: drop-shadow(0 4px 12px rgba(0,0,0,0.3));
+  transition: transform 0.2s ease;
+  cursor: pointer;
+}
+
+.hdr__p2-store img:hover { transform: translateY(-3px); }
+
+/* ── Right phone ── */
+.hdr__p2-phone {
+  flex-shrink: 0;
+  width: clamp(240px, 38vw, 480px);
+  /* align-self: flex-start; */
+  display: flex;
+  justify-content: start;
+
+  opacity: 0;
+  translate: 80px 0;
+  transition:
+    opacity   0.85s 0.45s cubic-bezier(0.22, 1, 0.36, 1),
+    translate 0.95s 0.45s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.hdr--phase2 .hdr__p2-phone {
+  opacity: 1;
+  translate: 0 0;
+}
+
+.hdr__p2-phone img {
+  height: 70vh;
+ margin-right: 200px;
+  /* display: block; */
+  filter: drop-shadow(0 32px 64px rgba(13,27,75,0.6));
+}
+
+/* ================================================================
+   KEYFRAME ANIMATIONS  (Phase 1)
+   ================================================================ */
+@keyframes hdr-fadeUp {
+  from { opacity: 0; transform: translateY(28px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes hdr-riseUp {
+  from { opacity: 0; transform: translateY(60px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+/* ================================================================
+   RESPONSIVE
+   ================================================================ */
+
+/* ── Tablet ≤ 900px ── */
+@media (max-width: 900px) {
+
+  /* Phase 2: stack vertically — phone on top, text below */
+  .hdr__p2 {
+    flex-direction: column-reverse; /* phone renders last in DOM = bottom, reverse = top */
+    align-items: center;
+    justify-content: flex-end;
+    padding: 80px 24px 40px;
+    gap: 20px;
+  }
+
+  /* phone comes in from top on tablet/mobile instead of right */
+  .hdr--phase1 .hdr__p2-phone {
+    translate: 0 -60px;
+    opacity: 0;
+  }
+  .hdr--phase2 .hdr__p2-phone {
+    translate: 0 0;
+    opacity: 1;
+    transition:
+      opacity   0.85s 0.45s cubic-bezier(0.22, 1, 0.36, 1),
+      translate 0.95s 0.45s cubic-bezier(0.22, 1, 0.36, 1);
+  }
+
+  .hdr__p2-phone {
+    width: clamp(180px, 55vw, 320px);
+    align-self: center;
+    flex-shrink: 0;
+  }
+
+  .hdr__p2-left {
+    align-items: center;
+    text-align: center;
+    width: 100%;
+  }
+
+  .hdr__p2-store { justify-content: center; }
+
+  .hdr__p2-badge {
+    font-size: 11px;
+    padding: 6px 14px;
+    top: 18px;
   }
 }
 
-@media (max-width: 1024px) {
-  .header-image img {
-    width: 80%;
-  }
-  .header-container h1 {
-    font-size: 42px;
-  }
-}
-
-@media (max-width: 868px) {
-  .header-image img {
-    width: 95%;
-  }
-}
-
+/* ── Mobile ≤ 568px ── */
 @media (max-width: 568px) {
-  .header-container h1 {
-    font-size: 32px;
-    padding: 2rem 1rem;
+
+  /* ── Phase 1 mobile:
+       text centred at top, phone sticks to bottom ── */
+  .hdr__p1 {
+    justify-content: space-between;   /* push text top, phone bottom */
+    padding: 72px 20px 0;
+    gap: 0;
   }
-  .header-store img {
-    width: 160px;
+
+  .hdr__p1-text {
+    padding-top: 8px;
   }
-  .header-image img {
-    height: 160px;
+
+  .hdr__p1-phone {
+    width: 100%;
+    margin-bottom: 0;
+    align-self: flex-end;
   }
+
+  .hdr__p1-phone img {
+    width: 85%;
+    margin: 0 auto;
+    display: block;
+    /* image sticks to bottom of section */
+    vertical-align: bottom;
+  }
+
+  /* ── Phase 2 mobile:
+       phone comes DOWN from top, text sits below ── */
+  .hdr__p2 {
+    flex-direction: column;        /* phone on TOP, text below */
+    justify-content: flex-start;
+    padding: 70px 20px 32px;
+    gap: 16px;
+  }
+
+  /* Phone comes from top */
+  .hdr--phase1 .hdr__p2-phone {
+    translate: 0 -80px;
+    opacity: 0;
+  }
+  .hdr--phase2 .hdr__p2-phone {
+    translate: 0 0;
+    opacity: 1;
+    transition:
+      opacity   0.85s 0.4s cubic-bezier(0.22, 1, 0.36, 1),
+      translate 0.95s 0.4s cubic-bezier(0.22, 1, 0.36, 1);
+  }
+
+  .hdr__p2-phone {
+    width: clamp(160px, 60vw, 260px);
+    align-self: center;
+    flex-shrink: 0;
+  }
+
+  /* Text slides up from bottom */
+  .hdr--phase1 .hdr__p2-left {
+    translate: 0 40px;
+    opacity: 0;
+  }
+  .hdr--phase2 .hdr__p2-left {
+    translate: 0 0;
+    opacity: 1;
+    transition:
+      opacity   0.75s 0.55s ease,
+      translate 0.85s 0.55s cubic-bezier(0.22, 1, 0.36, 1);
+  }
+
+  .hdr__p2-left {
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    gap: 10px;
+  }
+
+  .hdr__p2-store {
+    justify-content: center;
+    gap: 8px;
+  }
+
+  .hdr__p2-store img { width: 130px; }
+
+  .hdr__p2-heading { font-size: clamp(22px, 7vw, 30px); }
+  .hdr__p2-sub     { font-size: 15px; }
+
+  .hdr__p2-badge {
+    top: 14px;
+    font-size: 10px;
+    padding: 5px 12px;
+    gap: 6px;
+  }
+}
+
+/* ── Very small ≤ 380px ── */
+@media (max-width: 380px) {
+  .hdr__p1-brand { font-size: clamp(44px, 18vw, 72px); }
+  .hdr__p2-phone { width: 55vw; }
+  .hdr__p2-store img { width: 115px; }
 }
