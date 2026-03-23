@@ -17,36 +17,17 @@
 }
 
 /* ================================================================
-   BACKGROUND  — existing bg image, kept exactly as before
+   BACKGROUND
    ================================================================ */
 .hdr__bg {
   position: absolute;
   inset: 0;
   width: 100%;
   height: 100%;
-  object-fit: cover;   /* 🔥 makes it zoom & fill */
+  object-fit: cover;
   z-index: 0;
-  transform: scale(1.1); /* 🔥 slight zoom for premium feel */
+  transform: scale(1.1);
 }
-
-/* Phase 2: bg zooms out slightly for depth */
-/* .hdr--phase2 .hdr__bg {
-  transform: scale(1.04);
-  filter: brightness(0.72);
-} */
-
-/* .hdr__bg-overlay {
-  position: absolute;
-  inset: 0;
-  z-index: 1;
-  background: linear-gradient(
-    to bottom,
-    rgba(13, 27, 75, 0.45) 0%,
-    rgba(13, 27, 75, 0.2)  40%,
-    rgba(13, 27, 75, 0.65) 100%
-  );
-  transition: background 1s ease;
-} */
 
 .hdr--phase2 .hdr__bg-overlay {
   background: linear-gradient(
@@ -71,7 +52,6 @@
   padding: 60px 24px 0;
   gap: 32px;
 
-  /* transition OUT on phase2 */
   will-change: opacity, transform;
   transition:
     opacity   0.65s cubic-bezier(0.4, 0, 0.2, 1),
@@ -142,20 +122,21 @@
 .hdr__p1-phone img {
   height: 100%;
   width: 100%;
-  
-  /* display: block; */
   filter: drop-shadow(0 24px 48px rgba(13,27,75,0.55));
 }
 
 /* ================================================================
-   PHASE 2  —  split layout
+   PHASE 2  —  split layout  (DESKTOP-FIRST)
    ================================================================ */
 .hdr__p2 {
   position: absolute;
   inset: 0;
   z-index: 3;
+
+  /* Desktop: side-by-side, phone flush to bottom */
   display: flex;
-  align-items: center;
+  flex-direction: row;
+  align-items: flex-end;   /* ← key: both children anchor to bottom */
   padding: 80px 40px 0 40px;
   gap: 40px;
 
@@ -215,7 +196,7 @@
 }
 .hdr__badge-sep { color: #1767be; }
 
-/* ── Left content ── */
+/* ── Left content (desktop) ── */
 .hdr__p2-left {
   flex: 1;
   min-width: 0;
@@ -223,6 +204,9 @@
   flex-direction: column;
   gap: 16px;
   z-index: 1;
+
+  /* Align text to vertical centre rather than bottom */
+  align-self: center;
 
   opacity: 0;
   translate: -48px 0;
@@ -253,7 +237,6 @@
   letter-spacing: -0.01em;
 }
 
-
 .hdr__p2-sub {
   font-size: clamp(15px, 2vw, 20px);
   font-weight: 600;
@@ -265,9 +248,7 @@
 /* Store buttons */
 .hdr__p2-store {
   display: flex;
- 
   flex-wrap: wrap;
-  
 
   opacity: 0;
   translate: 0 20px;
@@ -290,14 +271,17 @@
 
 .hdr__p2-store img:hover { transform: translateY(-3px); }
 
-/* ── Right phone ── */
+/* ── Right phone (DESKTOP) ── */
 .hdr__p2-phone {
   flex-shrink: 0;
+  /* Desktop width */
   width: clamp(240px, 38vw, 480px);
-  /* align-self: flex-start; */
+
+  /* Anchor phone to bottom of the flex row */
+  align-self: flex-end;
   display: flex;
-  justify-content: end;
-  align-items: end;
+  justify-content: flex-end;
+  align-items: flex-end;
 
   opacity: 0;
   translate: 80px 0;
@@ -311,11 +295,16 @@
   translate: 0 0;
 }
 
+/* Desktop phone image — fills container height, sits flush to bottom */
 .hdr__p2-phone img {
+  /* Let the image be as tall as needed; the flex-end anchoring handles the bottom alignment */
   height: 78vh;
- 
-  /* display: block; */
+  width: auto;
+  display: block;
   filter: drop-shadow(0 32px 64px rgba(13,27,75,0.6));
+  /* No bottom margin — flush to section edge */
+  margin-bottom: 0;
+  vertical-align: bottom;
 }
 
 /* ================================================================
@@ -335,16 +324,16 @@
    RESPONSIVE
    ================================================================ */
 
-/* ── Tablet ≤ 900px ── */
-
-
-/* ── Mobile ≤ 568px ── */
+/* ================================================================
+   RESPONSIVE  —  Tablet & Mobile ≤ 900px
+   Layout: centered text block at top, phone large & flush to bottom
+   (matches the reference screenshot exactly)
+   ================================================================ */
 @media (max-width: 900px) {
 
-  /* ── Phase 1 mobile:
-       text centred at top, phone sticks to bottom ── */
+  /* ── Phase 1: text top-centre, phone bottom-centre ── */
   .hdr__p1 {
-    justify-content: space-between;   /* push text top, phone bottom */
+    justify-content: space-between;
     padding: 72px 20px 0;
     gap: 0;
   }
@@ -363,68 +352,89 @@
     width: 85%;
     margin: 0 auto;
     display: block;
-    /* image sticks to bottom of section */
     vertical-align: bottom;
   }
 
-  /* ── Phase 2 mobile:
-       phone comes DOWN from top, text sits below ── */
+  /* ── Phase 2: COLUMN layout
+       Row 1: centered text + store buttons
+       Row 2: phone image large, flush to bottom
+  ── */
   .hdr__p2 {
-    flex-direction: column;        /* phone on TOP, text below */
+    flex-direction: column;
+    align-items: center;
     justify-content: flex-start;
-    padding: 70px 20px 32px;
-    gap: 16px;
+    padding: 48px 24px 0;
+    gap: 0;
   }
 
-  /* Phone comes from top */
-  .hdr--phase1 .hdr__p2-phone {
-    translate: 0 -80px;
-    opacity: 0;
-  }
-  .hdr--phase2 .hdr__p2-phone {
-    translate: 0 0;
-    opacity: 1;
-    transition:
-      opacity   0.85s 0.4s cubic-bezier(0.22, 1, 0.36, 1),
-      translate 0.95s 0.4s cubic-bezier(0.22, 1, 0.36, 1);
-  }
-
-  .hdr__p2-phone {
-    /* width: clamp(160px, 60vw, 260px); */
-    align-self: self-end;
-    flex-shrink: 0;
-    height: 73vh;
-  }
-
-  /* Text slides up from bottom */
+  /* Left (text) block — centered, slides up from slight offset */
   .hdr--phase1 .hdr__p2-left {
-    /* translate: 0 40px; */
-    max-width: 520px;
+    translate: 0 24px;
     opacity: 0;
   }
   .hdr--phase2 .hdr__p2-left {
     translate: 0 0;
     opacity: 1;
     transition:
-      opacity   0.75s 0.55s ease,
-      translate 0.85s 0.55s cubic-bezier(0.22, 1, 0.36, 1);
+      opacity   0.75s 0.5s ease,
+      translate 0.85s 0.5s cubic-bezier(0.22, 1, 0.36, 1);
   }
 
   .hdr__p2-left {
-    align-items: center;
-    text-align: center;
     width: 100%;
+    align-self: auto;
+    align-items: center;      /* center all children */
+    text-align: center;
     gap: 10px;
+    flex-shrink: 0;
   }
 
+  /* Store buttons centered */
   .hdr__p2-store {
     justify-content: center;
-    /* gap: 8px; */
   }
 
   .hdr__p2-store img { width: 130px; }
 
-  .hdr__p2-heading { font-size: clamp(22px, 7vw, 30px); }
+  /* Phone — fills remaining space, flush to bottom */
+  .hdr--phase1 .hdr__p2-phone {
+    translate: 0 60px;
+    opacity: 0;
+  }
+  .hdr--phase2 .hdr__p2-phone {
+    translate: 0 0;
+    opacity: 1;
+    transition:
+      opacity   0.85s 0.55s cubic-bezier(0.22, 1, 0.36, 1),
+      translate 0.95s 0.55s cubic-bezier(0.22, 1, 0.36, 1);
+  }
+
+  .hdr__p2-phone {
+    /* Reset desktop overrides */
+    flex-shrink: 0;
+    width: 100%;
+    align-self: flex-end;
+    justify-content: center;
+    align-items: flex-end;
+    /* Grow to fill remaining vertical space */
+    flex: 1;
+    min-height: 0;
+  }
+
+  .hdr__p2-phone img {
+    /* Fill available space, stay bottom-anchored */
+    height: 100%;
+    width: auto;
+    max-width: 90%;
+    max-height: 52vh;
+    object-fit: contain;
+    object-position: bottom center;
+    display: block;
+    margin: 0 auto;
+    vertical-align: bottom;
+  }
+
+  .hdr__p2-heading { font-size: clamp(22px, 6vw, 32px); }
   .hdr__p2-sub     { font-size: 15px; }
 
   .hdr__p2-badge {
@@ -435,14 +445,19 @@
   }
 }
 
-/* ── Very small ≤ 380px ── */
-@media (max-width: 580px) {
+/* ── Very small ≤ 480px ── */
+@media (max-width: 480px) {
   .hdr__p1-brand { font-size: clamp(44px, 18vw, 72px); }
-  .hdr__p2-phone { width: 55vw; }
-  .hdr__p2-store img { width: 115px; }
-}
 
-.hdr__p2-phone {
-    flex-shrink: 0;
-    height: 73vh;
+  .hdr__p2 {
+    padding: 40px 16px 0;
   }
+
+  .hdr__p2-phone img {
+    max-height: 48vh;
+  }
+
+  .hdr__p2-store img { width: 110px; }
+
+  .hdr__p2-heading { font-size: clamp(18px, 6vw, 24px); }
+}
