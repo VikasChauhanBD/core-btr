@@ -47,18 +47,27 @@ function Footer() {
               </NavLink>
             </li>
             <li>
+              <NavLink to="/corebtr-offline">CoreBTR Offline</NavLink>
+            </li>
+            <li>
+              <NavLink to="/corebtr-bootcamp">CoreBTR Bootcamp</NavLink>
+            </li>
+            <li>
+              <NavLink to="/workbook">Workbook</NavLink>
+            </li>
+            <li>
               <NavLink to="#">Buy New Plans</NavLink>
             </li>
             <li>
               <NavLink to="/reviews">Reviews</NavLink>
             </li>
-            <li>
+            {/* <li>
               <NavLink to="https://drzainabvora.com/gallery" target="_blank">
                 Gallery
               </NavLink>
-            </li>
+            </li> */}
             <li>
-              <NavLink to="/faqs">FAQ's</NavLink>
+              <NavLink to="/contact-us">Contact Us</NavLink>
             </li>
           </ul>
         </div>
@@ -91,17 +100,17 @@ function Footer() {
               <NavLink to="/cancellation-and-refund-policy">
                 Cancellation & Refund Policy
               </NavLink>
-              <li>
-                <NavLink to="/shipping-and-delivery-policy">
-                  Shipping & Delivery Policy
-                </NavLink>
-              </li>
+            </li>
+            <li>
+              <NavLink to="/shipping-and-delivery-policy">
+                Shipping & Delivery Policy
+              </NavLink>
             </li>
             <li>
               <NavLink to="/device-policy">Device Policy</NavLink>
             </li>
             <li>
-              <NavLink to="/contact-us">Contact Us</NavLink>
+              <NavLink to="/faqs">FAQ's</NavLink>
             </li>
           </ul>
         </div>

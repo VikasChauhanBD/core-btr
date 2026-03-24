@@ -21,6 +21,7 @@ import DevicePolicyPage from "./pages/DevicePolicyPage";
 import DeleteAccountPage from "./pages/DeleteAccountPage";
 import ContactUsPage from "./pages/ContactUsPage";
 import ShippingAndDeliveryPolicyPage from "./pages/ShippingAndDeliveryPolicyPage";
+import WorkbookPage from "./pages/WorkbookPage";
 
 function App() {
   const [showIntro, setShowIntro] = useState(false);
@@ -87,6 +88,7 @@ function App() {
           <Route path="/btr-online" element={<BTROnlinePage />} />
           <Route path="/corebtr-offline" element={<BTROfflinePage />} />
           <Route path="/corebtr-bootcamp" element={<BootcampPage />} />
+          <Route path="/workbook" element={<WorkbookPage />} />
           <Route path="/reviews" element={<StudentReviewsPage />} />
           <Route path="/faqs" element={<FaqsPage />} />
           <Route path="/contact-us" element={<ContactUsPage />} />
