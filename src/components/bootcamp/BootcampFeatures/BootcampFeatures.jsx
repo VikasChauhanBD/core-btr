@@ -24,7 +24,7 @@ const challenges = [
     number: "04",
     title: "A Space to Learn, Grow, and Collaborate",
     body: "Preparation can often feel lonely. Vidya Jeevan is designed to change that. It creates a healthy ecosystem where students feel supported, connected, and motivated by being surrounded by others on the same path. If you don't know where to start from, you start from here.",
-    image: "https://cdn.dribbble.com/userupload/47154438/file/1403841f3d745bd51cba0486f721fad9.jpg",
+    image: "https://cdn.dribbble.com/userupload/47154578/file/a07ac4a09c73c81d76513a76bd1180a3.png",
   },
 ];
 
