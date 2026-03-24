@@ -198,6 +198,13 @@
   border-radius: 6px;
   padding: 4px 12px;
 }
+.bootcamp-section-sub-heading-img {
+  font-size: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #1d204b;
+}
 
 /* ── Animations ── */
 @keyframes bootcamp-fadeUp {
@@ -289,4 +296,66 @@
   .bootcamp-highlight-grid {
     grid-template-columns: 1fr;
   }
+}
+
+
+.bootcamp-highlight-content {
+  max-width: 900px;
+  margin: 20px auto 0;
+  text-align: center;
+  padding: 10px;
+}
+
+.bootcamp-subtitle {
+  font-size: 14px;
+  font-weight: 600;
+  color: #6b7280;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  margin-bottom: 8px;
+}
+
+.bootcamp-title {
+  font-size: 32px;
+  font-weight: 700;
+  color: #111827;
+  margin-bottom: 16px;
+}
+
+.bootcamp-description {
+  font-size: 16px;
+  color: #4b5563;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.bootcamp-points {
+  list-style: none;
+  padding: 0;
+  margin: 20px 0;
+}
+
+.bootcamp-points li {
+  font-size: 15px;
+  color: #374151;
+  margin-bottom: 10px;
+  position: relative;
+}
+
+.bootcamp-points li::before {
+  content: "✔";
+  color: #2563eb;
+  margin-right: 8px;
+}
+
+.bootcamp-tagline {
+  margin-top: 20px;
+  font-size: 16px;
+  font-weight: 500;
+  color: #111827;
+}
+
+.bootcamp-tagline span {
+  color: #1767be;
+  font-weight: 700;
 }
