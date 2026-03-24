@@ -1,5 +1,6 @@
 import React from "react";
 import "./OurVision.css";
+import { NavLink } from "react-router-dom";
 
 function OurVision() {
   return (
@@ -25,6 +26,8 @@ function OurVision() {
           <br />
           <strong>Revise Smart. Revise Core.</strong>
         </p>
+
+        <NavLink to="#">Get Started with CoreBTR</NavLink>
       </section>
     </div>
   );

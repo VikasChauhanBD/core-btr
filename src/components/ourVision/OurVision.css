@@ -61,15 +61,6 @@
   background: #feb122;
 }
 
-.our-vision-info-vision {
-  font-size: 20px;
-  color: #fff;
-  line-height: 1.5;
-  margin-bottom: 20px;
-  position: relative;
-  z-index: 1;
-}
-
 .our-vision-info-exams {
   display: flex;
   justify-content: center;
@@ -89,6 +80,25 @@
   background: #fff;
   border-radius: 20px;
   padding: 5px 14px;
+}
+
+.our-vision-info-vision {
+  font-size: 20px;
+  color: #fff;
+  line-height: 1.5;
+  margin-bottom: 2rem;
+  position: relative;
+  z-index: 1;
+}
+
+.our-vision-info a {
+  text-decoration: none;
+  padding: 8px 16px;
+  background-color: #fff;
+  color: #1767be;
+  font-size: 16px;
+  font-weight: 600;
+  border-radius: 10px;
 }
 
 /* ---------------------------- Responsive Style ------------------------ */

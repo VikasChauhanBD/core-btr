@@ -167,6 +167,10 @@
 }
 
 @media (max-width: 568px) {
+  .why-workbooks-container {
+    padding: 0 1rem 4rem 1rem;
+  }
+
   .why-workbooks-info {
     width: 100%;
     padding: 32px 20px;
