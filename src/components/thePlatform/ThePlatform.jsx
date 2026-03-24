@@ -72,7 +72,7 @@ function ThePlatform() {
             What you get with Core<span>BTR</span>
           </h2>
           <p className="the-platform-lead">
-            CoreBTR: All-in-One Medical Learning & Revision System designed for
+            All-in-One Medical Learning & Revision System designed for
             NEET PG, INI-CET and FMGE aspirants who want a simpler, smarter way
             to prepare & bring everything you need into one clear, structured
             system.

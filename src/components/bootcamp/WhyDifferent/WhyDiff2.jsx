@@ -145,14 +145,14 @@ const features = [
     number: "03",
     tag: "Structured Day-by-Day Schedule",
     title: "Accountability & Discipline",
-    desc: "keeps Procrastination away & Ensures Course Completion",
+    desc: "Keeps Procrastination away & Ensures Course Completion",
     color: "wd2-blue",
   },
   {
     number: "04",
     tag: "Unlike Traditional Classes",
     title: "Mentorship-Driven Learning",
-    desc: "this Program Emphasizes Strategy, Consistency & Mental Conditioning along with Academics",
+    desc: "This Program Emphasizes Strategy, Consistency & Mental Conditioning along with Academics",
     color: "wd2-gold",
   },
   {

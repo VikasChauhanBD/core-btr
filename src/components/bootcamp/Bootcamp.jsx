@@ -14,9 +14,10 @@ const highlights = [
       "Target Exams: NEET PG & INI-CET 2026",
       "Subject-wise tests with detailed discussions",
       "Mock Grand Tests (CBT-based)",
+      "Personal desktop with access to internet only for Academic Purposes",
       "Mini tests with explanations",
     ],
-    badge: "New Batch Started From 18th Jan 2026",
+    badge: "New Batch Coming Soon",
   },
 ];
 
