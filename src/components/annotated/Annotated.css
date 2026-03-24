@@ -10,7 +10,7 @@
 }
 
 .annotated-section-heading {
-  font-size: 48px;
+  font-size: 38px;
   line-height: 1.15;
   color: #1d204b;
 }
@@ -29,7 +29,6 @@
   font-size: 16px;
   line-height: 1.78;
   color: #1d204b;
-  max-width: 640px;
   margin-bottom: 36px;
 }
 
@@ -120,9 +119,51 @@
   font-size: 13px;
 }
 
-.annotated-section-para {
-  text-align: center;
-  margin-top: 2rem;
+.annotated-volumes {
+  width: 100%;
+  display: flex;
+  margin: 2rem 0;
+  padding: 1rem 2rem;
+  justify-content: space-between;
+  background-color: #edf8ff;
+  border-radius: 32px;
+  border: 2px solid #b0d4ec;
+}
+
+.annotated-volumes-card {
+  width: 48%;
+}
+
+.annotated-volumes hr {
+  border: 2px solid #b0d4ec;
+}
+
+.annotated-volumes-card h3 {
+  font-size: 24px;
+  color: #3f3f3f;
+}
+
+.annotated-volumes-card ul {
+  margin-top: 1rem;
+  padding-left: 0;
+  list-style: none;
+}
+
+.annotated-volumes-card ul li {
+  position: relative;
+  font-size: 16px;
+  color: #3f3f3f;
+  margin-bottom: 8px;
+  padding-left: 1.6rem;
+}
+
+.annotated-volumes-card ul li::before {
+  content: "➜";
+  position: absolute;
+  left: 0;
+  top: 0;
+  color: #1767be;
+  font-size: 14px;
 }
 
 /* ---------------------------- Responsive Style ------------------------ */
@@ -149,6 +190,18 @@
 
   .annotated-section-sub-heading {
     font-size: 20px;
+  }
+
+  .annotated-volumes {
+    flex-wrap: wrap;
+  }
+
+  .annotated-volumes-card {
+    width: 100%;
+  }
+
+  .annotated-volumes hr {
+    border: none;
   }
 }
 

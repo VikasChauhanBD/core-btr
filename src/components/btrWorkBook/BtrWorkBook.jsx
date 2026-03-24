@@ -14,16 +14,15 @@ function BtrWorkBook() {
       </div>
 
       <div className="wookbook-content">
-        <h1>Workbooks That Turn Revision Into Revolution</h1>
+        <h1>Books That Turn Revision Into Revolution</h1>
         <h4>For NEET PG | INI CET | FMGE</h4>
         <p>
-          At CoreBTR, the focus is simple - revise what actually matters. These
-          workbooks are made to help you stay clear, consistent, exam-ready and
-          have been aligned with video content for rapid recall.
-          <br />
-          Whether you're preparing for NEET PG, INI CET, or FMGE, this system
-          helps you cover all 19 subjects in a practical and manageable way.
+          At CoreBTR, the focus is simple - revise what actually matters. This
+          5-book system is designed to help you stay clear, consistent, and
+          exam-ready while covering all 19 subjects in a practical and
+          manageable way.
         </p>
+        <h4 className="wookbook-content-last">What You Get</h4>
       </div>
     </div>
   );

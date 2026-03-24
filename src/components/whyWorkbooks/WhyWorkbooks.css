@@ -44,7 +44,6 @@
   font-size: 18px;
   font-weight: 700;
   letter-spacing: 0.22em;
-  text-transform: uppercase;
   color: #feb122;
   margin-bottom: 22px;
   display: flex;
@@ -126,7 +125,7 @@
 }
 
 .why-workbooks-info-subtitle {
-  font-size: 24px;
+  font-size: 22px;
   font-weight: 600;
   margin: 0 0 12px;
   color: #fff;
@@ -135,7 +134,7 @@
 }
 
 .why-workbooks-info-vision {
-  font-size: 20px;
+  font-size: 18px;
   color: #fff;
   line-height: 1.5;
   margin-bottom: 2rem;
@@ -186,7 +185,7 @@
   }
 
   .why-workbooks-info-subtitle {
-    font-size: 20px;
+    font-size: 18px;
     font-weight: 400;
   }
 

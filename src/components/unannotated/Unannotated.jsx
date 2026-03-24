@@ -3,8 +3,8 @@ import "./Unannotated.css";
 
 const highlights = [
   {
-    title:
-      "If you like writing things down and learning in your own way, this format will suit you",
+    // title:
+    //   "If you like writing things down and learning in your own way, this format will suit you",
     points: [
       "Write while watching videos",
       "Build your own understanding",
@@ -23,11 +23,11 @@ function Unannotated() {
             Unannotated <span>Workbooks</span>
           </h2>
           <h4 className="unannotated-section-sub-heading">
-            2 Volumes | Make Your Own Notes
+            2 Volumes | Make Your Own Notes & Master Active Recall
           </h4>
           <p className="unannotated-lead">
-            These workbooks go along with CoreBTR videos and are meant for
-            active study.
+            These workbooks are aligned with CoreBTR lecture videos and are
+            built for active learning.
           </p>
           <div className="unannotated-highlight-grid">
             <div className="unannotated-highlight-image">
@@ -39,7 +39,7 @@ function Unannotated() {
 
             {highlights.map((h) => (
               <div className="unannotated-highlight-card" key={h.title}>
-                <h3>{h.title}</h3>
+                {/* <h3>{h.title}</h3> */}
                 <ul className="unannotated-highlight-list">
                   {h.points.map((p, i) => (
                     <li key={i}>{p}</li>
@@ -52,8 +52,11 @@ function Unannotated() {
             ))}
           </div>
           <p className="unannotated-section-para">
-            This works well for system-wise study and helps you stay regular
-            with revision.
+            You can also use them for active recall after watching videos 1-2
+            times: Keep the workbook in front of you and try to recall
+            everything - speak aloud, teach someone, or revise mentally. These
+            books help you move from passive watching to strong retention and
+            recall.
           </p>
         </section>
       </div>
