@@ -109,7 +109,6 @@
 .target-audience-who-title {
   font-size: 22px;
   font-weight: 700;
-  /* color: #1a1a2e; */
   color: #3f3f3f;
   margin-bottom: 12px;
 }
@@ -124,7 +123,7 @@
 }
 
 .target-audience-who-list li {
-  font-size: 18px;
+  font-size: 16px;
   line-height: 1.65;
   padding-left: 28px;
   position: relative;

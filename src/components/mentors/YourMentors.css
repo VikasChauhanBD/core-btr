@@ -1,0 +1,108 @@
+.your-mentors-container {
+  width: 80%;
+  margin: 0 auto;
+  padding: 5rem 1rem 0 1rem;
+  text-align: center;
+}
+
+.your-mentors-content {
+  width: 100%;
+}
+
+.your-mentors-content h2 {
+  font-size: 48px;
+  color: #1767be;
+}
+
+.your-mentors-content span {
+  color: #1d204b;
+}
+
+.your-mentors-content h4 {
+  font-size: 24px;
+  color: #3f3f3f;
+}
+
+.your-mentors-content h3 {
+  margin-top: 2rem;
+  font-size: 28px;
+  color: #3f3f3f;
+}
+
+.your-mentors-cards {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  margin: 2.5rem 0;
+}
+
+.your-mentors-card img {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  border: 2px solid #1767be;
+  border-radius: 50%;
+}
+
+.your-mentors-card h4 {
+  font-size: 24px;
+  color: #3f3f3f;
+}
+
+.your-mentors-card p {
+  font-size: 16px;
+  line-height: 1.75;
+  margin-top: 1rem;
+  color: #3f3f3f;
+}
+
+.your-mentors-container a {
+  text-decoration: none;
+  padding: 8px 16px;
+  background-color: #1767be;
+  color: #fff;
+  font-size: 16px;
+  border-radius: 10px;
+}
+
+/* ---------------------------- Responsive Style ------------------------ */
+@media (max-width: 1440px) {
+  .your-mentors-container {
+    width: 85%;
+  }
+}
+
+@media (max-width: 1024px) {
+  .your-mentors-container {
+    width: 95%;
+  }
+}
+
+@media (max-width: 868px) {
+  .your-mentors-container {
+    padding: 2.5rem 1rem 0 1rem;
+  }
+
+  .your-mentors-content h2 {
+    font-size: 32px;
+  }
+
+  .your-mentors-content h4 {
+    font-size: 20px;
+  }
+
+  .your-mentors-cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 568px) {
+  .your-mentors-container {
+    width: 100%;
+  }
+
+  .your-mentors-cards {
+    grid-template-columns: 1fr;
+  }
+}
