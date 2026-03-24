@@ -98,14 +98,6 @@ function Bootcamp() {
       need to crack the exam.
     </p>
 
-    {/* TOP IMAGE */}
-    <div className="bootcamp-highlight-image bootcamp-highlight-image--top">
-      <img
-        src={SABR}
-        alt="coreBTR BootCamp Class 2026 - Top"
-      />
-    </div>
-
     {/* POINTERS IN MIDDLE */}
     <div className="bootcamp-highlight-grid">
       {highlights.map((h) => (
@@ -122,6 +114,31 @@ function Bootcamp() {
         </div>
       ))}
     </div>
+
+    {/* TOP IMAGE */}
+    <div className="bootcamp-highlight-image bootcamp-highlight-image--top">
+      <img
+        src={SABR}
+        alt="coreBTR BootCamp Class 2026 - Top"
+      />
+    </div>
+
+    {/* POINTERS IN MIDDLE */}
+    {/* <div className="bootcamp-highlight-grid">
+      {highlights.map((h) => (
+        <div className="bootcamp-highlight-card" key={h.title}>
+          <h3>{h.title}</h3>
+          <ul className="bootcamp-highlight-list">
+            {h.points.map((p, i) => (
+              <li key={i}>{p}</li>
+            ))}
+          </ul>
+          {h.badge && (
+            <span className="bootcamp-highlight-badge">{h.badge}</span>
+          )}
+        </div>
+      ))}
+    </div> */}
 
     {/* BOTTOM IMAGE */}
     <div className="bootcamp-highlight-image bootcamp-highlight-image--bottom">
