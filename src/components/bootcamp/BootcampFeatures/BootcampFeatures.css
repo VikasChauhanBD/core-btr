@@ -1,0 +1,261 @@
+.bootcamp-features-container {
+  width: 100%;
+  background: #ffffff;
+}
+
+.bootcamp-features-sections {
+  padding: 72px 0 80px;
+}
+
+.bootcamp-features-what-you-get {
+  width: 80%;
+  
+  margin: 0 auto;
+}
+
+.bfc-header {
+  margin-bottom: 64px;
+}
+
+.bootcamp-features-eyebrow {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 18px;
+}
+
+.bootcamp-features-eyebrow-line {
+  width: 36px;
+  height: 2px;
+  background: #feb122;
+  border-radius: 2px;
+  flex-shrink: 0;
+}
+
+.bootcamp-features-eyebrow-text {
+  font-size: 13px;
+  font-weight: 800;
+  letter-spacing: 0.22em;
+  color: #feb122;
+  text-transform: uppercase;
+}
+
+.bootcamp-features-section-heading {
+  font-size: 46px;
+  font-weight: 800;
+  line-height: 1.15;
+  color: #1d204b;
+  margin: 0 0 20px;
+}
+
+.bootcamp-features-section-heading span {
+  color: #1767be;
+}
+
+.bootcamp-features-lead {
+  font-size: 15.5px;
+  /* line-height: 1.8; */
+  color: #555e6d;
+  max-width: 1400px;
+  margin: 0 0 0px;
+}
+
+.bfc-lead-last {
+  margin-bottom: 0;
+}
+
+.bfc-list {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.bfc-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  min-height: 460px;
+  opacity: 0;
+  transform: translateY(40px);
+  transition: opacity 0.65s ease var(--delay, 0s),
+              transform 0.65s ease var(--delay, 0s);
+  border-radius: 24px;
+  overflow: hidden;
+  box-shadow: 0 4px 32px rgba(29, 32, 75, 0.08);
+}
+
+.bfc-row.bfc-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.bfc-row--img-right {
+  direction: rtl;
+}
+
+.bfc-row--img-right > * {
+  direction: ltr;
+}
+
+.bfc-img-col {
+  position: relative;
+  overflow: hidden;
+}
+
+.bfc-img-frame {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  min-height: 400px;
+}
+
+.bfc-img-el {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.55s ease;
+}
+
+.bfc-row:hover .bfc-img-el {
+  transform: scale(1.04);
+}
+
+.bfc-img-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    135deg,
+    rgba(23, 103, 190, 0.15) 0%,
+    rgba(10, 6, 40, 0.3) 100%
+  );
+  pointer-events: none;
+}
+
+.bfc-img-chip {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+  background: #feb122;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 16px rgba(254, 177, 34, 0.5);
+}
+
+.bfc-chip-num {
+  font-size: 16px;
+  font-weight: 900;
+  color: #1d204b;
+  line-height: 1;
+}
+
+.bfc-text-col {
+  background: #fffbd5;
+  display: flex;
+  align-items: center;
+}
+
+.bfc-row--img-right .bfc-text-col {
+  background: #a6caff;
+}
+
+.bfc-text-inner {
+  padding: 52px 56px;
+}
+
+.bfc-step-tag {
+  display: inline-block;
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 0.2em;
+  color: #feb122;
+  text-transform: uppercase;
+  margin-bottom: 14px;
+}
+
+.bfc-row-title {
+  font-size: 36px;
+  font-weight: 800;
+  color: #1d204b;
+  line-height: 1.25;
+  margin: 0 0 14px;
+}
+
+.bfc-title-bar {
+  width: 40px;
+  height: 3px;
+  background: linear-gradient(90deg, #feb122, #1767be);
+  border-radius: 2px;
+  margin-bottom: 20px;
+}
+
+.bfc-row-body {
+  font-size: 15px;
+  line-height: 1.82;
+  font-weight: 500;
+  color: #464545;
+  margin: 0;
+}
+
+@media (max-width: 1200px) {
+  .bootcamp-features-what-you-get {
+    width: 90%;
+  }
+  .bfc-text-inner {
+    padding: 40px 36px;
+  }
+}
+
+@media (max-width: 960px) {
+  .bootcamp-features-what-you-get {
+    width: 94%;
+  }
+  .bootcamp-features-section-heading {
+    font-size: 34px;
+  }
+  .bfc-row {
+    grid-template-columns: 1fr;
+    min-height: unset;
+  }
+  .bfc-row--img-right {
+    direction: ltr;
+  }
+  .bfc-row--img-right > * {
+    direction: ltr;
+  }
+  .bfc-img-frame {
+    min-height: 280px;
+  }
+  .bfc-text-inner {
+    padding: 32px 28px;
+  }
+}
+
+@media (max-width: 560px) {
+  .bootcamp-features-what-you-get {
+    width: 100%;
+    padding: 0 16px;
+    box-sizing: border-box;
+  }
+  .bootcamp-features-sections {
+    padding: 48px 0 56px;
+  }
+  .bootcamp-features-section-heading {
+    font-size: 27px;
+  }
+  .bfc-header {
+    margin-bottom: 40px;
+  }
+  .bfc-img-frame {
+    min-height: 220px;
+  }
+  .bfc-row-title {
+    font-size: 21px;
+  }
+  .bfc-text-inner {
+    padding: 24px 20px;
+  }
+}

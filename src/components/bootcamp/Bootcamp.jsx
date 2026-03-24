@@ -2,20 +2,22 @@ import React from "react";
 import "./Bootcamp.css";
 import { NavLink } from "react-router-dom";
 import BootcampHero from "./hero-section/BootcampHero";
-import BootcampFeatures from "./Bootcampfeatures/BootcampFeatures";
+
 import WhyDiff2 from "./WhyDifferent/WhyDiff2";
+import BootcampFeatures from "./BootcampFeatures/BootcampFeatures";
 
 const highlights = [
   {
     title: "Program Highlights",
     points: [
-      "Duration: 4 Months",
-      "Mode: Intensive Personalised Offline Program",
-      "Target Exams: NEET PG & INI-CET 2026",
-      "Subject-wise tests with detailed discussions",
-      "Mock Grand Tests (CBT-based)",
-      "Personal desktop with access to internet only for Academic Purposes",
-      "Mini tests with explanations",
+      "4 Months of High-Intensity Revision - designed to maximise output in limited time",
+      "Personalised Offline Learning - focused environment with structured guidance",
+      "Built for NEET PG & INI-CET 2026 - aligned with actual exam demands",
+      "Subject-wise Tests + Detailed Discussions - learn how to think, not just what to study",
+      "CBT-Based Grand Tests - real exam simulation with performance insights",
+      "Mini Tests with Explanations - continuous practice with concept clarity",
+      "Mentor-Guided Strategy Sessions - refine approach, improve accuracy, boost confidence",
+      "Consistent Performance Tracking - identify weak areas and work on them strategically",
     ],
     badge: "New Batch Starting Soon",
   },
@@ -28,20 +30,17 @@ function Bootcamp() {
 
       <div className="bootcamp-content">
         <h1>
-          <span>Core</span>BTR Bootcamp 2026
+          <span>Core</span>Bootcamp at Vidya Jeevan Experience Centre, Greater Noida
         </h1>
         <h3>
-          An Intensive, Personalised Offline Crash Course for NEET PG &amp;
-          INI-CET Aspirants
+          An intensive, high-impact offline program for serious NEET PG &amp; INI-CET aspirants - hosted at the Vidya Jeevan Experience Centre, a space built for focused learning, discipline, and distraction-free preparation.
         </h3>
         <p>
-          The <b>CoreBTR Bootcamp</b> is a{" "}
-          <b>4-month, high-intensity offline crash program</b> designed for
-          students who want focused revision, expert mentorship, and real exam
-          readiness under one roof. With mentorship from{" "}
-          <b>Dr. Zainab Vora, Dr. Ravi Sharma, and Dr. Apurv Mehra,</b> the
-          Bootcamp is built for serious aspirants targeting{" "}
-          <b>NEET PG &amp; INI-CET 2026.</b>
+          With mentorship from <b>Dr. Zainab Vora, Dr. Ravi Sharma, and Dr. Apurv Mehra</b> this program is designed to give you the{" "}
+          <b>right environment, the right guidance, and the right strategy</b> so you don’t just study more, you study better.{" "}
+          
+          Where the environment, mentorship, and your{" "}
+          <b>effort come together to create results.</b>
         </p>
       </div>
 
@@ -85,6 +84,7 @@ function Bootcamp() {
         </section>
       </div>
       <BootcampFeatures />
+      
       
       <WhyDiff2 />
     </div>
