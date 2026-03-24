@@ -20,6 +20,7 @@ import StudentReviewsPage from "./pages/StudentReviewsPage";
 import DevicePolicyPage from "./pages/DevicePolicyPage";
 import DeleteAccountPage from "./pages/DeleteAccountPage";
 import ContactUsPage from "./pages/ContactUsPage";
+import ShippingAndDeliveryPolicyPage from "./pages/ShippingAndDeliveryPolicyPage";
 
 function App() {
   const [showIntro, setShowIntro] = useState(false);
@@ -100,6 +101,10 @@ function App() {
             element={<CancellationPolicy />}
           />
           <Route path="/device-policy" element={<DevicePolicyPage />} />
+          <Route
+            path="/shipping-and-delivery-policy"
+            element={<ShippingAndDeliveryPolicyPage />}
+          />
         </Routes>
         <Footer />
       </BrowserRouter>

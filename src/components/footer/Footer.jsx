@@ -91,6 +91,11 @@ function Footer() {
               <NavLink to="/cancellation-and-refund-policy">
                 Cancellation & Refund Policy
               </NavLink>
+              <li>
+                <NavLink to="/shipping-and-delivery-policy">
+                  Shipping & Delivery Policy
+                </NavLink>
+              </li>
             </li>
             <li>
               <NavLink to="/device-policy">Device Policy</NavLink>
