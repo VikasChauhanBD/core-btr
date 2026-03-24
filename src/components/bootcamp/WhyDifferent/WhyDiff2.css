@@ -1,0 +1,322 @@
+/* ================================================
+   WhyDiff2.css  |  CoreBTR Bootcamp — Why Different
+   No images • No emoji • Card-based • Responsive
+================================================ */
+
+@import url('https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700;800&family=Manrope:wght@400;500;600&display=swap');
+
+/* ---------- Tokens ---------- */
+:root {
+  --wd2-blue:   #1a6dff;
+  --wd2-blue-l: #eef3ff;
+  --wd2-blue-d: #0d4db3;
+  --wd2-gold:   #e9a230;
+  --wd2-gold-l: #fef6e4;
+  --wd2-dark:   #0d1b2a;
+  --wd2-body:   #4a5568;
+  --wd2-border: #e2e8f0;
+  --wd2-bg:     #f4f6fb;
+}
+
+/* ---------- Section ---------- */
+.wd2-section {
+  background: #f5f6ff;
+  color: #1a1a2e;
+  padding: 4rem 1rem;
+  font-family: 'Manrope', sans-serif;
+  position: relative;
+}
+
+.wd2-section::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image:
+    linear-gradient(#d6d8f5 1px, transparent 1px),
+    linear-gradient(90deg, #d6d8f5 1px, transparent 1px);
+  background-size: 48px 48px;
+  opacity: 0.3;
+  pointer-events: none;
+}
+
+.wd2-inner {
+  width: 80%;
+  margin: 0 auto;
+  position: relative;
+  z-index: 1;
+}
+
+/* ---------- Header ---------- */
+.wd2-header {
+  text-align: left;
+  margin-bottom: 36px;
+}
+
+.wd2-eyebrow {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 16px;
+}
+
+.wd2-eyebrow-line {
+  width: 36px;
+  height: 2px;
+  background: #feb122;
+  border-radius: 2px;
+  flex-shrink: 0;
+}
+
+.wd2-eyebrow-text {
+  font-family: 'Sora', sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: #feb122;
+}
+
+.wd2-heading {
+  font-family: 'Sora', sans-serif;
+  font-size: 48px;
+  font-weight: 800;
+  color: #1d204b;
+  line-height: 1.15;
+  margin: 0 0 14px;
+}
+
+.wd2-heading-accent {
+  color: #1767be;
+}
+
+/* ---------- Grid ---------- */
+.wd2-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+}
+
+/* ---------- Feature Card ---------- */
+.wd2-card {
+  position: relative;
+  background: #fff;
+  border: 1px solid var(--wd2-border);
+  border-radius: 16px;
+  padding: 28px 24px 26px;
+  display: flex;
+  gap: 18px;
+  align-items: flex-start;
+  overflow: hidden;
+  opacity: 0;
+  transform: translateY(30px);
+  transition:
+    opacity 0.55s cubic-bezier(.22,1,.36,1) calc(var(--i) * 80ms),
+    transform 0.55s cubic-bezier(.22,1,.36,1) calc(var(--i) * 80ms),
+    box-shadow 0.22s ease,
+    border-color 0.22s ease;
+}
+
+.wd2-card.wd2-in {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.wd2-card:hover {
+  box-shadow: 0 10px 36px rgba(26, 109, 255, 0.09);
+}
+
+/* Accent bar top */
+.wd2-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 3px;
+  border-radius: 16px 16px 0 0;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.3s ease;
+}
+.wd2-card:hover::before {
+  transform: scaleX(1);
+}
+
+.wd2-card.wd2-blue::before { background: var(--wd2-blue); }
+.wd2-card.wd2-gold::before { background: var(--wd2-gold); }
+
+/* Blue variant hover border */
+.wd2-card.wd2-blue:hover { border-color: rgba(26, 109, 255, 0.3); }
+.wd2-card.wd2-gold:hover { border-color: rgba(233, 162, 48, 0.35); }
+
+/* ---------- Step number ---------- */
+.wd2-card-num {
+  font-family: 'Sora', sans-serif;
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 0.05em;
+  flex-shrink: 0;
+  width: 34px;
+  height: 34px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 2px;
+}
+
+.wd2-card.wd2-blue .wd2-card-num {
+  background: var(--wd2-blue-l);
+  color: var(--wd2-blue-d);
+}
+.wd2-card.wd2-gold .wd2-card-num {
+  background: var(--wd2-gold-l);
+  color: #7a4a00;
+}
+
+/* ---------- Card body ---------- */
+.wd2-card-body {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.wd2-card-tag {
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.wd2-card.wd2-blue .wd2-card-tag { color: var(--wd2-blue); }
+.wd2-card.wd2-gold .wd2-card-tag { color: #b07818; }
+
+.wd2-card-title {
+  font-family: 'Sora', sans-serif;
+  font-size: 20px;
+  font-weight: 800;
+  color: var(--wd2-dark);
+  margin: 0;
+  line-height: 1.25;
+}
+
+.wd2-card-desc {
+  font-size: 16px;
+  color: var(--wd2-body);
+  line-height: 1.65;
+  margin: 4px 0 0;
+}
+
+/* ---------- Bottom Banner ---------- */
+.wd2-banner {
+  grid-column: 1 / -1;
+  background: var(--wd2-dark);
+  border-radius: 16px;
+  padding: 28px 36px;
+  opacity: 0;
+  transform: translateY(30px);
+  transition:
+    opacity 0.6s cubic-bezier(.22,1,.36,1) calc(var(--i) * 80ms),
+    transform 0.6s cubic-bezier(.22,1,.36,1) calc(var(--i) * 80ms);
+}
+
+.wd2-banner.wd2-in {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.wd2-banner-quote {
+  font-size: 16px;
+  color: #94a3b8;
+  line-height: 1.65;
+  margin: 0;
+  border-left: 3px solid #feb122;
+  padding-left: 18px;
+}
+
+.wd2-banner-quote strong {
+  color: #fff;
+}
+
+/* =============================================
+   RESPONSIVE  — mirrors bootcamp-features breakpoints
+============================================= */
+
+@media (max-width: 1440px) {
+  .wd2-inner { width: 85%; }
+}
+
+@media (max-width: 1024px) {
+  .wd2-inner { width: 95%; }
+}
+
+/* Tablet: 2 columns */
+@media (max-width: 860px) {
+  .wd2-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .wd2-banner {
+    padding: 24px 24px;
+  }
+}
+
+@media (max-width: 868px) {
+  .wd2-heading { font-size: 32px; }
+}
+
+/* Mobile: 1 column */
+@media (max-width: 568px) {
+  .wd2-inner { width: 100%; }
+  .wd2-grid {
+    grid-template-columns: 1fr;
+    gap: 12px;
+  }
+  .wd2-card { padding: 22px 18px; }
+  .wd2-banner { padding: 22px 18px; }
+}
+
+
+
+/* =========================================
+   FORCE ALL CARDS TO LOOK LIKE CARD 01
+   (Override gold → blue)
+========================================= */
+
+/* Top accent bar */
+.wd2-card::before {
+  background: var(--wd2-blue) !important;
+}
+
+/* Number box */
+.wd2-card .wd2-card-num {
+  background: var(--wd2-blue-l) !important;
+  color: var(--wd2-blue-d) !important;
+}
+
+/* Tag text */
+.wd2-card .wd2-card-tag {
+  color: var(--wd2-blue) !important;
+}
+
+/* Hover border */
+.wd2-card:hover {
+  border-color: rgba(26, 109, 255, 0.3) !important;
+}
+
+/* Remove gold-specific styles completely */
+.wd2-card.wd2-gold::before {
+  background: var(--wd2-blue) !important;
+}
+
+.wd2-card.wd2-gold .wd2-card-num {
+  background: var(--wd2-blue-l) !important;
+  color: var(--wd2-blue-d) !important;
+}
+
+.wd2-card.wd2-gold .wd2-card-tag {
+  color: var(--wd2-blue) !important;
+}
+
+.wd2-card.wd2-gold:hover {
+  border-color: rgba(26, 109, 255, 0.3) !important;
+}

@@ -3,6 +3,7 @@ import "./Bootcamp.css";
 import { NavLink } from "react-router-dom";
 import BootcampHero from "./hero-section/BootcampHero";
 import BootcampFeatures from "./Bootcampfeatures/BootcampFeatures";
+import WhyDiff2 from "./WhyDifferent/WhyDiff2";
 
 const highlights = [
   {
@@ -83,6 +84,8 @@ function Bootcamp() {
         </section>
       </div>
       <BootcampFeatures />
+      
+      <WhyDiff2 />
     </div>
   );
 }

@@ -3,28 +3,28 @@ import "./BootcampFeatures.css";
 
 const whatYouGet = [
   {
-    title: "Expert Mentorship",
-    body: "Mentorship sessions by Dr. Zainab Vora, Dr. Ravi Sharma & Dr. Apurv Mehra.",
+    title: "Mentorship Beyond Classes",
+    body: "Regular strategy sessions with Dr. Zainab Vora, Dr. Ravi Sharma & Dr. Apurv Mehra for doubt clearance and mindset building.",
     image:
       "https://cdn.dribbble.com/userupload/47131946/file/3407472911a39d6e886b3f41fed1c00f.jpeg",
   },
   {
-    title: "Subject-wise Revision",
-    body: "Dedicated revision classes covering all 19 subjects.",
+    title: "Complete Coverage",
+    body: "All 19 Subjects Revised in a Structured Crash Course",
     image:
       "https://cdn.dribbble.com/userupload/47132002/file/367c57699e92e2ba8ff6bf24f744f46f.jpeg",
   },
   {
-    title: "Library & Self-Study",
-    body: "Dedicated library cubicles for focused self-study sessions.",
+    title: "Integrated Approach",
+    body: "MCQ Discussion, E&Ds & Mini Tests Designed to StrengthenConcepts + Application",
     image:
-      "https://cdn.dribbble.com/userupload/47132128/file/3f749b3457361dd64021686aeeedce11.webp",
+      "https://cdn.dribbble.com/userupload/47132128/file/7ac090fc0f6779db93246446f87edc37.jpeg",
   },
   {
-    title: "Personal Desktop",
-    body: "Personal desktop with internet access strictly for academic use.",
+    title: "Real Exam Simulation",
+    body: "CBT-Based Grand Tests Conducted in an Authentic Exam Environment.",
     image:
-      "https://cdn.dribbble.com/userupload/47132129/file/55b639e65e7711c709d57b27a69b9c88.webp",
+      "https://cdn.dribbble.com/userupload/47132129/file/78364d434da0ce0859310eb484ea501e.jpeg",
   },
 ];
 
@@ -40,7 +40,7 @@ export default function BootcampFeatures() {
             </span>
           </div>
           <h2 className="bootcamp-features-section-heading">
-            Key Features of the<span> Bootcamp</span>
+            Why Students Prefer<span> Bootcamp</span>
           </h2>
           <p className="bootcamp-features-lead">
             Everything you need for a complete, structured, high-yield revision
