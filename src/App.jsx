@@ -18,6 +18,7 @@ import BTROnlinePage from "./pages/BTROnlinePage";
 import ScrollToTop from "./pages/ScrollToTop";
 import StudentReviewsPage from "./pages/StudentReviewsPage";
 import DevicePolicyPage from "./pages/DevicePolicyPage";
+import DeleteAccountPage from "./pages/DeleteAccountPage";
 
 function App() {
   const [showIntro, setShowIntro] = useState(false);
@@ -87,6 +88,7 @@ function App() {
           <Route path="/reviews" element={<StudentReviewsPage />} />
           <Route path="/faqs" element={<FaqsPage />} />
           <Route path="/privacy-policy" element={<PrivacyPolicyPage />} />
+          <Route path="/delete-account" element={<DeleteAccountPage />} />
           <Route
             path="/terms-and-conditions"
             element={<TermsAndConditions />}
