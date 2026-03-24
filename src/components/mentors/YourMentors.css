@@ -151,4 +151,9 @@
   .your-mentors-cards {
     grid-template-columns: 1fr;
   }
+  .dr-zainab-vora-image img,
+  .your-mentors-card img {
+    width: 310px;
+    height: 400px;
+  }
 }

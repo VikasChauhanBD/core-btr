@@ -1,22 +1,3 @@
-/* .reviews-page {
-  background: #f5f6ff;
-  color: #1a1a2e;
-  position: relative;
-}
-
-.reviews-page::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background-image:
-    linear-gradient(#d6d8f5 1px, transparent 1px),
-    linear-gradient(90deg, #d6d8f5 1px, transparent 1px);
-  background-size: 48px 48px;
-  opacity: 0.3;
-  pointer-events: none;
-  top: 100vh;
-} */
-
 .reviews-hero {
   position: relative;
   width: 100%;
@@ -29,14 +10,13 @@
   overflow: hidden;
 }
 
-/* Background image layer */
 .reviews-hero-bg {
   position: absolute;
   inset: 0;
   background-size: cover;
   background-position: center 30%;
   background-repeat: no-repeat;
-  transform: scale(1.04); /* slight zoom — gives depth */
+  transform: scale(1.04);
   transition: transform 8s ease;
   z-index: 0;
 }
@@ -45,7 +25,6 @@
   transform: scale(1);
 }
 
-/* Dark overlay — keeps text legible */
 .reviews-hero-overlay {
   position: absolute;
   inset: 0;
@@ -58,7 +37,6 @@
   z-index: 1;
 }
 
-/* Content sits above bg + overlay */
 .reviews-hero-content {
   position: relative;
   z-index: 2;
@@ -68,7 +46,6 @@
   max-width: 720px;
 }
 
-/* ── Eyebrow ── */
 .reviews-eyebrow {
   display: inline-flex;
   align-items: center;
@@ -89,7 +66,6 @@
   background: #feb122;
 }
 
-/* ── Heading ── */
 .reviews-hero h1 {
   font-size: 48px;
   line-height: 1.1;
@@ -105,7 +81,6 @@
   color: #fff;
 }
 
-/* ── Stats bar ── */
 .reviews-stats {
   display: inline-flex;
   gap: 0;
@@ -149,9 +124,6 @@
   color: rgba(255, 255, 255, 0.55);
 }
 
-/* ================================================================
-   CAROUSEL SECTION  —  static + arrows
-   ================================================================ */
 .reviews-scroll-section {
   padding: 48px 0 64px;
   overflow: hidden;
@@ -223,15 +195,13 @@
   right: 12px;
 }
 
-/* ── Scrollable row — NO animation, manual scroll only ── */
 .reviews-scroll-row {
   display: flex;
   gap: 24px;
-  padding: 12px 64px; /* padding so first/last card aren't under arrows */
+  padding: 64px;
   overflow-x: auto;
   scroll-snap-type: x mandatory;
   -webkit-overflow-scrolling: touch;
-  /* hide native scrollbar */
   scrollbar-width: none;
   -ms-overflow-style: none;
 }
@@ -240,9 +210,6 @@
   display: none;
 }
 
-/* ================================================================
-   REVIEW CARD  —  unchanged from original
-   ================================================================ */
 .review-card {
   background: #fff;
   box-shadow:
