@@ -80,7 +80,7 @@ function BTRoffline() {
 
       <div className="btr-offline-highlight-image">
         <img
-          src="https://cdn.dribbble.com/userupload/47137540/file/eef588e412551d711f440360f36f5963.jpg"
+          src="https://cdn.dribbble.com/userupload/47137540/file/11e028e5dee519a0282473a5583c6fe4.jpg"
           alt="coreBTR Offline Course images"
         />
       </div>

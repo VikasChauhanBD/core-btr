@@ -162,6 +162,21 @@
   letter-spacing: 0.3px;
   white-space: nowrap;
 }
+.offline-details-cities-cta {
+  display: flex;
+  justify-content: center;
+  padding-top: 2rem;
+}
+
+.offline-details-cities-section a {
+  text-decoration: none;
+  padding: 8px 16px;
+  background-color: #1767be;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 600;
+  border-radius: 10px;
+}
 
 /* --------------------------- Responsive ------------------- */
 @media (max-width: 1440px) {
