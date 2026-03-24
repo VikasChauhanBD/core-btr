@@ -103,7 +103,7 @@ export default function Header({ introComplete }) {
           </h1>
           {/* <h1 className="hdr__p2-heading2">CoreBTR</h1> */}
           <h3 className="hdr__p2-sub">From Revision to Revolution</h3>
-          <h3 className="hdr__p2-sub2">Launching On 2nd April </h3>
+          <h3 className="hdr__p2-sub2">Launching on 2nd April </h3>
           <div className="hdr__p2-store">
             <img src={PlayStore} alt="Get it on Google Play" />
             <img src={AppStore} alt="Download on App Store" />
