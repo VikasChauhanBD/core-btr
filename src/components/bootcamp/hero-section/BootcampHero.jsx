@@ -66,11 +66,9 @@ export default function BootcampHero() {
         <span className="bch__r-by">by</span>
         <span className="bch__r-name">Dr. Zainab Vora</span>
         <span className="bch__r-place">
-          at Vidya Jeevan,
-          <br />
-          Greater Noida
+          at Vidya Jeevan, Greater Noida
         </span>
-        <span className="bch__r-cta">NEW BATCH STARTING SOON</span>
+        <span className="bch__r-cta">When concepts click, <br/> everything changes</span>
       </div>
 
       {/* ── LEFT: CoreBTR BOOTCAMP big — expand only ── */}
@@ -101,7 +99,8 @@ export default function BootcampHero() {
         <span className="bch__mob-bottom-sub">
           at Vidya Jeevan, Greater Noida
         </span>
-        <span className="bch__mob-cta">NEW BATCH STARTED</span>
+        <span className="bch__mob-bottom-cta">When concepts click, everything changes</span>
+        {/* <span className="bch__mob-cta">NEW BATCH STARTED</span> */}
       </div>
     </section>
   );

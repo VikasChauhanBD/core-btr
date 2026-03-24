@@ -31,17 +31,19 @@ function Bootcamp() {
 
       <div className="bootcamp-content">
         <h1>
-          <span>Core</span>Bootcamp at Vidya Jeevan Experience Centre, Greater Noida
+          <span>Core</span>BTR Bootcamp
         </h1>
         <h3>
-          An intensive, high-impact offline program for serious NEET PG &amp; INI-CET aspirants - hosted at the Vidya Jeevan Experience Centre, a space built for focused learning, discipline, and distraction-free preparation.
+           Learn with Dr. Zainab Vora. Transform with the System.
+
         </h3>
         <p>
-          With mentorship from <b>Dr. Zainab Vora, Dr. Ravi Sharma, and Dr. Apurv Mehra</b> this program is designed to give you the{" "}
-          <b>right environment, the right guidance, and the right strategy</b> so you don’t just study more, you study better.{" "}
+          This is where concepts finally make sense. Where revision becomes structured And where your preparation starts moving in the right direction.
+          <b>At coreBTR Bootcamp, </b> you’re not just attending classes—you’re learning directly under <b>Dr. Zainab Vora</b>, with a system designed to help you {" "}
+          <b>stay consistent, focused, and exam-ready.</b> so you don’t just study more, you study better.{" "}
           
-          Where the environment, mentorship, and your{" "}
-          <b>effort come together to create results.</b>
+          Start Learning Smarter.{" "}
+          <b>Explore Bootcamp</b>
         </p>
       </div>
 
@@ -93,9 +95,7 @@ function Bootcamp() {
       Program <span>Highlights</span>
     </h2>
     <p className="bootcamp-lead">
-      A structured, intensive offline program designed to give NEET PG
-      &amp; INI-CET aspirants the revision, testing, and mentorship they
-      need to crack the exam.
+      An intensive, high-impact offline program for serious<b> NEET PG &amp; INI-CET <br/> aspirants - designed for focused learning,</b> disciplined preparation, and a completely distraction-free environment.
     </p>
 
     {/* POINTERS IN MIDDLE */}
@@ -118,10 +118,35 @@ function Bootcamp() {
     {/* TOP IMAGE */}
     <div className="bootcamp-highlight-image bootcamp-highlight-image--top">
       <img
-        src={SABR}
+        src="https://cdn.dribbble.com/userupload/47155755/file/3f45cbd32c6198de7dc278e7d95dbf2d.jpeg"
         alt="coreBTR BootCamp Class 2026 - Top"
       />
+      
     </div>
+    <div className="bootcamp-highlight-content">
+  <p className="bootcamp-subtitle">
+    Learn The BTR Way
+  </p>
+
+  <h2 className="bootcamp-title">
+    Concepts. Clarity. Confidence.
+  </h2>
+
+  <p className="bootcamp-description">
+    With <strong>Dr. Zainab Vora</strong>, learning is not about memorizing more—it’s about understanding better.
+    Complex topics are simplified with integrated, system-wise learning across all 19 subjects.
+  </p>
+
+  <ul className="bootcamp-points">
+    <li>High-yield focus for NEET PG, INI-CET & FMGE</li>
+    <li>System-wise structured preparation</li>
+    <li>Built for retention, recall & real exam pressure</li>
+  </ul>
+
+  <p className="bootcamp-tagline">
+    This is not just teaching. <span>This is the BTR approach.</span>
+  </p>
+</div>
 
     {/* POINTERS IN MIDDLE */}
     {/* <div className="bootcamp-highlight-grid">
@@ -143,10 +168,11 @@ function Bootcamp() {
     {/* BOTTOM IMAGE */}
     <div className="bootcamp-highlight-image bootcamp-highlight-image--bottom">
       <img
-        src={CBTRoom}
+        src="https://cdn.dribbble.com/userupload/47155756/file/65427d7658a4f012368607444d02c2d1.jpeg"
         alt="coreBTR BootCamp Class 2026 - Bottom"
       />
     </div>
+    <h3 className="bootcamp-section-sub-heading-img">Real Exam Environment. Real Preparation.</h3>
   </section>
       </div>
       <BootcampFeatures />
