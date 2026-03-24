@@ -20,7 +20,7 @@ function Annotated() {
       <div className="annotated-sections">
         <section className="annotated-highlights">
           <h2 className="annotated-section-heading">
-            Annotated <span>Workbooks</span>
+            Annotated <span>Notes</span>
           </h2>
           <h4 className="annotated-section-sub-heading">
             Set of 3 Books | Ready for Revision
