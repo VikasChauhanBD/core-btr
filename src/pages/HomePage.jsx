@@ -7,10 +7,10 @@ import TargetAudience from "../components/targetAudience/TargetAudience";
 import YourMentors from "../components/mentors/YourMentors";
 import OurVision from "../components/ourVision/OurVision";
 
-function HomePage() {
+function HomePage({ introComplete }) {
   return (
     <div>
-      <Header />
+      <Header introComplete={introComplete} />
       <CoreBTR />
       <ThePlatform />
       <WhyCoreBTR />

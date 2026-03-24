@@ -22,6 +22,7 @@ import WorkbookPage from "./pages/WorkbookPage";
 
 function App() {
   const [showIntro, setShowIntro] = useState(false);
+  const [introComplete, setIntroComplete] = useState(false);
 
   useEffect(() => {
     const CHANNEL_NAME = "coreBTR";
@@ -47,7 +48,12 @@ function App() {
           const hasSeenVideo = sessionStorage.getItem("hasSeenIntro");
           if (!hasSeenVideo) {
             setShowIntro(true);
-          }
+            } else {
+        setIntroComplete(true); // ADD THIS — skip intro case
+      }
+    } else {
+      setIntroComplete(true); // ADD THIS — other tab case
+        
         }
       }, 100);
 
@@ -69,6 +75,7 @@ function App() {
   const handleVideoEnd = () => {
     sessionStorage.setItem("hasSeenIntro", "true");
     setShowIntro(false);
+    setTimeout(() => setIntroComplete(true), 1000);
   };
 
   return (
@@ -78,7 +85,7 @@ function App() {
         <Navbar />
         <ScrollToTop />
         <Routes>
-          <Route path="/" element={<HomePage />} />
+          <Route path="/" element={<HomePage introComplete={introComplete} />} />
           <Route path="/btr-online" element={<BTROnlinePage />} />
           <Route path="/corebtr-offline" element={<BTROfflinePage />} />
           <Route path="/corebtr-bootcamp" element={<BootcampPage />} />

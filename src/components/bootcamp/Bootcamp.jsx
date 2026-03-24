@@ -17,7 +17,7 @@ const highlights = [
       "Personal desktop with access to internet only for Academic Purposes",
       "Mini tests with explanations",
     ],
-    badge: "New Batch Coming Soon",
+    badge: "New Batch Starting Soon",
   },
 ];
 

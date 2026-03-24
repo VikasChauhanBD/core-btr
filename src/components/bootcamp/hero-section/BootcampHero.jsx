@@ -70,7 +70,7 @@ export default function BootcampHero() {
           <br />
           Greater Noida
         </span>
-        <span className="bch__r-cta">NEW BATCH STARTED</span>
+        <span className="bch__r-cta">NEW BATCH STARTING SOON</span>
       </div>
 
       {/* ── LEFT: CoreBTR BOOTCAMP big — expand only ── */}
