@@ -6,25 +6,25 @@ const challenges = [
     number: "01",
     title: "A Focused Learning Environment",
     body: "Vidya Jeevan offers a calm, disciplined, and inspiring atmosphere where students can step away from distractions and fully immerse themselves in revision. A strong environment creates stronger concentration, better consistency, and more meaningful learning.",
-    image: "https://cdn.dribbble.com/userupload/47131946/file/3407472911a39d6e886b3f41fed1c00f.jpeg",
+    image: "https://cdn.dribbble.com/userupload/47154439/file/0d2dfdac79b0e128968c4fbd8118c239.jpg",
   },
   {
     number: "02",
     title: "Nutritious Food and Daily Support",
     body: "Good preparation also depends on physical well-being. With proper food and a well-managed setup, students are able to stay energised, healthier, and mentally sharper throughout the bootcamp experience.",
-    image: "https://cdn.dribbble.com/userupload/47132002/file/367c57699e92e2ba8ff6bf24f744f46f.jpeg",
+    image: "https://cdn.dribbble.com/userupload/47154493/file/657574912c59fe06d6b24787383536f6.jpg",
   },
   {
     number: "03",
     title: "Mentorship That Truly Matters",
-    body: "Every student needs someone in their corner. At CoreBTR Bootcamp, mentorship is both academic and emotional. Dr. Zainab Vora leads the academic journey with her proven revision system. Dr. Ravi Sharma brings motivation grounded in real clinical experience. Dr. Apurv Mehra adds practical wisdom as a surgeon and mentor.",
-    image: "https://cdn.dribbble.com/userupload/47132128/file/7ac090fc0f6779db93246446f87edc37.jpeg",
+    body: "Every student needs someone who says “Tu kar, main hoon tere saath”. At CoreBTR Bootcamp, mentorship is both academic and emotional. Dr. Zainab Vora leads the academic journey with her proven revision system, teaching you exactly what to study, how to study, and how to think in the exam. Her focus is always on clarity, retention, and exam-oriented preparation. Dr. Ravi Sharma brings motivation grounded in real clinical experience — helping you stay strong, disciplined, and confident when preparation feels overwhelming. Dr. Apurv Mehra adds a powerful perspective as a surgeon and mentor — guiding you with practical wisdom, mindset, and the discipline required to succeed in this journey. Together, this mentorship ensures that you are not just preparing - you are supported, guided, and constantly reminded that you are not alone in this.",
+    image: "https://cdn.dribbble.com/userupload/47154438/file/1403841f3d745bd51cba0486f721fad9.jpg",
   },
   {
     number: "04",
     title: "A Space to Learn, Grow, and Collaborate",
     body: "Preparation can often feel lonely. Vidya Jeevan is designed to change that. It creates a healthy ecosystem where students feel supported, connected, and motivated by being surrounded by others on the same path. If you don't know where to start from, you start from here.",
-    image: "https://cdn.dribbble.com/userupload/47132129/file/78364d434da0ce0859310eb484ea501e.jpeg",
+    image: "https://cdn.dribbble.com/userupload/47154438/file/1403841f3d745bd51cba0486f721fad9.jpg",
   },
 ];
 

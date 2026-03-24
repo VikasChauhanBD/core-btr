@@ -101,7 +101,7 @@
 
 .bootcamp-highlight-grid {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr;
   gap: 20px;
 }
 
@@ -244,5 +244,48 @@
   .bootcamp-content,
   .bootcamp-highlights {
     width: 100%;
+  }
+}
+
+/* ── Top & Bottom images ── */
+.bootcamp-highlight-image {
+  width: 100%;
+  
+  margin: 0 auto;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow:
+    0 4px 20px rgba(39, 24, 126, 0.18),
+    0 1px 4px rgba(39, 24, 126, 0.1);
+}
+
+.bootcamp-highlight-image--top {
+  margin-bottom: 32px;
+}
+
+.bootcamp-highlight-image--bottom {
+  margin-top: 32px;
+}
+
+.bootcamp-highlight-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* ── Cards grid in the middle ── */
+/* .bootcamp-highlight-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+} */
+
+/* ── Responsive ── */
+@media (max-width: 868px) {
+  .bootcamp-highlight-grid {
+    grid-template-columns: 1fr;
   }
 }
