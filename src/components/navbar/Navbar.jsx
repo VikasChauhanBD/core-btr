@@ -150,8 +150,8 @@ function Navbar() {
         <NavLink to="/corebtr-bootcamp" onClick={handleCloseNav}>
           CoreBTR Bootcamp
         </NavLink>
-        <NavLink to="/workbook" onClick={handleCloseNav}>
-          Workbook
+        <NavLink to="/workbooks" onClick={handleCloseNav}>
+          Workbooks
         </NavLink>
         <NavLink to="#" onClick={handleCloseNav}>
           Buy New Plans

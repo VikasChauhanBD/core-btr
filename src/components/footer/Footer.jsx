@@ -53,7 +53,7 @@ function Footer() {
               <NavLink to="/corebtr-bootcamp">CoreBTR Bootcamp</NavLink>
             </li>
             <li>
-              <NavLink to="/workbook">Workbook</NavLink>
+              <NavLink to="/workbooks">Workbooks</NavLink>
             </li>
             <li>
               <NavLink to="#">Buy New Plans</NavLink>

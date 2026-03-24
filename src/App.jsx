@@ -9,9 +9,6 @@ import PrivacyPolicyPage from "./pages/PrivacyPolicyPage";
 import Footer from "./components/footer/Footer";
 import TermsAndConditions from "./components/Policies/TermsAndConditions";
 import CancellationPolicy from "./components/Policies/CancellationPolicy";
-import AboutBooks from "./pages/AboutBooks";
-import Annotated from "./components/annotated/Annotated";
-import Unannotated from "./components/unannotated/Unannotated";
 import BootcampPage from "./pages/BootcampPage";
 import BTROfflinePage from "./pages/BTROfflinePage";
 import BTROnlinePage from "./pages/BTROnlinePage";
@@ -82,13 +79,10 @@ function App() {
         <ScrollToTop />
         <Routes>
           <Route path="/" element={<HomePage />} />
-          <Route path="/about-books" element={<AboutBooks />} />
-          <Route path="/annotated" element={<Annotated />} />
-          <Route path="/unannotated" element={<Unannotated />} />
           <Route path="/btr-online" element={<BTROnlinePage />} />
           <Route path="/corebtr-offline" element={<BTROfflinePage />} />
           <Route path="/corebtr-bootcamp" element={<BootcampPage />} />
-          <Route path="/workbook" element={<WorkbookPage />} />
+          <Route path="/workbooks" element={<WorkbookPage />} />
           <Route path="/reviews" element={<StudentReviewsPage />} />
           <Route path="/faqs" element={<FaqsPage />} />
           <Route path="/contact-us" element={<ContactUsPage />} />
