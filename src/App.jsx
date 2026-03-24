@@ -19,6 +19,7 @@ import ScrollToTop from "./pages/ScrollToTop";
 import StudentReviewsPage from "./pages/StudentReviewsPage";
 import DevicePolicyPage from "./pages/DevicePolicyPage";
 import DeleteAccountPage from "./pages/DeleteAccountPage";
+import ContactUsPage from "./pages/ContactUsPage";
 
 function App() {
   const [showIntro, setShowIntro] = useState(false);
@@ -87,6 +88,7 @@ function App() {
           <Route path="/corebtr-bootcamp" element={<BootcampPage />} />
           <Route path="/reviews" element={<StudentReviewsPage />} />
           <Route path="/faqs" element={<FaqsPage />} />
+          <Route path="/contact-us" element={<ContactUsPage />} />
           <Route path="/privacy-policy" element={<PrivacyPolicyPage />} />
           <Route path="/delete-account" element={<DeleteAccountPage />} />
           <Route

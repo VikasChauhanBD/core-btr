@@ -95,6 +95,9 @@ function Footer() {
             <li>
               <NavLink to="/device-policy">Device Policy</NavLink>
             </li>
+            <li>
+              <NavLink to="/contact-us">Contact Us</NavLink>
+            </li>
           </ul>
         </div>
       </div>

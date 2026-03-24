@@ -163,10 +163,6 @@
 /* -------------------------- Responsive Style -------------------------- */
 
 @media (max-width: 1024px) {
-  .navbar-container {
-    box-shadow: none;
-  }
-
   .web-nav {
     display: none;
   }
