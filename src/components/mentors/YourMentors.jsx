@@ -7,16 +7,16 @@ function YourMentors() {
     {
       name: "Dr. Ravi Sharma",
       image:
-        "https://cdn.dribbble.com/userupload/47148400/file/bb5cdf9860f2800b182af7e16169dd6c.jpg",
+        "https://cdn.dribbble.com/userupload/47148400/file/059d9e926eea42733d6020c1abea7cdd.png",
       description:
-        "A dedicated mentor who guides students on how to approach their preparation journey with clarity and focus. His constant support and strategic direction help students stay confident, disciplined, and motivated.",
+        "Dr. Ravi Sharma is a Neurosurgeon who brings a calm, experience-driven perspective to medical exam preparation. With a reassuring belief that “tu kar, main hoon tere saath,” his mentorship focuses on discipline, consistency, and mental strength — helping students stay steady through pressure, self-doubt, and long study phases. With a practical and motivating approach, he ensures students remain focused, confident, and exam-ready till the very end.",
     },
     {
       name: "Dr. Apurv Mehra",
       image:
-        "https://cdn.dribbble.com/userupload/47148401/file/123e4d490b998148e7ac3095d5336c47.jpg",
+        "https://cdn.dribbble.com/userupload/47148401/file/1007fcbde4afe5e428766c261f30b946.png",
       description:
-        "An inspiring mentor who motivates students to grow not only as skilled professionals but also as compassionate human beings. His wisdom encourages confidence, purpose, and lifelong growth.",
+        "Dr. Apurv Mehra is an Orthopedic Surgeon who brings real-world clinical experience and strong mentorship to NEET PG, INI-CET, and FMGE aspirants. With a strong belief that “teri kismat da likhya tere to koi kho nai sakda, te je us di meher hove te tenu o v mil jae jo tera ho nai sakda,” his guidance focuses on discipline, consistency, and mental strength - helping students stay focused, resilient, and exam-ready throughout their journey.",
     },
   ];
 
@@ -30,32 +30,42 @@ function YourMentors() {
         <h3>Meet Your Mentors</h3>
       </div>
 
-      <div className="dr-zainab-vora">
-        <div className="dr-zainab-vora-image">
-          <img
-            src="https://cdn.dribbble.com/userupload/47148402/file/c843d28ece4dd9328214dbc6ebb0dda2.jpg"
-            alt="Dr. Zainab Vora "
-          />
-        </div>
-
-        <div className="dr-zainab-vora-info">
-          <h4>Dr. Zainab Vora</h4>
-          <p>
-            Renowned for her exceptional clarity and structured approach, she
-            simplifies complex subjects into practical, retainable concepts. Her
-            guidance builds strong fundamentals and confident clinical thinking.
-          </p>
-        </div>
-      </div>
-
-      <div className="your-mentors-cards">
-        {mentors.map((mentor, index) => (
-          <div key={index} className="your-mentors-card">
-            <img src={mentor.image} alt={mentor.name} />
-            <h4>{mentor.name}</h4>
-            <p>{mentor.description}</p>
+      <div className="your-mentors-info">
+        <div className="dr-zainab-vora">
+          <div className="dr-zainab-vora-image">
+            <img
+              src="https://cdn.dribbble.com/userupload/47148402/file/210d605b7a0fe225a1cd8f1a658ca919.png"
+              alt="Dr. Zainab Vora "
+            />
           </div>
-        ))}
+
+          <div className="dr-zainab-vora-info">
+            <h4>Dr. Zainab Vora</h4>
+            <p>
+              Dr. Zainab Vora is one of the most trusted and result-oriented
+              educators for NEET PG, INI-CET, and FMGE aspirants, known for her
+              revolutionary BTR approach that has transformed revision into a
+              smarter, faster, and more effective process. An MBBS, MD Radiology
+              (Gold Medalist) from AIIMS New Delhi, she secured AIR 1 in AIIMS &
+              NIMHANS (2015), reflecting her strong academic foundation. With
+              years of teaching experience and deep insight into exam patterns,
+              she focuses on high-yield concepts, structured revision systems,
+              and simplifying complex subjects into clear, exam-ready
+              understanding — all driven by her belief that “kahani tumhari hai…
+              ho sake toh kamaal likhna.”
+            </p>
+          </div>
+        </div>
+
+        <div className="your-mentors-cards">
+          {mentors.map((mentor, index) => (
+            <div key={index} className="your-mentors-card">
+              <img src={mentor.image} alt={mentor.name} />
+              <h4>{mentor.name}</h4>
+              <p>{mentor.description}</p>
+            </div>
+          ))}
+        </div>
       </div>
     </div>
   );

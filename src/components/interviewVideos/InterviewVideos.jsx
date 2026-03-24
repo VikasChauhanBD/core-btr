@@ -30,8 +30,8 @@ const videosData = [
   {
     id: 4,
     thumbnail:
-      "https://cdn.dribbble.com/userupload/47151746/file/ca8f199c03ef87645877b085fb211957.jpg",
-    alt: "Dr. Manav Bansal: INICET Rank- 73",
+      "https://cdn.dribbble.com/userupload/47151746/file/921df818ba8b7b9783361fc7bd31085d.jpg",
+    alt: "AIR 21 Dr. Manav Bansal & AIR 73 Dr. Shiwani Bansal",
     url: "https://www.youtube.com/embed/x4dNpOOmD08",
   },
   {
@@ -72,7 +72,7 @@ const videosData = [
   {
     id: 10,
     thumbnail:
-      "https://cdn.dribbble.com/userupload/47151748/file/8b9139b924f8f521736d3b44b82612db.jpg",
+      "https://cdn.dribbble.com/userupload/47151748/file/231c3eebcdddd21ebcd740733a569f53.jpg",
     alt: "Dr. Raushni: INICET Rank- 149",
     url: "https://www.youtube.com/embed/uEtv-X0ntoE",
   },

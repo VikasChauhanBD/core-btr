@@ -29,13 +29,21 @@
   color: #3f3f3f;
 }
 
+.your-mentors-info {
+  border-radius: 10px;
+  padding: 1rem;
+  /* background-color: #edf8ff; */
+}
+
 .dr-zainab-vora {
   display: flex;
   align-items: center;
   gap: 2rem;
+
   margin-top: 2.5rem;
-  border: 2px solid #bebebe;
-  border-radius: 10px;
+  background-color: #edf8ff;
+  border-radius: 32px;
+  border: 2px solid #b0d4ec;
 }
 
 .dr-zainab-vora-image {
@@ -46,11 +54,13 @@
   width: 400px;
   height: 400px;
   object-fit: cover;
+  margin-bottom: -4px;
 }
 
 .dr-zainab-vora-info {
   width: 48%;
   text-align: start;
+  padding: 1rem;
 }
 
 .dr-zainab-vora-info h4 {
@@ -71,6 +81,13 @@
   grid-template-columns: repeat(2, 1fr);
   gap: 2rem;
   margin: 2.5rem 0;
+}
+
+.your-mentors-card {
+  background-color: #edf8ff;
+  border-radius: 32px;
+  border: 2px solid #b0d4ec;
+  padding: 1rem;
 }
 
 .your-mentors-card img {
@@ -128,7 +145,6 @@
 
   .dr-zainab-vora {
     flex-direction: column;
-    border: none;
     gap: 0;
   }
 
@@ -151,6 +167,7 @@
   .your-mentors-cards {
     grid-template-columns: 1fr;
   }
+
   .dr-zainab-vora-image img,
   .your-mentors-card img {
     width: 310px;
