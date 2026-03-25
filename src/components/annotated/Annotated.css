@@ -71,7 +71,8 @@
 }
 
 .annotated-image-overlay-icon {
-  font-size: 36px;
+  font-size: 28px;
+  color: #fff;
   opacity: 0;
   transform: scale(0.7);
   transition:
@@ -389,9 +390,13 @@
 
 .ann-popup-nav--prev {
   left: 20px;
+  background-color: #fff;
+  color: #1d204b;
 }
 .ann-popup-nav--next {
   right: 20px;
+  background-color: #fff;
+  color: #1d204b;
 }
 
 .ann-popup-footer {

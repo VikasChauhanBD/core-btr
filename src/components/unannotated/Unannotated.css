@@ -87,7 +87,8 @@
 }
 
 .unannotated-image-overlay-icon {
-  font-size: 36px;
+  font-size: 28px;
+  color: #fff;
   opacity: 0;
   transform: scale(0.7);
   transition:
@@ -368,9 +369,13 @@
 
 .popup-nav--prev {
   left: 20px;
+  background-color: #fff;
+  color: #1d204b;
 }
 .popup-nav--next {
   right: 20px;
+  background-color: #fff;
+  color: #1d204b;
 }
 
 /* ── Footer ─────────────────────────────────────────────── */

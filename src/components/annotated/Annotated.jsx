@@ -204,7 +204,9 @@ function Annotated() {
                 alt="coreBTR Annotated Workbooks"
               />
               <div className="annotated-image-overlay">
-                <span className="annotated-image-overlay-icon">🔍</span>
+                <span className="annotated-image-overlay-icon">
+                  Check Sample Pages
+                </span>
               </div>
             </div>
             {highlights.map((h, idx) => (

@@ -260,7 +260,9 @@ function Unannotated() {
                 alt="coreBTR Unannotated Workbooks"
               />
               <div className="unannotated-image-overlay">
-                <span className="unannotated-image-overlay-icon">🔍</span>
+                <span className="unannotated-image-overlay-icon">
+                  Check Sample Pages
+                </span>
               </div>
             </div>
             {highlights.map((h, idx) => (
