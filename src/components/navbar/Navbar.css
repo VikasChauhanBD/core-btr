@@ -184,7 +184,7 @@
     position: absolute;
     width: 100%;
     background-color: white;
-    top: 4.75rem;
+    top: 6rem;
     left: 0;
     z-index: 10;
     padding: 1rem 0;
@@ -249,6 +249,10 @@
   .navbar-logo img {
     width: 140px;
   }
+
+  .mobile-nav {
+    top: 5.5rem;
+  }
 }
 
 @media (max-width: 568px) {
@@ -258,5 +262,9 @@
 
   .hamburger {
     padding-right: 1.5rem;
+  }
+
+  .mobile-nav {
+    top: 5rem;
   }
 }

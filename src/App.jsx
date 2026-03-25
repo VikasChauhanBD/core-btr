@@ -11,7 +11,7 @@ import TermsAndConditions from "./components/Policies/TermsAndConditions";
 import CancellationPolicy from "./components/Policies/CancellationPolicy";
 import BootcampPage from "./pages/BootcampPage";
 import BTROfflinePage from "./pages/BTROfflinePage";
-import BTROnlinePage from "./pages/BTROnlinePage";
+// import BTROnlinePage from "./pages/BTROnlinePage";
 import ScrollToTop from "./pages/ScrollToTop";
 import StudentReviewsPage from "./pages/StudentReviewsPage";
 import DevicePolicyPage from "./pages/DevicePolicyPage";
@@ -19,6 +19,7 @@ import DeleteAccountPage from "./pages/DeleteAccountPage";
 import ContactUsPage from "./pages/ContactUsPage";
 import ShippingAndDeliveryPolicyPage from "./pages/ShippingAndDeliveryPolicyPage";
 import WorkbookPage from "./pages/WorkbookPage";
+import Face404 from "./components/face404/Face404";
 
 function App() {
   const [showIntro, setShowIntro] = useState(false);
@@ -48,12 +49,11 @@ function App() {
           const hasSeenVideo = sessionStorage.getItem("hasSeenIntro");
           if (!hasSeenVideo) {
             setShowIntro(true);
-            } else {
-        setIntroComplete(true); // ADD THIS — skip intro case
-      }
-    } else {
-      setIntroComplete(true); // ADD THIS — other tab case
-        
+          } else {
+            setIntroComplete(true); // ADD THIS — skip intro case
+          }
+        } else {
+          setIntroComplete(true); // ADD THIS — other tab case
         }
       }, 100);
 
@@ -85,8 +85,11 @@ function App() {
         <Navbar />
         <ScrollToTop />
         <Routes>
-          <Route path="/" element={<HomePage introComplete={introComplete} />} />
-          <Route path="/btr-online" element={<BTROnlinePage />} />
+          <Route
+            path="/"
+            element={<HomePage introComplete={introComplete} />}
+          />
+          {/* <Route path="/btr-online" element={<BTROnlinePage />} /> */}
           <Route path="/corebtr-offline" element={<BTROfflinePage />} />
           <Route path="/corebtr-bootcamp" element={<BootcampPage />} />
           <Route path="/workbooks" element={<WorkbookPage />} />
@@ -108,7 +111,9 @@ function App() {
             path="/shipping-and-delivery-policy"
             element={<ShippingAndDeliveryPolicyPage />}
           />
+          <Route path="*" element={<Face404 />} />
         </Routes>
+
         <Footer />
       </BrowserRouter>
     </>
