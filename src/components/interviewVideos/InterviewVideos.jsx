@@ -3,7 +3,7 @@ import "./InterviewVideos.css";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { FaPlayCircle } from "react-icons/fa";
-import { div } from "framer-motion/client";
+import { NavLink } from "react-router-dom";
 
 const videosData = [
   {
@@ -83,6 +83,13 @@ const videosData = [
     alt: "Dr. Harsha Gupta: NEET PG Rank- 161",
     url: "https://www.youtube.com/embed/lhsnmiQ70aA",
   },
+  {
+    id: 12,
+    thumbnail:
+      "https://cdn.dribbble.com/userupload/47159849/file/4a7109781f654c6a9418b4a245273552.jpg",
+    alt: "AIR 392 Dr. Kritika Garg | NEET PG 2025",
+    url: "https://www.youtube.com/embed/iC76e3Jq5Pk",
+  },
 ];
 
 function InterviewVideos() {
@@ -94,7 +101,7 @@ function InterviewVideos() {
 
   return (
     <div className="interview-videos-container">
-      <h2>INI CET | NEET PG 2025 Interviews</h2>
+      <h2>INI CET November | NEET PG 2025 Interviews</h2>
       <div className="interview-videos-cards" data-aos="fade-up">
         {videosData.map((video) => (
           <div
@@ -122,6 +129,15 @@ function InterviewVideos() {
             )}
           </div>
         ))}
+      </div>
+
+      <div className="interview-videos-cta">
+        <NavLink
+          to="https://www.youtube.com/@vidyajeevan24/videos"
+          target="_blank"
+        >
+          Check More On Youtube
+        </NavLink>
       </div>
     </div>
   );
