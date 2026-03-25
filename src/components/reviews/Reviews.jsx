@@ -19,7 +19,9 @@ const StarRating = () => (
 function ReviewCard({ t, index }) {
   const [expanded, setExpanded] = useState(false);
   const [isClamped, setIsClamped] = useState(false);
+  const [collapsedHeight, setCollapsedHeight] = useState(null);
   const textRef = useRef(null);
+  const cardRef = useRef(null);
 
   useEffect(() => {
     const el = textRef.current;
@@ -28,38 +30,56 @@ function ReviewCard({ t, index }) {
     }
   }, [t.feedback]);
 
+  // Capture the card's natural height before expanding
+  const handleToggle = () => {
+    if (!expanded && cardRef.current) {
+      setCollapsedHeight(cardRef.current.offsetHeight);
+    }
+    setExpanded((prev) => !prev);
+  };
+
   return (
+    // Wrapper locks the grid row height to the collapsed size when card expands
     <div
-      className={`review-card${expanded ? " expanded" : ""}`}
-      style={{ animationDelay: `${(index % (COLS * LOAD_MORE_ROWS)) * 60}ms` }}
+      className="review-card-wrapper"
+      style={
+        expanded && collapsedHeight ? { height: collapsedHeight } : undefined
+      }
     >
-      <div className="card-top">
-        <StarRating />
-      </div>
-
-      <div className="card-feedback-wrapper">
-        <blockquote
-          ref={textRef}
-          className={`card-feedback${expanded ? " card-feedback--expanded" : ""}`}
-        >
-          "{t.feedback}"
-        </blockquote>
-
-        {isClamped && (
-          <button
-            className="read-more-btn"
-            onClick={() => setExpanded((prev) => !prev)}
-            aria-expanded={expanded}
+      <div
+        ref={cardRef}
+        className={`review-card${expanded ? " expanded" : ""}`}
+        style={{
+          animationDelay: `${(index % (COLS * LOAD_MORE_ROWS)) * 60}ms`,
+        }}
+      >
+        <div className="card-top">
+          <StarRating />
+        </div>
+        <div className="card-feedback-wrapper">
+          <blockquote
+            ref={textRef}
+            className={`card-feedback${
+              expanded ? " card-feedback--expanded" : ""
+            }`}
           >
-            {expanded ? "Show less ▲" : "Read more ▼"}
-          </button>
-        )}
-      </div>
-
-      <div className="card-author">
-        <img className="author-avatar" src={t.image} alt={t.name} />
-        <div>{t.initials}</div>
-        <div className="author-name">{t.name}</div>
+            "{t.feedback}"
+          </blockquote>
+          {isClamped && (
+            <button
+              className="read-more-btn"
+              onClick={handleToggle}
+              aria-expanded={expanded}
+            >
+              {expanded ? "Show less ▲" : "Read more ▼"}
+            </button>
+          )}
+        </div>
+        <div className="card-author">
+          <img className="author-avatar" src={t.image} alt={t.name} />
+          <div>{t.initials}</div>
+          <div className="author-name">{t.name}</div>
+        </div>
       </div>
     </div>
   );
@@ -83,7 +103,6 @@ export default function Reviews() {
           <ReviewCard key={i} t={t} index={i} />
         ))}
       </div>
-
       {hasMore && (
         <div className="cta-wrapper">
           <button className="cta-btn" onClick={handleLoadMore}>

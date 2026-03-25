@@ -8,7 +8,7 @@ function StudentReviewsPage() {
     <div>
       <StudentReviews />
       <InterviewVideos />
-      <Reviews />
+      {/* <Reviews /> */}
     </div>
   );
 }

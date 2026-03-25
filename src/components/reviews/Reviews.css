@@ -26,6 +26,8 @@
 .reviews-grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
+  /* stretch so all wrappers fill the row height equally */
+  align-items: stretch;
   gap: 18px;
   width: 100%;
   margin: 0 auto 52px;
@@ -33,6 +35,18 @@
   box-sizing: border-box;
   position: relative;
   z-index: 1;
+}
+
+/* ── Wrapper ── 
+   Each card lives inside this wrapper.
+   Normally it stretches to the full row height.
+   When a card is expanded, we pin the wrapper's height via inline style
+   so the grid row does NOT grow — only the card itself overflows.
+*/
+.review-card-wrapper {
+  position: relative;
+  /* overflow: visible so the expanded card can visually grow past the wrapper */
+  overflow: visible;
 }
 
 /* ── Card ── */
@@ -52,8 +66,20 @@
     transform 0.3s ease,
     box-shadow 0.3s ease;
   cursor: default;
+  /* Fill wrapper height when collapsed so all cards in a row are equal */
   height: 100%;
   box-sizing: border-box;
+}
+
+/* When expanded, the card overrides height: 100% and sizes to content */
+.review-card.expanded {
+  height: auto;
+  z-index: 10;
+  /* Lift above neighbours so it visually overlays them if needed */
+  position: relative;
+  box-shadow:
+    0 16px 48px rgba(39, 24, 126, 0.22),
+    0 4px 12px rgba(39, 24, 126, 0.1);
 }
 
 .review-card::before {
@@ -75,13 +101,12 @@
     0 4px 12px rgba(39, 24, 126, 0.1);
 }
 
-.review-card:hover::before {
-  opacity: 1;
+.review-card.expanded:hover {
+  transform: none;
 }
 
-.review-card.expanded {
-  z-index: 2;
-  position: relative;
+.review-card:hover::before {
+  opacity: 1;
 }
 
 @keyframes cardFadeUp {

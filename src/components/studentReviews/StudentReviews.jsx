@@ -3,6 +3,7 @@ import "./StudentReviews.css";
 import { FaQuoteRight, FaChevronLeft, FaChevronRight } from "react-icons/fa";
 import { NavLink } from "react-router-dom";
 // import { testimonialsData } from "../../assets/data/testimonials";
+import Reviews from "../reviews/Reviews";
 import DrShrutiRawat from "../../assets/studentsImages/Dr-Shruti-Rawat.png";
 import DrSnehaRani from "../../assets/studentsImages/Dr-Sneha-Rani.png";
 import DrAravindKrishnan from "../../assets/studentsImages/dr-aravind-krishnan.jpg";
@@ -208,7 +209,10 @@ function StudentReviews() {
           </p>
         </div>
       </header>
-      <div className="reviews-scroll-section">
+
+      <Reviews />
+
+      {/* <div className="reviews-scroll-section">
         <button
           className="reviews-arrow reviews-arrow--left"
           onClick={scrollLeft}
@@ -230,7 +234,7 @@ function StudentReviews() {
             <ReviewCard key={i} t={t} />
           ))}
         </div>
-      </div>
+      </div> */}
     </div>
   );
 }
