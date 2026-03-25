@@ -186,24 +186,24 @@ function StudentReviews() {
   };
 
   return (
-    <div className="reviews-page">
-      <header className="reviews-hero">
+    <div className="student-student-reviews-page">
+      <header className="student-reviews-hero">
         <div
-          className="reviews-hero-bg"
+          className="student-reviews-hero-bg"
           style={{ backgroundImage: `url(${HERO_BG})` }}
           aria-hidden="true"
         />
 
-        <div className="reviews-hero-overlay" aria-hidden="true" />
+        <div className="student-reviews-hero-overlay" aria-hidden="true" />
 
-        <div className="reviews-hero-content">
-          <div className="reviews-eyebrow">
+        <div className="student-reviews-hero-content">
+          <div className="student-reviews-eyebrow">
             <span>Student Stories</span>
           </div>
 
           <h1>Real Results. Real Voices</h1>
 
-          <p className="reviews-hero-sub">
+          <p className="student-reviews-hero-sub">
             Thousands of NEET PG, INI-CET &amp; FMGE aspirants have transformed
             their preparation with BTR. Here is what they have to say.
           </p>
@@ -212,9 +212,9 @@ function StudentReviews() {
 
       <Reviews />
 
-      {/* <div className="reviews-scroll-section">
+      {/* <div className="student-reviews-scroll-section">
         <button
-          className="reviews-arrow reviews-arrow--left"
+          className="student-reviews-arrow student-reviews-arrow--left"
           onClick={scrollLeft}
           aria-label="Scroll left"
         >
@@ -222,14 +222,14 @@ function StudentReviews() {
         </button>
 
         <button
-          className="reviews-arrow reviews-arrow--right"
+          className="student-reviews-arrow student-reviews-arrow--right"
           onClick={scrollRight}
           aria-label="Scroll right"
         >
           <FaChevronRight />
         </button>
 
-        <div className="reviews-scroll-row" ref={rowRef}>
+        <div className="student-reviews-scroll-row" ref={rowRef}>
           {testimonials.map((t, i) => (
             <ReviewCard key={i} t={t} />
           ))}

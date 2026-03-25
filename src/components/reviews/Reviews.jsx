@@ -21,7 +21,7 @@ function ReviewCard({ t, index }) {
   const [isClamped, setIsClamped] = useState(false);
   const [collapsedHeight, setCollapsedHeight] = useState(null);
   const textRef = useRef(null);
-  const cardRef = useRef(null);
+  const wrapperRef = useRef(null);
 
   useEffect(() => {
     const el = textRef.current;
@@ -30,24 +30,25 @@ function ReviewCard({ t, index }) {
     }
   }, [t.feedback]);
 
-  // Capture the card's natural height before expanding
   const handleToggle = () => {
-    if (!expanded && cardRef.current) {
-      setCollapsedHeight(cardRef.current.offsetHeight);
+    if (!expanded && wrapperRef.current) {
+      // Capture the wrapper's current rendered height before expanding
+      setCollapsedHeight(wrapperRef.current.offsetHeight);
+    } else {
+      setCollapsedHeight(null);
     }
     setExpanded((prev) => !prev);
   };
 
   return (
-    // Wrapper locks the grid row height to the collapsed size when card expands
     <div
-      className="review-card-wrapper"
+      ref={wrapperRef}
+      className={`review-card-wrapper${expanded ? " review-card-wrapper--expanded" : ""}`}
       style={
         expanded && collapsedHeight ? { height: collapsedHeight } : undefined
       }
     >
       <div
-        ref={cardRef}
         className={`review-card${expanded ? " expanded" : ""}`}
         style={{
           animationDelay: `${(index % (COLS * LOAD_MORE_ROWS)) * 60}ms`,
@@ -59,9 +60,7 @@ function ReviewCard({ t, index }) {
         <div className="card-feedback-wrapper">
           <blockquote
             ref={textRef}
-            className={`card-feedback${
-              expanded ? " card-feedback--expanded" : ""
-            }`}
+            className={`card-feedback${expanded ? " card-feedback--expanded" : ""}`}
           >
             "{t.feedback}"
           </blockquote>
