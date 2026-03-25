@@ -1,7 +1,5 @@
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import "./InterviewVideos.css";
-import AOS from "aos";
-import "aos/dist/aos.css";
 import { FaPlayCircle } from "react-icons/fa";
 import { NavLink } from "react-router-dom";
 
@@ -114,10 +112,6 @@ function InterviewVideos() {
   const [activeVideo, setActiveVideo] = useState(null);
   const [activeTab, setActiveTab] = useState("ALL");
 
-  useEffect(() => {
-    AOS.init({ duration: 1000, offset: 200 });
-  }, []);
-
   const filteredVideos =
     activeTab === "ALL"
       ? videosData
@@ -132,7 +126,9 @@ function InterviewVideos() {
         {TABS.map((tab) => (
           <button
             key={tab.value}
-            className={`interview-videos-tab ${activeTab === tab.value ? "active" : ""}`}
+            className={`interview-videos-tab ${
+              activeTab === tab.value ? "active" : ""
+            }`}
             onClick={() => {
               setActiveTab(tab.value);
               setActiveVideo(null);
@@ -143,7 +139,7 @@ function InterviewVideos() {
         ))}
       </div>
 
-      <div className="interview-videos-cards" data-aos="fade-up">
+      <div className="interview-videos-cards">
         {filteredVideos.map((video) => (
           <div
             key={video.id}

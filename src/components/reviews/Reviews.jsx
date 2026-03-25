@@ -32,7 +32,6 @@ function ReviewCard({ t, index }) {
 
   const handleToggle = () => {
     if (!expanded && wrapperRef.current) {
-      // Capture the wrapper's current rendered height before expanding
       setCollapsedHeight(wrapperRef.current.offsetHeight);
     } else {
       setCollapsedHeight(null);
@@ -86,13 +85,20 @@ function ReviewCard({ t, index }) {
 
 export default function Reviews() {
   const [visibleCount, setVisibleCount] = useState(INITIAL_ROWS * COLS);
+  const [hasLoadedMore, setHasLoadedMore] = useState(false); // ← NEW
   const visibleTestimonials = testimonialsData.slice(0, visibleCount);
   const hasMore = visibleCount < testimonialsData.length;
 
   const handleLoadMore = () => {
+    setHasLoadedMore(true); // ← NEW
     setVisibleCount((prev) =>
       Math.min(prev + LOAD_MORE_ROWS * COLS, testimonialsData.length),
     );
+  };
+
+  const handleCollapseBack = () => {
+    // ← NEW
+    setVisibleCount(INITIAL_ROWS * COLS);
   };
 
   return (
@@ -102,8 +108,8 @@ export default function Reviews() {
           <ReviewCard key={i} t={t} index={i} />
         ))}
       </div>
-      {hasMore && (
-        <div className="cta-wrapper">
+      <div className="cta-wrapper">
+        {hasMore && (
           <button className="cta-btn" onClick={handleLoadMore}>
             <span>Read More Stories</span>
             <svg
@@ -117,8 +123,25 @@ export default function Reviews() {
               <path d="M12 5v14M5 12l7 7 7-7" />
             </svg>
           </button>
-        </div>
-      )}
+        )}
+        {hasLoadedMore && ( // ← NEW: only visible after first "Read More" click
+          <button
+            className="cta-btn cta-btn--collapse"
+            onClick={handleCollapseBack}
+          >
+            <svg
+              width="18"
+              height="18"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              strokeWidth="2.5"
+            >
+              <path d="M12 19V5M5 12l7-7 7 7" />
+            </svg>
+          </button>
+        )}
+      </div>
     </section>
   );
 }
