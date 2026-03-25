@@ -325,7 +325,7 @@ function PrivacyPolicy() {
         If the Services allow account creation, you may request deletion of your
         coreBTR account and associated personal data through the in-app account
         deletion pathway and through our web-based deletion request page at
-        https://corebtr.com/delete-account.
+        <a href="/delete-account"> https://corebtr.com/delete-account.</a>
         <br />
         <br />
         Deleting your account will permanently remove your access to the
