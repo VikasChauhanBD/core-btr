@@ -6,7 +6,7 @@ const whatYouGet = [
     title: "High-Yield Revision Videos",
     body: "Concise, concept-driven lectures across all 19 subjects, including integrated system-based learning.",
     image:
-      "https://cdn.dribbble.com/userupload/47131992/file/085c8599dae7a5a13ef5b6f70262278f.jpeg",
+      "https://cdn.dribbble.com/userupload/47163471/file/bfbe0c8d4f366e2f4fa8415ba82d34aa.jpeg",
   },
   {
     title: "Structured Notes & Workbooks",
@@ -18,7 +18,7 @@ const whatYouGet = [
     title: "PYQs",
     body: "Previous year questions organized topic-wise for focused PYQ based revision.",
     image:
-      "https://cdn.dribbble.com/userupload/47131999/file/a3169785ccf8ff11eb88c72c6250e4db.jpeg",
+      "https://cdn.dribbble.com/userupload/47163535/file/bebac77cbdd72726377d5eee6fb21072.jpg",
   },
   {
     title: "Curated QBank",
