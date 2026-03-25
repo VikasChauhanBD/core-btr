@@ -101,7 +101,7 @@ function InterviewVideos() {
 
   return (
     <div className="interview-videos-container">
-      <h2>INI CET November | NEET PG 2025 Interviews</h2>
+      <h2>Success Stories of INI CET November | NEET PG 2025 Toppers</h2>
       <div className="interview-videos-cards" data-aos="fade-up">
         {videosData.map((video) => (
           <div
