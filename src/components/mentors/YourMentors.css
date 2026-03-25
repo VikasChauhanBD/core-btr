@@ -11,11 +11,11 @@
 
 .your-mentors-content h2 {
   font-size: 38px;
-  color: #1767be;
+  color: #1d204b;
 }
 
 .your-mentors-content span {
-  color: #1d204b;
+  color: #1767be;
 }
 
 .your-mentors-content h4 {
@@ -32,7 +32,6 @@
 .your-mentors-info {
   border-radius: 10px;
   padding: 1rem;
-  /* background-color: #edf8ff; */
 }
 
 .dr-zainab-vora {

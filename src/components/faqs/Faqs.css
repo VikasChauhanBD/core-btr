@@ -5,11 +5,8 @@
 
 .faq-header {
   width: 100%;
-  background-image: url(../../assets/images/header-bg.avif);
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
+  background-color: #1767be;
+  color: #ffffff;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -21,13 +18,13 @@
   display: inline;
   font-size: 18px;
   color: #1767be;
+  background-color: #ffffff;
   padding: 8px 16px;
-  border: 1px solid #1767be;
   border-radius: 8px;
 }
 
 .faq-header h1 {
-  font-size: 48px;
+  font-size: 38px;
   padding: 2rem;
   text-align: center;
 }
@@ -98,7 +95,7 @@
   flex: 1;
   font-size: 1rem;
   font-weight: 500;
-  color: #1e293b;
+  color: #1d204b;
   line-height: 1.45;
 }
 
@@ -130,13 +127,13 @@
   padding: 16px 24px 22px 68px;
   font-size: 1rem;
   line-height: 1.75;
-  color: #475569;
+  color: #3f3f3f;
   border-top: 1px solid rgba(99, 102, 241, 0.08);
 }
 
 .faq-item-answer strong {
   font-weight: 700;
-  color: #1e293b;
+  color: #3f3f3f;
 }
 
 .faq-item-answer a {

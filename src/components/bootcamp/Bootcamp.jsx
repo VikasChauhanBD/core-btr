@@ -31,18 +31,17 @@ function Bootcamp() {
 
       <div className="bootcamp-content">
         <h1>
-          <span>Core</span>BTR Bootcamp
+          Core<span>BTR</span> Bootcamp
         </h1>
-        <h3>
-           Learn with Dr. Zainab Vora. Transform with the System.
-
-        </h3>
+        <h3>Learn with Dr. Zainab Vora. Transform with the System.</h3>
         <p>
-          This is where concepts finally make sense. Where revision becomes structured And where your preparation starts moving in the right direction.
-          <b>At coreBTR Bootcamp, </b> you’re not just attending classes—you’re learning directly under <b>Dr. Zainab Vora</b>, with a system designed to help you {" "}
-          <b>stay consistent, focused, and exam-ready.</b> so you don’t just study more, you study better.{" "}
-          
-          Start Learning Smarter.{" "}
+          This is where concepts finally make sense. Where revision becomes
+          structured And where your preparation starts moving in the right
+          direction.
+          <b>At coreBTR Bootcamp, </b> you’re not just attending classes—you’re
+          learning directly under <b>Dr. Zainab Vora</b>, with a system designed
+          to help you <b>stay consistent, focused, and exam-ready.</b> so you
+          don’t just study more, you study better. Start Learning Smarter.{" "}
           <b>Explore Bootcamp</b>
         </p>
       </div>
@@ -85,71 +84,75 @@ function Bootcamp() {
             ))}
           </div>
         </section> */}
-        <div className="bootcamp-sections">
-  <section className="bootcamp-highlights">
-    <div className="bootcamp-eyebrow">
-      <span className="bootcamp-eyebrow-line" />
-      <span className="bootcamp-eyebrow-text">Overview</span>
-    </div>
-    <h2 className="bootcamp-section-heading">
-      Program <span>Highlights</span>
-    </h2>
-    <p className="bootcamp-lead">
-      An intensive, high-impact offline program for serious<b> NEET PG &amp; INI-CET <br/> aspirants - designed for focused learning,</b> disciplined preparation, and a completely distraction-free environment.
-    </p>
+      <div className="bootcamp-sections">
+        <section className="bootcamp-highlights">
+          <div className="bootcamp-eyebrow">
+            <span className="bootcamp-eyebrow-line" />
+            <span className="bootcamp-eyebrow-text">Overview</span>
+          </div>
+          <h2 className="bootcamp-section-heading">
+            Program <span>Highlights</span>
+          </h2>
+          <p className="bootcamp-lead">
+            An intensive, high-impact offline program for serious
+            <b>
+              {" "}
+              NEET PG &amp; INI-CET <br /> aspirants - designed for focused
+              learning,
+            </b>{" "}
+            disciplined preparation, and a completely distraction-free
+            environment.
+          </p>
 
-    {/* POINTERS IN MIDDLE */}
-    <div className="bootcamp-highlight-grid">
-      {highlights.map((h) => (
-        <div className="bootcamp-highlight-card" key={h.title}>
-          <h3>{h.title}</h3>
-          <ul className="bootcamp-highlight-list">
-            {h.points.map((p, i) => (
-              <li key={i}>{p}</li>
+          {/* POINTERS IN MIDDLE */}
+          <div className="bootcamp-highlight-grid">
+            {highlights.map((h) => (
+              <div className="bootcamp-highlight-card" key={h.title}>
+                <h3>{h.title}</h3>
+                <ul className="bootcamp-highlight-list">
+                  {h.points.map((p, i) => (
+                    <li key={i}>{p}</li>
+                  ))}
+                </ul>
+                {h.badge && (
+                  <span className="bootcamp-highlight-badge">{h.badge}</span>
+                )}
+              </div>
             ))}
-          </ul>
-          {h.badge && (
-            <span className="bootcamp-highlight-badge">{h.badge}</span>
-          )}
-        </div>
-      ))}
-    </div>
+          </div>
 
-    {/* TOP IMAGE */}
-    <div className="bootcamp-highlight-image bootcamp-highlight-image--top">
-      <img
-        src="https://cdn.dribbble.com/userupload/47155755/file/3f45cbd32c6198de7dc278e7d95dbf2d.jpeg"
-        alt="coreBTR BootCamp Class 2026 - Top"
-      />
-      
-    </div>
-    <div className="bootcamp-highlight-content">
-  <p className="bootcamp-subtitle">
-    Learn The BTR Way
-  </p>
+          {/* TOP IMAGE */}
+          <div className="bootcamp-highlight-image bootcamp-highlight-image--top">
+            <img
+              src="https://cdn.dribbble.com/userupload/47155755/file/3f45cbd32c6198de7dc278e7d95dbf2d.jpeg"
+              alt="coreBTR BootCamp Class 2026 - Top"
+            />
+          </div>
+          <div className="bootcamp-highlight-content">
+            <p className="bootcamp-subtitle">Learn The BTR Way</p>
 
-  <h2 className="bootcamp-title">
-    Concepts. Clarity. Confidence.
-  </h2>
+            <h2 className="bootcamp-title">Concepts. Clarity. Confidence.</h2>
 
-  <p className="bootcamp-description">
-    With <strong>Dr. Zainab Vora</strong>, learning is not about memorizing more—it’s about understanding better.
-    Complex topics are simplified with integrated, system-wise learning across all 19 subjects.
-  </p>
+            <p className="bootcamp-description">
+              With <strong>Dr. Zainab Vora</strong>, learning is not about
+              memorizing more—it’s about understanding better. Complex topics
+              are simplified with integrated, system-wise learning across all 19
+              subjects.
+            </p>
 
-  <ul className="bootcamp-points">
-    <li>High-yield focus for NEET PG, INI-CET & FMGE</li>
-    <li>System-wise structured preparation</li>
-    <li>Built for retention, recall & real exam pressure</li>
-  </ul>
+            <ul className="bootcamp-points">
+              <li>High-yield focus for NEET PG, INI-CET & FMGE</li>
+              <li>System-wise structured preparation</li>
+              <li>Built for retention, recall & real exam pressure</li>
+            </ul>
 
-  <p className="bootcamp-tagline">
-    This is not just teaching. <span>This is the BTR approach.</span>
-  </p>
-</div>
+            <p className="bootcamp-tagline">
+              This is not just teaching. <span>This is the BTR approach.</span>
+            </p>
+          </div>
 
-    {/* POINTERS IN MIDDLE */}
-    {/* <div className="bootcamp-highlight-grid">
+          {/* POINTERS IN MIDDLE */}
+          {/* <div className="bootcamp-highlight-grid">
       {highlights.map((h) => (
         <div className="bootcamp-highlight-card" key={h.title}>
           <h3>{h.title}</h3>
@@ -165,19 +168,20 @@ function Bootcamp() {
       ))}
     </div> */}
 
-    {/* BOTTOM IMAGE */}
-    <div className="bootcamp-highlight-image bootcamp-highlight-image--bottom">
-      <img
-        src="https://cdn.dribbble.com/userupload/47155756/file/65427d7658a4f012368607444d02c2d1.jpeg"
-        alt="coreBTR BootCamp Class 2026 - Bottom"
-      />
-    </div>
-    <h3 className="bootcamp-section-sub-heading-img">Real Exam Environment. Real Preparation.</h3>
-  </section>
+          {/* BOTTOM IMAGE */}
+          <div className="bootcamp-highlight-image bootcamp-highlight-image--bottom">
+            <img
+              src="https://cdn.dribbble.com/userupload/47155756/file/65427d7658a4f012368607444d02c2d1.jpeg"
+              alt="coreBTR BootCamp Class 2026 - Bottom"
+            />
+          </div>
+          <h3 className="bootcamp-section-sub-heading-img">
+            Real Exam Environment. Real Preparation.
+          </h3>
+        </section>
       </div>
       <BootcampFeatures />
-      
-      
+
       <WhyDiff2 />
     </div>
   );

@@ -10,25 +10,25 @@
 }
 
 .bootcamp-content h1 {
-  font-size: 42px;
-  color: #1767be;
+  font-size: 38px;
+  color: #1d204b;
   margin-bottom: 10px;
 }
 
 .bootcamp-content span {
-  color: #1d204b;
+  color: #1767be;
 }
 
 .bootcamp-content h3 {
-  font-size: 20px;
+  font-size: 22px;
   margin-bottom: 1rem;
-  color: #1d204b;
+  color: #3f3f3f;
 }
 
 .bootcamp-content p {
   font-size: 18px;
   line-height: 1.75;
-  color: #1d204b;
+  color: #3f3f3f;
 }
 
 .bootcamp-sections {
@@ -81,7 +81,7 @@
 }
 
 .bootcamp-section-heading {
-  font-size: 48px;
+  font-size: 38px;
   line-height: 1.15;
   color: #1d204b;
   margin-bottom: 14px;
@@ -94,8 +94,7 @@
 .bootcamp-lead {
   font-size: 16px;
   line-height: 1.78;
-  color: #1d204b;
-  max-width: 640px;
+  color: #3f3f3f;
   margin-bottom: 36px;
 }
 
@@ -173,7 +172,7 @@
 .bootcamp-highlight-list li {
   font-size: 16px;
   line-height: 1.65;
-  color: #1d204b;
+  color: #3f3f3f;
   padding-left: 24px;
   position: relative;
 }
@@ -199,11 +198,12 @@
   padding: 4px 12px;
 }
 .bootcamp-section-sub-heading-img {
-  font-size: 30px;
+  font-size: 28px;
   display: flex;
   align-items: center;
   justify-content: center;
-  color: #1d204b;
+  color: #3f3f3f;
+  margin-top: 1rem;
 }
 
 /* ── Animations ── */
@@ -239,7 +239,8 @@
 
 @media (max-width: 868px) {
   .bootcamp-content h1,
-  .bootcamp-section-heading {
+  .bootcamp-section-heading,
+  .bootcamp-title {
     font-size: 32px;
   }
 
@@ -258,7 +259,7 @@
 /* ── Top & Bottom images ── */
 .bootcamp-highlight-image {
   width: 100%;
-  
+
   margin: 0 auto;
   border-radius: 12px;
   overflow: hidden;
@@ -298,7 +299,6 @@
   }
 }
 
-
 .bootcamp-highlight-content {
   max-width: 900px;
   margin: 20px auto 0;
@@ -307,24 +307,24 @@
 }
 
 .bootcamp-subtitle {
-  font-size: 14px;
+  font-size: 16px;
   font-weight: 600;
-  color: #6b7280;
+  color: #3f3f3f;
   letter-spacing: 1px;
   text-transform: uppercase;
   margin-bottom: 8px;
 }
 
 .bootcamp-title {
-  font-size: 32px;
+  font-size: 38px;
   font-weight: 700;
-  color: #111827;
+  color: #1d204b;
   margin-bottom: 16px;
 }
 
 .bootcamp-description {
   font-size: 16px;
-  color: #4b5563;
+  color: #3f3f3f;
   line-height: 1.6;
   margin-bottom: 20px;
 }
@@ -336,8 +336,8 @@
 }
 
 .bootcamp-points li {
-  font-size: 15px;
-  color: #374151;
+  font-size: 16px;
+  color: #3f3f3f;
   margin-bottom: 10px;
   position: relative;
 }
@@ -352,7 +352,7 @@
   margin-top: 20px;
   font-size: 16px;
   font-weight: 500;
-  color: #111827;
+  color: #1d204b;
 }
 
 .bootcamp-tagline span {

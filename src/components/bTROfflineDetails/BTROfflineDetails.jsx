@@ -67,7 +67,7 @@ export default function BTROfflineDetails() {
           {features.map((f, i) => (
             <div className="offline-details-feature-item" key={i}>
               <span className="offline-details-feature-icon">▶</span>
-              <span>{f.text}</span>
+              <span className="offline-details-feature-text">{f.text}</span>
             </div>
           ))}
         </div>

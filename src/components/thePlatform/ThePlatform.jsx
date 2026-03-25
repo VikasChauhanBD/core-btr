@@ -12,7 +12,7 @@ const whatYouGet = [
     title: "Structured Notes & Workbooks",
     body: "5 books designed for rapid revision and long-term retention, perfectly aligned with video content.",
     image:
-      "https://cdn.dribbble.com/userupload/47131997/file/03369f55b4b26160b30aeece8c067731.jpg",
+      "https://cdn.dribbble.com/userupload/47150179/file/2797e7c5125ef94e919282423d5bd711.jpg",
   },
   {
     title: "PYQs",
@@ -30,7 +30,7 @@ const whatYouGet = [
     title: "Video Solutions by Dr. Zainab Vora",
     body: "Clear explanations to help you understand the logic behind every answer.",
     image:
-      "https://cdn.dribbble.com/userupload/47131990/file/53f5354ff4f39cbe87af1fb5ae71ea79.jpeg",
+      "https://cdn.dribbble.com/userupload/47132002/file/367c57699e92e2ba8ff6bf24f744f46f.jpeg",
   },
   {
     title: "ZVRecommended PYQs",
@@ -42,13 +42,13 @@ const whatYouGet = [
     title: "Grand Tests & Subject Tests",
     body: "Analyze performance, identify weak areas, and track your progress.",
     image:
-      "https://cdn.dribbble.com/userupload/47131991/file/a9e47cc1ab11153e982c48035be3c3d6.jpeg",
+      "https://cdn.dribbble.com/userupload/47132128/file/7ac090fc0f6779db93246446f87edc37.jpeg",
   },
   {
     title: "Topic-Wise Pearls for Rapid Revision",
     body: "Ultra high-yield points for last-minute preparation and quick recall.",
     image:
-      "https://cdn.dribbble.com/userupload/47132002/file/367c57699e92e2ba8ff6bf24f744f46f.jpeg",
+      "https://cdn.dribbble.com/userupload/47162323/file/6b2f21c04c796ee6acade0b779942195.jpg",
   },
   {
     title: "Flashcards for Active Recall",

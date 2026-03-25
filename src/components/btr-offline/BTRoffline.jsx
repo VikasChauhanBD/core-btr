@@ -39,8 +39,7 @@ function BTRoffline() {
           <b>PYQs and high-yield facts,</b> CoreBTR helps you revise all 19
           subjects in a structured, no-nonsense manner.
           <br />
-          <br />
-          This is not theory overload — it's about{" "}
+          This is not theory overload - it's about{" "}
           <b>what to remember, how to apply, and what not to miss.</b>
         </p>
         <h6>"Kahani tumhaari hai, Ho sake toh kamaal likhna."</h6>

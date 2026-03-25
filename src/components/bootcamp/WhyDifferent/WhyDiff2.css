@@ -3,19 +3,19 @@
    No images • No emoji • Card-based • Responsive
 ================================================ */
 
-@import url('https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700;800&family=Manrope:wght@400;500;600&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700;800&family=Manrope:wght@400;500;600&display=swap");
 
 /* ---------- Tokens ---------- */
 :root {
-  --wd2-blue:   #1a6dff;
+  --wd2-blue: #1a6dff;
   --wd2-blue-l: #eef3ff;
   --wd2-blue-d: #0d4db3;
-  --wd2-gold:   #e9a230;
+  --wd2-gold: #e9a230;
   --wd2-gold-l: #fef6e4;
-  --wd2-dark:   #0d1b2a;
-  --wd2-body:   #4a5568;
+  --wd2-dark: #0d1b2a;
+  --wd2-body: #4a5568;
   --wd2-border: #e2e8f0;
-  --wd2-bg:     #f4f6fb;
+  --wd2-bg: #f4f6fb;
 }
 
 /* ---------- Section ---------- */
@@ -23,7 +23,7 @@
   background: #f5f6ff;
   color: #1a1a2e;
   padding: 4rem 1rem;
-  font-family: 'Manrope', sans-serif;
+  font-family: "Manrope", sans-serif;
   position: relative;
 }
 
@@ -68,7 +68,6 @@
 }
 
 .wd2-eyebrow-text {
-  font-family: 'Sora', sans-serif;
   font-size: 16px;
   font-weight: 700;
   letter-spacing: 0.22em;
@@ -77,9 +76,7 @@
 }
 
 .wd2-heading {
-  font-family: 'Sora', sans-serif;
-  font-size: 48px;
-  font-weight: 800;
+  font-size: 38px;
   color: #1d204b;
   line-height: 1.15;
   margin: 0 0 14px;
@@ -110,8 +107,8 @@
   opacity: 0;
   transform: translateY(30px);
   transition:
-    opacity 0.55s cubic-bezier(.22,1,.36,1) calc(var(--i) * 80ms),
-    transform 0.55s cubic-bezier(.22,1,.36,1) calc(var(--i) * 80ms),
+    opacity 0.55s cubic-bezier(0.22, 1, 0.36, 1) calc(var(--i) * 80ms),
+    transform 0.55s cubic-bezier(0.22, 1, 0.36, 1) calc(var(--i) * 80ms),
     box-shadow 0.22s ease,
     border-color 0.22s ease;
 }
@@ -127,7 +124,7 @@
 
 /* Accent bar top */
 .wd2-card::before {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   left: 0;
@@ -142,16 +139,23 @@
   transform: scaleX(1);
 }
 
-.wd2-card.wd2-blue::before { background: var(--wd2-blue); }
-.wd2-card.wd2-gold::before { background: var(--wd2-gold); }
+.wd2-card.wd2-blue::before {
+  background: var(--wd2-blue);
+}
+.wd2-card.wd2-gold::before {
+  background: var(--wd2-gold);
+}
 
 /* Blue variant hover border */
-.wd2-card.wd2-blue:hover { border-color: rgba(26, 109, 255, 0.3); }
-.wd2-card.wd2-gold:hover { border-color: rgba(233, 162, 48, 0.35); }
+.wd2-card.wd2-blue:hover {
+  border-color: rgba(26, 109, 255, 0.3);
+}
+.wd2-card.wd2-gold:hover {
+  border-color: rgba(233, 162, 48, 0.35);
+}
 
 /* ---------- Step number ---------- */
 .wd2-card-num {
-  font-family: 'Sora', sans-serif;
   font-size: 11px;
   font-weight: 800;
   letter-spacing: 0.05em;
@@ -188,21 +192,24 @@
   text-transform: uppercase;
 }
 
-.wd2-card.wd2-blue .wd2-card-tag { color: var(--wd2-blue); }
-.wd2-card.wd2-gold .wd2-card-tag { color: #b07818; }
+.wd2-card.wd2-blue .wd2-card-tag {
+  color: var(--wd2-blue);
+}
+.wd2-card.wd2-gold .wd2-card-tag {
+  color: #b07818;
+}
 
 .wd2-card-title {
-  font-family: 'Sora', sans-serif;
   font-size: 20px;
   font-weight: 800;
-  color: var(--wd2-dark);
+  color: #3f3f3f;
   margin: 0;
   line-height: 1.25;
 }
 
 .wd2-card-desc {
   font-size: 16px;
-  color: var(--wd2-body);
+  color: #3f3f3f;
   line-height: 1.65;
   margin: 4px 0 0;
 }
@@ -216,8 +223,8 @@
   opacity: 0;
   transform: translateY(30px);
   transition:
-    opacity 0.6s cubic-bezier(.22,1,.36,1) calc(var(--i) * 80ms),
-    transform 0.6s cubic-bezier(.22,1,.36,1) calc(var(--i) * 80ms);
+    opacity 0.6s cubic-bezier(0.22, 1, 0.36, 1) calc(var(--i) * 80ms),
+    transform 0.6s cubic-bezier(0.22, 1, 0.36, 1) calc(var(--i) * 80ms);
 }
 
 .wd2-banner.wd2-in {
@@ -243,11 +250,15 @@
 ============================================= */
 
 @media (max-width: 1440px) {
-  .wd2-inner { width: 85%; }
+  .wd2-inner {
+    width: 85%;
+  }
 }
 
 @media (max-width: 1024px) {
-  .wd2-inner { width: 95%; }
+  .wd2-inner {
+    width: 95%;
+  }
 }
 
 /* Tablet: 2 columns */
@@ -261,21 +272,27 @@
 }
 
 @media (max-width: 868px) {
-  .wd2-heading { font-size: 32px; }
+  .wd2-heading {
+    font-size: 32px;
+  }
 }
 
 /* Mobile: 1 column */
 @media (max-width: 568px) {
-  .wd2-inner { width: 100%; }
+  .wd2-inner {
+    width: 100%;
+  }
   .wd2-grid {
     grid-template-columns: 1fr;
     gap: 12px;
   }
-  .wd2-card { padding: 22px 18px; }
-  .wd2-banner { padding: 22px 18px; }
+  .wd2-card {
+    padding: 22px 18px;
+  }
+  .wd2-banner {
+    padding: 22px 18px;
+  }
 }
-
-
 
 /* =========================================
    FORCE ALL CARDS TO LOOK LIKE CARD 01

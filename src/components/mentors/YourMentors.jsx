@@ -1,6 +1,5 @@
 import React from "react";
 import "./YourMentors.css";
-import { NavLink } from "react-router-dom";
 
 function YourMentors() {
   const mentors = [
@@ -8,15 +7,36 @@ function YourMentors() {
       name: "Dr. Ravi Sharma",
       image:
         "https://cdn.dribbble.com/userupload/47148400/file/059d9e926eea42733d6020c1abea7cdd.png",
-      description:
-        "Dr. Ravi Sharma is a Neurosurgeon who brings a calm, experience-driven perspective to medical exam preparation. With a reassuring belief that “tu kar, main hoon tere saath,” his mentorship focuses on discipline, consistency, and mental strength — helping students stay steady through pressure, self-doubt, and long study phases. With a practical and motivating approach, he ensures students remain focused, confident, and exam-ready till the very end.",
+      description: (
+        <>
+          Dr. Ravi Sharma is a Neurosurgeon who brings a calm, experience-driven
+          perspective to medical exam preparation. With a reassuring belief that{" "}
+          <b>“Tu kar, main hoon tere saath,”</b> his mentorship focuses on
+          discipline, consistency, and mental strength — helping students stay
+          steady through pressure, self-doubt, and long study phases. With a
+          practical and motivating approach, he ensures students remain focused,
+          confident, and exam-ready till the very end.
+        </>
+      ),
     },
     {
       name: "Dr. Apurv Mehra",
       image:
         "https://cdn.dribbble.com/userupload/47148401/file/1007fcbde4afe5e428766c261f30b946.png",
-      description:
-        "Dr. Apurv Mehra is an Orthopedic Surgeon who brings real-world clinical experience and strong mentorship to NEET PG, INI-CET, and FMGE aspirants. With a strong belief that “teri kismat da likhya tere to koi kho nai sakda, te je us di meher hove te tenu o v mil jae jo tera ho nai sakda,” his guidance focuses on discipline, consistency, and mental strength - helping students stay focused, resilient, and exam-ready throughout their journey.",
+      description: (
+        <>
+          Dr. Apurv Mehra is an Orthopedic Surgeon who brings real-world
+          clinical experience and strong mentorship to NEET PG, INI-CET, and
+          FMGE aspirants. With a strong belief that{" "}
+          <b>
+            “Teri kismat da likhya tere to koi kho nai sakda, te je us di meher
+            hove te tenu o v mil jae jo tera ho nai sakda,”
+          </b>{" "}
+          his guidance focuses on discipline, consistency, and mental strength -
+          helping students stay focused, resilient, and exam-ready throughout
+          their journey.
+        </>
+      ),
     },
   ];
 
@@ -24,7 +44,7 @@ function YourMentors() {
     <div className="your-mentors-container">
       <div className="your-mentors-content">
         <h2>
-          <span>Your Transformation Starts Here with Core</span>BTR
+          Your Transformation Starts Here with Core<span>BTR</span>
         </h2>
         <h4>and the guidance of those who’ve been in your place.</h4>
         <h3>Meet Your Mentors</h3>
@@ -35,7 +55,7 @@ function YourMentors() {
           <div className="dr-zainab-vora-image">
             <img
               src="https://cdn.dribbble.com/userupload/47148402/file/210d605b7a0fe225a1cd8f1a658ca919.png"
-              alt="Dr. Zainab Vora "
+              alt="Dr. Zainab Vora"
             />
           </div>
 
@@ -51,8 +71,8 @@ function YourMentors() {
               years of teaching experience and deep insight into exam patterns,
               she focuses on high-yield concepts, structured revision systems,
               and simplifying complex subjects into clear, exam-ready
-              understanding — all driven by her belief that “kahani tumhari hai…
-              ho sake toh kamaal likhna.”
+              understanding - all driven by her belief that{" "}
+              <b>“Kahani tumhari hai… ho sake toh kamaal likhna.”</b>{" "}
             </p>
           </div>
         </div>

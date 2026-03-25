@@ -43,8 +43,7 @@
 .unannotated-lead {
   font-size: 16px;
   line-height: 1.78;
-  color: #1d204b;
-  max-width: 640px;
+  color: #3f3f3f;
   margin-bottom: 36px;
 }
 
@@ -158,7 +157,7 @@
 .unannotated-highlight-list li {
   font-size: 16px;
   line-height: 1.65;
-  color: #1d204b;
+  color: #3f3f3f;
   padding-left: 24px;
   position: relative;
 }
@@ -175,9 +174,9 @@
 .unannotated-section-para {
   text-align: center;
   margin-top: 2rem;
+  color: #3f3f3f;
 }
 
-/* ── CTA Button ─────────────────────────────────────────── */
 .unannotated-preview-cta {
   display: inline-flex;
   align-items: center;
@@ -214,7 +213,6 @@
   line-height: 1;
 }
 
-/* ── Popup Overlay ──────────────────────────────────────── */
 .popup-overlay {
   position: fixed;
   inset: 0;
@@ -258,7 +256,6 @@
   }
 }
 
-/* ── Popup Header ───────────────────────────────────────── */
 .popup-header {
   display: flex;
   align-items: center;
@@ -305,7 +302,6 @@
   border-color: rgba(255, 255, 255, 0.35);
 }
 
-/* ── Image Stage ────────────────────────────────────────── */
 .popup-stage {
   flex: 1;
   display: flex;
@@ -336,7 +332,6 @@
   user-select: none;
 }
 
-/* ── Nav Arrows ─────────────────────────────────────────── */
 .popup-nav {
   position: absolute;
   top: 50%;
@@ -378,7 +373,6 @@
   color: #1d204b;
 }
 
-/* ── Footer ─────────────────────────────────────────────── */
 .popup-footer {
   padding: 14px 24px;
   background: #141626;
@@ -391,7 +385,6 @@
   gap: 12px;
 }
 
-/* ── Zoom Controls ──────────────────────────────────────── */
 .popup-zoom-controls {
   display: flex;
   align-items: center;
@@ -441,7 +434,6 @@
   background: rgba(255, 255, 255, 0.14);
 }
 
-/* ── Dot Indicators ─────────────────────────────────────── */
 .popup-dots {
   display: flex;
   align-items: center;

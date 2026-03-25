@@ -28,7 +28,7 @@
 .annotated-lead {
   font-size: 16px;
   line-height: 1.78;
-  color: #1d204b;
+  color: #3f3f3f;
   margin-bottom: 36px;
 }
 
@@ -142,7 +142,7 @@
 .annotated-highlight-list li {
   font-size: 16px;
   line-height: 1.65;
-  color: #1d204b;
+  color: #3f3f3f;
   padding-left: 24px;
   position: relative;
 }
