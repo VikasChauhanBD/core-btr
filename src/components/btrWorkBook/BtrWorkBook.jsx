@@ -8,7 +8,7 @@ function BtrWorkBook() {
     <div className="workbook-container">
       <div className="wookbook-banner">
         <img
-          src="https://cdn.dribbble.com/userupload/47149656/file/8ab86e5cfb50e5d05217e320b1c814a0.jpeg"
+          src="https://cdn.dribbble.com/userupload/47178135/file/3272e8bd649b03e27e2ab07b03944e5b.jpg"
           alt="CoreBTR Workbook by Dr. Zainab Vora"
         />
       </div>
