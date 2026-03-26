@@ -1,9 +1,10 @@
 import { useState, useRef, useEffect } from "react";
 import "./Reviews.css";
 import { testimonialsData } from "../../assets/data/testimonials";
+import { reviewsData } from "../../assets/data/reviews";
 
 const INITIAL_ROWS = 4;
-const COLS = 4;
+const COLS = 3;
 const LOAD_MORE_ROWS = 4;
 
 const StarRating = () => (
@@ -75,8 +76,12 @@ function ReviewCard({ t, index }) {
         </div>
         <div className="card-author">
           <img className="author-avatar" src={t.image} alt={t.name} />
-          <div>{t.initials}</div>
-          <div className="author-name">{t.name}</div>
+          <div className="author-name">
+            <p>Name - {t.name}</p>
+            <p>Rank - {t.Rank}</p>
+            <p>Exam - {t.Exam}</p>
+            <p>Year - {t.Year}</p>
+          </div>
         </div>
       </div>
     </div>
@@ -85,20 +90,20 @@ function ReviewCard({ t, index }) {
 
 export default function Reviews() {
   const [visibleCount, setVisibleCount] = useState(INITIAL_ROWS * COLS);
-  const [hasLoadedMore, setHasLoadedMore] = useState(false); // ← NEW
-  const visibleTestimonials = testimonialsData.slice(0, visibleCount);
-  const hasMore = visibleCount < testimonialsData.length;
+  const [hasLoadedMore, setHasLoadedMore] = useState(false);
+  const visibleTestimonials = reviewsData.slice(0, visibleCount);
+  const hasMore = visibleCount < reviewsData.length;
 
   const handleLoadMore = () => {
-    setHasLoadedMore(true); // ← NEW
+    setHasLoadedMore(true);
     setVisibleCount((prev) =>
-      Math.min(prev + LOAD_MORE_ROWS * COLS, testimonialsData.length),
+      Math.min(prev + LOAD_MORE_ROWS * COLS, reviewsData.length),
     );
   };
 
   const handleCollapseBack = () => {
-    // ← NEW
     setVisibleCount(INITIAL_ROWS * COLS);
+    setHasLoadedMore(false);
   };
 
   return (
@@ -111,7 +116,7 @@ export default function Reviews() {
       <div className="cta-wrapper">
         {hasMore && (
           <button className="cta-btn" onClick={handleLoadMore}>
-            <span>Read More Stories</span>
+            <span>Read More Success Stories</span>
             <svg
               width="18"
               height="18"
@@ -124,7 +129,7 @@ export default function Reviews() {
             </svg>
           </button>
         )}
-        {hasLoadedMore && ( // ← NEW: only visible after first "Read More" click
+        {hasLoadedMore && (
           <button
             className="cta-btn cta-btn--collapse"
             onClick={handleCollapseBack}
