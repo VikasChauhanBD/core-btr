@@ -14,18 +14,18 @@ const unannotatedImages = [
     src: "https://cdn.dribbble.com/userupload/47156370/file/8fa07b793c781b7480e806955d66dcfb.jpeg",
     alt: "Unannotated workbook page 3",
   },
-  {
-    src: "https://cdn.dribbble.com/userupload/47156369/file/1efd9f39240d441142ea5c6333970ed0.jpeg",
-    alt: "Unannotated workbook page 4",
-  },
+  // {
+  //   src: "https://cdn.dribbble.com/userupload/47156369/file/1efd9f39240d441142ea5c6333970ed0.jpeg",
+  //   alt: "Unannotated workbook page 4",
+  // },
   {
     src: "https://cdn.dribbble.com/userupload/47156358/file/953ad100be428496700ac76ec6e85d43.jpeg",
     alt: "Unannotated workbook page 5",
   },
-  {
-    src: "https://cdn.dribbble.com/userupload/47156357/file/180e2ad593e6503915795ba3b3ee7ef0.jpeg",
-    alt: "Unannotated workbook page 6",
-  },
+  // {
+  //   src: "https://cdn.dribbble.com/userupload/47156357/file/180e2ad593e6503915795ba3b3ee7ef0.jpeg",
+  //   alt: "Unannotated workbook page 6",
+  // },
   {
     src: "https://cdn.dribbble.com/userupload/47156353/file/b5a4450acfb7fa8ba5f06c444aa6785d.jpeg",
     alt: "Unannotated workbook page 7",
@@ -54,8 +54,6 @@ const unannotatedImages = [
     src: "https://cdn.dribbble.com/userupload/47156362/file/66746e5291b7fc3542fbb025ce2e858f.jpeg",
     alt: "Unannotated workbook page 13",
   },
-  /////////////////////////////////////////////////////////////////
-
   {
     src: "https://cdn.dribbble.com/userupload/47156354/file/0d199aa3c70e7b3dce1439fbbfe10095.jpeg",
     alt: "Unannotated workbook page 14",
@@ -64,11 +62,10 @@ const unannotatedImages = [
     src: "https://cdn.dribbble.com/userupload/47156352/file/9e9c9ff02e784fca271c36d54b45e426.jpeg",
     alt: "Unannotated workbook page 15",
   },
-  {
-    src: "https://cdn.dribbble.com/userupload/47156366/file/149de6a84578593dd6e6e19195137432.jpeg",
-    alt: "Unannotated workbook page 16",
-  },
-
+  // {
+  //   src: "https://cdn.dribbble.com/userupload/47156366/file/149de6a84578593dd6e6e19195137432.jpeg",
+  //   alt: "Unannotated workbook page 16",
+  // },
   {
     src: "https://cdn.dribbble.com/userupload/47156364/file/56a13a18efdaf755c2d17670e0786cd0.jpeg",
     alt: "Unannotated workbook page 17",

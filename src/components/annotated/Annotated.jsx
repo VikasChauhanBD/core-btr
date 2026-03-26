@@ -30,10 +30,10 @@ const annotatedImages = [
     src: "https://cdn.dribbble.com/userupload/47174602/file/824fb661fdec6ee326cb09880e813838.jpeg",
     alt: "Annotated notes page 7",
   },
-  {
-    src: "https://cdn.dribbble.com/userupload/47174604/file/7319d23d30d3cfb96455d34b96f135a5.jpeg",
-    alt: "Annotated notes page 8",
-  },
+  // {
+  //   src: "https://cdn.dribbble.com/userupload/47174604/file/7319d23d30d3cfb96455d34b96f135a5.jpeg",
+  //   alt: "Annotated notes page 8",
+  // },
   {
     src: "https://cdn.dribbble.com/userupload/47174603/file/b61875e61eebbbde1f903fb08f167471.jpeg",
     alt: "Annotated notes page 9",
