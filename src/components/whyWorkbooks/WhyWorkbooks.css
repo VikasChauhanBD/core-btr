@@ -67,7 +67,7 @@
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 12px;
-  max-width: 760px;
+  max-width: 868px;
   position: relative;
   z-index: 1;
   text-align: left;

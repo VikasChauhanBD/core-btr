@@ -13,28 +13,36 @@ function UseWorkbook() {
             Simple, Structured, Effective
           </h4>
           <p>
-            <b>1. Start with Annotated Books -</b> Keep them open while watching
-            videos Focus on understanding, not writing everything Add only extra
-            points if needed
+            <b>1. Start with Annotated Books</b>
           </p>
+          <h6>
+            Keep them open while watching videos Focus on understanding, not
+            writing everything Add only extra points if needed.
+          </h6>
           <p>
-            <b>2. Revise from Annotated Books -</b> Re-read after the video
-            Focus on high-yield and PYQ-based content
+            <b>2. Revise from Annotated Books</b>
           </p>
+          <h6>
+            Re-read after the video Focus on high-yield and PYQ-based content.
+          </h6>
           <p>
-            <b>3. Active Recall with Unannotated Workbooks -</b>
+            <b>3. Active Recall with Unannotated Workbooks</b>
+          </p>
+          <h6>
             Use after 1-2 video views Try to recall everything from memory
-            Speak, teach, or revise mentally
-          </p>
+            Speak, teach, or revise mentally.
+          </h6>
           <p>
-            <b>4. Repeat for Retention -</b>
-            Revisit topics regularly Use workbooks again for recall
+            <b>4. Repeat for Retention</b>
           </p>
+          <h6>Revisit topics regularly Use workbooks again for recall.</h6>
           <p>
-            <b>5. Use Volume 3 (Integrated) for Concepts -</b>
+            <b>5. Use Volume 3 (Integrated) for Concepts</b>
+          </p>
+          <h6>
             Focus on understanding and subject integration Take more time for
-            clarity
-          </p>
+            clarity.
+          </h6>
         </section>
       </div>
     </div>

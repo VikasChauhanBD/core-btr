@@ -121,8 +121,7 @@ function InterviewVideos() {
     <div className="interview-videos-container">
       <h2>Success Stories of INI CET November | NEET PG 2025 Toppers</h2>
 
-      {/* Filter Tabs */}
-      <div className="interview-videos-tabs">
+      {/* <div className="interview-videos-tabs">
         {TABS.map((tab) => (
           <button
             key={tab.value}
@@ -137,10 +136,39 @@ function InterviewVideos() {
             {tab.label}
           </button>
         ))}
-      </div>
+      </div> */}
+
+      {/* <div className="interview-videos-cards">
+        {filteredVideos.map((video) => (
+          <div
+            key={video.id}
+            className="interview-videos-card"
+            onClick={() =>
+              setActiveVideo(activeVideo === video.id ? null : video.id)
+            }
+          >
+            {activeVideo === video.id ? (
+              <iframe
+                src={`${video.url}?autoplay=1`}
+                allow="autoplay; encrypted-media"
+                allowFullScreen
+                frameBorder="0"
+                title={`Video ${video.id}`}
+              ></iframe>
+            ) : (
+              <>
+                <img src={video.thumbnail} alt={video.alt} />
+                <div className="interview-videos-play-icon">
+                  <FaPlayCircle />
+                </div>
+              </>
+            )}
+          </div>
+        ))}
+      </div> */}
 
       <div className="interview-videos-cards">
-        {filteredVideos.map((video) => (
+        {videosData.map((video) => (
           <div
             key={video.id}
             className="interview-videos-card"
@@ -173,7 +201,7 @@ function InterviewVideos() {
           to="https://www.youtube.com/@vidyajeevan24/videos"
           target="_blank"
         >
-          Check More On Youtube
+          Check More Success Stories
         </NavLink>
       </div>
     </div>

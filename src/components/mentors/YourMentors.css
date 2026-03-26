@@ -39,9 +39,9 @@
   align-items: center;
   gap: 2rem;
   margin-top: 2.5rem;
-  background-color: #edf8ff;
   border-radius: 32px;
-  border: 2px solid #b0d4ec;
+  background-color: #1767be;
+  border: 2px solid #1d204b;
 }
 
 .dr-zainab-vora-image {
@@ -59,18 +59,18 @@
   width: 48%;
   text-align: start;
   padding: 1rem;
+  /* color: #3f3f3f; */
+  color: #fff;
 }
 
 .dr-zainab-vora-info h4 {
   font-size: 24px;
-  color: #3f3f3f;
 }
 
 .dr-zainab-vora-info p {
   font-size: 16px;
   line-height: 1.75;
   margin-top: 1rem;
-  color: #3f3f3f;
 }
 
 .your-mentors-cards {
@@ -82,10 +82,14 @@
 }
 
 .your-mentors-card {
-  background-color: #edf8ff;
+  /* background-color: #edf8ff;
+  border: 2px solid #b0d4ec; */
+  background-color: #1767be;
+  border: 2px solid #1d204b;
   border-radius: 32px;
-  border: 2px solid #b0d4ec;
   padding: 1rem;
+  /* color: #3f3f3f; */
+  color: #fff;
 }
 
 .your-mentors-card img {
@@ -98,14 +102,12 @@
 
 .your-mentors-card h4 {
   font-size: 24px;
-  color: #3f3f3f;
 }
 
 .your-mentors-card p {
   font-size: 16px;
   line-height: 1.75;
   margin-top: 1rem;
-  color: #3f3f3f;
 }
 
 .your-mentors-container a {

@@ -44,7 +44,15 @@
   font-size: 16px;
   line-height: 1.78;
   color: #3f3f3f;
-  margin-bottom: 8px;
+  margin: 8px 0;
+}
+
+.use-workbook-highlights h6 {
+  margin-left: 18px;
+  font-size: 16px;
+  font-weight: 500;
+  color: #3f3f3f;
+  margin-top: -8px;
 }
 
 .use-workbook-highlight-grid {

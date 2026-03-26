@@ -43,7 +43,7 @@
   text-align: center;
   padding: 60px 24px 48px;
   width: 100%;
-  max-width: 720px;
+  max-width: 810px;
 }
 
 .student-reviews-eyebrow {
@@ -75,7 +75,6 @@
 
 .student-reviews-hero-sub {
   font-size: 18px;
-  max-width: 520px;
   margin: 0 auto;
   line-height: 1.75;
   color: #fff;
