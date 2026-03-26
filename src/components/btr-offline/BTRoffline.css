@@ -225,6 +225,10 @@
 }
 
 @media (max-width: 868px) {
+  .btr-offline-banner img {
+    height: 250px;
+  }
+
   .btr-offline-content h1,
   .btr-offline-section-heading {
     font-size: 32px;
@@ -233,11 +237,27 @@
   .btr-offline-highlights {
     grid-template-columns: 1fr;
   }
+
+  .btr-offline-highlight-image {
+    width: 100%;
+  }
+
+  .btr-offline-highlight-image img {
+    border-radius: 0;
+  }
 }
 
 @media (max-width: 568px) {
+  .btr-offline-banner img {
+    height: 180px;
+  }
+
   .btr-offline-content,
   .btr-offline-highlights {
     width: 100%;
+  }
+
+  .btr-offline-highlight-image img {
+    height: 220px;
   }
 }

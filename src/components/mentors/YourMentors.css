@@ -38,7 +38,6 @@
   display: flex;
   align-items: center;
   gap: 2rem;
-
   margin-top: 2.5rem;
   background-color: #edf8ff;
   border-radius: 32px;
@@ -93,6 +92,8 @@
   width: 400px;
   height: 400px;
   object-fit: cover;
+  /* border-bottom: 4px solid #b0d4ec;
+  border-radius: 50px; */
 }
 
 .your-mentors-card h4 {
@@ -170,6 +171,6 @@
   .dr-zainab-vora-image img,
   .your-mentors-card img {
     width: 310px;
-    height: 400px;
+    height: 300px;
   }
 }

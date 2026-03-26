@@ -23,7 +23,7 @@ function BTRoffline() {
       <div className="btr-offline-banner">
         <img
           src="https://cdn.dribbble.com/userupload/47138330/file/22e4881842fa5a52a3255f80d9874680.jpg"
-          alt="coreBTR Offline (Offline Crash Course) by Dr. Zainab Vora"
+          alt="coreBTR Offline by Dr. Zainab Vora"
         />
       </div>
 

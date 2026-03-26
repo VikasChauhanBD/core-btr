@@ -17,7 +17,7 @@ function Footer() {
           </div>
           <div className="footer-social">
             <NavLink
-              to="https://www.instagram.com/btrbyzainabvora/"
+              to="https://www.instagram.com/corebtr/"
               target="_blank"
               className="social-icon"
               aria-label="Instagram"

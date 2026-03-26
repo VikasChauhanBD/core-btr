@@ -63,15 +63,15 @@ function YourMentors() {
             <h4>Dr. Zainab Vora</h4>
             <p>
               Dr. Zainab Vora is one of the most trusted and result-oriented
-              educators for NEET PG, INI-CET, and FMGE aspirants, known for her
-              revolutionary BTR approach that has transformed revision into a
-              smarter, faster, and more effective process. An MBBS, MD Radiology
-              (Gold Medalist) from AIIMS New Delhi, she secured AIR 1 in AIIMS &
-              NIMHANS (2015), reflecting her strong academic foundation. With
-              years of teaching experience and deep insight into exam patterns,
-              she focuses on high-yield concepts, structured revision systems,
-              and simplifying complex subjects into clear, exam-ready
-              understanding - all driven by her belief that{" "}
+              educators for NEET PG, INI-CET, and FMGE aspirants, and is known
+              for her revolutionary BTR approach that has transformed revision
+              into a smarter, faster, and more effective process. An MBBS, MD
+              Radiology (Gold Medalist) from AIIMS New Delhi, she secured AIR 1
+              in AIIMS & NIMHANS (2015), reflecting her strong academic
+              foundation. With years of teaching experience and deep insight
+              into exam patterns, she focuses on high-yield concepts, structured
+              revision systems, and simplifying complex subjects into clear,
+              exam-ready understanding - all driven by her belief that{" "}
               <b>“Kahani tumhari hai… ho sake toh kamaal likhna.”</b>{" "}
             </p>
           </div>
