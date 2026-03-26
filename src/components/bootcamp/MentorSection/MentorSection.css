@@ -31,7 +31,7 @@
    Header
 ───────────────────────────────────────────── */
 .ms-header {
-  text-align: center;
+  text-align: left;
   margin-bottom: 64px;
   opacity: 0;
   transform: translateY(28px);
@@ -46,8 +46,8 @@
 /* Eyebrow */
 .ms-eyebrow {
   display: flex;
-  align-items: center;
-  justify-content: center;
+  align-items: left;
+  justify-content: left;
   gap: 14px;
   margin-bottom: 20px;
 }
@@ -98,9 +98,12 @@
 /* Subhead */
 .ms-subhead {
   font-size: 15px;
+  display: flex;
+  align-items: left;
+  justify-content: left;
   line-height: 1.65;
   color: #4a4a6a;
-  max-width: 640px;
+  
   margin: 0 auto;
 }
 
@@ -154,7 +157,7 @@
 .ms-img-wrap {
   position: relative;
   width: 100%;
-  height: 700px;           /* fixed 400×500 ratio → constrained to card width */
+  height: 300px;           /* fixed 400×500 ratio → constrained to card width */
   overflow: hidden;
 }
 
