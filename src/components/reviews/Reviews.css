@@ -205,7 +205,7 @@
 
 .author-name {
   font-size: 16px;
-  font-weight: 500;
+  /* font-weight: 500; */
   color: #3f3f3f;
   line-height: 1.3;
 }
