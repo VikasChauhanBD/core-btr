@@ -65,10 +65,10 @@ export default function BootcampHero() {
       <div className="bch__right">
         <span className="bch__r-by">by</span>
         <span className="bch__r-name">Dr. Zainab Vora</span>
-        <span className="bch__r-place">
+        {/* <span className="bch__r-place">
           at Vidya Jeevan, Greater Noida
-        </span>
-        <span className="bch__r-cta">When concepts click, <br/> everything changes</span>
+        </span> */}
+        <span className="bch__r-cta">When concepts click <br/> everything changes</span>
       </div>
 
       {/* ── LEFT: CoreBTR BOOTCAMP big — expand only ── */}
@@ -77,6 +77,9 @@ export default function BootcampHero() {
           CoreBTR
           <br />
           BOOTCAMP
+        </span>
+        <span className="bch__r-place">
+          at Vidya Jeevan, Greater Noida
         </span>
       </div>
 

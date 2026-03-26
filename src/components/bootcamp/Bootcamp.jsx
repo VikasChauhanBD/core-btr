@@ -7,6 +7,7 @@ import SABR from "../../assets/images/SABR.webp";
 import WhyDiff2 from "./WhyDifferent/WhyDiff2";
 import BootcampFeatures from "./BootcampFeatures/BootcampFeatures";
 import BootcampCTA from "./BootcampCTA/BootcampCTA";
+import MentorSection from "./MentorSection/MentorSection";
 
 const highlights = [
   {
@@ -181,14 +182,34 @@ function Bootcamp() {
               alt="coreBTR BootCamp Class 2026 - Bottom"
             />
           </div>
-          <h3 className="bootcamp-section-sub-heading-img">
+          {/* <h3 className="bootcamp-section-sub-heading-img">
             Real Exam Environment. Real Preparation.
-          </h3>
+          </h3> */}
+          <div className="bootcamp-highlight-content">
+           
+
+            <h2 className="bootcamp-title">Consistent Testing. Real Progress.</h2>
+
+            <p className="bootcamp-description">
+            <strong> After completing each subject,</strong> After completing each subject, you’ll take structured tests to assess your understanding and identify gaps. On non-class days, daily mini tests ensure you stay in the habit of solving MCQs
+            </p>
+
+            {/* <ul className="bootcamp-points">
+              <li>High-yield focus for NEET PG, INI-CET & FMGE</li>
+              <li>System-wise structured preparation</li>
+              <li>Built for retention, recall & real exam pressure</li>
+            </ul> */}
+
+            <p className="bootcamp-tagline">
+              So practice becomes consistent,<span>not occasional.</span>
+            </p>
+          </div>
         </section>
       </div>
       <BootcampFeatures />
 
       <WhyDiff2 />
+      <MentorSection />
       <BootcampCTA />
     </div>
   );
