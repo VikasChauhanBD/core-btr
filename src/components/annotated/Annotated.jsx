@@ -3,44 +3,40 @@ import "./Annotated.css";
 
 const annotatedImages = [
   {
-    src: "https://cdn.dribbble.com/userupload/47156247/file/05bfc020a8cf2b14a1e68bdc49c966f2.jpeg",
+    src: "https://cdn.dribbble.com/userupload/47174610/file/dbd381bef0f2e6b3ce55391e9793601d.jpeg",
     alt: "Annotated notes page 1",
   },
   {
-    src: "https://cdn.dribbble.com/userupload/47156251/file/1af82589a6be90957b67c0f05e035f6c.jpeg",
+    src: "https://cdn.dribbble.com/userupload/47174606/file/7bb8d23795dfb9d5ea000633f15e3d45.jpeg",
     alt: "Annotated notes page 2",
   },
   {
-    src: "https://cdn.dribbble.com/userupload/47156254/file/9e8fd49c61c784ea069cee1b74305e57.jpeg",
+    src: "https://cdn.dribbble.com/userupload/47174607/file/4ce9e2dfa0e0eaae11e1a8538dd2a7e2.jpeg",
     alt: "Annotated notes page 3",
   },
   {
-    src: "https://cdn.dribbble.com/userupload/47156253/file/9c8dd9e86673f47b7d4473fac2b760e4.jpeg",
+    src: "https://cdn.dribbble.com/userupload/47174608/file/198884ca481a557256df5210784b2dab.jpeg",
     alt: "Annotated notes page 4",
   },
   {
-    src: "https://cdn.dribbble.com/userupload/47156252/file/b630a1b83fce39f4fc14fec76aba4b70.jpeg",
+    src: "https://cdn.dribbble.com/userupload/47174609/file/7eecf6e1013e0f1ac275e2fe4c1111dc.jpeg",
     alt: "Annotated notes page 5",
   },
   {
-    src: "https://cdn.dribbble.com/userupload/47156250/file/a7cf23c164dbbfa1e4dea6a37158b24a.jpeg",
+    src: "https://cdn.dribbble.com/userupload/47174605/file/e3325d6ce6bf5b8262a7b6b816de11f7.jpeg",
     alt: "Annotated notes page 6",
   },
   {
-    src: "https://cdn.dribbble.com/userupload/47156255/file/32d95908c246036714fd23e0e7bd7c8c.jpeg",
+    src: "https://cdn.dribbble.com/userupload/47174602/file/824fb661fdec6ee326cb09880e813838.jpeg",
     alt: "Annotated notes page 7",
   },
   {
-    src: "https://cdn.dribbble.com/userupload/47156256/file/def5f194dee2c772eb88bf466d98173e.jpeg",
+    src: "https://cdn.dribbble.com/userupload/47174604/file/7319d23d30d3cfb96455d34b96f135a5.jpeg",
     alt: "Annotated notes page 8",
   },
   {
-    src: "https://cdn.dribbble.com/userupload/47156248/file/502861d24758b7a2a133d261431cc3d1.jpeg",
+    src: "https://cdn.dribbble.com/userupload/47174603/file/b61875e61eebbbde1f903fb08f167471.jpeg",
     alt: "Annotated notes page 9",
-  },
-  {
-    src: "https://cdn.dribbble.com/userupload/47156249/file/c42588be57777c789c12a182ccf2a1bf.jpeg",
-    alt: "Annotated notes page 10",
   },
 ];
 
