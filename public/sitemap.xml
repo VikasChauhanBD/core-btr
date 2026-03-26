@@ -36,7 +36,49 @@
   </url>
 
   <url>
+    <loc>https://corebtr.com/contact-us</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <url>
+    <loc>https://corebtr.com/privacy-policy</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <url>
+    <loc>https://corebtr.com/terms-and-conditions</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <url>
+    <loc>https://corebtr.com/cancellation-and-refund-policy</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <url>
+    <loc>https://corebtr.com/shipping-and-delivery-policy</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <url>
+    <loc>https://corebtr.com/device-policy</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <url>
     <loc>https://corebtr.com/faqs</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <url>
+    <loc>https://corebtr.com/delete-account</loc>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>

@@ -47,12 +47,6 @@ function Footer() {
               </NavLink>
             </li>
             <li>
-              <NavLink to="/corebtr-offline">CoreBTR Offline</NavLink>
-            </li>
-            <li>
-              <NavLink to="/corebtr-bootcamp">CoreBTR Bootcamp</NavLink>
-            </li>
-            <li>
               <NavLink to="/workbooks">Workbooks</NavLink>
             </li>
             <li>
@@ -61,11 +55,6 @@ function Footer() {
             <li>
               <NavLink to="/reviews">Reviews</NavLink>
             </li>
-            {/* <li>
-              <NavLink to="https://drzainabvora.com/gallery" target="_blank">
-                Gallery
-              </NavLink>
-            </li> */}
             <li>
               <NavLink to="/contact-us">Contact Us</NavLink>
             </li>
