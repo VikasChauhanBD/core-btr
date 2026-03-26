@@ -19,6 +19,7 @@ import DeleteAccountPage from "./pages/DeleteAccountPage";
 import ContactUsPage from "./pages/ContactUsPage";
 import ShippingAndDeliveryPolicyPage from "./pages/ShippingAndDeliveryPolicyPage";
 import WorkbookPage from "./pages/WorkbookPage";
+import GalleryPage from "./pages/GalleryPage";
 import Face404 from "./components/face404/Face404";
 
 function App() {
@@ -93,6 +94,7 @@ function App() {
           <Route path="/corebtr-offline" element={<BTROfflinePage />} />
           <Route path="/corebtr-bootcamp" element={<BootcampPage />} />
           <Route path="/workbooks" element={<WorkbookPage />} />
+          <Route path="/gallery" element={<GalleryPage />} />
           <Route path="/reviews" element={<StudentReviewsPage />} />
           <Route path="/faqs" element={<FaqsPage />} />
           <Route path="/contact-us" element={<ContactUsPage />} />
