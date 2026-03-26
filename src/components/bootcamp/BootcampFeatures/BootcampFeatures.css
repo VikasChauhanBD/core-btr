@@ -1,3 +1,6 @@
+/* ─────────────────────────────────────────────
+   Container & Section
+───────────────────────────────────────────── */
 .bootcamp-features-container {
   width: 100%;
   background: #ffffff;
@@ -12,8 +15,19 @@
   margin: 0 auto;
 }
 
+/* ─────────────────────────────────────────────
+   Header
+───────────────────────────────────────────── */
 .bfc-header {
-  margin-bottom: 64px;
+  margin-bottom: 56px;
+  opacity: 0;
+  transform: translateY(32px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.bfc-header.bfc-visible {
+  opacity: 1;
+  transform: translateY(0);
 }
 
 .bootcamp-features-eyebrow {
@@ -53,184 +67,334 @@
 
 .bootcamp-features-lead {
   font-size: 16px;
-  line-height: 1.5;
+  line-height: 1.6;
   color: #3f3f3f;
-  max-width: 1400px;
-  margin: 0 0 0px;
+  max-width: 860px;
+  margin: 0;
 }
 
-.bfc-lead-last {
-  margin-bottom: 0;
-}
-
-.bfc-list {
-  display: flex;
-  flex-direction: column;
-  gap: 40px;
-}
-
-.bfc-row {
+/* ─────────────────────────────────────────────
+   Split Panel  
+   Left = flexible | Right = fixed 480px tall
+───────────────────────────────────────────── */
+.bfc-split-panel {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  min-height: 460px;
+  grid-template-columns: 1fr 460px;
+  gap: 48px;
+  align-items: start;        /* both columns start at top */
   opacity: 0;
-  transform: translateY(40px);
-  transition:
-    opacity 0.65s ease var(--delay, 0s),
-    transform 0.65s ease var(--delay, 0s);
-  border-radius: 24px;
-  overflow: hidden;
-  box-shadow: 0 4px 32px rgba(29, 32, 75, 0.08);
+  transform: translateY(36px);
+  transition: opacity 0.65s ease 0.15s, transform 0.65s ease 0.15s;
 }
 
-.bfc-row.bfc-visible {
+.bfc-split-panel.bfc-visible {
   opacity: 1;
   transform: translateY(0);
 }
 
-.bfc-row--img-right {
-  direction: rtl;
+/* ─────────────────────────────────────────────
+   LEFT — Pointer list (always expanded)
+───────────────────────────────────────────── */
+.bfc-pointers {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
 }
 
-.bfc-row--img-right > * {
-  direction: ltr;
-}
-
-.bfc-img-col {
-  position: relative;
-  overflow: hidden;
-}
-
-.bfc-img-frame {
+.bfc-pointer-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+  padding: 18px 16px 18px 16px;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  text-align: left;
+  border-radius: 14px;
+  transition: background 0.22s ease, box-shadow 0.22s ease;
   position: relative;
   width: 100%;
-  height: 100%;
-  min-height: 400px;
+  border-left: 3px solid transparent;
 }
 
-.bfc-img-el {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  display: block;
-  transition: transform 0.55s ease;
+.bfc-pointer-item:hover {
+  background: #f5f8ff;
 }
 
-.bfc-row:hover .bfc-img-el {
-  transform: scale(1.04);
+.bfc-pointer-active {
+  background: #fffbd5 !important;
+  box-shadow: 0 4px 20px rgba(29, 32, 75, 0.08);
+  border-left-color: #feb122;
 }
 
-.bfc-img-overlay {
-  position: absolute;
-  inset: 0;
-  background: linear-gradient(
-    135deg,
-    rgba(23, 103, 190, 0.15) 0%,
-    rgba(10, 6, 40, 0.3) 100%
-  );
-  pointer-events: none;
-}
-
-.bfc-img-chip {
-  position: absolute;
-  top: 20px;
-  left: 20px;
-  width: 52px;
-  height: 52px;
+/* Chip */
+.bfc-pointer-chip {
+  flex-shrink: 0;
+  width: 40px;
+  height: 40px;
   border-radius: 50%;
-  background: #feb122;
+  background: #e8effa;
   display: flex;
   align-items: center;
   justify-content: center;
-  box-shadow: 0 4px 16px rgba(254, 177, 34, 0.5);
+  transition: background 0.22s ease, box-shadow 0.22s ease;
+  margin-top: 1px;
 }
 
-.bfc-chip-num {
-  font-size: 16px;
+.bfc-pointer-active .bfc-pointer-chip {
+  background: #feb122;
+  box-shadow: 0 4px 14px rgba(254, 177, 34, 0.4);
+}
+
+.bfc-pointer-num {
+  font-size: 12px;
   font-weight: 900;
   color: #1d204b;
   line-height: 1;
 }
 
-.bfc-text-col {
-  background: #fffbd5;
+/* Text */
+.bfc-pointer-content {
+  flex: 1;
+  min-width: 0;
+}
+
+.bfc-pointer-title-row {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 8px;
+  margin-bottom: 6px;
 }
 
-.bfc-row--img-right .bfc-text-col {
-  background: #a6caff;
-}
-
-.bfc-text-inner {
-  padding: 52px 56px;
-}
-
-.bfc-step-tag {
-  display: inline-block;
-  font-size: 12px;
-  font-weight: 800;
-  letter-spacing: 0.2em;
-  color: #feb122;
-  text-transform: uppercase;
-  margin-bottom: 14px;
-}
-
-.bfc-row-title {
-  font-size: 36px;
+.bfc-pointer-title {
+  font-size: 16px;
   font-weight: 800;
   color: #1d204b;
-  line-height: 1.25;
-  margin: 0 0 14px;
-}
-
-.bfc-title-bar {
-  width: 40px;
-  height: 3px;
-  background: linear-gradient(90deg, #feb122, #1767be);
-  border-radius: 2px;
-  margin-bottom: 20px;
-}
-
-.bfc-row-body {
-  font-size: 16px;
-  line-height: 1.82;
-  color: #3f3f3f;
   margin: 0;
+  line-height: 1.3;
+  transition: color 0.2s;
+  flex: 1;
 }
 
+.bfc-pointer-active .bfc-pointer-title {
+  color: #1767be;
+}
+
+/* Arrow */
+.bfc-pointer-arrow {
+  flex-shrink: 0;
+  color: #c0c8e0;
+  margin-top: 2px;
+  transition: color 0.2s ease, transform 0.2s ease;
+}
+
+.bfc-arrow-active {
+  color: #1767be !important;
+  transform: translateX(3px);
+}
+
+/* Body — ALWAYS fully visible, no collapse */
+.bfc-pointer-body {
+  font-size: 13.5px;
+  line-height: 1.7;
+  color: #5a5a7a;
+  /* font-weight: 500; */
+  margin: 0 0 0;
+}
+
+/* Doctor name highlight */
+.bfc-doctor-name {
+  font-weight: 800;
+  color: #1767be;
+}
+
+/* ── Mentor sub-cards ── */
+.bfc-mentor-list {
+  margin-top: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.bfc-mentor-card {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  background: #f0f5ff;
+  border: 1px solid #d4e3ff;
+  border-radius: 10px;
+  padding: 10px 14px;
+}
+
+.bfc-mentor-icon {
+  flex-shrink: 0;
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  background: #dce9ff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 1px;
+}
+
+.bfc-mentor-name {
+  font-size: 13px;
+  font-weight: 800;
+  color: #1767be;
+}
+
+.bfc-mentor-desc {
+  font-size: 12.5px;
+  color: #5a5a7a;
+  line-height: 1.5;
+}
+
+/* ─────────────────────────────────────────────
+   RIGHT — Fixed-height image panel
+───────────────────────────────────────────── */
+.bfc-image-panel {
+  position: sticky;
+  top: 24px;               /* sticks while left side scrolls */
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.bfc-image-inner {
+  position: relative;
+  width: 100%;
+  height: 480px;           /* fixed height — image never changes size */
+  border-radius: 20px;
+  overflow: hidden;
+  animation: bfc-fade-in 0.5s ease forwards;
+  box-shadow: 0 8px 40px rgba(29, 32, 75, 0.15);
+}
+
+@keyframes bfc-fade-in {
+  from {
+    opacity: 0;
+    transform: scale(1.04);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.bfc-fade-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  display: block;
+}
+
+.bfc-image-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    160deg,
+    rgba(23, 103, 190, 0.1) 0%,
+    rgba(10, 6, 40, 0.42) 100%
+  );
+  pointer-events: none;
+}
+
+/* Badge */
+.bfc-image-badge {
+  position: absolute;
+  bottom: 18px;
+  left: 18px;
+  right: 18px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  background: rgba(255, 255, 255, 0.13);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.22);
+  border-radius: 12px;
+  padding: 11px 15px;
+  animation: bfc-badge-up 0.5s ease 0.15s both;
+}
+
+@keyframes bfc-badge-up {
+  from { opacity: 0; transform: translateY(10px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+.bfc-badge-num {
+  flex-shrink: 0;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background: #feb122;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 11px;
+  font-weight: 900;
+  color: #1d204b;
+}
+
+.bfc-badge-label {
+  font-size: 13.5px;
+  font-weight: 700;
+  color: #ffffff;
+  line-height: 1.3;
+}
+
+/* Dots */
+.bfc-dots {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+
+.bfc-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  border: none;
+  background: #d0d8f0;
+  cursor: pointer;
+  padding: 0;
+  transition: background 0.25s ease, width 0.25s ease;
+}
+
+.bfc-dot-active {
+  background: #1767be;
+  width: 24px;
+  border-radius: 4px;
+}
+
+/* ─────────────────────────────────────────────
+   Responsive
+───────────────────────────────────────────── */
 @media (max-width: 1200px) {
-  .bootcamp-features-what-you-get {
-    width: 90%;
-  }
-  .bfc-text-inner {
-    padding: 40px 36px;
-  }
+  .bootcamp-features-what-you-get { width: 90%; }
+  .bfc-split-panel { grid-template-columns: 1fr 400px; gap: 36px; }
+  .bfc-image-inner { height: 440px; }
 }
 
 @media (max-width: 960px) {
-  .bootcamp-features-what-you-get {
-    width: 94%;
-  }
-  .bootcamp-features-section-heading {
-    font-size: 34px;
-  }
-  .bfc-row {
+  .bootcamp-features-what-you-get { width: 94%; }
+  .bootcamp-features-section-heading { font-size: 30px; }
+
+  .bfc-split-panel {
     grid-template-columns: 1fr;
-    min-height: unset;
+    gap: 32px;
   }
-  .bfc-row--img-right {
-    direction: ltr;
+
+  .bfc-image-panel {
+    position: static;
+    order: -1;
   }
-  .bfc-row--img-right > * {
-    direction: ltr;
-  }
-  .bfc-img-frame {
-    min-height: 280px;
-  }
-  .bfc-text-inner {
-    padding: 32px 28px;
-  }
+
+  .bfc-image-inner { height: 300px; }
 }
 
 @media (max-width: 560px) {
@@ -239,22 +403,11 @@
     padding: 0 16px;
     box-sizing: border-box;
   }
-  .bootcamp-features-sections {
-    padding: 48px 0 56px;
-  }
-  .bootcamp-features-section-heading {
-    font-size: 27px;
-  }
-  .bfc-header {
-    margin-bottom: 40px;
-  }
-  .bfc-img-frame {
-    min-height: 220px;
-  }
-  .bfc-row-title {
-    font-size: 21px;
-  }
-  .bfc-text-inner {
-    padding: 24px 20px;
-  }
+  .bootcamp-features-sections { padding: 48px 0 56px; }
+  .bootcamp-features-section-heading { font-size: 24px; }
+  .bfc-header { margin-bottom: 32px; }
+  .bfc-image-inner { height: 240px; }
+  .bfc-pointer-title { font-size: 14px; }
+  .bfc-pointer-item { padding: 14px 12px; gap: 12px; }
+  .bfc-pointer-body { font-size: 12.5px; }
 }

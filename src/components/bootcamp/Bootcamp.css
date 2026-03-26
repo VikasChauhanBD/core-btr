@@ -205,6 +205,14 @@
   color: #3f3f3f;
   margin-top: 1rem;
 }
+.bootcamp-section-sub-heading-img-2 {
+  font-size: 28px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #3f3f3f;
+  margin-top: -1rem;
+}
 
 /* ── Animations ── */
 @keyframes bootcamp-fadeUp {
@@ -305,6 +313,21 @@
   text-align: center;
   padding: 10px;
 }
+.bootcamp-highlight-image {
+  position: relative;
+}
+
+.bootcamp-subtitle-top {
+  position: absolute;
+  bottom: 20px; /* adjust this to match your green line */
+  left: 40px;   /* adjust horizontal position */
+  font-size: 32px;
+  font-weight: 800;
+  color: #ffffff;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  z-index: 2;
+}
 
 .bootcamp-subtitle {
   font-size: 16px;
@@ -315,11 +338,13 @@
   margin-bottom: 8px;
 }
 
+
 .bootcamp-title {
   font-size: 38px;
   font-weight: 700;
   color: #1d204b;
   margin-bottom: 16px;
+  margin-top: -20px;
 }
 
 .bootcamp-description {

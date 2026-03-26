@@ -1,0 +1,124 @@
+.our-CTA-container {
+  width: 100%;
+  padding: 4rem 1rem;
+}
+
+.our-CTA-info {
+  width: 80%;
+  margin: 0 auto;
+  background: linear-gradient(135deg, #1d204b 0%, #1767be 50%, #feb122 100%);
+  border-radius: 12px;
+  padding: 40px 44px;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 24px 64px rgba(27, 18, 100, 0.32);
+  z-index: 1;
+  text-align: center;
+}
+
+.our-CTA-info::before {
+  content: "";
+  position: absolute;
+  top: -60px;
+  right: -60px;
+  width: 220px;
+  height: 220px;
+  border: 1.5px solid rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+  pointer-events: none;
+}
+
+.our-CTA-info::after {
+  content: "";
+  position: absolute;
+  bottom: -80px;
+  left: -50px;
+  width: 260px;
+  height: 260px;
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  border-radius: 50%;
+  pointer-events: none;
+}
+
+.our-CTA-info-label {
+  font-size: 18px;
+  font-weight: 700;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: #feb122;
+  margin-bottom: 22px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+}
+
+.our-CTA-info-label::before,
+.our-CTA-info-label::after {
+  content: "";
+  flex: 1;
+  height: 1px;
+  background: #feb122;
+}
+
+.our-CTA-info-exams {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  flex-wrap: wrap;
+  margin-bottom: 24px;
+  position: relative;
+  z-index: 1;
+}
+
+.our-CTA-info-exam-tag {
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #1d204b;
+  background: #fff;
+  border-radius: 20px;
+  padding: 5px 14px;
+}
+
+.our-CTA-info-CTA {
+  font-size: 20px;
+  color: #fff;
+  line-height: 1.5;
+  margin-bottom: 2rem;
+  position: relative;
+  z-index: 1;
+}
+
+.our-CTA-info a {
+  text-decoration: none;
+  padding: 8px 16px;
+  background-color: #fff;
+  color: #1767be;
+  font-size: 16px;
+  font-weight: 600;
+  border-radius: 10px;
+}
+
+/* ---------------------------- Responsive Style ------------------------ */
+@media (max-width: 1440px) {
+  .our-CTA-info {
+    width: 85%;
+  }
+}
+
+@media (max-width: 1024px) {
+  .our-CTA-info {
+    width: 95%;
+  }
+}
+
+/* @media (max-width: 868px) {
+} */
+
+@media (max-width: 568px) {
+  .our-CTA-info {
+    width: 100%;
+  }
+}

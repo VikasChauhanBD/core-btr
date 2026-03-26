@@ -6,6 +6,7 @@ import CBTRoom from "../../assets/images/CBTRooms2.webp";
 import SABR from "../../assets/images/SABR.webp";
 import WhyDiff2 from "./WhyDifferent/WhyDiff2";
 import BootcampFeatures from "./BootcampFeatures/BootcampFeatures";
+import BootcampCTA from "./BootcampCTA/BootcampCTA";
 
 const highlights = [
   {
@@ -97,7 +98,7 @@ function Bootcamp() {
             An intensive, high-impact offline program for serious
             <b>
               {" "}
-              NEET PG &amp; INI-CET <br /> aspirants - designed for focused
+              NEET PG &amp; INI-CET Aspirants.<br /> Designed for focused
               learning,
             </b>{" "}
             disciplined preparation, and a completely distraction-free
@@ -127,9 +128,14 @@ function Bootcamp() {
               src="https://cdn.dribbble.com/userupload/47155755/file/3f45cbd32c6198de7dc278e7d95dbf2d.jpeg"
               alt="coreBTR BootCamp Class 2026 - Top"
             />
+            <p className="bootcamp-subtitle-top">Learn The BTR Way : 19 Subjects | System-Wise | High-Yield</p>
+            
           </div>
+          {/* <h3 className="bootcamp-section-sub-heading-img-2">
+           19 Subjects | System-Wise | High-Yield
+          </h3> */}
           <div className="bootcamp-highlight-content">
-            <p className="bootcamp-subtitle">Learn The BTR Way</p>
+           
 
             <h2 className="bootcamp-title">Concepts. Clarity. Confidence.</h2>
 
@@ -183,6 +189,7 @@ function Bootcamp() {
       <BootcampFeatures />
 
       <WhyDiff2 />
+      <BootcampCTA />
     </div>
   );
 }

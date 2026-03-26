@@ -12,13 +12,13 @@ const whatYouGet = [
     title: "Structured Notes & Workbooks",
     body: "5 books designed for rapid revision and long-term retention, perfectly aligned with video content.",
     image:
-      "https://cdn.dribbble.com/userupload/47150179/file/2797e7c5125ef94e919282423d5bd711.jpg",
+      "https://cdn.dribbble.com/userupload/47176513/file/3db2bd69791791623f75d4c7d616cd5f.jpg",
   },
   {
     title: "PYQs",
     body: "Previous year questions organized topic-wise for focused PYQ based revision.",
     image:
-      "https://cdn.dribbble.com/userupload/47163535/file/bebac77cbdd72726377d5eee6fb21072.jpg",
+      "https://cdn.dribbble.com/userupload/47176149/file/f56c121e5b3a8e57046f51850137947f.jpg",
   },
   {
     title: "Curated QBank",
@@ -36,7 +36,7 @@ const whatYouGet = [
     title: "ZVRecommended PYQs",
     body: "Handpicked, high-impact questions for quick revision when time is limited.",
     image:
-      "https://cdn.dribbble.com/userupload/47132068/file/f1c780491f79ec7ea31d7a65430d2d98.jpeg",
+      "https://cdn.dribbble.com/userupload/47175085/file/5301d9658937422fdef481a74ad3f73f.png",
   },
   {
     title: "Grand Tests & Subject Tests",
