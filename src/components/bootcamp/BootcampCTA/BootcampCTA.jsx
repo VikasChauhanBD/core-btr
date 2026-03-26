@@ -9,7 +9,7 @@ function BootcampCTA() {
         <div className="our-CTA-info-label">Join the Bootcamp</div>
 
         <p className="our-CTA-info-CTA">
-          If you’re ready to stop feeling lost and start seeing progress—this is where it begins.
+          If you’re ready to stop feeling lost and start seeing progress - this is where it begins.
         </p>
 
         

@@ -225,8 +225,8 @@ export default function WhyDiff2() {
             style={{ "--i": 5 }}
           >
             <p className="wd2-banner-quote">
-              This Bootcamp is Not just about Teaching —{" "}
-              <strong>It's about Handholding Students till the Finish line</strong>
+              At CoreBTR Bootcamp -{" "}
+              <strong>We guide you all the way until you achieve your goal</strong>
             </p>
           </div>
         </div>

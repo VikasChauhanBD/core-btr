@@ -37,14 +37,10 @@ function Bootcamp() {
         </h1>
         <h3>Learn with Dr. Zainab Vora. Transform with the System.</h3>
         <p>
-          This is where concepts finally make sense. Where revision becomes
-          structured And where your preparation starts moving in the right
-          direction.
-          <b>At coreBTR Bootcamp, </b> you’re not just attending classes—you’re
-          learning directly under <b>Dr. Zainab Vora</b>, with a system designed
-          to help you <b>stay consistent, focused, and exam-ready.</b> so you
-          don’t just study more, you study better. Start Learning Smarter.{" "}
-          <b>Explore Bootcamp</b>
+          This is where concepts finally make sense. Where revision becomes structured and where your preparation starts moving in the right direction.
+          <b>At coreBTR Bootcamp, </b> you’re not just attending classes, you’re learning directly under<b>Dr. Zainab Vora</b>, with a system designed
+          to help you <b>stay consistent, focused, and exam-ready.</b> You don’t just study more, you study better.{" "}
+          <b> Start Learning Smarter.</b>
         </p>
       </div>
 
@@ -126,10 +122,15 @@ function Bootcamp() {
           {/* TOP IMAGE */}
           <div className="bootcamp-highlight-image bootcamp-highlight-image--top">
             <img
-              src="https://cdn.dribbble.com/userupload/47155755/file/3f45cbd32c6198de7dc278e7d95dbf2d.jpeg"
+              src="https://cdn.dribbble.com/userupload/47178593/file/1bfaa70f0c6507317a6cb8d3c9100c74.png"
               alt="coreBTR BootCamp Class 2026 - Top"
             />
-            <p className="bootcamp-subtitle-top">Learn The BTR Way : 19 Subjects | System-Wise | High-Yield</p>
+            <p className="bootcamp-subtitle-top">
+  Learn The BTR Way :{" "}
+  <span className="highlight-yellow">
+    19 Subjects | System-Wise | High-Yield
+  </span>
+</p>
             
           </div>
           {/* <h3 className="bootcamp-section-sub-heading-img-2">
@@ -177,11 +178,14 @@ function Bootcamp() {
 
           {/* BOTTOM IMAGE */}
           <div className="bootcamp-highlight-image bootcamp-highlight-image--bottom">
-            <img
-              src="https://cdn.dribbble.com/userupload/47155756/file/65427d7658a4f012368607444d02c2d1.jpeg"
-              alt="coreBTR BootCamp Class 2026 - Bottom"
-            />
-          </div>
+  <img
+    src="https://cdn.dribbble.com/userupload/47178594/file/67a6d44caf08a8edf187a3f80c9938cb.png"
+    alt="coreBTR BootCamp Class 2026 - Bottom"
+  />
+  <h3 className="bootcamp-section-sub-heading-img">
+    Real Exam Environment. Real Preparation.
+  </h3>
+</div>
           {/* <h3 className="bootcamp-section-sub-heading-img">
             Real Exam Environment. Real Preparation.
           </h3> */}
@@ -191,7 +195,7 @@ function Bootcamp() {
             <h2 className="bootcamp-title">Consistent Testing. Real Progress.</h2>
 
             <p className="bootcamp-description">
-            <strong> After completing each subject,</strong> After completing each subject, you’ll take structured tests to assess your understanding and identify gaps. On non-class days, daily mini tests ensure you stay in the habit of solving MCQs
+            <strong> After completing each subject,</strong> you’ll take structured tests to assess your understanding and identify gaps. On non-class days, daily mini tests ensure you stay in the habit of solving MCQs
             </p>
 
             {/* <ul className="bootcamp-points">
@@ -209,7 +213,7 @@ function Bootcamp() {
       <BootcampFeatures />
 
       <WhyDiff2 />
-      <MentorSection />
+      
       <BootcampCTA />
     </div>
   );

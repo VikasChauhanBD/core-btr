@@ -44,9 +44,9 @@ function YourMentors() {
     <div className="your-mentors-container">
       <div className="your-mentors-content">
         <h2>
-          Your Transformation Starts Here with Core<span>BTR</span>
+          Your Transformation Starts Here 
         </h2>
-        <h4>and the guidance of those who’ve been in your place.</h4>
+        <h4>With CoreBTR and the guidance of those who’ve been in your place.</h4>
         <h3>Meet Your Mentors</h3>
       </div>
 

@@ -378,6 +378,7 @@
 
 import React, { useEffect, useRef, useState } from "react";
 import "./BootcampFeatures.css";
+import MentorSection from "../MentorSection/MentorSection";
 
 /* ── Inline bold for doctor names ── */
 function BoldDoctors({ text }) {
@@ -618,6 +619,7 @@ export default function BootcampFeatures() {
             </div>
 
           </div>
+          <MentorSection />
 
           {/* ── Footer Note ── */}
           <div className="bfc-footer-note" ref={footerRef}>
