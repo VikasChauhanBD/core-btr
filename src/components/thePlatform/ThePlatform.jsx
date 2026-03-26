@@ -42,13 +42,13 @@ const whatYouGet = [
     title: "Grand Tests & Subject Tests",
     body: "Analyze performance, identify weak areas, and track your progress.",
     image:
-      "https://cdn.dribbble.com/userupload/47132128/file/7ac090fc0f6779db93246446f87edc37.jpeg",
+      "https://cdn.dribbble.com/userupload/47179158/file/bb5917ddc73b78c26c286aea9cf2c857.png",
   },
   {
     title: "Topic-Wise Pearls for Rapid Revision",
     body: "Ultra high-yield points for last-minute preparation and quick recall.",
     image:
-      "https://cdn.dribbble.com/userupload/47162323/file/6b2f21c04c796ee6acade0b779942195.jpg",
+      "https://cdn.dribbble.com/userupload/47179121/file/6a50e039be7b80303a90afc6d728c3e6.png",
   },
   {
     title: "Flashcards for Active Recall",
