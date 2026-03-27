@@ -295,24 +295,14 @@ export const reviewsData = [
     Rank: "362",
     Exam: "INICET Nov 2025",
   },
-  //  {
-  //     feedback:
-  //       "4k in NEET PG to 781 INI CET Nov 25. Grateful for your guidance and support dr. Zainab Vora ma'am.",
-  //     name: "Dr. Anonymous",
-  //     image: AvatarFemale,
-  //     Rank: "781",
-  //     Exam: "INICET Nov",
-  //     Year: "2025",
-  //   },
-  //   {
-  //     feedback:
-  //       "6.3k in NEET, I got 312 rank in INI CET. This is only because of you ma'am, I recalled old things from BTR, like a year old from what I had studied, I didn't even revise after NEET thank you ma'am.",
-  //     name: "Dr. Anonymous",
-  //     image: AvatarMale,
-  //     Rank: "312",
-  //     Exam: "INICET",
-  //     Year: "2024",
-  //   },
+  {
+    feedback:
+      "6.3k in NEET, I got 312 rank in INI CET. This is only because of you ma'am, I recalled old things from BTR, like a year old from what I had studied, I didn't even revise after NEET thank you ma'am.",
+    name: "Dr. Mihir Saxena",
+    image: AvatarMale,
+    Rank: "312",
+    Exam: "INICET NOV 2025",
+  },
   {
     feedback:
       "Finally Dr. Zainab Vora ma'am I wanna thank you from the bottom of my heart for all the efforts you put for us, I know I speak for all when I say this. I was generally an ambitious person from the start and you were the perfect teacher for me ma'am. I'd always say I wanna aim for the stars so that if I can't reach them I'd at least fall on the moon and I think you just fueled the fire inside me, while also keeping me grounded and not letting me lose sight of what we're actually working for. We're not in this to get a rank we're all in this to get a seat for the specialty we wanna practice our whole life. I think younger me would have wanted to give it one more try for rank 1 but I've changed in these three months and I'm grateful and content with what I've got and I think I'll leave this rat race here. Ma'am you've made me a better doctor and a better person. I've learnt patience, unconditional love, resilience, gratitude and many more things which I can't find words for.",
@@ -329,15 +319,65 @@ export const reviewsData = [
     Rank: "28",
     Exam: "NEET PG 2025",
   },
-
-  ////////////////////////////////////////////////////////////////////////////////////////////////
-  ///////////////////////////////////////////////////////////////////////////////////////////////
-
   {
     feedback: "BTR is the best... Dr. Zainab Vora ma'am the OG.",
     name: "Dr. Dikchha singh ",
     image: AvatarFemale,
+    Rank: "214",
+    Exam: "FMGE 2025",
   },
+  {
+    feedback:
+      "Neet 63k to 8900 rank, thank you dr. Zainab Vora ma'am even this rank was a far fetched dream for me. I anticipated the exam right after seating in the hall, so palpitations settled by the time exam actually started that really helped me stay calm in the exam. Will work harder now for may and NEET also Congratulations to everyone.",
+    name: "Dr. Shahzeen",
+    image: AvatarFemale,
+    Rank: "8900",
+    Exam: "INICET NOV 2025",
+  },
+  {
+    feedback:
+      "Ma'am thank you so much, NEET 50k to INI 224. BTR and your teaching was the only reason for this rank.",
+    name: "Dr. Abinaya G",
+    image: AvatarMale,
+    Rank: "224",
+    Exam: "INICET NOV 2025",
+  },
+  {
+    feedback:
+      "4k in NEET PG to 781 INI CET Nov 25. Grateful for your guidance and support dr. Zainab Vora ma'am.",
+    name: "Dr. Meena Prathyusha",
+    image: AvatarMale,
+    Rank: "781",
+    Exam: "INICET NOV 2025",
+  },
+  {
+    feedback:
+      "Thank you so much ma'am... I'll never regret my decision of keeping belief in you, AIR 2721.",
+    name: "Dr. Aneeket Vishnu Shelke",
+    image: AvatarMale,
+    Rank: "2721",
+    Exam: "NEET PG 2025",
+  },
+  {
+    feedback:
+      "Got admitted in Paeds in MMC, Mysore Karnataka, From being a student of a private college to getting admitted in a prestigious college, you've been the major person in this successful journey. I am indeed blessed to get your guidance and support at the correct time when I needed the most. Last one year was nothing but a girl sitting inside four walls with a mission to succeed and you in front guiding through each day, through each mistakes, making me sure those mistakes won't repeat. Your EnDs were the real game changers and after I went through all the editions and listened to the answers of all the tests and GTs I got the knack of solving questions. You were my study partner each day for a year, without you knowing me and made the whole preparation journey stress free step by step, little by little gradually.",
+    name: "Dr. Krithi Gowda",
+    image: AvatarFemale,
+    Rank: "861",
+    Exam: "INICET MAY 2025",
+  },
+  {
+    feedback:
+      "AIR 54 thanks Dr. Zainab ma'am and thanks to BTR, don't know where i will get at such a rank, this is for all, trust BTR you will excel too.",
+    name: "Dr. Shibasis Nag",
+    image: AvatarMale,
+    Rank: "54",
+    Exam: "INICET NOV 2025",
+  },
+
+  ////////////////////////////////////////////////////////////////////////////////////////////////
+  ///////////////////////////////////////////////////////////////////////////////////////////////
+
   {
     feedback:
       "I have done the BTR 2.0 I really appreciate the timings of the live classes, it is perfect timing because around 5 pm most of the students feel exhausted and sleepy or tired. So during this time live lectures are best and the next day morning you can revise the content.THANK YOU!!!!",
@@ -366,12 +406,7 @@ export const reviewsData = [
     name: "Dr. Garima  Sharma",
     image: AvatarFemale,
   },
-  {
-    feedback:
-      "BTR is a lifesaver. Dr. Zainab Vora ma'am is the ultimate guide 🙏.",
-    name: "Dr. Sohini Mondal ",
-    image: AvatarFemale,
-  },
+
   {
     feedback:
       "I just wanted to thank you from my heart, I got allotted MD Medicine in my city. The Hard Work you put into every class has genuinely inspired us to work harder, it's your belief in BTR that translates into your Hard Work and your Hard Work inspires us to Believe in BTR. Thank you ma'am for BTR and we all know BTR is not 'just BTR' It's all the compiled videos all the choti copy sessions all the EnDs all the motivation you gave us all Bonus BTRs all the Extra Edge BTRs all the Mega BTR sessions. The thought you put behind each and every question and the 4 options for that question is something magical!! Your Hard work makes BTR magical!!",
@@ -381,18 +416,6 @@ export const reviewsData = [
   {
     feedback:
       "With a very grateful and emotional heart, I'm sharing that I have been allotted MD Radiology at Jaipur. This journey tested me in ways I never imagined. There were days of doubt, fear, and exhaustion when I felt lost. In those moments, your teaching became my strength. Every concept you explained, every bit of clarity you gave, slowly built my confidence and kept me moving forward. What you gave me was not just preparation for an exam, but belief in myself. I will always carry your lessons, guidance, and values as I step into this new phase of my life. This seat is a result of your dedication and blessings.",
-    name: "Dr. Anonymous",
-    image: AvatarMale,
-  },
-  {
-    feedback:
-      "Neet 63k to 8900 rank, thank you dr. Zainab Vora ma'am even this rank was a far fetched dream for me. I anticipated the exam right after seating in the hall, so palpitations settled by the time exam actually started that really helped me stay calm in the exam. Will work harder now for may and NEET also Congratulations to everyone.",
-    name: "Dr. Anonymous",
-    image: AvatarMale,
-  },
-  {
-    feedback:
-      "Ma'am thank you so much, NEET 50k to INI 224. BTR and your teaching was the only reason for this rank.",
     name: "Dr. Anonymous",
     image: AvatarMale,
   },
@@ -410,18 +433,6 @@ export const reviewsData = [
   },
   {
     feedback:
-      "4k in NEET PG to 781 INI CET Nov 25. Grateful for your guidance and support dr. Zainab Vora ma'am.",
-    name: "Dr. Anonymous",
-    image: AvatarMale,
-  },
-  {
-    feedback:
-      "6.3k in NEET, I got 312 rank in INI CET. This is only because of you ma'am, I recalled old things from BTR, like a year old from what I had studied, I didn't even revise after NEET thank you ma'am.",
-    name: "Dr. Anonymous",
-    image: AvatarMale,
-  },
-  {
-    feedback:
       "Thank you so much Dr. Zainab Vora ma'am for everything you do. My PG preparation journey has finally come to an end, and I just wanted to say how grateful I am to you! You put in so much effort from going through all the Telegram doubts to clearing them the very next day in your live sessions. The BTRs, TNDs, mega revisions, Ashirwad classes everything was amazing. You truly are the best teacher and mentor one could ever ask for. Honestly I thought I'd have to take a drop after internship. But when the NEET postponement was announced, I decided to give it my all and started watching your videos religiously and I secured a decent rank of 7.2k. Thank you so much ma'am I couldn't have done this without you. I was literally crying while watching the mega session just seeing the kind of effort you put in moved me so much. You're the kindest, smartest, and most inspiring person ever! I'm totally in awe of you.",
     name: "Dr. Anonymous",
     image: AvatarMale,
@@ -432,24 +443,14 @@ export const reviewsData = [
     name: "Dr. Anonymous",
     image: AvatarMale,
   },
-  {
-    feedback:
-      "Thank you so much ma'am... I'll never regret my decision of keeping belief in you, AIR 2721.",
-    name: "Dr. Anonymous",
-    image: AvatarMale,
-  },
+
   {
     feedback:
       "Ma'am I got AIIMS GKP psychiatry, Thank you for this wonderful support. My neet pg rank was 19068 but got 1800 in ini and yesterday got AIIMS GKP. Thank you so much dr. Zainab vora ma'am.",
     name: "Dr. Anonymous",
     image: AvatarMale,
   },
-  {
-    feedback:
-      "Got admitted in Paeds in MMC, Mysore Karnataka, From being a student of a private college to getting admitted in a prestigious college, you've been the major person in this successful journey. I am indeed blessed to get your guidance and support at the correct time when I needed the most. Last one year was nothing but a girl sitting inside four walls with a mission to succeed and you in front guiding through each day, through each mistakes, making me sure those mistakes won't repeat. Your EnDs were the real game changers and after I went through all the editions and listened to the answers of all the tests and GTs I got the knack of solving questions. You were my study partner each day for a year, without you knowing me and made the whole preparation journey stress free step by step, little by little gradually.",
-    name: "Dr. Krithi Gowda",
-    image: AvatarFemale,
-  },
+
   {
     feedback:
       "Thank you so much ma'am for everything that you do for us. I've joined GSVM Kanpur for general surgery hoping for an upgrade but I'm already in a great college in my dream branch. couldn't have been possible without you. For us only studying that much seems like an uphill task, I can only begin to imagine how much of a challenge it would be for you to compile all the resources and present it to us so beautifully well. All my friends got into their dream institutions, with branch of their liking. And all of us can vouch for BTR and every other creation of yours. Thank you so much ma'am, you're the best.",
@@ -462,12 +463,7 @@ export const reviewsData = [
     name: "Dr. AJ",
     image: AvatarMale,
   },
-  {
-    feedback:
-      "AIR 54 thanks Dr. Zainab ma'am and thanks to BTR, don't know where i will get at such a rank, this is for all, trust BTR you will excel too.",
-    name: "Dr. Shibasis Nag",
-    image: AvatarMale,
-  },
+
   {
     feedback:
       "40K in NEET PG to 4K in INI. Thank you with so much gratitude dr. Zainab vora ma'am. I Was not able to complete Btr T and D schedule so little skeptical about giving INI-CET. But nevertheless feeling so confident about sticking to ma'am schedule and the direction she guides us. Hopefully great INI 26.",
@@ -1263,12 +1259,6 @@ export const reviewsData = [
   },
   {
     feedback:
-      "Got admitted in Paeds in MMC, Mysore Karnataka, From being a student of a private college to getting admitted in a prestigious college, you've been the major person in this successful journey. I am indeed blessed to get your guidance and support at the correct time when I needed the most. Last one year was nothing but a girl sitting inside four walls with a mission to succeed and you in front guiding through each day, through each mistakes, making me sure those mistakes won't repeat. Your EnDs were the real game changers and after I went through all the editions and listened to the answers of all the tests and GTs I got the knack of solving questions. You were my study partner each day for a year, without you knowing me and made the whole preparation journey stress free step by step, little by little gradually.",
-    name: "Dr. Krithi Gowda",
-    image: AvatarFemale,
-  },
-  {
-    feedback:
       "Thank you so much ma'am for everything that you do for us. I've joined GSVM Kanpur for general surgery hoping for an upgrade but I'm already in a great college in my dream branch. couldn't have been possible without you. For us only studying that much seems like an uphill task, I can only begin to imagine how much of a challenge it would be for you to compile all the resources and present it to us so beautifully well. All my friends got into their dream institutions, with branch of their liking. And all of us can vouch for BTR and every other creation of yours. Thank you so much ma'am, you're the best.",
     name: "Dr. Shivanshi",
     image: AvatarFemale,
@@ -1283,12 +1273,6 @@ export const reviewsData = [
     feedback:
       "I started with a rank of 18k in NEET PG 2024, and after starting with BTR, I managed to improve my rank to 1306 in November INICET 2024. Despite facing setbacks, including a dip to a 3700 rank in May INICET 2025, I didn't give up. And then, the results came, and I'm overjoyed to share that I've secured an All India Rank of 933 in NEET PG 2025 and got selected for MD Radio-Diagnosis! Moreover, your mentorship played a pivotal role in helping me clear UPSC CMS as well, where I secured an AIR of 142. You are truly awesome in compiling everything and all 19 subjects so beautifully - it's a testament to your exceptional teaching skills and dedication. I'm forever grateful for your support and guidance.",
     name: "Dr. Anonymous",
-    image: AvatarMale,
-  },
-  {
-    feedback:
-      "AIR 54 thanks Dr. Zainab ma'am and thanks to BTR, don't know where i will get at such a rank, this is for all, trust BTR you will excel too.",
-    name: "Dr. Shibasis Nag",
     image: AvatarMale,
   },
   {
