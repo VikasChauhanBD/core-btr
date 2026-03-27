@@ -28,6 +28,7 @@
   font-size: 38px;
   line-height: 1.15;
   color: #1d204b;
+  text-align: center;
 }
 
 .unannotated-section-heading span {
@@ -38,6 +39,7 @@
   font-size: 24px;
   color: #3f3f3f;
   margin-bottom: 14px;
+  text-align: center;
 }
 
 .unannotated-lead {
@@ -45,21 +47,32 @@
   line-height: 1.78;
   color: #3f3f3f;
   margin-bottom: 36px;
+  text-align: center;
 }
 
+/* Two-column grid */
 .unannotated-highlight-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 20px;
 }
 
+/* Wrapper: image + CTA stacked vertically */
+.unannotated-image-block {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+/* Image fills all available height */
 .unannotated-highlight-image {
   border-radius: 12px;
   overflow: hidden;
   box-shadow:
     0 4px 20px rgba(39, 24, 126, 0.18),
     0 1px 4px rgba(39, 24, 126, 0.1);
-  align-self: stretch;
+  flex: 1; /* grow to fill the block */
+  min-height: 360px;
 }
 
 .unannotated-highlight-image img {
@@ -74,6 +87,7 @@
   position: relative;
 }
 
+/* Overlay — shows a centred eye icon on hover */
 .unannotated-image-overlay {
   position: absolute;
   inset: 0;
@@ -86,7 +100,7 @@
 }
 
 .unannotated-image-overlay-icon {
-  font-size: 28px;
+  font-size: 24px;
   color: #fff;
   opacity: 0;
   transform: scale(0.7);
@@ -96,7 +110,7 @@
 }
 
 .unannotated-highlight-image--clickable:hover .unannotated-image-overlay {
-  background: rgba(23, 103, 190, 0.45);
+  background: rgba(23, 103, 190, 0.35);
 }
 
 .unannotated-highlight-image--clickable:hover .unannotated-image-overlay-icon {
@@ -104,6 +118,45 @@
   transform: scale(1);
 }
 
+/* CTA — sits below the image, full width of its column */
+.unannotated-preview-cta {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  width: 100%;
+  padding: 12px 22px;
+  background: #1767be;
+  color: #fff;
+  font-size: 15px;
+  font-weight: 600;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition:
+    background 0.2s ease,
+    transform 0.18s ease,
+    box-shadow 0.2s ease;
+  box-shadow: 0 3px 10px rgba(23, 103, 190, 0.35);
+  flex-shrink: 0;
+}
+
+.unannotated-preview-cta:hover {
+  background: #1257a0;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 18px rgba(23, 103, 190, 0.45);
+}
+
+.unannotated-preview-cta:active {
+  transform: translateY(0);
+}
+
+.cta-icon {
+  font-size: 17px;
+  line-height: 1;
+}
+
+/* Points card — full width below the grid, no CTA */
 .unannotated-highlight-card {
   background: #fff;
   border: 1px solid #1767be;
@@ -117,8 +170,6 @@
   transition:
     transform 0.24s ease,
     box-shadow 0.24s ease;
-  display: flex;
-  flex-direction: column;
 }
 
 .unannotated-highlight-card::before {
@@ -145,13 +196,18 @@
   margin-bottom: 16px;
 }
 
+.unannotated-points-card {
+  margin-top: 20px;
+}
+
 .unannotated-highlight-list {
   list-style: none;
   padding: 0;
-  margin: 0 0 auto 0;
+  margin: 0;
   display: flex;
-  flex-direction: column;
-  gap: 10px;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 10px 40px;
 }
 
 .unannotated-highlight-list li {
@@ -177,42 +233,7 @@
   color: #3f3f3f;
 }
 
-.unannotated-preview-cta {
-  display: inline-flex;
-  align-items: center;
-  gap: 8px;
-  margin-top: 22px;
-  padding: 11px 22px;
-  background: #1767be;
-  color: #fff;
-  font-size: 15px;
-  font-weight: 600;
-  border: none;
-  border-radius: 8px;
-  cursor: pointer;
-  transition:
-    background 0.2s ease,
-    transform 0.18s ease,
-    box-shadow 0.2s ease;
-  box-shadow: 0 3px 10px rgba(23, 103, 190, 0.35);
-  align-self: flex-start;
-}
-
-.unannotated-preview-cta:hover {
-  background: #1257a0;
-  transform: translateY(-2px);
-  box-shadow: 0 6px 18px rgba(23, 103, 190, 0.45);
-}
-
-.unannotated-preview-cta:active {
-  transform: translateY(0);
-}
-
-.cta-icon {
-  font-size: 17px;
-  line-height: 1;
-}
-
+/* ───── Popup ───── */
 .popup-overlay {
   position: fixed;
   inset: 0;
@@ -462,7 +483,7 @@
   background: rgba(255, 255, 255, 0.55);
 }
 
-/* ---------------------------- Responsive Style ------------------------ */
+/* ───── Responsive ───── */
 @media (max-width: 1440px) {
   .unannotated-highlights {
     width: 85%;
@@ -480,10 +501,17 @@
     grid-template-columns: 1fr;
   }
 
+  .unannotated-highlight-image {
+    min-height: 280px;
+  }
+
+  .unannotated-highlight-list {
+    flex-direction: column;
+  }
+
   .unannotated-section-heading {
     font-size: 32px;
   }
-
   .unannotated-section-sub-heading {
     font-size: 20px;
   }
@@ -493,7 +521,6 @@
     height: 42px;
     font-size: 26px;
   }
-
   .popup-nav--prev {
     left: 10px;
   }

@@ -14,18 +14,10 @@ const unannotatedImages = [
     src: "https://cdn.dribbble.com/userupload/47156370/file/8fa07b793c781b7480e806955d66dcfb.jpeg",
     alt: "Unannotated workbook page 3",
   },
-  // {
-  //   src: "https://cdn.dribbble.com/userupload/47156369/file/1efd9f39240d441142ea5c6333970ed0.jpeg",
-  //   alt: "Unannotated workbook page 4",
-  // },
   {
     src: "https://cdn.dribbble.com/userupload/47156358/file/953ad100be428496700ac76ec6e85d43.jpeg",
     alt: "Unannotated workbook page 5",
   },
-  // {
-  //   src: "https://cdn.dribbble.com/userupload/47156357/file/180e2ad593e6503915795ba3b3ee7ef0.jpeg",
-  //   alt: "Unannotated workbook page 6",
-  // },
   {
     src: "https://cdn.dribbble.com/userupload/47156353/file/b5a4450acfb7fa8ba5f06c444aa6785d.jpeg",
     alt: "Unannotated workbook page 7",
@@ -62,18 +54,10 @@ const unannotatedImages = [
     src: "https://cdn.dribbble.com/userupload/47156352/file/9e9c9ff02e784fca271c36d54b45e426.jpeg",
     alt: "Unannotated workbook page 15",
   },
-  // {
-  //   src: "https://cdn.dribbble.com/userupload/47156366/file/149de6a84578593dd6e6e19195137432.jpeg",
-  //   alt: "Unannotated workbook page 16",
-  // },
   {
     src: "https://cdn.dribbble.com/userupload/47156364/file/56a13a18efdaf755c2d17670e0786cd0.jpeg",
     alt: "Unannotated workbook page 17",
   },
-  // {
-  //   src: "https://cdn.dribbble.com/userupload/47156358/file/953ad100be428496700ac76ec6e85d43.jpeg",
-  //   alt: "Unannotated workbook page 14",
-  // },
   {
     src: "https://cdn.dribbble.com/userupload/47156351/file/a87b234cad2b4c2ee87ecdf4990e7173.jpeg",
     alt: "Unannotated workbook page 19",
@@ -84,15 +68,15 @@ const unannotatedImages = [
   },
 ];
 
-const highlights = [
-  {
-    points: [
-      "Write while watching videos",
-      "Build your own understanding",
-      "Stay focused during study time",
-      "Improve memory through self-notes",
-    ],
-  },
+const half = Math.ceil(unannotatedImages.length / 2);
+const firstHalfImages = unannotatedImages.slice(0, half);
+const secondHalfImages = unannotatedImages.slice(half);
+
+const highlightPoints = [
+  "Write while watching videos",
+  "Build your own understanding",
+  "Stay focused during study time",
+  "Improve memory through self-notes",
 ];
 
 function ImageCarouselPopup({ images, startIndex = 0, onClose }) {
@@ -213,9 +197,11 @@ function ImageCarouselPopup({ images, startIndex = 0, onClose }) {
 
 function Unannotated() {
   const [showPopup, setShowPopup] = useState(false);
+  const [popupImages, setPopupImages] = useState([]);
   const [popupStartIndex, setPopupStartIndex] = useState(0);
 
-  const openPopup = (index = 0) => {
+  const openPopup = (images, index = 0) => {
+    setPopupImages(images);
     setPopupStartIndex(index);
     setShowPopup(true);
   };
@@ -234,40 +220,70 @@ function Unannotated() {
             These workbooks are aligned with CoreBTR lecture videos and are
             built for active learning.
           </p>
+
+          {/* Two image columns — each with CTA below */}
           <div className="unannotated-highlight-grid">
-            <div
-              className="unannotated-highlight-image unannotated-highlight-image--clickable"
-              onClick={() => openPopup(0)}
-            >
-              <img
-                src="https://cdn.dribbble.com/userupload/47150180/file/50d95f28f4938ab6c8b0c8a2fac7d52c.jpg"
-                alt="coreBTR Unannotated Workbooks"
-              />
-              <div className="unannotated-image-overlay">
-                <span className="unannotated-image-overlay-icon">
-                  Check Sample Pages
-                </span>
+            {/* Volume 1 */}
+            <div className="unannotated-image-block">
+              <div
+                className="unannotated-highlight-image unannotated-highlight-image--clickable"
+                onClick={() => openPopup(firstHalfImages, 0)}
+              >
+                <img
+                  src="https://cdn.dribbble.com/userupload/47187681/file/f7bb58a9c8fee39631839fdf095a4d33.jpeg"
+                  alt="coreBTR Unannotated Workbook Volume 1"
+                />
+                <div className="unannotated-image-overlay">
+                  <span className="unannotated-image-overlay-icon">
+                    Preview Sample Pages
+                  </span>
+                </div>
               </div>
+              <button
+                className="unannotated-preview-cta"
+                onClick={() => openPopup(firstHalfImages, 0)}
+              >
+                <span className="cta-icon">📖</span>
+                Preview Sample Pages
+              </button>
             </div>
-            {highlights.map((h, idx) => (
-              <div className="unannotated-highlight-card" key={idx}>
-                <ul className="unannotated-highlight-list">
-                  {h.points.map((p, i) => (
-                    <li key={i}>{p}</li>
-                  ))}
-                </ul>
-                {h.badge && (
-                  <span className="unannotated-highlight-badge">{h.badge}</span>
-                )}
-                <button
-                  className="unannotated-preview-cta"
-                  onClick={() => openPopup(0)}
-                >
-                  Preview Sample Pages
-                </button>
+
+            {/* Volume 2 */}
+            <div className="unannotated-image-block">
+              <div
+                className="unannotated-highlight-image unannotated-highlight-image--clickable"
+                onClick={() => openPopup(secondHalfImages, 0)}
+              >
+                <img
+                  src="https://cdn.dribbble.com/userupload/47187684/file/cbca34d3aa32922163fa51a0157f5930.jpeg"
+                  alt="coreBTR Unannotated Workbook Volume 2"
+                />
+                <div className="unannotated-image-overlay">
+                  <span className="unannotated-image-overlay-icon">
+                    Preview Sample Pages
+                  </span>
+                </div>
               </div>
-            ))}
+              <button
+                className="unannotated-preview-cta"
+                onClick={() => openPopup(secondHalfImages, 0)}
+              >
+                <span className="cta-icon">📖</span>
+                Preview Sample Pages
+              </button>
+            </div>
           </div>
+
+          {/* Points card — no CTA */}
+          <div className="unannotated-highlight-card unannotated-points-card">
+            <h3>Why Use These Workbooks?</h3>
+            <ul className="unannotated-highlight-list">
+              {highlightPoints.map((p, i) => (
+                <li key={i}>{p}</li>
+              ))}
+            </ul>
+          </div>
+
           <p className="unannotated-section-para">
             You can also use them for active recall after watching videos 1-2
             times: Keep the workbook in front of you and try to recall
@@ -280,7 +296,7 @@ function Unannotated() {
 
       {showPopup && (
         <ImageCarouselPopup
-          images={unannotatedImages}
+          images={popupImages}
           startIndex={popupStartIndex}
           onClose={() => setShowPopup(false)}
         />
