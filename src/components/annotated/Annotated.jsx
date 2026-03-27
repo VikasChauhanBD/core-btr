@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useCallback } from "react";
+import React, { useState, useEffect, useCallback, useRef } from "react";
 import "./Annotated.css";
 
 const annotatedImages = [
@@ -30,13 +30,44 @@ const annotatedImages = [
     src: "https://cdn.dribbble.com/userupload/47174602/file/824fb661fdec6ee326cb09880e813838.jpeg",
     alt: "Annotated notes page 7",
   },
-  // {
-  //   src: "https://cdn.dribbble.com/userupload/47174604/file/7319d23d30d3cfb96455d34b96f135a5.jpeg",
-  //   alt: "Annotated notes page 8",
-  // },
   {
     src: "https://cdn.dribbble.com/userupload/47174603/file/b61875e61eebbbde1f903fb08f167471.jpeg",
     alt: "Annotated notes page 9",
+  },
+];
+
+const integratedImages = [
+  {
+    src: "https://cdn.dribbble.com/userupload/47185362/file/6a3312aae68d2c2dcd525e60c1b32d67.jpeg",
+    alt: "Integrated Systems page 1",
+  },
+  {
+    src: "https://cdn.dribbble.com/userupload/47185273/file/51dc110600c9958a5a711dff2135dcf3.jpeg",
+    alt: "Integrated Systems page 2",
+  },
+  {
+    src: "https://cdn.dribbble.com/userupload/47185361/file/f5f41e88a90a37e0d3f9e11e579d6ffa.jpeg",
+    alt: "Integrated Systems page 3",
+  },
+  {
+    src: "https://cdn.dribbble.com/userupload/47185364/file/e00ff31385bce0f964e2127c8a247939.jpeg",
+    alt: "Integrated Systems page 4",
+  },
+  {
+    src: "https://cdn.dribbble.com/userupload/47185365/file/705bc2539b83754e7417944704ba97eb.jpeg",
+    alt: "Integrated Systems page 5",
+  },
+  {
+    src: "https://cdn.dribbble.com/userupload/47185272/file/b9bcdc84a82636334eef7323e6e64396.jpeg",
+    alt: "Integrated Systems page 6",
+  },
+  {
+    src: "https://cdn.dribbble.com/userupload/47185363/file/8b94fcd7d6b94f62b4aa28e4ada6a2ad.jpeg",
+    alt: "Integrated Systems page 7",
+  },
+  {
+    src: "https://cdn.dribbble.com/userupload/47185274/file/cc8a4c1cde9e2bf2278d1cd32eedd346.jpeg",
+    alt: "Integrated Systems page 8",
   },
 ];
 
@@ -50,6 +81,81 @@ const highlights = [
     ],
   },
 ];
+
+function useVisibleCount() {
+  const getCount = () => {
+    if (typeof window === "undefined") return 3;
+    if (window.innerWidth <= 568) return 1;
+    if (window.innerWidth <= 868) return 2;
+    return 3;
+  };
+  const [count, setCount] = useState(getCount);
+  useEffect(() => {
+    const handler = () => setCount(getCount());
+    window.addEventListener("resize", handler);
+    return () => window.removeEventListener("resize", handler);
+  }, []);
+  return count;
+}
+
+function IntegratedCarousel({ images, onImageClick }) {
+  const [index, setIndex] = useState(0);
+  const visibleCount = useVisibleCount();
+  const maxIndex = images.length - visibleCount;
+
+  const goPrev = () => setIndex((i) => Math.max(i - 1, 0));
+  const goNext = () => setIndex((i) => Math.min(i + 1, maxIndex));
+
+  // Reset index if it goes out of range on resize
+  useEffect(() => {
+    setIndex((i) => Math.min(i, Math.max(0, images.length - visibleCount)));
+  }, [visibleCount, images.length]);
+
+  const translateX = -(index * (100 / visibleCount));
+
+  return (
+    <div>
+      <div className="annotated-integrated-carousel">
+        <div
+          className="annotated-integrated-carousel-track"
+          style={{ transform: `translateX(${translateX}%)` }}
+        >
+          {images.map((img, i) => (
+            <div key={i} className="annotated-integrated-carousel-slide">
+              <img
+                src={img.src}
+                alt={img.alt}
+                onClick={() => onImageClick(i)}
+              />
+            </div>
+          ))}
+        </div>
+      </div>
+      <div className="annotated-carousel-controls">
+        <button
+          className="annotated-carousel-btn"
+          onClick={goPrev}
+          disabled={index === 0}
+          aria-label="Previous"
+        >
+          ‹ Prev
+        </button>
+        <span className="annotated-carousel-counter">
+          {index + 1} – {Math.min(index + visibleCount, images.length)} /{" "}
+          {images.length}
+        </span>
+        <button
+          className="annotated-carousel-btn"
+          onClick={goNext}
+          disabled={index >= maxIndex}
+          aria-label="Next"
+        >
+          Next ›
+        </button>
+      </div>
+    </div>
+  );
+}
 
 function ImageCarouselPopup({ images, startIndex = 0, onClose }) {
   const [currentIndex, setCurrentIndex] = useState(startIndex);
@@ -169,9 +275,11 @@ function ImageCarouselPopup({ images, startIndex = 0, onClose }) {
 
 function Annotated() {
   const [showPopup, setShowPopup] = useState(false);
+  const [popupImages, setPopupImages] = useState(annotatedImages);
   const [popupStartIndex, setPopupStartIndex] = useState(0);
 
-  const openPopup = (index = 0) => {
+  const openPopup = (images, index = 0) => {
+    setPopupImages(images);
     setPopupStartIndex(index);
     setShowPopup(true);
   };
@@ -193,7 +301,7 @@ function Annotated() {
           <div className="annotated-highlight-grid">
             <div
               className="annotated-highlight-image annotated-highlight-image--clickable"
-              onClick={() => openPopup(0)}
+              onClick={() => openPopup(annotatedImages, 0)}
             >
               <img
                 src="https://cdn.dribbble.com/userupload/47150179/file/2797e7c5125ef94e919282423d5bd711.jpg"
@@ -217,13 +325,24 @@ function Annotated() {
                 )}
                 <button
                   className="annotated-preview-cta"
-                  onClick={() => openPopup(0)}
+                  onClick={() => openPopup(annotatedImages, 0)}
                 >
                   Preview Sample Pages
                 </button>
               </div>
             ))}
           </div>
+
+          <div className="annotated-integrated-system">
+            <h2>
+              Annotated Notes Vol. 3 - Integrated Systems Preview Sample Pages
+            </h2>
+            <IntegratedCarousel
+              images={integratedImages}
+              onImageClick={(i) => openPopup(integratedImages, i)}
+            />
+          </div>
+
           <div className="annotated-volumes">
             <div className="annotated-volumes-card">
               <h3>Volume 1 & 2</h3>
@@ -252,7 +371,7 @@ function Annotated() {
 
       {showPopup && (
         <ImageCarouselPopup
-          images={annotatedImages}
+          images={popupImages}
           startIndex={popupStartIndex}
           onClose={() => setShowPopup(false)}
         />
