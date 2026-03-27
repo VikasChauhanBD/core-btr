@@ -1,5 +1,6 @@
 import React, { useState, useEffect, useCallback, useRef } from "react";
 import "./Annotated.css";
+import AnnotatedVolumesIntegrated from "./AnnotatedVolumesIntegrated";
 
 const annotatedImages = [
   {
@@ -333,39 +334,10 @@ function Annotated() {
             ))}
           </div>
 
-          <div className="annotated-integrated-system">
-            <h2>
-              Annotated Notes Vol. 3 - Integrated Systems Preview Sample Pages
-            </h2>
-            <IntegratedCarousel
-              images={integratedImages}
-              onImageClick={(i) => openPopup(integratedImages, i)}
-            />
-          </div>
-
-          <div className="annotated-volumes">
-            <div className="annotated-volumes-card">
-              <h3>Volume 1 & 2</h3>
-              <ul>
-                <li>Covers all subjects (except integrated systems)</li>
-                <li>Directly aligned with lecture content</li>
-                <li>Acts as your primary revision notes</li>
-              </ul>
-            </div>
-            <hr />
-            <div className="annotated-volumes-card">
-              <h3>Volume 3 - Integrated Systems</h3>
-              <ul>
-                <li>
-                  Covers Physiology, Pathology, Pharmacology & Medicine
-                  (integrated)
-                </li>
-                <li>More conceptual and comprehensive</li>
-                <li>Content is expanded for deeper understanding</li>
-                <li>Designed to improve clinical integration and clarity</li>
-              </ul>
-            </div>
-          </div>
+          <AnnotatedVolumesIntegrated
+            integratedImages={integratedImages}
+            openPopup={openPopup}
+          />
         </section>
       </div>
 
