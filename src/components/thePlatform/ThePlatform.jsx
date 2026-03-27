@@ -54,7 +54,7 @@ const whatYouGet = [
     title: "Flashcards for Active Recall",
     body: "Boost retention and revise faster with powerful memory tools.",
     image:
-      "https://cdn.dribbble.com/userupload/47132067/file/ed9501d6b27213fbe1b90340674c4163.jpeg",
+      "https://cdn.dribbble.com/userupload/47132067/file/a296cea4f169f4636a3a1c82ac2eae2a.jpg",
     badge: "Coming Soon",
   },
 ];

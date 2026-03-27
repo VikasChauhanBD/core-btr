@@ -47,7 +47,7 @@ function WhyCoreBTR() {
       id: 1,
       icon: BiLayer,
       title: "Complete System",
-      desp: "Built as a complete revision system — not just scattered content, evolving from Cerebellum to BTR.",
+      desp: "Built as a complete revision system - not just scattered content.",
     },
     {
       id: 2,
