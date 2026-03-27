@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useCallback, useRef } from "react";
 import "./Annotated.css";
-import AnnotatedVolumesIntegrated from "./AnnotatedVolumesIntegrated";
+// import AnnotatedVolumesIntegrated from "./AnnotatedVolumesIntegrated";
 
 const annotatedImages = [
   {
@@ -162,7 +162,7 @@ function IntegratedCarousel({ images, onImageClick }) {
   );
 }
 
-function ImageCarouselPopup({ images, startIndex = 0, onClose }) {
+function ImageCarouselPopup({ images, startIndex = 0, onClose, title }) {
   const [currentIndex, setCurrentIndex] = useState(startIndex);
   const [zoom, setZoom] = useState(1);
 
@@ -201,7 +201,7 @@ function ImageCarouselPopup({ images, startIndex = 0, onClose }) {
           <span className="ann-popup-counter">
             {currentIndex + 1} / {images.length}
           </span>
-          <span className="ann-popup-title">Notes Preview</span>
+          <span className="ann-popup-title">{title}</span>
           <button
             className="ann-popup-close-btn"
             onClick={onClose}
@@ -282,10 +282,18 @@ function Annotated() {
   const [showPopup, setShowPopup] = useState(false);
   const [popupImages, setPopupImages] = useState(annotatedImages);
   const [popupStartIndex, setPopupStartIndex] = useState(0);
+  const [popupTitle, setPopupTitle] = useState("Notes Preview");
 
-  const openPopup = (images, index = 0) => {
+  // const openPopup = (images, index = 0) => {
+  //   setPopupImages(images);
+  //   setPopupStartIndex(index);
+  //   setShowPopup(true);
+  // };
+
+  const openPopup = (images, index = 0, title = "Notes Preview") => {
     setPopupImages(images);
     setPopupStartIndex(index);
+    setPopupTitle(title);
     setShowPopup(true);
   };
 
@@ -310,7 +318,9 @@ function Annotated() {
             <div className="annotated-image-block">
               <div
                 className="annotated-highlight-image annotated-highlight-image--clickable"
-                onClick={() => openPopup(annotatedFirstHalf, 0)}
+                onClick={() =>
+                  openPopup(annotatedFirstHalf, 0, "Annotated Notes Vol. 1")
+                }
               >
                 <img
                   src="https://cdn.dribbble.com/userupload/47187682/file/76584c4627f6a8dbd7a967ed17ba0cea.jpeg"
@@ -324,7 +334,9 @@ function Annotated() {
               </div>
               <button
                 className="annotated-preview-cta"
-                onClick={() => openPopup(annotatedFirstHalf, 0)}
+                onClick={() =>
+                  openPopup(annotatedFirstHalf, 0, "Annotated Notes Vol. 1")
+                }
               >
                 Preview Sample Pages
               </button>
@@ -334,7 +346,9 @@ function Annotated() {
             <div className="annotated-image-block">
               <div
                 className="annotated-highlight-image annotated-highlight-image--clickable"
-                onClick={() => openPopup(annotatedSecondHalf, 0)}
+                onClick={() =>
+                  openPopup(annotatedSecondHalf, 0, "Annotated Notes Vol. 2")
+                }
               >
                 <img
                   src="https://cdn.dribbble.com/userupload/47187685/file/985aef3655a68010ed6d310b8ce67bb8.jpeg"
@@ -348,7 +362,9 @@ function Annotated() {
               </div>
               <button
                 className="annotated-preview-cta"
-                onClick={() => openPopup(annotatedSecondHalf, 0)}
+                onClick={() =>
+                  openPopup(annotatedSecondHalf, 0, "Annotated Notes Vol. 2")
+                }
               >
                 Preview Sample Pages
               </button>
@@ -358,7 +374,13 @@ function Annotated() {
             <div className="annotated-image-block">
               <div
                 className="annotated-highlight-image annotated-highlight-image--clickable"
-                onClick={() => openPopup(integratedImages, 0)}
+                onClick={() =>
+                  openPopup(
+                    integratedImages,
+                    0,
+                    "Annotated Notes Vol. 3 - Integrated Systems",
+                  )
+                }
               >
                 <img
                   src="https://cdn.dribbble.com/userupload/47187683/file/9443d454260265ee581d00d38141b926.jpeg"
@@ -372,7 +394,13 @@ function Annotated() {
               </div>
               <button
                 className="annotated-preview-cta"
-                onClick={() => openPopup(integratedImages, 0)}
+                onClick={() =>
+                  openPopup(
+                    integratedImages,
+                    0,
+                    "Annotated Notes Vol. 3 - Integrated Systems",
+                  )
+                }
               >
                 Preview Sample Pages
               </button>
@@ -389,17 +417,23 @@ function Annotated() {
             </ul>
           </div>
 
-          <AnnotatedVolumesIntegrated
+          {/* <AnnotatedVolumesIntegrated
             integratedImages={integratedImages}
             openPopup={openPopup}
-          />
+          /> */}
         </section>
       </div>
 
       {showPopup && (
+        // <ImageCarouselPopup
+        //   images={popupImages}
+        //   startIndex={popupStartIndex}
+        //   onClose={() => setShowPopup(false)}
+        // />
         <ImageCarouselPopup
           images={popupImages}
           startIndex={popupStartIndex}
+          title={popupTitle}
           onClose={() => setShowPopup(false)}
         />
       )}

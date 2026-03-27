@@ -445,6 +445,83 @@ export const reviewsData = [
     Rank: "2182",
     Exam: "NEET PG 2025",
   },
+  {
+    feedback:
+      "Dr. Zainab Vora Ma'am, my name is Sreya Duvvuri. I'm a faithful follower of BTR for the last 6 months. Glad to report that I've gotten rank 624 in this INI CET. It's no way an exaggeration if i say i was able to overcome so many challenges with purely your lovely teaching and rigorous TnD.",
+    name: "Dr. Sreya Duvvuri",
+    image: AvatarFemale,
+    Rank: "624",
+    Exam: "INICET NOV 2025",
+  },
+  {
+    feedback:
+      "Dr. Zainab Vora i just wanted to thank you from the bottom of my heart. From scoring 37k in may INI CET 2024 initially and 34k in NEET PG 2024 to 9k in NEET PG 2025 and 709 in INI CET Nov 2025 now - this progress would not have been possible without your mentorship. Even though I may not get the branch I'd hoped for, I remain truly grateful for your guidance, motivation and faith.",
+    name: "Dr. Maaninee Kaul",
+    image: AvatarFemale,
+    Rank: "709",
+    Exam: "INICET NOV 2025",
+  },
+  {
+    feedback:
+      "NEET PG 29k to got AIR 344 and my partner from 29k to AIR 1.2k. We are eternally grateful to you dr. zainab ma'am and BTR is truly your brainchild so so so grateful hopefully will get to meet you ma'am. Thank you so much ma'am.",
+    name: "Dr. Sanjana",
+    image: AvatarFemale,
+    Rank: "344",
+    Exam: "INICET NOV 2025",
+  },
+  {
+    feedback:
+      "This happens for real man! I remember one ques in management of UGI variceal bleed and ma'am said propranolol is never used in acute management and this was one of the correct option out of 4 in 1 ques. To all those asking for strategy, I would say Each and every word ma'am says in TnDs and the class is helpful in some or the other way. Follow the TnDs blindly in this exam i felt majority of the exam was framed by ma'am only. The important topics which she used to say is truly important. Thank you Dr. Zainab Vora ma'am once again.",
+    name: "Dr. Kaneez Fatima",
+    image: AvatarFemale,
+    Rank: "483",
+    Exam: "INICET NOV 2025",
+  },
+  {
+    feedback:
+      "Dr. Zainab Vora ma'am I just wanted to thank you for the past 1 year. I started using BTR since Nov 2024 from not qualifying in May INI CET 24 -> 19k, in Nov INI CET 24 -> 14k, in May INI CET 25 -> 8k, in Nov INI CET 25 though its not enough to get my dream branch but still wanted to thank you so much for this 1yr long journey. I got 11k in NEET PG 25 and i will take my seat this time and will be out of this rat race. Truly grateful for your motivation and guidance ma'am.",
+    name: "Dr. Nandita Das",
+    image: AvatarFemale,
+    Rank: "11k",
+    Exam: "NEET PG 2025",
+  },
+  {
+    feedback:
+      "Dr. Zainab Vora ma'am, I have secured AIR 124. Thank you so much ma'am for guiding through this journey and creating this BTR. Followed your BTR online tests for last 2 months to revise to give a last shot for INI-CET.",
+    name: "Dr. Mudit Goyal",
+    image: AvatarMale,
+    Rank: "124",
+    Exam: "INICET NOV 2025",
+  },
+  {
+    feedback: "AIR 1416, Forever grateful to you ma'am. Owe you everything.",
+    name: "Dr. Vedant Gupta",
+    image: AvatarMale,
+    Rank: "1416",
+    Exam: "NEET PG 2025",
+  },
+  {
+    feedback:
+      "Dr. Zainab Vora ma'am thank you so much, I got 966 rank all because of BTR and hope to improve in NEET PG Ma'am could you please do a Harrison's review because amongst my incorrect were both of the questions directly from Harrison, the one with arthralgia and sensory loss as answers.",
+    name: "Dr. Neelabh Mitti Ravindran",
+    image: AvatarMale,
+    Rank: "966",
+    Exam: "INICET MAY 2025",
+  },
+  {
+    feedback:
+      "I secured AIR 323 in this May INI CET. It wouldn't have been possible without BTR. I have been following BTR only for the longest time. In fact I took mission plan subscription only after November INI CET. But before that and even after that BTR has been the holy grail of my preparation. I actually cleared NEET PG 24 and was getting clinical branch at 13.5k. Many people told me to take up whatever I am getting because of increasing competition. I had just completed my internship and had attended Kolkata offline BTR. I thought I should at least give myself a chance to prepare properly before taking up a seat. Hence I took a drop. Although 323 might not be an excellent rank but it is definitely an improvement from my side and I owe this success to you ma'am. Thank you for everything you do for us Dr. Zainab Vora ma'am.",
+    name: "Dr. Avirup Mukherjee",
+    image: AvatarMale,
+    Rank: "323",
+    Exam: "INICET MAY 2025",
+  },
+  {
+    feedback:
+      "I've got a rank of 1059 in this exam. I may or may not get a seat of my choice but this is very close to my heart. I ended up with 23k rank in NEET PG 2024, after which it was difficult to decide whether or not to take another drop. I'm so glad I did, and part of the reason was that BTR was my only source and I just had to go through that again. Later in Nov INI CET my rank was 6k, I am so so grateful. Thank you for all the support and positivity. Lots of love and respect.",
+    name: "Dr. Gautami",
+    image: AvatarFemale,
+  },
   ////////////////////////////////////////////////////////////////////////////////////////////////
   ///////////////////////////////////////////////////////////////////////////////////////////////
 
@@ -578,51 +655,11 @@ export const reviewsData = [
 
   {
     feedback:
-      "Dr. Zainab Vora Ma'am, my name is Sreya Duvvuri. I'm a faithful follower of BTR for the last 6 months. Glad to report that I've gotten rank 624 in this INI CET. It's no way an exaggeration if i say i was able to overcome so many challenges with purely your lovely teaching and rigorous TnD.",
-    name: "Dr. Sreya Duvvuri",
-    image: AvatarFemale,
-  },
-  {
-    feedback:
-      "Dr. Zainab Vora i just wanted to thank you from the bottom of my heart. From scoring 37k in may INI CET 2024 initially and 34k in NEET PG 2024 to 9k in NEET PG 2025 and 709 in INI CET Nov 2025 now - this progress would not have been possible without your mentorship. Even though I may not get the branch I'd hoped for, I remain truly grateful for your guidance, motivation and faith.",
-    name: "Dr. Maaninee Kaul",
-    image: AvatarFemale,
-  },
-  {
-    feedback:
-      "NEET PG 29k to got AIR 344 and my partner from 29k to AIR 1.2k. We are eternally grateful to you dr. zainab ma'am and BTR is truly your brainchild so so so grateful hopefully will get to meet you ma'am. Thank you so much ma'am.",
-    name: "Dr. Sanjana",
-    image: AvatarFemale,
-  },
-  {
-    feedback:
-      "This happens for real man! I remember one ques in management of UGI variceal bleed and ma'am said propranolol is never used in acute management and this was one of the correct option out of 4 in 1 ques. To all those asking for strategy, I would say Each and every word ma'am says in TnDs and the class is helpful in some or the other way. Follow the TnDs blindly in this exam i felt majority of the exam was framed by ma'am only. The important topics which she used to say is truly important. Thank you Dr. Zainab Vora ma'am once again.",
-    name: "Dr. Kaneez Fatima",
-    image: AvatarFemale,
-  },
-  {
-    feedback:
       "28k NEET PG 25 to 4k INI CET Nov 25 in 2 months. Thank you Dr. Zainab Vora ma'am for everything.",
     name: "Dr. Anonymous",
     image: AvatarMale,
   },
-  {
-    feedback:
-      "Dr. Zainab Vora ma'am I just wanted to thank you for the past 1 year. I started using BTR since Nov 2024 from not qualifying in May INI CET 24 -> 19k, in Nov INI CET 24 -> 14k, in May INI CET 25 -> 8k, in Nov INI CET 25 though its not enough to get my dream branch but still wanted to thank you so much for this 1yr long journey. I got 11k in NEET PG 25 and i will take my seat this time and will be out of this rat race. Truly grateful for your motivation and guidance ma'am.",
-    name: "Dr. Nandita Das",
-    image: AvatarFemale,
-  },
-  {
-    feedback:
-      "Dr. Zainab Vora ma'am, I have secured AIR 124. Thank you so much ma'am for guiding through this journey and creating this BTR. Followed your BTR online tests for last 2 months to revise to give a last shot for INI-CET.",
-    name: "Dr. Mudit Goyal",
-    image: AvatarMale,
-  },
-  {
-    feedback: "AIR 1416, Forever grateful to you ma'am. Owe you everything.",
-    name: "Dr. Vedant Gupta",
-    image: AvatarMale,
-  },
+
   {
     feedback:
       "AIR 2386, Thank you so much ma'am, for all the constant support you have given throughout this year. It felt like you were right beside me, guiding me. Forever grateful to you.",
@@ -641,18 +678,7 @@ export const reviewsData = [
     name: "Dr. Anonymous",
     image: AvatarMale,
   },
-  {
-    feedback:
-      "Dr. Zainab Vora ma'am thank you so much, I got 966 rank all because of BTR and hope to improve in NEET PG Ma'am could you please do a Harrison's review because amongst my incorrect were both of the questions directly from Harrison, the one with arthralgia and sensory loss as answers.",
-    name: "Dr. Neelabh Mitti Ravindran",
-    image: AvatarMale,
-  },
-  {
-    feedback:
-      "I secured AIR 323 in this May INI CET. It wouldn't have been possible without BTR. I have been following BTR only for the longest time. In fact I took mission plan subscription only after November INI CET. But before that and even after that BTR has been the holy grail of my preparation. I actually cleared NEET PG 24 and was getting clinical branch at 13.5k. Many people told me to take up whatever I am getting because of increasing competition. I had just completed my internship and had attended Kolkata offline BTR. I thought I should at least give myself a chance to prepare properly before taking up a seat. Hence I took a drop. Although 323 might not be an excellent rank but it is definitely an improvement from my side and I owe this success to you ma'am. Thank you for everything you do for us Dr. Zainab Vora ma'am.",
-    name: "Dr. Avirup Mukherjee",
-    image: AvatarMale,
-  },
+
   {
     feedback:
       "I got a rank of 674 all thanks to you. Couldn't believe it as starting my preparation from march, thought I was so late but as you always say BELIEF THO RAKHO, that what kept me going on. Just followed your schedule each and every day.",
@@ -665,12 +691,7 @@ export const reviewsData = [
     name: "Dr. Anonymous",
     image: AvatarMale,
   },
-  {
-    feedback:
-      "I've got a rank of 1059 in this exam. I may or may not get a seat of my choice but this is very close to my heart. I ended up with 23k rank in NEET PG 2024, after which it was difficult to decide whether or not to take another drop. I'm so glad I did, and part of the reason was that BTR was my only source and I just had to go through that again. Later in Nov INI CET my rank was 6k, I am so so grateful. Thank you for all the support and positivity. Lots of love and respect.",
-    name: "Dr. Gautami",
-    image: AvatarFemale,
-  },
+
   {
     feedback:
       "Thank you so much Dr. Zainab Ma'am, You are a Angel sent by God for me... I could qualify because of your methods of learning and remembering.",
@@ -1300,44 +1321,8 @@ export const reviewsData = [
   },
   {
     feedback:
-      "Dr. Zainab Vora Ma'am, my name is Sreya Duvvuri. I'm a faithful follower of BTR for the last 6 months. Glad to report that I've gotten rank 624 in this INI CET. It's no way an exaggeration if i say i was able to overcome so many challenges with purely your lovely teaching and rigorous TnD.",
-    name: "Dr. Sreya Duvvuri",
-    image: AvatarFemale,
-  },
-  {
-    feedback:
-      "Dr. Zainab Vora i just wanted to thank you from the bottom of my heart. From scoring 37k in may INI CET 2024 initially and 34k in NEET PG 2024 to 9k in NEET PG 2025 and 709 in INI CET Nov 2025 now - this progress would not have been possible without your mentorship. Even though I may not get the branch I'd hoped for, I remain truly grateful for your guidance, motivation and faith.",
-    name: "Dr. Maaninee Kaul",
-    image: AvatarFemale,
-  },
-  {
-    feedback:
-      "NEET PG 29k to got AIR 344 and my partner from 29k to AIR 1.2k. We are eternally grateful to you dr. zainab ma'am and BTR is truly your brainchild so so so grateful hopefully will get to meet you ma'am. Thank you so much ma'am.",
-    name: "Dr. Sanjana",
-    image: AvatarFemale,
-  },
-  {
-    feedback:
-      "This happens for real man! I remember one ques in management of UGI variceal bleed and ma'am said propranolol is never used in acute management and this was one of the correct option out of 4 in 1 ques. To all those asking for strategy, I would say Each and every word ma'am says in TnDs and the class is helpful in some or the other way. Follow the TnDs blindly in this exam i felt majority of the exam was framed by ma'am only. The important topics which she used to say is truly important. Thank you Dr. Zainab Vora ma'am once again.",
-    name: "Dr. Kaneez Fatima",
-    image: AvatarFemale,
-  },
-  {
-    feedback:
       "28k NEET PG 25 to 4k INI CET Nov 25 in 2 months. Thank you Dr. Zainab Vora ma'am for everything.",
     name: "Dr. Anonymous",
-    image: AvatarMale,
-  },
-  {
-    feedback:
-      "Dr. Zainab Vora ma'am I just wanted to thank you for the past 1 year. I started using BTR since Nov 2024 from not qualifying in May INI CET 24 -> 19k, in Nov INI CET 24 -> 14k, in May INI CET 25 -> 8k, in Nov INI CET 25 though its not enough to get my dream branch but still wanted to thank you so much for this 1yr long journey. I got 11k in NEET PG 25 and i will take my seat this time and will be out of this rat race. Truly grateful for your motivation and guidance ma'am.",
-    name: "Dr. Nandita Das",
-    image: AvatarFemale,
-  },
-  {
-    feedback:
-      "Dr. Zainab Vora ma'am, I have secured AIR 124. Thank you so much ma'am for guiding through this journey and creating this BTR. Followed your BTR online tests for last 2 months to revise to give a last shot for INI-CET.",
-    name: "Dr. Mudit Goyal",
     image: AvatarMale,
   },
   {
