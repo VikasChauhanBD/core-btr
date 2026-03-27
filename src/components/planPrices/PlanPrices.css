@@ -1,0 +1,298 @@
+.plan-prices-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+  padding: 5rem 1rem;
+  background: #f7faf9;
+}
+
+.launch-banner {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  border: 1.5px solid #2ecc87;
+  border-radius: 999px;
+  padding: 6px 18px;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  color: #1a5c40;
+  background: #fff;
+  text-transform: uppercase;
+}
+
+.launch-dot {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: #2ecc87;
+  animation: pulse 1.8s ease-in-out infinite;
+}
+
+@keyframes pulse {
+  0%,
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 0.4;
+    transform: scale(0.7);
+  }
+}
+
+.plans-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  width: 70%;
+  align-items: start;
+}
+
+.plan-card {
+  position: relative;
+  background: #fff;
+  border: 1.5px solid #e2ede8;
+  border-radius: 16px;
+  padding: 28px 24px 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  transition:
+    box-shadow 0.25s ease,
+    transform 0.25s ease;
+}
+
+.plan-card:hover {
+  box-shadow: 0 12px 40px rgba(46, 204, 135, 0.12);
+  transform: translateY(-3px);
+}
+
+.plan-card--featured {
+  border: 2px solid #1767be;
+  box-shadow: 0 8px 32px rgba(26, 109, 189, 0.13);
+  padding-top: 36px;
+}
+
+.plan-badge {
+  position: absolute;
+  top: -14px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  padding: 5px 14px;
+  border-radius: 999px;
+  white-space: nowrap;
+}
+
+.plan-badge--best {
+  background: #1767be;
+  color: #fff;
+}
+
+.plan-badge--popular {
+  background: #0f9a5e;
+  color: #fff;
+}
+
+.plan-header {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.plan-tier {
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.14em;
+  color: #3f3f3f;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+.plan-duration {
+  font-size: 32px;
+  font-weight: 700;
+  color: #111c17;
+  margin: 0;
+  line-height: 1.1;
+}
+
+.plan-pricing-meta {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.plan-meta-row {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.plan-meta-label {
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  color: #3f3f3f;
+  text-transform: uppercase;
+  width: 42px;
+}
+
+.plan-meta-value {
+  font-size: 15px;
+  font-weight: 500;
+  color: #475f55;
+}
+
+.plan-meta-value--strike {
+  text-decoration: line-through;
+  opacity: 0.7;
+}
+
+.plan-launch-box {
+  background: #f0faf5;
+  border: 1px solid #c8eed9;
+  border-radius: 12px;
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.plan-launch-label {
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  color: #0f9a5e;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+.plan-launch-price-row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.plan-launch-price {
+  font-size: 38px;
+  font-weight: 700;
+  color: #111c17;
+  line-height: 1;
+}
+
+.plan-currency {
+  font-size: 20px;
+  font-weight: 600;
+  vertical-align: super;
+  line-height: 1;
+}
+
+.plan-discount-badge {
+  background: #0f9a5e;
+  color: #fff;
+  font-size: 13px;
+  font-weight: 700;
+  padding: 3px 9px;
+  margin-top: 14px;
+  border-radius: 6px;
+  letter-spacing: 0.05em;
+}
+
+.plan-extra-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  border: 1.5px solid #c8eed9;
+  border-radius: 8px;
+  background: #fff;
+  color: #1a5c40;
+  font-size: 14px;
+  font-weight: 600;
+  padding: 8px 12px;
+  margin-top: 10px;
+  cursor: pointer;
+  transition:
+    background 0.18s,
+    border-color 0.18s;
+  width: fit-content;
+}
+
+.plan-extra-btn:hover {
+  background: #e6f9f0;
+  border-color: #2ecc87;
+}
+
+.plan-savings {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.plan-savings-label {
+  font-size: 15px;
+  color: #3f3f3f;
+  white-space: nowrap;
+  min-width: 58px;
+}
+
+.plan-savings-bar {
+  flex: 1;
+  height: 5px;
+  background: #e2ede8;
+  border-radius: 999px;
+  overflow: hidden;
+}
+
+.plan-savings-fill {
+  height: 100%;
+  background: #2ecc87;
+  border-radius: 999px;
+  transition: width 0.6s ease;
+}
+
+.plan-savings-amount {
+  font-size: 15px;
+  font-weight: 700;
+  color: #0f9a5e;
+  white-space: nowrap;
+}
+
+.plan-prices-wrapper a {
+  text-decoration: none;
+  padding: 8px 16px;
+  background-color: #1767be;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 600;
+  border-radius: 10px;
+}
+
+/* -------------------------- Responsive Style -------------------------- */
+
+@media (max-width: 1440px) {
+  .plans-grid {
+    width: 85%;
+  }
+}
+
+/* @media (max-width: 1024px) {
+} */
+
+@media (max-width: 868px) {
+  .plans-grid {
+    width: 80%;
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+}
+
+@media (max-width: 568px) {
+  .plans-grid {
+    width: 100%;
+  }
+}

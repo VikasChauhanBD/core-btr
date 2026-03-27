@@ -153,7 +153,7 @@ function Navbar() {
         <NavLink to="/workbooks" onClick={handleCloseNav}>
           Workbooks
         </NavLink>
-        <NavLink to="#" onClick={handleCloseNav}>
+        <NavLink to="/plan-prices" onClick={handleCloseNav}>
           Buy New Plans
         </NavLink>
         <NavLink to="/reviews" onClick={handleCloseNav}>

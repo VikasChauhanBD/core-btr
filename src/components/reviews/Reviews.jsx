@@ -77,10 +77,10 @@ function ReviewCard({ t, index }) {
         <div className="card-author">
           <img className="author-avatar" src={t.image} alt={t.name} />
           <div className="author-name">
-            <p>Name - {t.name}</p>
-            <p>Rank - {t.Rank}</p>
-            <p>Exam - {t.Exam}</p>
-            <p>Year - {t.Year}</p>
+            <p>{t.name}</p>
+            <p>
+              {t.Rank} | {t.Exam}
+            </p>
           </div>
         </div>
       </div>
