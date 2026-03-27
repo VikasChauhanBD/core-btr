@@ -323,7 +323,7 @@ function Annotated() {
                 }
               >
                 <img
-                  src="https://cdn.dribbble.com/userupload/47187682/file/76584c4627f6a8dbd7a967ed17ba0cea.jpeg"
+                  src="https://cdn.dribbble.com/userupload/47187682/file/35fd36049bdc1dfe49efe682ccfd99bc.jpeg"
                   alt="coreBTR Annotated Book 1"
                 />
                 <div className="annotated-image-overlay">
@@ -351,7 +351,7 @@ function Annotated() {
                 }
               >
                 <img
-                  src="https://cdn.dribbble.com/userupload/47187685/file/985aef3655a68010ed6d310b8ce67bb8.jpeg"
+                  src="https://cdn.dribbble.com/userupload/47187685/file/65b2781218419c3c9ba396d818fe52c7.jpeg"
                   alt="coreBTR Annotated Book 2"
                 />
                 <div className="annotated-image-overlay">
@@ -383,7 +383,7 @@ function Annotated() {
                 }
               >
                 <img
-                  src="https://cdn.dribbble.com/userupload/47187683/file/9443d454260265ee581d00d38141b926.jpeg"
+                  src="https://cdn.dribbble.com/userupload/47187683/file/28d3f95c331901fa90fbc544e716c5e5.jpeg"
                   alt="coreBTR Annotated Book 3"
                 />
                 <div className="annotated-image-overlay">

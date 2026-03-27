@@ -230,7 +230,7 @@ function Unannotated() {
                 onClick={() => openPopup(firstHalfImages, 0)}
               >
                 <img
-                  src="https://cdn.dribbble.com/userupload/47187681/file/f7bb58a9c8fee39631839fdf095a4d33.jpeg"
+                  src="https://cdn.dribbble.com/userupload/47187681/file/f896a9a524c0637e3a89dbe53750f38b.jpeg"
                   alt="coreBTR Unannotated Workbook Volume 1"
                 />
                 <div className="unannotated-image-overlay">
@@ -255,7 +255,7 @@ function Unannotated() {
                 onClick={() => openPopup(secondHalfImages, 0)}
               >
                 <img
-                  src="https://cdn.dribbble.com/userupload/47187684/file/cbca34d3aa32922163fa51a0157f5930.jpeg"
+                  src="https://cdn.dribbble.com/userupload/47187684/file/6d48fefeab3c1eb192009e02b0e313fe.jpeg"
                   alt="coreBTR Unannotated Workbook Volume 2"
                 />
                 <div className="unannotated-image-overlay">
