@@ -72,6 +72,11 @@ const integratedImages = [
   },
 ];
 
+// Split annotatedImages into two halves
+const annHalf = Math.ceil(annotatedImages.length / 2);
+const annotatedFirstHalf = annotatedImages.slice(0, annHalf);
+const annotatedSecondHalf = annotatedImages.slice(annHalf);
+
 const highlights = [
   {
     points: [
@@ -107,7 +112,6 @@ function IntegratedCarousel({ images, onImageClick }) {
   const goPrev = () => setIndex((i) => Math.max(i - 1, 0));
   const goNext = () => setIndex((i) => Math.min(i + 1, maxIndex));
 
-  // Reset index if it goes out of range on resize
   useEffect(() => {
     setIndex((i) => Math.min(i, Math.max(0, images.length - visibleCount)));
   }, [visibleCount, images.length]);
@@ -299,39 +303,90 @@ function Annotated() {
             Created by Dr. Zainab Vora, these books are designed to save time
             and keep you focused on what is truly important.
           </p>
+
+          {/* Three image columns */}
           <div className="annotated-highlight-grid">
-            <div
-              className="annotated-highlight-image annotated-highlight-image--clickable"
-              onClick={() => openPopup(annotatedImages, 0)}
-            >
-              <img
-                src="https://cdn.dribbble.com/userupload/47150179/file/2797e7c5125ef94e919282423d5bd711.jpg"
-                alt="coreBTR Annotated Workbooks"
-              />
-              <div className="annotated-image-overlay">
-                <span className="annotated-image-overlay-icon">
-                  Check Sample Pages
-                </span>
+            {/* Book 1 — first half of annotatedImages */}
+            <div className="annotated-image-block">
+              <div
+                className="annotated-highlight-image annotated-highlight-image--clickable"
+                onClick={() => openPopup(annotatedFirstHalf, 0)}
+              >
+                <img
+                  src="https://cdn.dribbble.com/userupload/47187682/file/76584c4627f6a8dbd7a967ed17ba0cea.jpeg"
+                  alt="coreBTR Annotated Book 1"
+                />
+                <div className="annotated-image-overlay">
+                  <span className="annotated-image-overlay-icon">
+                    Preview Sample Pages
+                  </span>
+                </div>
               </div>
+              <button
+                className="annotated-preview-cta"
+                onClick={() => openPopup(annotatedFirstHalf, 0)}
+              >
+                Preview Sample Pages
+              </button>
             </div>
-            {highlights.map((h, idx) => (
-              <div className="annotated-highlight-card" key={idx}>
-                <ul className="annotated-highlight-list">
-                  {h.points.map((p, i) => (
-                    <li key={i}>{p}</li>
-                  ))}
-                </ul>
-                {h.badge && (
-                  <span className="annotated-highlight-badge">{h.badge}</span>
-                )}
-                <button
-                  className="annotated-preview-cta"
-                  onClick={() => openPopup(annotatedImages, 0)}
-                >
-                  Preview Sample Pages
-                </button>
+
+            {/* Book 2 — second half of annotatedImages */}
+            <div className="annotated-image-block">
+              <div
+                className="annotated-highlight-image annotated-highlight-image--clickable"
+                onClick={() => openPopup(annotatedSecondHalf, 0)}
+              >
+                <img
+                  src="https://cdn.dribbble.com/userupload/47187685/file/985aef3655a68010ed6d310b8ce67bb8.jpeg"
+                  alt="coreBTR Annotated Book 2"
+                />
+                <div className="annotated-image-overlay">
+                  <span className="annotated-image-overlay-icon">
+                    Preview Sample Pages
+                  </span>
+                </div>
               </div>
-            ))}
+              <button
+                className="annotated-preview-cta"
+                onClick={() => openPopup(annotatedSecondHalf, 0)}
+              >
+                Preview Sample Pages
+              </button>
+            </div>
+
+            {/* Book 3 — full integratedImages */}
+            <div className="annotated-image-block">
+              <div
+                className="annotated-highlight-image annotated-highlight-image--clickable"
+                onClick={() => openPopup(integratedImages, 0)}
+              >
+                <img
+                  src="https://cdn.dribbble.com/userupload/47187683/file/9443d454260265ee581d00d38141b926.jpeg"
+                  alt="coreBTR Annotated Book 3"
+                />
+                <div className="annotated-image-overlay">
+                  <span className="annotated-image-overlay-icon">
+                    Preview Sample Pages
+                  </span>
+                </div>
+              </div>
+              <button
+                className="annotated-preview-cta"
+                onClick={() => openPopup(integratedImages, 0)}
+              >
+                Preview Sample Pages
+              </button>
+            </div>
+          </div>
+
+          {/* Points card */}
+          <div className="annotated-highlight-card annotated-points-card">
+            <h3>Why Use These Notes?</h3>
+            <ul className="annotated-highlight-list">
+              {highlights[0].points.map((p, i) => (
+                <li key={i}>{p}</li>
+              ))}
+            </ul>
           </div>
 
           <AnnotatedVolumesIntegrated
