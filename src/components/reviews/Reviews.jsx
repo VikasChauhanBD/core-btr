@@ -79,7 +79,7 @@ function ReviewCard({ t, index }) {
           <div className="author-name">
             <p>{t.name}</p>
             <p>
-              {t.Rank} | {t.Exam}
+              Rank {t.Rank} | {t.Exam}
             </p>
           </div>
         </div>
