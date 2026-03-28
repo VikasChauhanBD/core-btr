@@ -53,7 +53,7 @@
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 20px;
-  width: 70%;
+  width: 80%;
   align-items: start;
 }
 
@@ -277,6 +277,18 @@
   font-size: 16px;
   font-weight: 600;
   border-radius: 10px;
+}
+
+.plan-prices-help {
+  font-size: 16px;
+  color: #3f3f3f;
+  margin-top: -20px;
+}
+
+.plan-prices-help a {
+  color: #1767be;
+  padding: 0 !important;
+  background-color: transparent !important;
 }
 
 /* -------------------------- Responsive Style -------------------------- */

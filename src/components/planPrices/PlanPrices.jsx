@@ -115,6 +115,11 @@ export default function PlanPrices() {
       </div>
 
       <NavLink to="#">Buy Now</NavLink>
+
+      <p className="plan-prices-help">
+        For any queries, feel free to contact our Helpline:{" "}
+        <a href="tel:7428581909">7428581909</a>
+      </p>
     </div>
   );
 }
