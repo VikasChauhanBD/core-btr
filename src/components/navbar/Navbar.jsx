@@ -155,7 +155,7 @@ function Navbar() {
         <NavLink to="/plan-prices" onClick={handleCloseNav}>
           Buy New Plans
         </NavLink>
-        <NavLink to="/reviews" onClick={handleCloseNav}>
+        {/* <NavLink to="/reviews" onClick={handleCloseNav}>
           Reviews
         </NavLink>
         <NavLink to="/gallery" onClick={handleCloseNav}>
@@ -163,6 +163,9 @@ function Navbar() {
         </NavLink>
         <NavLink to="/faqs" onClick={handleCloseNav}>
           FAQ's
+        </NavLink> */}
+        <NavLink className="login-signup-cta" to="#" onClick={handleCloseNav}>
+          Login | Signup
         </NavLink>
       </nav>
       <div className="hamburger">

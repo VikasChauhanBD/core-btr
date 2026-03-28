@@ -36,7 +36,7 @@
 }
 
 .navbar-container a:hover {
-  color: #1676e4;
+  color: #1767be;
 }
 
 .dropdown-container {
@@ -60,7 +60,7 @@
 }
 
 .dropdown-trigger:hover {
-  color: #1676e4;
+  color: #1767be;
 }
 
 .nested-trigger {
@@ -152,12 +152,18 @@
 }
 
 .dropdown-link:hover {
-  color: #1676e4;
+  color: #1767be;
   background-color: transparent;
 }
 
 .hamburger {
   display: none;
+}
+
+.login-signup-cta {
+  background-color: #1767be;
+  color: #ffffff !important;
+  border-radius: 10px;
 }
 
 /* -------------------------- Responsive Style -------------------------- */
