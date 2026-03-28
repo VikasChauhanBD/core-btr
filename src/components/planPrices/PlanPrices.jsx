@@ -43,10 +43,12 @@ const plans = [
 export default function PlanPrices() {
   return (
     <div className="plan-prices-wrapper">
-      <div className="launch-banner">
+      {/* <div className="launch-banner">
         <span className="launch-dot" />
         LIMITED TIME LAUNCH OFFER
-      </div>
+      </div> */}
+
+      <h2>Choose Your Plan</h2>
 
       <div className="plans-grid">
         {plans.map((plan) => (

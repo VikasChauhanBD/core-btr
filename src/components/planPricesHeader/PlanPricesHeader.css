@@ -33,7 +33,6 @@
   line-height: 1.15;
   text-align: center;
   color: #1d204b;
-  margin-bottom: 10px;
 }
 
 .prices-header-section-heading span {
@@ -41,7 +40,14 @@
 }
 
 .prices-header-container h3 {
-  font-size: 22px;
+  font-size: 24px;
+  font-weight: 600;
+  color: #3f3f3f;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.prices-header-container p {
   color: #3f3f3f;
   text-align: center;
 }
@@ -50,7 +56,7 @@
   font-size: 24px;
   color: #3f3f3f;
   text-align: center;
-  margin: 24px 0 10px 0;
+  margin: 24px 0 16px 0;
 }
 
 .prices-header-who-grid {
@@ -100,7 +106,7 @@
 .prices-header-who-card2 img {
   width: 100%;
   height: 100%;
-  object-fit: fill;
+  object-fit: contain;
 }
 
 .prices-header-who-list {
@@ -141,7 +147,7 @@
   }
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 1280px) {
   .prices-header-who-for {
     width: 95%;
   }
