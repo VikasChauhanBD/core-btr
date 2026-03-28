@@ -664,6 +664,22 @@ export const reviewsData = [
     Exam: "NEET PG 2025",
   },
   {
+    feedback:
+      "INI CET Nov 25 - 1600, NEET PG - 50k, INI CET May - 57k. I know i didn't do great and need to appear again but i am proud of the people who believed in me and my family too. Hope so i can make them proud next time! Its never the content or source i understood, it always the person and your stupid faith in yourself! Dr. Zainab ma'am is not a content or source, she is the person who instills faith in people when they are low. I am so amazed by ma'am as a person and not just as a teacher! Dr. Zainab Vora ma'am you taught me to be consistent and believe in myself, huge respect and love. Promise to meet you soon.",
+    name: "Dr. Anonymous",
+    image: AvatarMale,
+    Rank: "1600",
+    Exam: "INICET NOV 2025",
+  },
+  {
+    feedback:
+      "Ma'am I got AIIMS GKP psychiatry, Thank you for this wonderful support. My neet pg rank was 19068 but got 1800 in ini and yesterday got AIIMS GKP. Thank you so much dr. Zainab vora ma'am.",
+    name: "Dr. Anonymous",
+    image: AvatarMale,
+    Rank: "1800",
+    Exam: "INICET",
+  },
+  {
     feedback: "Thank you so much ma'am, INI CET May 14196 to NEET PG 1895.",
     name: "Dr. Tarun Prakash Maurya",
     image: AvatarMale,
@@ -914,8 +930,6 @@ export const reviewsData = [
       "I just wanted to thank you from my heart, I got allotted MD Medicine in my city. The Hard Work you put into every class has genuinely inspired us to work harder, it's your belief in BTR that translates into your Hard Work and your Hard Work inspires us to Believe in BTR. Thank you ma'am for BTR and we all know BTR is not 'just BTR' It's all the compiled videos all the choti copy sessions all the EnDs all the motivation you gave us all Bonus BTRs all the Extra Edge BTRs all the Mega BTR sessions. The thought you put behind each and every question and the 4 options for that question is something magical!! Your Hard work makes BTR magical!!",
     name: "Dr. Kaustubh More",
     image: AvatarMale,
-    Rank: "",
-    Exam: "",
   },
   {
     feedback:
@@ -932,19 +946,6 @@ export const reviewsData = [
   {
     feedback:
       "Thank you so much Dr. Zainab Vora ma'am for everything you do. My PG preparation journey has finally come to an end, and I just wanted to say how grateful I am to you! You put in so much effort from going through all the Telegram doubts to clearing them the very next day in your live sessions. The BTRs, TNDs, mega revisions, Ashirwad classes everything was amazing. You truly are the best teacher and mentor one could ever ask for. Honestly I thought I'd have to take a drop after internship. But when the NEET postponement was announced, I decided to give it my all and started watching your videos religiously and I secured a decent rank of 7.2k. Thank you so much ma'am I couldn't have done this without you. I was literally crying while watching the mega session just seeing the kind of effort you put in moved me so much. You're the kindest, smartest, and most inspiring person ever! I'm totally in awe of you.",
-    name: "Dr. Anonymous",
-    image: AvatarMale,
-  },
-  {
-    feedback:
-      "INI CET Nov 25 - 1600, NEET PG - 50k, INI CET May - 57k. I know i didn't do great and need to appear again but i am proud of the people who believed in me and my family too. Hope so i can make them proud next time! Its never the content or source i understood, it always the person and your stupid faith in yourself! Dr. Zainab ma'am is not a content or source, she is the person who instills faith in people when they are low. I am so amazed by ma'am as a person and not just as a teacher! Dr. Zainab Vora ma'am you taught me to be consistent and believe in myself, huge respect and love. Promise to meet you soon.",
-    name: "Dr. Anonymous",
-    image: AvatarMale,
-  },
-
-  {
-    feedback:
-      "Ma'am I got AIIMS GKP psychiatry, Thank you for this wonderful support. My neet pg rank was 19068 but got 1800 in ini and yesterday got AIIMS GKP. Thank you so much dr. Zainab vora ma'am.",
     name: "Dr. Anonymous",
     image: AvatarMale,
   },

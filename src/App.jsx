@@ -22,6 +22,7 @@ import WorkbookPage from "./pages/WorkbookPage";
 import GalleryPage from "./pages/GalleryPage";
 import PlanPricesPage from "./pages/PlanPricesPage";
 import Face404 from "./components/face404/Face404";
+import AuthPage from "./components/authPage/AuthPage";
 
 function App() {
   const [showIntro, setShowIntro] = useState(false);
@@ -116,6 +117,7 @@ function App() {
             element={<ShippingAndDeliveryPolicyPage />}
           />
           <Route path="*" element={<Face404 />} />
+          <Route path="/testingpage" element={<AuthPage />} />
         </Routes>
 
         <Footer />
