@@ -6,7 +6,7 @@ const whatYouGet = [
     title: "High-Yield Revision Videos",
     body: "Concise, concept-driven lectures across all 19 subjects, including integrated system-based learning.",
     image:
-      "https://cdn.dribbble.com/userupload/47163471/file/bfbe0c8d4f366e2f4fa8415ba82d34aa.jpeg",
+      "https://cdn.dribbble.com/userupload/47131990/file/24bc95be6dde1d0302082f428ab86bf4.png",
   },
   {
     title: "Structured Notes & Workbooks",
