@@ -42,7 +42,7 @@
   }
 }
 
-.plan-prices-wrapper h2 {
+.plan-prices-heading {
   font-size: 38px;
   line-height: 1.15;
   text-align: center;
@@ -294,7 +294,7 @@
 }
 
 @media (max-width: 868px) {
-  .plan-prices-wrapper h2 {
+  .plan-prices-heading {
     font-size: 32px;
   }
 

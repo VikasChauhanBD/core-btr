@@ -48,7 +48,7 @@ export default function PlanPrices() {
         LIMITED TIME LAUNCH OFFER
       </div> */}
 
-      <h2>Choose Your Plan</h2>
+      <h2 className="plan-prices-heading">Choose Your Plan</h2>
 
       <div className="plans-grid">
         {plans.map((plan) => (
