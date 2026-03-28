@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import "./Navbar.css";
 import { NavLink, useNavigate } from "react-router-dom";
-import Logo from "../../assets/images/coreBTR-logo.svg";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { IoIosArrowDown } from "react-icons/io";
 

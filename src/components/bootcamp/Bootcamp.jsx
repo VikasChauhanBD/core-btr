@@ -2,8 +2,6 @@ import React from "react";
 import "./Bootcamp.css";
 import { NavLink } from "react-router-dom";
 import BootcampHero from "./hero-section/BootcampHero";
-import CBTRoom from "../../assets/images/CBTRooms2.webp";
-import SABR from "../../assets/images/SABR.webp";
 import WhyDiff2 from "./WhyDifferent/WhyDiff2";
 import BootcampFeatures from "./BootcampFeatures/BootcampFeatures";
 import BootcampCTA from "./BootcampCTA/BootcampCTA";
@@ -37,10 +35,13 @@ function Bootcamp() {
         </h1>
         <h3>Learn with Dr. Zainab Vora. Transform with the System.</h3>
         <p>
-          This is where concepts finally make sense. Where revision becomes structured and where your preparation starts moving in the right direction.
-          <b>At coreBTR Bootcamp, </b> you’re not just attending classes, you’re learning directly under<b>Dr. Zainab Vora</b>, with a system designed
-          to help you <b>stay consistent, focused, and exam-ready.</b> You don’t just study more, you study better.{" "}
-          <b> Start Learning Smarter.</b>
+          This is where concepts finally make sense. Where revision becomes
+          structured and where your preparation starts moving in the right
+          direction.
+          <b>At coreBTR Bootcamp, </b> you’re not just attending classes, you’re
+          learning directly under<b>Dr. Zainab Vora</b>, with a system designed
+          to help you <b>stay consistent, focused, and exam-ready.</b> You don’t
+          just study more, you study better. <b> Start Learning Smarter.</b>
         </p>
       </div>
 
@@ -95,8 +96,8 @@ function Bootcamp() {
             An intensive, high-impact offline program for serious
             <b>
               {" "}
-              NEET PG &amp; INI-CET Aspirants.<br /> Designed for focused
-              learning,
+              NEET PG &amp; INI-CET Aspirants.
+              <br /> Designed for focused learning,
             </b>{" "}
             disciplined preparation, and a completely distraction-free
             environment.
@@ -126,19 +127,16 @@ function Bootcamp() {
               alt="coreBTR BootCamp Class 2026 - Top"
             />
             <p className="bootcamp-subtitle-top">
-  Learn The BTR Way :{" "}
-  <span className="highlight-yellow">
-    19 Subjects | System-Wise | High-Yield
-  </span>
-</p>
-            
+              Learn The BTR Way :{" "}
+              <span className="highlight-yellow">
+                19 Subjects | System-Wise | High-Yield
+              </span>
+            </p>
           </div>
           {/* <h3 className="bootcamp-section-sub-heading-img-2">
            19 Subjects | System-Wise | High-Yield
           </h3> */}
           <div className="bootcamp-highlight-content">
-           
-
             <h2 className="bootcamp-title">Concepts. Clarity. Confidence.</h2>
 
             <p className="bootcamp-description">
@@ -178,24 +176,27 @@ function Bootcamp() {
 
           {/* BOTTOM IMAGE */}
           <div className="bootcamp-highlight-image bootcamp-highlight-image--bottom">
-  <img
-    src="https://cdn.dribbble.com/userupload/47178594/file/67a6d44caf08a8edf187a3f80c9938cb.png"
-    alt="coreBTR BootCamp Class 2026 - Bottom"
-  />
-  <h3 className="bootcamp-section-sub-heading-img">
-    Real Exam Environment. Real Preparation.
-  </h3>
-</div>
+            <img
+              src="https://cdn.dribbble.com/userupload/47178594/file/67a6d44caf08a8edf187a3f80c9938cb.png"
+              alt="coreBTR BootCamp Class 2026 - Bottom"
+            />
+            <h3 className="bootcamp-section-sub-heading-img">
+              Real Exam Environment. Real Preparation.
+            </h3>
+          </div>
           {/* <h3 className="bootcamp-section-sub-heading-img">
             Real Exam Environment. Real Preparation.
           </h3> */}
           <div className="bootcamp-highlight-content">
-           
-
-            <h2 className="bootcamp-title">Consistent Testing. Real Progress.</h2>
+            <h2 className="bootcamp-title">
+              Consistent Testing. Real Progress.
+            </h2>
 
             <p className="bootcamp-description">
-            <strong> After completing each subject,</strong> you’ll take structured tests to assess your understanding and identify gaps. On non-class days, daily mini tests ensure you stay in the habit of solving MCQs
+              <strong> After completing each subject,</strong> you’ll take
+              structured tests to assess your understanding and identify gaps.
+              On non-class days, daily mini tests ensure you stay in the habit
+              of solving MCQs
             </p>
 
             {/* <ul className="bootcamp-points">
@@ -213,7 +214,7 @@ function Bootcamp() {
       <BootcampFeatures />
 
       <WhyDiff2 />
-      
+
       <BootcampCTA />
     </div>
   );

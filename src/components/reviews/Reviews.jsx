@@ -1,6 +1,5 @@
 import { useState, useRef, useEffect } from "react";
 import "./Reviews.css";
-import { testimonialsData } from "../../assets/data/testimonials";
 import { reviewsData } from "../../assets/data/reviews";
 
 const INITIAL_ROWS = 4;

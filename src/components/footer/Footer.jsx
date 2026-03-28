@@ -1,7 +1,6 @@
 import React from "react";
 import "./Footer.css";
 import { NavLink } from "react-router-dom";
-import Logo from "../../assets/images/coreBTR-white-logo.svg";
 import { FaInstagram, FaYoutube } from "react-icons/fa";
 
 function Footer() {
