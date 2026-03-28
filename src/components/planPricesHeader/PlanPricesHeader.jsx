@@ -28,7 +28,15 @@ function PlanPricesHeader() {
     <div className="prices-header-container">
       <div className="prices-header-sections">
         <section className="prices-header-who-for">
-          <h2 className="prices-header-section-heading">What is included</h2>
+          <h1 className="prices-header-section-heading">
+            Core<span>BTR</span> is designed to simplify your revision and
+            maximize your results.
+          </h1>
+          <h3>
+            Every feature is built to help you learn faster, retain better, and
+            perform with confidence in NEET PG, INI-CET & FMGE.
+          </h3>
+          <h4>What You Get with CoreBTR</h4>
           <div className="prices-header-who-grid">
             <div className="prices-header-who-card1">
               <ul className="prices-header-who-list">
@@ -39,7 +47,7 @@ function PlanPricesHeader() {
             </div>
             <div className="prices-header-who-card2">
               <img
-                src="https://cdn.dribbble.com/userupload/47198571/file/76c6e3aa84bc16716a67612585e278d1.jpeg"
+                src="https://cdn.dribbble.com/userupload/47198292/file/3d7da8f9174ab84ad4ee4db0d5bcfcf4.png"
                 alt=""
               />
             </div>
