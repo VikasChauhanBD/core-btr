@@ -58,6 +58,10 @@ import R323 from "../../assets/studentsImages/R323.jpg";
 import R156 from "../../assets/studentsImages/R156.jpg";
 import R364 from "../../assets/studentsImages/R364.jpg";
 import R183 from "../../assets/studentsImages/R183.jpg";
+import R1226 from "../../assets/studentsImages/R1226.jpeg";
+import R1057 from "../../assets/studentsImages/R1057.jpeg";
+import R2793 from "../../assets/studentsImages/R2793.jpeg";
+import R1233 from "../../assets/studentsImages/R1233.jpeg";
 
 import AvatarMale from "../../assets/studentsImages/avatar-male.png";
 import AvatarFemale from "../../assets/studentsImages/avatar-female.png";
@@ -439,6 +443,14 @@ export const reviewsData = [
   },
   {
     feedback:
+      "I got AIR 1057 thank you so much ma'am for all you support and blessing this was my first attempt along with Internship this is all because of your support and you made me believe that I can you this in 6 months of preparation. Got AIR 945 in INI CET also thanks to you.",
+    name: "Dr. Avani",
+    image: R1057,
+    Rank: "1057",
+    Exam: "NEET PG 2025",
+  },
+  {
+    feedback:
       "Thank you so much ma'am, Got rank 1070 BTR was such a huge part of my journey, So grateful for the journey Dr. Zainab Vora ma'am.",
     name: "Dr. Ramya R",
     image: R1070,
@@ -451,6 +463,22 @@ export const reviewsData = [
     name: "Dr. Sakshita Pal",
     image: DrSakshitaPal,
     Rank: "1144",
+    Exam: "NEET PG 2025",
+  },
+  {
+    feedback:
+      "Dr. Zainab Vora ma'am, I did good this time... My rank is 1226. I have no words to express my gratitude to you and this message will never completely embody my emotions. THANK YOU MA'AM... BTR did help me to identify my short comings and focus my hardwork. Me being an FMGE was always told that NEET PG is out of my reach and you helped me prove it wrong. Thank you for helping me through this will always be grateful.",
+    name: "Dr. Anandhu",
+    image: R1226,
+    Rank: "1226",
+    Exam: "NEET PG 2025",
+  },
+  {
+    feedback:
+      "Hi ma'am, Got a rank of 1233 in NEET PG. Thank you so much for everything. I've relied on BTR only as main source and if anyone says BTR is not enough I will just say BTR is as good as you are. It's the crux of the story what you've created is a Zainab verse of your own with everything coming together beautifully in the end. At first IMBJ is just an annoying four letter word in the end it becomes the meeting point of so many subjects. Ma'am really you are an artist if there is anyone who has prepared for this entrance to the top notch level it's you and you do it every year. There are many sources of preparation but there is only one mentor who is there from strategy class till ashirvaad class. Thank you for being part of my journey.",
+    name: "Dr. Eshita",
+    image: R1233,
+    Rank: "1233",
     Exam: "NEET PG 2025",
   },
   {
@@ -539,6 +567,14 @@ export const reviewsData = [
     name: "Dr. Nishita",
     image: R2503,
     Rank: "2503",
+    Exam: "NEET PG 2025",
+  },
+  {
+    feedback:
+      "From 54k in my last NEET PG to AIR 2793 this time ma'am, you are nothing less than a god to me. This would never have been possible without your guidance, support. Never in my wildest dreams had I imagined I could achieve this. Truly, from the bottom of my heart, thank you ma'am for making this possible.",
+    name: "Dr. Revati",
+    image: R2793,
+    Rank: "2793",
     Exam: "NEET PG 2025",
   },
   {
@@ -1509,12 +1545,6 @@ export const reviewsData = [
       "BTR helped me in every way possible, this rank was only possible because of Dr. Zainab Vora ma'am.",
     name: "Dr. Piyush Gupta",
     image: AvatarMale,
-  },
-  {
-    feedback:
-      "Dr. Zainab Vora ma'am is truly the greatest. Her positivity and belief made me confident that I could crack both INICET May 2025 and NEET PG 2025 along with internship, and I did, securing AIR 945 in INICET and 1057 in NEET PG. She taught us not just content, but how to approach questions calmly even when knowledge feels incomplete. As someone we could truly relate to, she made all 19 subjects manageable in a short time. I'm extremely grateful to her and the T&D team for the best question-solving skills. I've recommended BTR to all my juniors, and they're loving it. Thank you so much, ma'am.",
-    name: "Dr. Avani Porwal",
-    image: AvatarFemale,
   },
   {
     feedback:
@@ -2588,12 +2618,6 @@ export const reviewsData = [
   },
   {
     feedback:
-      "Dr. Zainab Vora ma'am, I did good this time... My rank is 1226. I have no words to express my gratitude to you and this message will never completely embody my emotions. THANK YOU MA'AM... BTR did help me to identify my short comings and focus my hardwork. Me being an FMGE was always told that NEET PG is out of my reach and you helped me prove it wrong. Thank you for helping me through this will always be grateful.",
-    name: "Dr. Anonymous",
-    image: AvatarMale,
-  },
-  {
-    feedback:
       "Dear Dr. Zainab Vora Ma'am, I sincerely thank you. I have secured an AIR 4402 in NEET PG 2025, compared to 19.5k in NEET PG 2024. Last year, I had the option of joining MD Anesthesia in one of the best colleges of the state, but I did not join. When I restarted my preparation, I faced many challenges while managing my duty at the CHC. Most of my friends had already joined, and at times I struggled with motivation. There were moments of regret and self-doubt, but your words - 'take baby steps and believe in yourself' - kept me moving forward. I truly consider you not only a mentor but also a friend who inspired me through this journey. Thank you so much ma'am, for your constant guidance and encouragement.",
     name: "Dr. Rojalin Prusty",
     image: AvatarFemale,
@@ -2651,12 +2675,6 @@ export const reviewsData = [
       "Got an AIR 2846. Thank you so much Dr. Zainab Vora ma'am for being the guiding angel throughout this journey.",
     name: "Dr. Anonymous",
     image: AvatarMale,
-  },
-  {
-    feedback:
-      "I got AIR 1057 thank you so much ma'am for all you support and blessing this was my first attempt along with Internship this is all because of your support and you made me believe that I can you this in 6 months of preparation. Got AIR 945 in INI CET also thanks to you.",
-    name: "Dr. Avani",
-    image: AvatarFemale,
   },
   {
     feedback:
@@ -2718,12 +2736,6 @@ export const reviewsData = [
   {
     feedback: "Thanks ma'am for all your efforts and it's Air 407.",
     name: "Dr. Prasant",
-    image: AvatarMale,
-  },
-  {
-    feedback:
-      "From 54k in my last NEET PG to AIR 2793 this time ma'am, you are nothing less than a god to me. This would never have been possible without your guidance, support. Never in my wildest dreams had I imagined I could achieve this. Truly, from the bottom of my heart, thank you ma'am for making this possible.",
-    name: "Dr. Anonymous",
     image: AvatarMale,
   },
   {
@@ -2835,12 +2847,6 @@ export const reviewsData = [
     feedback: "Got AIR 119, Thank you ma'am for BTR.",
     name: "Dr. Pavan",
     image: AvatarMale,
-  },
-  {
-    feedback:
-      "Hi ma'am, Got a rank of 1233 in NEET PG. Thank you so much for everything. I've relied on BTR only as main source and if anyone says BTR is not enough I will just say BTR is as good as you are. It's the crux of the story what you've created is a Zainab verse of your own with everything coming together beautifully in the end. At first IMBJ is just an annoying four letter word in the end it becomes the meeting point of so many subjects. Ma'am really you are an artist if there is anyone who has prepared for this entrance to the top notch level it's you and you do it every year. There are many sources of preparation but there is only one mentor who is there from strategy class till ashirvaad class. Thank you for being part of my journey.",
-    name: "Dr. Eshita",
-    image: AvatarFemale,
   },
   {
     feedback:
