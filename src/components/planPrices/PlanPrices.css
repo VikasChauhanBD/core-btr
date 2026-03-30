@@ -265,6 +265,12 @@
   text-align: center;
 }
 
+.plan-prices-register {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
 .plan-prices-help {
   font-size: 16px;
   color: #3f3f3f;

@@ -176,6 +176,9 @@ export default function PlanPrices() {
       </div> */}
 
       <div className="plan-prices-help-div">
+        <p className="plan-prices-register">
+          Registration starts from 11:00 AM on 1<sup>st</sup> April 2026
+        </p>
         <p className="plan-prices-help">
           For any queries, feel free to contact our Helpline:{" "}
           <a href="tel:7428581909">7428581909</a> (Only For Calling)
