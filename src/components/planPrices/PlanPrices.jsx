@@ -84,7 +84,8 @@ export default function PlanPrices() {
 
               <div className="plan-extra-btn">
                 <p className="plan-launch-offer">
-                  Launch offer <br /> Avail Flat 30% off + 2 Months Extra
+                  Launch offer <br /> Avail Flat <b>30%</b> off +{" "}
+                  <b>2 Months</b> Extra
                 </p>
               </div>
             </div>
@@ -125,7 +126,9 @@ export default function PlanPrices() {
           {/* <p className="plan-launch-offer"></p> */}
 
           <div className="plan-extra-btn">
-            Launch offer <br /> Avail Flat 40% off
+            <p className="plan-launch-offer">
+              Launch offer <br /> Avail Flat <b>40%</b> off
+            </p>
           </div>
         </div>
 

@@ -4,59 +4,59 @@ import "./PlanPricesFaqs.css";
 const faqs = [
   {
     id: 1,
+    question:
+      "If we buy the launch plan, will that be added to our existing subscription?",
+    answer: `Yes it shall be added to your existing subscription and will start after the existing subscription ends`,
+  },
+  {
+    id: 2,
     question: "What does CoreBTR include?",
     answer: `CoreBTR offers a complete revision ecosystem—high-yield videos, structured notes, PYQs, a curated QBank, video solutions, grand tests, and topic-wise pearls—all in one platform.`,
   },
   {
-    id: 2,
+    id: 3,
     question: "Are the revision videos enough for exam preparation?",
     answer: `Yes. The videos are designed to be concise, high-yield, and concept-driven, covering all 19 subjects with integrated systems for effective revision.`,
   },
   {
-    id: 3,
+    id: 4,
     question: "How are the notes and workbooks structured?",
     answer: `The notes and workbooks are aligned with the video content and focus on quick revision, active recall, and easy retention during multiple revisions.`,
   },
   {
-    id: 4,
+    id: 5,
     question: "Does CoreBTR include PYQs from all exams?",
     answer: `Yes. PYQs from NEET PG, INI-CET, and FMGE are included, organized topic-wise and exam-wise for targeted practice.`,
   },
   {
-    id: 5,
+    id: 6,
     question: "What makes the QBank different?",
     answer: `The QBank is curated with application-based MCQs that help improve clinical thinking, accuracy, and exam temperament—not just theory recall.`,
   },
   {
-    id: 6,
+    id: 7,
     question: "What are #ZVRecommended PYQs?",
     answer: `These are handpicked, high-yield PYQs recommended by Dr. Zainab Vora.`,
   },
   {
-    id: 7,
+    id: 8,
     question: "Are there tests to track performance?",
     answer: `Yes. CoreBTR includes Grand Tests and Subject Tests to help you assess your preparation, identify weak areas, and improve performance.`,
   },
   {
-    id: 8,
+    id: 9,
     question: "What are Topic-Wise Pearls?",
     answer: `These are ultra high-yield, quick-revision points designed for last-minute recall and rapid revision before exams.`,
   },
   {
-    id: 9,
+    id: 10,
     question: "Will there be flashcards available?",
     answer: `Yes. Flashcards are coming soon and will help with active recall, memory reinforcement, and efficient revision.`,
   },
   {
-    id: 10,
+    id: 11,
     question: "Is CoreBTR suitable for revision?",
     answer: `Absolutely. The entire platform is designed for rapid, high-yield revision—making it ideal for both ongoing prep and last-phase revision.`,
-  },
-  {
-    id: 11,
-    question:
-      "If we buy the launch plan, will that be added to our existing subscription?",
-    answer: `Yes it shall be added to your existing subscription and will start after the existing subscription ends`,
   },
 ];
 
