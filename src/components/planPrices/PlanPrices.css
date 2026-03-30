@@ -117,7 +117,6 @@
   letter-spacing: 0.1em;
   color: #3f3f3f;
   text-transform: uppercase;
-  width: 112px;
 }
 
 .plan-meta-value {
@@ -127,8 +126,10 @@
 }
 
 .plan-meta-value--strike {
+  font-size: 18px;
   text-decoration: line-through;
   opacity: 0.7;
+  color: #000000 !important;
 }
 
 .plan-launch-box {
@@ -142,11 +143,10 @@
 }
 
 .plan-launch-label {
-  font-size: 12px;
-  font-weight: 700;
+  font-size: 16px;
+  font-weight: 600;
   letter-spacing: 0.12em;
   color: #0f9a5e;
-  text-transform: uppercase;
   margin: 0;
 }
 
@@ -155,7 +155,7 @@
   font-weight: 600;
   letter-spacing: 0.12em;
   color: #0f9a5e;
-  margin-top: 10px;
+  text-align: center;
 }
 
 .plan-launch-price-row {
@@ -179,20 +179,21 @@
 }
 
 .plan-extra-btn {
-  display: inline-flex;
+  /* display: inline-flex; */
   align-items: center;
   gap: 6px;
   border: 1.5px solid #c8eed9;
   border-radius: 8px;
   background: #fff;
-  color: #1a5c40;
+  color: #0f9a5e;
   font-size: 15px;
   font-weight: 600;
   padding: 8px 12px;
+  text-align: center;
   transition:
     background 0.18s,
     border-color 0.18s;
-  width: fit-content;
+  /* width: fit-content; */
 }
 
 .plan-extra-btn:hover {
@@ -208,9 +209,17 @@
 }
 
 .plan-prices-valid {
-  color: #1d204b;
+  color: red;
   font-size: 16px;
   font-weight: 600;
+  margin-top: -10px;
+}
+
+.plan-launch-valid {
+  text-align: center;
+  font-size: 16px;
+  font-weight: 600;
+  color: red;
 }
 
 .plan-prices-wrapper a {
@@ -262,13 +271,6 @@
   transition:
     box-shadow 0.25s ease,
     transform 0.25s ease;
-}
-
-.plan-launch-valid {
-  text-align: center;
-  font-size: 16px;
-  font-weight: 600;
-  color: #1d204b;
 }
 
 /* -------------------------- Responsive Style -------------------------- */

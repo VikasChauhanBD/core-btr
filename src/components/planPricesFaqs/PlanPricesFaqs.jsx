@@ -52,6 +52,12 @@ const faqs = [
     question: "Is CoreBTR suitable for revision?",
     answer: `Absolutely. The entire platform is designed for rapid, high-yield revision—making it ideal for both ongoing prep and last-phase revision.`,
   },
+  {
+    id: 11,
+    question:
+      "If we buy the launch plan, will that be added to our existing subscription?",
+    answer: `Yes it shall be added to your existing subscription and will start after the existing subscription ends`,
+  },
 ];
 
 function FaqItem({ faq, index }) {

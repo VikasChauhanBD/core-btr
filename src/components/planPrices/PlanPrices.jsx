@@ -53,7 +53,7 @@ export default function PlanPrices() {
               <div
                 className={`plan-badge ${plan.featured ? "plan-badge--best" : "plan-badge--popular"}`}
               >
-                <Star size={11} strokeWidth={2.5} /> {plan.badge}
+                <Star size={13} strokeWidth={2.5} /> {plan.badge}
               </div>
             )}
             <div className="plan-header">
@@ -62,15 +62,18 @@ export default function PlanPrices() {
             </div>
             <div className="plan-pricing-meta">
               <div className="plan-meta-row">
-                <span className="plan-meta-label">Original Price:</span>
-                <span className="plan-meta-value plan-meta-value--strike">
-                  {plan.originalPrice}
-                </span>
+                <p className="plan-meta-label">
+                  Original Price:{" "}
+                  <span className="plan-meta-value--strike">
+                    {plan.originalPrice}
+                  </span>
+                </p>
+                {/* <span className="plan-meta-value plan-meta-value--strike"></span> */}
               </div>
             </div>
             <div className="plan-launch-box">
               <p className="plan-launch-label">
-                <Sparkles size={11} strokeWidth={2.5} /> LAUNCH PRICE
+                <Sparkles size={11} strokeWidth={2.5} /> Introductory Price
               </p>
               <div className="plan-launch-price-row">
                 <span className="plan-launch-price">
@@ -78,13 +81,15 @@ export default function PlanPrices() {
                   {plan.launchPrice}
                 </span>
               </div>
-              <p className="plan-launch-offer">Introductory offer</p>
-              <button className="plan-extra-btn">
-                Avail Flat 30% off + 2 Months Extra
-              </button>
+
+              <div className="plan-extra-btn">
+                <p className="plan-launch-offer">
+                  Launch offer <br /> Avail Flat 30% off + 2 Months Extra
+                </p>
+              </div>
             </div>
             <p className="plan-prices-valid">
-              * This offer is Valid till 16<sup>th</sup> April 2026
+              * This offer is valid till 16<sup>th</sup> April 2026
             </p>
             <div className="plan-savings">
               <NavLink to={plan.cta}>Buy Now</NavLink>
@@ -101,15 +106,15 @@ export default function PlanPrices() {
 
       <div className="plan-prices-book">
         <div className="plan-meta-row">
-          <span className="plan-meta-label">Original Price:</span>
-          <span className="plan-meta-value plan-meta-value--strike">
-            ₹ 5,700
-          </span>
+          <p className="plan-meta-label">
+            Original Price:{" "}
+            <span className="plan-meta-value--strike">₹ 5,700</span>
+          </p>
         </div>
 
         <div className="plan-launch-box">
           <p className="plan-launch-label">
-            <Sparkles size={11} strokeWidth={2.5} /> LAUNCH PRICE:
+            <Sparkles size={13} strokeWidth={2.5} /> Introductory Price:
           </p>
           <div className="plan-launch-price-row">
             <span className="plan-launch-price">
@@ -117,8 +122,11 @@ export default function PlanPrices() {
               4,600
             </span>
           </div>
-          <p className="plan-launch-offer">Introductory offer</p>
-          <button className="plan-extra-btn">Avail Flat 40% off</button>
+          {/* <p className="plan-launch-offer"></p> */}
+
+          <div className="plan-extra-btn">
+            Launch offer <br /> Avail Flat 40% off
+          </div>
         </div>
 
         <div className="plan-savings">
@@ -136,7 +144,7 @@ export default function PlanPrices() {
           <a href="tel:7428581909">7428581909</a> (Only For Calling)
         </p>
         <p className="plan-prices-help">
-          Send us at Whatsapp:{" "}
+          Send us Whatsapp:{" "}
           <a
             href="https://wa.me/919266682739"
             target="_blank"
