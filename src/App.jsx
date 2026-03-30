@@ -99,21 +99,15 @@ function App() {
           <Route path="/gallery" element={<GalleryPage />} />
           <Route path="/plan-prices" element={<PlanPricesPage />} />
           <Route path="/reviews" element={<StudentReviewsPage />} />
-          <Route path="/faqs" element={<FaqsPage />} />
-          <Route path="/contact-us" element={<ContactUsPage />} />
+          <Route path="/faq" element={<FaqsPage />} />
+          <Route path="/contact" element={<ContactUsPage />} />
           <Route path="/privacy-policy" element={<PrivacyPolicyPage />} />
           <Route path="/delete-account" element={<DeleteAccountPage />} />
-          <Route
-            path="/terms-and-conditions"
-            element={<TermsAndConditions />}
-          />
-          <Route
-            path="/cancellation-and-refund-policy"
-            element={<CancellationPolicy />}
-          />
+          <Route path="/terms" element={<TermsAndConditions />} />
+          <Route path="/cancellation-refund" element={<CancellationPolicy />} />
           <Route path="/device-policy" element={<DevicePolicyPage />} />
           <Route
-            path="/shipping-and-delivery-policy"
+            path="/shipping-delivery"
             element={<ShippingAndDeliveryPolicyPage />}
           />
           <Route path="*" element={<Face404 />} />

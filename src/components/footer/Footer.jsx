@@ -58,7 +58,7 @@ function Footer() {
               <NavLink to="/gallery">Gallery</NavLink>
             </li>
             <li>
-              <NavLink to="/contact-us">Contact Us</NavLink>
+              <NavLink to="/contact">Contact Us</NavLink>
             </li>
           </ul>
         </div>
@@ -85,15 +85,15 @@ function Footer() {
               <NavLink to="/privacy-policy">Privacy Policy</NavLink>
             </li>
             <li>
-              <NavLink to="/terms-and-conditions">Terms & Conditions</NavLink>
+              <NavLink to="/terms">Terms & Conditions</NavLink>
             </li>
             <li>
-              <NavLink to="/cancellation-and-refund-policy">
+              <NavLink to="/cancellation-refund">
                 Cancellation & Refund Policy
               </NavLink>
             </li>
             <li>
-              <NavLink to="/shipping-and-delivery-policy">
+              <NavLink to="/shipping-delivery">
                 Shipping & Delivery Policy
               </NavLink>
             </li>
@@ -101,7 +101,7 @@ function Footer() {
               <NavLink to="/device-policy">Device Policy</NavLink>
             </li>
             <li>
-              <NavLink to="/faqs">FAQ's</NavLink>
+              <NavLink to="/faq">FAQ's</NavLink>
             </li>
           </ul>
         </div>

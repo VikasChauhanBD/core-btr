@@ -3,13 +3,13 @@ import "./Policies.css";
 function PrivacyPolicy() {
   return (
     <div className="main-container">
-      <h1>coreBTR Privacy Policy</h1>
+      <h1>CoreBTR Privacy Policy</h1>
       <h2>1. Who we are and how to contact us</h2>
       <p>
-        coreBTR is a brand operated by SABRSHUKR COCARE PRIVATE LIMITED
-        ("coreBTR", "SABRSHUKR COCARE", "we", "us", or "our"). This Privacy
+        CoreBTR is a brand operated by SABRSHUKR COCARE PRIVATE LIMITED
+        ("CoreBTR", "SABRSHUKR COCARE", "we", "us", or "our"). This Privacy
         Policy explains how we collect, use, disclose, store, and otherwise
-        process personal data when you use the coreBTR website, mobile
+        process personal data when you use the CoreBTR website, mobile
         applications, online mock exam services, and services offered at the
         VidyaJeevan Centre (together, the "Services").
         <br />

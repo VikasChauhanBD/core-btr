@@ -6,6 +6,8 @@ function ShippingAndDeliveryPolicy() {
     <div className="main-container">
       <h1>Shipping & Delivery Policy</h1>
       <h5 className="main-para">
+        Effective Date: 25 April <br />
+        <br />
         Thank you for visiting CoreBTR, a brand owned and operated by SABRSHUKR
         COCARE PRIVATE LIMITED. This Shipping & Delivery Policy outlines the
         terms and conditions related to the shipment and delivery of products

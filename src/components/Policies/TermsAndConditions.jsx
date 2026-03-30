@@ -3,9 +3,9 @@ import "./Policies.css";
 function TermsAndConditions() {
   return (
     <div className="main-container">
-      <h1>coreBTR Terms And Conditions of Use</h1>
+      <h1>CoreBTR Terms And Conditions of Use</h1>
       <p>
-        coreBTR is a brand owned and operated by SABRSHUKR COCARE PRIVATE
+        CoreBTR is a brand owned and operated by SABRSHUKR COCARE PRIVATE
         LIMITED ("SABRSHUKR COCARE", "we", "us", "our"). The website corebtr.com
         is owned and managed by SABRSHUKR COCARE PRIVATE LIMITED. CIN:
         U86201DL2025PTC446602. These Terms govern your access to and use of
