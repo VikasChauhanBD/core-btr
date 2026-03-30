@@ -19,6 +19,18 @@
   text-align: center;
 }
 
+.plan-prices-wrapper h5 {
+  font-size: 16px;
+  font-weight: 600;
+  color: #3f3f3f;
+  margin-top: 10px;
+}
+
+.plan-prices-wrapper h6 {
+  font-size: 32px !important;
+  margin-top: 2rem;
+}
+
 .plans-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -129,6 +141,7 @@
   font-size: 18px;
   text-decoration: line-through;
   opacity: 0.7;
+  text-transform: capitalize;
   color: #000000 !important;
 }
 
@@ -146,7 +159,7 @@
   font-size: 16px;
   font-weight: 600;
   letter-spacing: 0.12em;
-  color: #0f9a5e;
+  color: #000000;
   margin: 0;
 }
 
@@ -174,8 +187,19 @@
 .plan-currency {
   font-size: 20px;
   font-weight: 600;
-  vertical-align: super;
+  /* vertical-align: super; */
   line-height: 1;
+}
+
+.plan-text {
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.plan-extra {
+  font-size: 18px;
+  font-weight: 600;
+  margin-top: 6px;
 }
 
 .plan-extra-btn {
