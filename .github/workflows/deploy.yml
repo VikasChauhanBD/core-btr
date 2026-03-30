@@ -1,53 +1,53 @@
-# name: Deploy React Website
+name: Deploy React Website
 
-# on:
-#   push:
-#     branches:
-#       - main
+on:
+  push:
+    branches:
+      - main
 
-# env:
-#   # 🔥 Force GitHub Actions to use Node.js 24
-#   FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
+env:
+  # 🔥 Force GitHub Actions to use Node.js 24
+  FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
 
-# jobs:
-#   build-and-deploy:
-#     runs-on: ubuntu-latest
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
 
-#     steps:
-#       # Checkout latest code
-#       - name: Checkout code
-#         uses: actions/checkout@v4
+    steps:
+      # Checkout latest code
+      - name: Checkout code
+        uses: actions/checkout@v4
 
-#       # Setup Node.js (use 22 or 24)
-#       - name: Setup Node.js
-#         uses: actions/setup-node@v4
-#         with:
-#           node-version: 22
-#           cache: "npm"
+      # Setup Node.js (use 22 or 24)
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: "npm"
 
-#       # Install dependencies
-#       - name: Install dependencies
-#         run: npm ci
+      # Install dependencies
+      - name: Install dependencies
+        run: npm ci
 
-#       # Build project
-#       - name: Build project
-#         run: npm run build
+      # Build project
+      - name: Build project
+        run: npm run build
 
-#       # Deploy via FTP
-#       - name: Sync files to Hostinger
-#         uses: SamKirkland/FTP-Deploy-Action@v4.3.5
-#         with:
-#           server: ${{ secrets.FTP_SERVER }}
-#           username: ${{ secrets.FTP_USERNAME }}
-#           password: ${{ secrets.FTP_PASSWORD }}
+      # Deploy via FTP
+      - name: Sync files to Hostinger
+        uses: SamKirkland/FTP-Deploy-Action@v4.3.5
+        with:
+          server: ${{ secrets.FTP_SERVER }}
+          username: ${{ secrets.FTP_USERNAME }}
+          password: ${{ secrets.FTP_PASSWORD }}
 
-#           # Vite React → dist
-#           # CRA React → build
-#           local-dir: ./dist/
+          # Vite React → dist
+          # CRA React → build
+          local-dir: ./dist/
 
-#           # Your FTP root
-#           server-dir: ./
+          # Your FTP root
+          server-dir: ./
 
-#           protocol: ftp
-#           security: loose
-#           dangerous-clean-slate: false
+          protocol: ftp
+          security: loose
+          dangerous-clean-slate: false

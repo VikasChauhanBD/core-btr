@@ -6,41 +6,6 @@
   background: #f7faf9;
 }
 
-.launch-banner {
-  display: inline-flex;
-  align-items: center;
-  gap: 8px;
-  border: 1.5px solid #2ecc87;
-  border-radius: 999px;
-  padding: 6px 18px;
-  font-size: 12px;
-  font-weight: 600;
-  letter-spacing: 0.12em;
-  color: #1a5c40;
-  background: #fff;
-  text-transform: uppercase;
-}
-
-.launch-dot {
-  width: 7px;
-  height: 7px;
-  border-radius: 50%;
-  background: #2ecc87;
-  animation: pulse 1.8s ease-in-out infinite;
-}
-
-@keyframes pulse {
-  0%,
-  100% {
-    opacity: 1;
-    transform: scale(1);
-  }
-  50% {
-    opacity: 0.4;
-    transform: scale(0.7);
-  }
-}
-
 .plan-prices-heading {
   font-size: 38px;
   line-height: 1.15;
@@ -186,11 +151,10 @@
 }
 
 .plan-launch-offer {
-  font-size: 12px;
-  font-weight: 700;
+  font-size: 15px;
+  font-weight: 600;
   letter-spacing: 0.12em;
   color: #0f9a5e;
-  text-transform: uppercase;
   margin-top: 10px;
 }
 
@@ -212,17 +176,6 @@
   font-weight: 600;
   vertical-align: super;
   line-height: 1;
-}
-
-.plan-discount-badge {
-  background: #0f9a5e;
-  color: #fff;
-  font-size: 13px;
-  font-weight: 700;
-  padding: 3px 9px;
-  margin-top: 14px;
-  border-radius: 6px;
-  letter-spacing: 0.05em;
 }
 
 .plan-extra-btn {
@@ -254,33 +207,10 @@
   gap: 10px;
 }
 
-.plan-savings-label {
-  font-size: 15px;
-  color: #3f3f3f;
-  white-space: nowrap;
-  min-width: 58px;
-}
-
-.plan-savings-bar {
-  flex: 1;
-  height: 5px;
-  background: #e2ede8;
-  border-radius: 999px;
-  overflow: hidden;
-}
-
-.plan-savings-fill {
-  height: 100%;
-  background: #2ecc87;
-  border-radius: 999px;
-  transition: width 0.6s ease;
-}
-
-.plan-savings-amount {
-  font-size: 15px;
-  font-weight: 700;
-  color: #0f9a5e;
-  white-space: nowrap;
+.plan-prices-valid {
+  color: #1d204b;
+  font-size: 16px;
+  font-weight: 600;
 }
 
 .plan-prices-wrapper a {
@@ -305,7 +235,6 @@
 
 .plan-prices-help-div {
   text-align: center;
-  /* margin-top: -1rem; */
 }
 
 .plan-prices-help {
@@ -338,7 +267,8 @@
 .plan-launch-valid {
   text-align: center;
   font-size: 16px;
-  color: red;
+  font-weight: 600;
+  color: #1d204b;
 }
 
 /* -------------------------- Responsive Style -------------------------- */
@@ -368,6 +298,10 @@
     width: 80%;
     grid-template-columns: 1fr;
     gap: 30px;
+  }
+
+  .plan-card {
+    order: var(--mobile-order);
   }
 }
 

@@ -1,5 +1,5 @@
 import React from "react";
-import { Gift, Sparkles, Star, Zap } from "lucide-react";
+import { Sparkles, Star } from "lucide-react";
 import "./PlanPrices.css";
 import { NavLink } from "react-router-dom";
 
@@ -11,6 +11,7 @@ const plans = [
     launchPrice: "7,399",
     discount: "30% OFF",
     badge: null,
+    order: 3,
     cta: "#",
   },
   {
@@ -21,6 +22,7 @@ const plans = [
     discount: "30% OFF",
     badge: "BEST VALUE",
     featured: true,
+    order: 1,
     cta: "#",
   },
   {
@@ -30,6 +32,7 @@ const plans = [
     launchPrice: "11,599",
     discount: "30% OFF",
     badge: "POPULAR",
+    order: 2,
     cta: "#",
   },
 ];
@@ -37,11 +40,6 @@ const plans = [
 export default function PlanPrices() {
   return (
     <div className="plan-prices-wrapper">
-      {/* <div className="launch-banner">
-        <span className="launch-dot" />
-        LIMITED TIME LAUNCH OFFER
-      </div> */}
-
       <h2 className="plan-prices-heading">Choose Your Plan</h2>
 
       <div className="plans-grid">
@@ -49,6 +47,7 @@ export default function PlanPrices() {
           <div
             key={plan.tier}
             className={`plan-card ${plan.featured ? "plan-card--featured" : ""}`}
+            style={{ "--mobile-order": plan.order }}
           >
             {plan.badge && (
               <div
@@ -57,12 +56,10 @@ export default function PlanPrices() {
                 <Star size={11} strokeWidth={2.5} /> {plan.badge}
               </div>
             )}
-
             <div className="plan-header">
               <p className="plan-tier">{plan.tier}</p>
               <h2 className="plan-duration">{plan.duration}</h2>
             </div>
-
             <div className="plan-pricing-meta">
               <div className="plan-meta-row">
                 <span className="plan-meta-label">Original Price:</span>
@@ -71,7 +68,6 @@ export default function PlanPrices() {
                 </span>
               </div>
             </div>
-
             <div className="plan-launch-box">
               <p className="plan-launch-label">
                 <Sparkles size={11} strokeWidth={2.5} /> LAUNCH PRICE
@@ -82,22 +78,20 @@ export default function PlanPrices() {
                   {plan.launchPrice}
                 </span>
               </div>
-              <p className="plan-launch-offer">LAUNCH OFFER</p>
+              <p className="plan-launch-offer">Introductory offer</p>
               <button className="plan-extra-btn">
                 Avail Flat 30% off + 2 Months Extra
               </button>
             </div>
-
+            <p className="plan-prices-valid">
+              * This offer is Valid till 16<sup>th</sup> April 2026
+            </p>
             <div className="plan-savings">
               <NavLink to={plan.cta}>Buy Now</NavLink>
             </div>
           </div>
         ))}
       </div>
-
-      {/* <h6>
-        Get <span>40%</span> off on Books
-      </h6> */}
 
       <h2 className="plan-prices-heading">Set of 5 Books</h2>
       <h4 className="plan-prices-sub-heading">
@@ -123,7 +117,7 @@ export default function PlanPrices() {
               4,600
             </span>
           </div>
-          <p className="plan-launch-offer">LAUNCH OFFER</p>
+          <p className="plan-launch-offer">Introductory offer</p>
           <button className="plan-extra-btn">Avail Flat 40% off</button>
         </div>
 

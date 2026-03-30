@@ -249,6 +249,11 @@
     font-size: 32px;
     padding: 0.5rem;
   }
+
+  .login-signup-cta {
+    width: 130px;
+    margin-left: 10px;
+  }
 }
 
 @media (max-width: 868px) {
