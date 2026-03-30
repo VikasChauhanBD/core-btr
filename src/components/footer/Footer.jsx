@@ -49,7 +49,7 @@ function Footer() {
               <NavLink to="/workbooks">Workbooks</NavLink>
             </li>
             <li>
-              <NavLink to="#">Buy New Plans</NavLink>
+              <NavLink to="/plan-prices">Buy New Plans</NavLink>
             </li>
             <li>
               <NavLink to="/reviews">Reviews</NavLink>
