@@ -5,12 +5,14 @@
   height: 100dvh;
   z-index: 99;
   background-color: white;
+  border-color: white;
 }
 
 .intro-video {
   width: 100%;
   height: 100vh;
   object-fit: cover;
+  border-color: white;
 }
 
 /* -------------------------- Responsive Style -------------------------- */
