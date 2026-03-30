@@ -37,7 +37,7 @@ function WhyWorkbooks() {
           perform better.
         </p>
 
-        <NavLink to="#">Buy Now</NavLink>
+        {/* <NavLink to="#">Buy Now</NavLink> */}
       </section>
     </div>
   );

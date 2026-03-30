@@ -1,0 +1,125 @@
+.workbook-prices-sections {
+  background: #f5f6ff;
+  color: #1a1a2e;
+  padding: 4rem 1rem;
+  position: relative;
+  text-align: center;
+}
+
+.workbook-prices-sections::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image:
+    linear-gradient(#d6d8f5 1px, transparent 1px),
+    linear-gradient(90deg, #d6d8f5 1px, transparent 1px);
+  background-size: 48px 48px;
+  opacity: 0.3;
+  pointer-events: none;
+}
+
+.workbook-prices-highlights {
+  width: 80%;
+  margin: 0 auto;
+  position: relative;
+  z-index: 1;
+}
+
+.workbook-prices-section-heading {
+  font-size: 38px;
+  line-height: 1.15;
+  color: #1d204b;
+}
+
+.workbook-prices-section-heading span {
+  color: #1767be;
+}
+
+.workbook-prices-section-sub-heading {
+  font-size: 24px;
+  color: #3f3f3f;
+  margin-bottom: 14px;
+}
+
+.workbook-prices-highlights p {
+  font-size: 18px;
+  line-height: 1.78;
+  color: #3f3f3f;
+  font-weight: 600;
+  margin: 8px 0;
+}
+
+.workbook-prices-highlights h6 {
+  font-size: 18px;
+  color: red;
+  padding: 4px 8px;
+  border-radius: 10px;
+  background-color: #fff;
+  display: inline-block;
+  margin: 10px 0 24px 0;
+}
+
+.workbook-prices-highlights a {
+  text-decoration: none;
+  padding: 8px 16px;
+  background-color: #1767be;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 600;
+  border-radius: 10px;
+}
+
+.plan-prices-help-div {
+  text-align: center;
+  margin-top: 1.5rem;
+}
+
+.plan-prices-register {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.plan-prices-help {
+  font-size: 16px;
+  color: #3f3f3f;
+}
+
+.plan-prices-help a {
+  color: #1767be;
+  padding: 0 !important;
+  background-color: transparent !important;
+}
+
+/* ---------------------------- Responsive Style ------------------------ */
+@media (max-width: 1440px) {
+  .workbook-prices-highlights {
+    width: 85%;
+  }
+}
+
+@media (max-width: 1024px) {
+  .workbook-prices-highlights {
+    width: 95%;
+  }
+}
+
+@media (max-width: 868px) {
+  .workbook-prices-highlight-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .workbook-prices-section-heading {
+    font-size: 32px;
+  }
+
+  .workbook-prices-section-sub-heading {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 568px) {
+  .workbook-prices-highlights {
+    width: 100%;
+  }
+}

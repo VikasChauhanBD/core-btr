@@ -4,6 +4,7 @@ import Unannotated from "../components/unannotated/Unannotated";
 import Annotated from "../components/annotated/Annotated";
 import WhyWorkbooks from "../components/whyWorkbooks/WhyWorkbooks";
 import UseWorkbook from "../components/useWorkbook/UseWorkbook";
+import WorkBooksPrices from "../components/workBooksPrices/WorkBooksPrices";
 import { Helmet } from "react-helmet";
 
 function WorkbookPage() {
@@ -23,6 +24,7 @@ function WorkbookPage() {
       <Annotated />
       <UseWorkbook />
       <WhyWorkbooks />
+      <WorkBooksPrices />
     </div>
   );
 }
