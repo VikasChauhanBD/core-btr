@@ -37,22 +37,19 @@ import "./Header.css";
 import AppStore from "../../assets/images/app.png";
 import PlayStore from "../../assets/images/ps1.png";
 
-// Phase 1 image — centred, rises from bottom
 const PHONE_P1 =
   "https://cdn.dribbble.com/userupload/47151821/file/eb0487235a3d27d1c8bb0d38541aa2b6.png";
 
-// Phase 2 image — slides in from right (desktop) / top (mobile)
 const PHONE_P2 =
   "https://cdn.dribbble.com/userupload/47148505/file/a7a8840b96f525cfebb3ccab6716a225.png";
 
-export default function Header({ introComplete }) {
+export default function Header() {
   const [phase, setPhase] = useState("phase1");
 
   useEffect(() => {
-    if (!introComplete) return;
     const t = setTimeout(() => setPhase("phase2"), 2000);
     return () => clearTimeout(t);
-  }, [introComplete]);
+  }, []);
 
   return (
     <div className={`hdr hdr--${phase}`}>
@@ -67,8 +64,6 @@ export default function Header({ introComplete }) {
 
       {/* ══════════════════════════════════════
           PHASE 1  —  centred intro
-          Desktop: text top-centre, phone bottom-centre
-          Mobile:  same — phone sticks to bottom
       ══════════════════════════════════════ */}
       <div className="hdr__p1">
         <div className="hdr__p1-text">
@@ -85,13 +80,8 @@ export default function Header({ introComplete }) {
 
       {/* ══════════════════════════════════════
           PHASE 2  —  split layout
-          Desktop: text left, phone right
-          Mobile:  phone top, text bottom
       ══════════════════════════════════════ */}
       <div className="hdr__p2">
-        {/* Top centre badge */}
-
-        {/* Left content (desktop) / Bottom content (mobile) */}
         <div className="hdr__p2-left">
           <span className="hdr__p2-eyebrow">Introducing</span>
           <h1 className="hdr__p2-heading">
@@ -101,7 +91,6 @@ export default function Header({ introComplete }) {
             <br />
             NEET PG | INI-CET | FMGE
           </h1>
-          {/* <h1 className="hdr__p2-heading2">CoreBTR</h1> */}
           <h3 className="hdr__p2-sub">From Revision to Revolution</h3>
           <h3 className="hdr__p2-sub2">Launching on 2nd April </h3>
           <div className="hdr__p2-store">
@@ -109,8 +98,6 @@ export default function Header({ introComplete }) {
             <img src={AppStore} alt="Download on App Store" />
           </div>
         </div>
-
-        {/* Right phone (desktop) / Top phone (mobile) */}
         <div className="hdr__p2-phone">
           <img src={PHONE_P2} alt="coreBTR App mockup" />
         </div>
