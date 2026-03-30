@@ -7,36 +7,30 @@ const plans = [
   {
     tier: "STARTER",
     duration: "3 Months",
-    mrp: "₹12,999",
-    intro: "₹9,999",
-    launchPrice: "6,999",
+    originalPrice: "₹11,999",
+    launchPrice: "7,399",
     discount: "30% OFF",
     badge: null,
-    saving: "₹6,000",
-    savingPercent: 46,
+    cta: "#",
   },
   {
     tier: "PRO ANNUAL",
     duration: "12 Months",
-    mrp: "₹17,999",
-    intro: "₹15,999",
-    launchPrice: "11,200",
+    originalPrice: "₹19,999",
+    launchPrice: "17,399",
     discount: "30% OFF",
     badge: "BEST VALUE",
-    saving: "₹6,799",
-    savingPercent: 42,
     featured: true,
+    cta: "#",
   },
   {
     tier: "GROWTH",
     duration: "6 Months",
-    mrp: "₹14,999",
-    intro: "₹11,999",
-    launchPrice: "9,099",
+    originalPrice: "₹14,999",
+    launchPrice: "11,599",
     discount: "30% OFF",
     badge: "POPULAR",
-    saving: "₹5,900",
-    savingPercent: 39,
+    cta: "#",
   },
 ];
 
@@ -71,15 +65,9 @@ export default function PlanPrices() {
 
             <div className="plan-pricing-meta">
               <div className="plan-meta-row">
-                <span className="plan-meta-label">MRP</span>
+                <span className="plan-meta-label">Original Price:</span>
                 <span className="plan-meta-value plan-meta-value--strike">
-                  {plan.mrp}
-                </span>
-              </div>
-              <div className="plan-meta-row">
-                <span className="plan-meta-label">INTRO</span>
-                <span className="plan-meta-value plan-meta-value--strike">
-                  {plan.intro}
+                  {plan.originalPrice}
                 </span>
               </div>
             </div>
@@ -93,33 +81,78 @@ export default function PlanPrices() {
                   <span className="plan-currency">₹</span>
                   {plan.launchPrice}
                 </span>
-                <span className="plan-discount-badge">{plan.discount}</span>
               </div>
+              <p className="plan-launch-offer">LAUNCH OFFER</p>
               <button className="plan-extra-btn">
-                <Gift size={15} strokeWidth={2} /> + 2 Months Extra FREE
+                Avail Flat 30% off + 2 Months Extra
               </button>
             </div>
 
             <div className="plan-savings">
-              <span className="plan-savings-label">You save</span>
-              <div className="plan-savings-bar">
-                <div
-                  className="plan-savings-fill"
-                  style={{ width: `${plan.savingPercent}%` }}
-                />
-              </div>
-              <span className="plan-savings-amount">{plan.saving}</span>
+              <NavLink to={plan.cta}>Buy Now</NavLink>
             </div>
           </div>
         ))}
       </div>
 
-      <NavLink to="#">Buy Now</NavLink>
+      {/* <h6>
+        Get <span>40%</span> off on Books
+      </h6> */}
 
-      <p className="plan-prices-help">
-        For any queries, feel free to contact our Helpline:{" "}
-        <a href="tel:7428581909">7428581909</a>
-      </p>
+      <h2 className="plan-prices-heading">Set of 5 Books</h2>
+      <h4 className="plan-prices-sub-heading">
+        Unannotated Workbooks - Set of 2 Books | Annotated Notes - Set of 3
+        Books
+      </h4>
+
+      <div className="plan-prices-book">
+        <div className="plan-meta-row">
+          <span className="plan-meta-label">Original Price:</span>
+          <span className="plan-meta-value plan-meta-value--strike">
+            ₹ 5,700
+          </span>
+        </div>
+
+        <div className="plan-launch-box">
+          <p className="plan-launch-label">
+            <Sparkles size={11} strokeWidth={2.5} /> LAUNCH PRICE:
+          </p>
+          <div className="plan-launch-price-row">
+            <span className="plan-launch-price">
+              <span className="plan-currency">₹</span>
+              4,600
+            </span>
+          </div>
+          <p className="plan-launch-offer">LAUNCH OFFER</p>
+          <button className="plan-extra-btn">Avail Flat 40% off</button>
+        </div>
+
+        <div className="plan-savings">
+          <NavLink to="#">Buy Now</NavLink>
+        </div>
+
+        <p className="plan-launch-valid">
+          Valid till 16<sup>th</sup> April 2026
+        </p>
+      </div>
+
+      <div className="plan-prices-help-div">
+        <p className="plan-prices-help">
+          For any queries, feel free to contact our Helpline:{" "}
+          <a href="tel:7428581909">7428581909</a> (Only For Calling)
+        </p>
+        <p className="plan-prices-help">
+          Send us at Whatsapp:{" "}
+          <a
+            href="https://wa.me/919266682739"
+            target="_blank"
+            rel="noreferrer"
+            className="contact-us-contact-value"
+          >
+            +91-9266682739
+          </a>
+        </p>
+      </div>
     </div>
   );
 }
