@@ -8,27 +8,41 @@ on:
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
+
     steps:
+      # ✅ Updated version
       - name: Checkout code
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
 
+      # ✅ Add Node setup (important for React)
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: "npm"
+
+      # Install dependencies
       - name: Install dependencies
-        run: npm install
+        run: npm ci
 
+      # Build project
       - name: Build project
         run: npm run build
 
+      # ✅ Updated FTP deploy version
       - name: Sync files to Hostinger
-        uses: SamKirkland/FTP-Deploy-Action@v4.3.4
+        uses: SamKirkland/FTP-Deploy-Action@v4.3.5
         with:
           server: ${{ secrets.FTP_SERVER }}
           username: ${{ secrets.FTP_USERNAME }}
           password: ${{ secrets.FTP_PASSWORD }}
-          # Vite uses dist, Create React App uses build
+
+          # Vite uses dist, CRA uses build
           local-dir: ./dist/
-          # Use ./ because your FTP account is already pointed at public_html
+
+          # FTP already points to public_html
           server-dir: ./
+
           protocol: ftp
           security: loose
-          # This ensures a clean sync by deleting old files first
           dangerous-clean-slate: false
