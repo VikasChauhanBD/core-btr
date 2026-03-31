@@ -11,21 +11,19 @@ function FairUsagePolicy() {
         <br />
         <br />
         Access to paid content requires <b>Device Linking,</b> with a lifetime
-        limit of
-        <b>two (2) unique devices</b> per account and only{" "}
-        <b>one (1) active session</b>
-        permitted at any time. The devices are linked after purchase with the
-        user getting appropriate prompts. Please note that linked devices{" "}
-        <b>cannot be changed or reset;</b> sharing credentials that lead to
-        unauthorized device linking will result in a permanent loss of access.
+        limit of <b>two (2) unique devices</b> per account and only{" "}
+        <b>one (1) active session</b> permitted at any time. The devices are
+        linked after purchase with the user getting appropriate prompts. Please
+        note that linked devices <b>cannot be changed or reset;</b> sharing
+        credentials that lead to unauthorized device linking will result in a
+        permanent loss of access.
         <br />
         <br />
         To ensure platform integrity, all usage is monitored under a{" "}
         <b>Fair Usage Policy,</b> and CoreBTR reserves the right to perform{" "}
-        <b>identity verification</b>
-        at any time. Any unauthorized attempts to bypass these device or
-        concurrency limits may result in temporary or permanent account
-        suspension.
+        <b>identity verification</b> at any time. Any unauthorized attempts to
+        bypass these device or concurrency limits may result in temporary or
+        permanent account suspension.
       </p>
       <br />
       <br />
@@ -86,10 +84,9 @@ function FairUsagePolicy() {
           </li>
           <li>
             <b>Verification:</b> CoreBTR reserves the right to request{" "}
-            <b>identification</b>
-            at any time to verify that the person using the linked device
-            matches the account holder. Failure to comply or a mismatch in
-            identity will lead to immediate account termination.
+            <b>identification</b> at any time to verify that the person using
+            the linked device matches the account holder. Failure to comply or a
+            mismatch in identity will lead to immediate account termination.
           </li>
         </ul>
       </p>

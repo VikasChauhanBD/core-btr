@@ -8,7 +8,10 @@ function FairUsagePolicyPage() {
       <Helmet>
         <title>Fair Usage Policy - CoreBTR</title>
 
-        <meta name="description" content="" />
+        <meta
+          name="description"
+          content="Core BTR Fair Usage Policy ensures balanced access to learning resources, maintaining quality performance and uninterrupted academic support for all students."
+        />
       </Helmet>
 
       <FairUsagePolicy />
