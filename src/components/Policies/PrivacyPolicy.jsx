@@ -28,7 +28,7 @@ function PrivacyPolicy() {
       <br />
       <h2>Medical Education Disclaimer</h2>
       <p>
-        coreBTR is a platform for educational purposes only. The content does
+        CoreBTR is a platform for educational purposes only. The content does
         not constitute medical advice, diagnosis, or treatment. This app is
         intended for use by medical professionals and students. Users should
         always seek the advice of a qualified healthcare provider and should not
@@ -40,12 +40,12 @@ function PrivacyPolicy() {
       <h2>2. Scope</h2>
       <p>
         This Policy applies to visitors to our website, registered users of the
-        coreBTR app and website, learners using our online and offline services,
+        CoreBTR app and website, learners using our online and offline services,
         candidates taking mock or demo exams hosted.
       </p>
       <br />
       <br />
-      <h2>3. Personal data we collect through the coreBTR app and website</h2>
+      <h2>3. Personal data we collect through the CoreBTR app and website</h2>
       <h3>A. Data you provide directly</h3>
       <p>
         Depending on the features you use, we may collect your name, mobile
@@ -92,7 +92,7 @@ function PrivacyPolicy() {
 
       <h3>F. Data Deletion</h3>
       <p>
-        You may request deletion of your coreBTR account and personal data at
+        You may request deletion of your CoreBTR account and personal data at
         any time:
         <ul>
           <li>In-App Path: Via the "Profile" or "Settings" menu.</li>
@@ -323,7 +323,7 @@ function PrivacyPolicy() {
       <h2>13. Account deletion</h2>
       <p>
         If the Services allow account creation, you may request deletion of your
-        coreBTR account and associated personal data through the in-app account
+        CoreBTR account and associated personal data through the in-app account
         deletion pathway and through our web-based deletion request page at
         <a href="/delete-account"> https://corebtr.com/delete-account.</a>
         <br />
@@ -347,7 +347,7 @@ function PrivacyPolicy() {
       <h2>14. Children and eligibility</h2>
 
       <p>
-        coreBTR is designed primarily for older students, adult learners, and
+        CoreBTR is designed primarily for older students, adult learners, and
         medical professionals, and is not directed to young children. If you are
         under the age at which you can independently consent to data processing
         in your jurisdiction, please use the Services only with the involvement,
