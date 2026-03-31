@@ -20,7 +20,7 @@ const supportedDevices = [
   },
 ];
 
-const faqs = [
+const drm = [
   {
     id: 1,
     question: "What is DRM?",
@@ -1015,7 +1015,7 @@ function DevicePolicy() {
         <h2>DRM (Digital Rights Management) FAQs</h2>
         <div className="device-policy-main">
           <div className="device-policy-list">
-            {faqs.map((faq, i) => (
+            {drm.map((faq, i) => (
               <FaqItem key={faq.id} faq={faq} index={i} />
             ))}
           </div>

@@ -27,10 +27,18 @@
   z-index: 1;
 }
 
+.plan-faq-container h4 {
+  font-size: 26px;
+  color: #3f3f3f;
+  position: relative;
+  z-index: 1;
+  margin-bottom: 1rem;
+}
+
 .plan-faq-main {
   width: 80%;
   margin: 0 auto;
-  padding: 2.5rem 0;
+  padding-top: 2.5rem !important;
 }
 
 .plan-faq-list {

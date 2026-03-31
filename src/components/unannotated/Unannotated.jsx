@@ -16,55 +16,55 @@ const unannotatedImages = [
   },
   {
     src: "https://cdn.dribbble.com/userupload/47156358/file/953ad100be428496700ac76ec6e85d43.jpeg",
-    alt: "Unannotated workbook page 5",
+    alt: "Unannotated workbook page 4",
   },
   {
     src: "https://cdn.dribbble.com/userupload/47156353/file/b5a4450acfb7fa8ba5f06c444aa6785d.jpeg",
-    alt: "Unannotated workbook page 7",
+    alt: "Unannotated workbook page 5",
   },
   {
     src: "https://cdn.dribbble.com/userupload/47156350/file/695daa8199323e8da7699e0cebc7cf6d.jpeg",
-    alt: "Unannotated workbook page 8",
+    alt: "Unannotated workbook page 6",
   },
   {
     src: "https://cdn.dribbble.com/userupload/47156371/file/e0bb1157e641835ed262ebd45337b31c.jpeg",
-    alt: "Unannotated workbook page 9",
+    alt: "Unannotated workbook page 7",
   },
   {
     src: "https://cdn.dribbble.com/userupload/47156368/file/1d03dea56f358b3914bd7ec80c3b4c2e.jpeg",
-    alt: "Unannotated workbook page 10",
-  },
-  {
-    src: "https://cdn.dribbble.com/userupload/47156356/file/51a2c773bea43d37e508d845d399dbec.jpeg",
-    alt: "Unannotated workbook page 11",
+    alt: "Unannotated workbook page 8",
   },
   {
     src: "https://cdn.dribbble.com/userupload/47156361/file/a6a4dc10bc1e8a3a9b9a6d9dc54f3976.jpeg",
-    alt: "Unannotated workbook page 12",
-  },
-  {
-    src: "https://cdn.dribbble.com/userupload/47156362/file/66746e5291b7fc3542fbb025ce2e858f.jpeg",
-    alt: "Unannotated workbook page 13",
+    alt: "Unannotated workbook page 9",
   },
   {
     src: "https://cdn.dribbble.com/userupload/47156354/file/0d199aa3c70e7b3dce1439fbbfe10095.jpeg",
-    alt: "Unannotated workbook page 14",
+    alt: "Unannotated workbook page 10",
+  },
+  {
+    src: "https://cdn.dribbble.com/userupload/47156362/file/66746e5291b7fc3542fbb025ce2e858f.jpeg",
+    alt: "Unannotated workbook page 11",
+  },
+  {
+    src: "https://cdn.dribbble.com/userupload/47156356/file/51a2c773bea43d37e508d845d399dbec.jpeg",
+    alt: "Unannotated workbook page 12",
   },
   {
     src: "https://cdn.dribbble.com/userupload/47156352/file/9e9c9ff02e784fca271c36d54b45e426.jpeg",
-    alt: "Unannotated workbook page 15",
+    alt: "Unannotated workbook page 13",
   },
   {
     src: "https://cdn.dribbble.com/userupload/47156364/file/56a13a18efdaf755c2d17670e0786cd0.jpeg",
-    alt: "Unannotated workbook page 17",
+    alt: "Unannotated workbook page 14",
   },
   {
     src: "https://cdn.dribbble.com/userupload/47156351/file/a87b234cad2b4c2ee87ecdf4990e7173.jpeg",
-    alt: "Unannotated workbook page 19",
+    alt: "Unannotated workbook page 15",
   },
   {
     src: "https://cdn.dribbble.com/userupload/47156348/file/e7088b9b8c5253142e9e1267eeb048b0.jpeg",
-    alt: "Unannotated workbook page 20",
+    alt: "Unannotated workbook page 16",
   },
 ];
 
