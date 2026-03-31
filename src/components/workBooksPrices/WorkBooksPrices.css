@@ -69,6 +69,15 @@
   border-radius: 10px;
 }
 
+.plan-prices-dispatch {
+  background-color: #fff;
+  display: inline-block;
+  color: #3f3f3f;
+  padding: 4px 8px;
+  border-radius: 10px;
+  margin-top: 2rem !important;
+}
+
 .plan-prices-help-div {
   text-align: center;
   margin-top: 1.5rem;

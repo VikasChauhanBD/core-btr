@@ -21,10 +21,19 @@ function WorkBooksPrices() {
             Launch Offer : Flat 40% off <br />
             Launch Price: Rs.2760/- ( after 40% off)
           </p>
-          <h6>This offer is valid till 16th April 2026</h6>
+          <h6>
+            This offer is valid till 16<sup>th</sup> April 2026
+          </h6>
           <br />
 
           <NavLink to="#">Buy Now</NavLink>
+
+          <br />
+
+          <p className="plan-prices-dispatch">
+            Dispatch will start from 15<sup>th</sup> April, on first come first
+            serve basis.
+          </p>
 
           <div className="plan-prices-help-div">
             <p className="plan-prices-register">
