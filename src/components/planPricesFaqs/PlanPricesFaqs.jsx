@@ -481,6 +481,11 @@ function PlanPricesFaqs() {
 
       <div className="plan-faq-main">
         <h4>4. Subscription & Device Policy</h4>
+        <p>
+          For More Information -{" "}
+          <a href="https://corebtr.com/fair-usage-policy">Click Here</a>
+        </p>
+
         <div className="faq-list">
           {device.map((faq, i) => (
             <FaqItem key={faq.id} faq={faq} index={i} />

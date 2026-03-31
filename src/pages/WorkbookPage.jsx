@@ -5,6 +5,7 @@ import Annotated from "../components/annotated/Annotated";
 import WhyWorkbooks from "../components/whyWorkbooks/WhyWorkbooks";
 import UseWorkbook from "../components/useWorkbook/UseWorkbook";
 import WorkBooksPrices from "../components/workBooksPrices/WorkBooksPrices";
+import ChhotiCopy from "../components/chhotiCopy/ChhotiCopy";
 import { Helmet } from "react-helmet";
 
 function WorkbookPage() {
@@ -22,6 +23,7 @@ function WorkbookPage() {
       <BtrWorkBook />
       <Unannotated />
       <Annotated />
+      <ChhotiCopy />
       <UseWorkbook />
       <WhyWorkbooks />
       <WorkBooksPrices />

@@ -1051,8 +1051,8 @@ function DevicePolicy() {
           >
             Email Support
           </NavLink>
-          <NavLink className="device-policy-call" to="tel:+918800222009">
-            Call: +91-8800222009
+          <NavLink className="device-policy-call" to="tel:+917428581909">
+            Call: +91-7428581909
           </NavLink>
         </div>
       </div>

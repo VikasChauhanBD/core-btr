@@ -35,6 +35,22 @@
   margin-bottom: 1rem;
 }
 
+.plan-faq-main p {
+  font-size: 18px;
+  font-weight: 600;
+  color: #1767be;
+  margin-bottom: 1rem !important;
+}
+
+.plan-faq-main a {
+  text-decoration: none;
+  color: red;
+}
+
+.plan-faq-main a:hover {
+  color: #1767be;
+}
+
 .plan-faq-main {
   width: 80%;
   margin: 0 auto;

@@ -1,0 +1,90 @@
+.chhoti-container {
+  padding: 1rem 1rem 4rem 1rem;
+}
+
+.chhoti-highlights {
+  width: 80%;
+  margin: 0 auto;
+  position: relative;
+  z-index: 1;
+}
+
+.chhoti-section-heading {
+  font-size: 38px;
+  line-height: 1.15;
+  color: #1d204b;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.chhoti-section-heading span {
+  color: #1767be;
+}
+
+.chhoti-section-sub-heading {
+  font-size: 24px;
+  color: #3f3f3f;
+  margin-bottom: 14px;
+  text-align: center;
+}
+
+.chhoti-lead {
+  font-size: 16px;
+  line-height: 1.78;
+  color: #3f3f3f;
+  margin-bottom: 36px;
+  text-align: center;
+}
+
+.chhoti-image {
+  width: 50%;
+  margin: 2rem auto;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow:
+    0 4px 20px rgba(39, 24, 126, 0.18),
+    0 1px 4px rgba(39, 24, 126, 0.1);
+}
+
+.chhoti-image img {
+  width: 100%;
+}
+
+/* ───── Responsive ───── */
+@media (max-width: 1440px) {
+  .chhoti-highlights {
+    width: 85%;
+  }
+
+  .chhoti-image {
+    width: 70%;
+  }
+}
+
+@media (max-width: 1024px) {
+  .chhoti-highlights {
+    width: 95%;
+  }
+  .chhoti-image {
+    width: 80%;
+  }
+}
+
+@media (max-width: 868px) {
+  .chhoti-section-heading {
+    font-size: 32px;
+  }
+  .chhoti-section-sub-heading {
+    font-size: 20px;
+  }
+  .chhoti-image {
+    width: 90%;
+  }
+}
+
+@media (max-width: 568px) {
+  .chhoti-highlights,
+  .chhoti-image {
+    width: 100%;
+  }
+}
