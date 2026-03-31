@@ -3,7 +3,7 @@ import { useNavigate } from "react-router-dom";
 import "./VerifyIdentityForm.css";
 
 // ▸ PASTE YOUR DEPLOYED APPS SCRIPT WEB APP URL HERE
-const APPS_SCRIPT_URL = "https://script.google.com/macros/s/AKfycbzmyW7j2cJDNg8YuJ8U0BkeXGqkDXhYucFLJcndWO31kZtng700YfAWH7P1cLK1FouO/exec";
+const APPS_SCRIPT_URL = "https://script.google.com/macros/s/AKfycbxLG5wwj7VajKCKZCcww9Mt3BLWLXCah002agVwnZkHWmm69qDURfBffY8v67xob2QT/exec";
 
 const ShieldIcon = () => (
   <svg
