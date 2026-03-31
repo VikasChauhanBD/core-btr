@@ -11,11 +11,11 @@ function WorkbookPage() {
   return (
     <div>
       <Helmet>
-        <title>Workbooks - Core BTR</title>
+        <title>Workbooks - CoreBTR</title>
 
         <meta
           name="description"
-          content="Core BTR Workbooks offers structured practice, concept-based questions & high-yield revision to strengthen exam preparation with confidence building."
+          content="CoreBTR Workbooks offers structured practice, concept-based questions & high-yield revision to strengthen exam preparation with confidence building."
         />
       </Helmet>
 

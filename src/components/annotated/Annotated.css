@@ -31,8 +31,16 @@
   font-size: 16px;
   line-height: 1.78;
   color: #3f3f3f;
-  margin-bottom: 36px;
+  /* margin-bottom: 36px; */
   text-align: center;
+}
+
+.annotated-price {
+  text-align: center;
+  font-size: 24px;
+  font-weight: 500;
+  margin: 1rem 0 2rem 0;
+  color: #1767be;
 }
 
 /* Three-column grid */

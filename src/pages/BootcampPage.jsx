@@ -6,11 +6,11 @@ function BootcampPage() {
   return (
     <div>
       <Helmet>
-        <title>Core BTR Bootcamp - Core BTR</title>
+        <title>CoreBTR Bootcamp - CoreBTR</title>
 
         <meta
           name="description"
-          content="Core BTR Bootcamp is an intensive, high-impact offline program for NEET PG & INI-CET aspirants, designed for disciplined preparation & exam readiness."
+          content="CoreBTR Bootcamp is an intensive, high-impact offline program for NEET PG & INI-CET aspirants, designed for disciplined preparation & exam readiness."
         />
       </Helmet>
 

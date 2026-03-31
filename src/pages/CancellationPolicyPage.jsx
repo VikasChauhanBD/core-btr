@@ -6,7 +6,7 @@ function CancellationPolicyPage() {
   return (
     <div>
       <Helmet>
-        <title>Cancellation & Refund Policy - Core BTR</title>
+        <title>Cancellation & Refund Policy - CoreBTR</title>
 
         <meta
           name="description"

@@ -6,11 +6,11 @@ function FaqsPage() {
   return (
     <div>
       <Helmet>
-        <title>FAQ's - Core BTR</title>
+        <title>FAQ's - CoreBTR</title>
 
         <meta
           name="description"
-          content="Browse category-wise Core BTR FAQ for a quick answer on common doubts about courses, schedules and preparation strategies. Connect us for any support."
+          content="Browse category-wise CoreBTR FAQ for a quick answer on common doubts about courses, schedules and preparation strategies. Connect us for any support."
         />
       </Helmet>
 

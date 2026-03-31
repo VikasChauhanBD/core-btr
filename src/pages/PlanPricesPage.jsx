@@ -8,11 +8,11 @@ function PlanPricesPage() {
   return (
     <div>
       <Helmet>
-        <title>Plan Prices - Core BTR</title>
+        <title>Plan Prices - CoreBTR</title>
 
         <meta
           name="description"
-          content="Check out Core BTR plan prices designed for flexible learning, structured revision programs, quality content and value driven preparation options."
+          content="Check out CoreBTR plan prices designed for flexible learning, structured revision programs, quality content and value driven preparation options."
         />
       </Helmet>
 

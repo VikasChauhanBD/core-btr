@@ -6,11 +6,11 @@ function GalleryPage() {
   return (
     <div>
       <Helmet>
-        <title>Gallery - Core BTR</title>
+        <title>Gallery - CoreBTR</title>
 
         <meta
           name="description"
-          content="Explore the Core BTR Gallery to view highlights of learning moments, success snapshots that reflect focused preparation & smart revision strategies."
+          content="Explore the CoreBTR Gallery to view highlights of learning moments, success snapshots that reflect focused preparation & smart revision strategies."
         />
       </Helmet>
 

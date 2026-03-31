@@ -13,13 +13,13 @@ function WorkBooksPrices() {
           </h4>
 
           <p>
-            Original Price: Rs.5700/- <br />
-            Intro Price: Rs.4600/-
+            Original Price: Rs. 5700/- <br />
+            Intro Price: Rs. 4600/-
           </p>
 
           <p>
             Launch Offer : Flat 40% off <br />
-            Launch Price: Rs.2760/- ( after 40% off)
+            Launch Price: Rs. 2760/- ( after 40% off)
           </p>
           <h6>
             This offer is valid till 16<sup>th</sup> April 2026

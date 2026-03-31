@@ -6,11 +6,11 @@ function PrivacyPolicyPage() {
   return (
     <div>
       <Helmet>
-        <title>Privacy Policy - Core BTR</title>
+        <title>Privacy Policy - CoreBTR</title>
 
         <meta
           name="description"
-          content="Core BTR Privacy Policy explains how we collect, use and protect your data, ensuring a safe and transparent learning experience for every student."
+          content="CoreBTR Privacy Policy explains how we collect, use and protect your data, ensuring a safe and transparent learning experience for every student."
         />
       </Helmet>
 

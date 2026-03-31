@@ -6,11 +6,11 @@ function TermsAndConditions() {
   return (
     <div>
       <Helmet>
-        <title>Terms & Conditions - Core BTR</title>
+        <title>Terms & Conditions - CoreBTR</title>
 
         <meta
           name="description"
-          content="Core BTR terms and conditions explains about acceptable use & academic integrity, plans, payments, renewals & refunds, Free trials and demos & more."
+          content="CoreBTR terms and conditions explains about acceptable use & academic integrity, plans, payments, renewals & refunds, Free trials and demos & more."
         />
       </Helmet>
 

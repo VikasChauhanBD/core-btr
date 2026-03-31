@@ -6,11 +6,11 @@ function DeleteAccountPage() {
   return (
     <div>
       <Helmet>
-        <title>Delete Account - Core BTR</title>
+        <title>Delete Account - CoreBTR</title>
 
         <meta
           name="description"
-          content="Manage your Core BTR profile easily with the delete account option, ensuring full control over your data, access, and learning preferences anytime."
+          content="Manage your CoreBTR profile easily with the delete account option, ensuring full control over your data, access, and learning preferences anytime."
         />
       </Helmet>
 

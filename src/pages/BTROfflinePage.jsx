@@ -7,11 +7,11 @@ function BTROfflinePage() {
   return (
     <div>
       <Helmet>
-        <title>Core BTR Offline - Core BTR </title>
+        <title>CoreBTR Offline - CoreBTR </title>
 
         <meta
           name="description"
-          content="Core BTR Offline designed by Dr. Zainab Vora helps NEET PG, INI-CET, FMGE aspirants to strengthen concepts with focused revision & exam preparation."
+          content="CoreBTR Offline designed by Dr. Zainab Vora helps NEET PG, INI-CET, FMGE aspirants to strengthen concepts with focused revision & exam preparation."
         />
       </Helmet>
 

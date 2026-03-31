@@ -13,12 +13,12 @@ function HomePage({ introComplete }) {
     <div>
       <Helmet>
         <title>
-          Core BTR - Concept-Based Rapid Revision for Medical PG Success
+          CoreBTR - Concept-Based Rapid Revision for Medical PG Success
         </title>
 
         <meta
           name="description"
-          content="Core BTR is designed for fast concept revision with high-yield topics, integrated learning, and exam-oriented strategies to help medical PG aspirants."
+          content="CoreBTR is designed for fast concept revision with high-yield topics, integrated learning, and exam-oriented strategies to help medical PG aspirants."
         />
       </Helmet>
 

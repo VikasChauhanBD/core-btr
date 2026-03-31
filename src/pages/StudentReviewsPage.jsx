@@ -7,11 +7,11 @@ function StudentReviewsPage() {
   return (
     <div>
       <Helmet>
-        <title>Reviews - Core BTR</title>
+        <title>Reviews - CoreBTR</title>
 
         <meta
           name="description"
-          content="Check out reviews of trusted student feedback, success stories, real preparation experience, reactions & highlights of the Core BTR learning approach."
+          content="Check out reviews of trusted student feedback, success stories, real preparation experience, reactions & highlights of the CoreBTR learning approach."
         />
       </Helmet>
 

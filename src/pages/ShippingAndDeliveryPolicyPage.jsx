@@ -6,11 +6,11 @@ function ShippingAndDeliveryPolicyPage() {
   return (
     <div>
       <Helmet>
-        <title>Shipping & Delivery Policy - Core BTR</title>
+        <title>Shipping & Delivery Policy - CoreBTR</title>
 
         <meta
           name="description"
-          content="Core BTR Shipping & Delivery Policy provides clear details on workbook dispatch, delivery timelines, and order tracking to ensure timely learning support."
+          content="CoreBTR Shipping & Delivery Policy provides clear details on workbook dispatch, delivery timelines, and order tracking to ensure timely learning support."
         />
       </Helmet>
 

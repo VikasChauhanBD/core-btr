@@ -312,6 +312,8 @@ function Annotated() {
             and keep you focused on what is truly important.
           </p>
 
+          <p className="annotated-price">Annotated Notes Price - Rs. 2000/-</p>
+
           {/* Three image columns */}
           <div className="annotated-highlight-grid">
             {/* Book 1 — first half of annotatedImages */}

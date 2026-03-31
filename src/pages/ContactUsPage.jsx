@@ -6,11 +6,11 @@ function ContactUsPage() {
   return (
     <div>
       <Helmet>
-        <title>Contact Us - Core BTR</title>
+        <title>Contact Us - CoreBTR</title>
 
         <meta
           name="description"
-          content="Connect for Core BTR course details, guidance & support. Core BTR academic team will provide you quick assistance for your queries without any delay."
+          content="Connect for CoreBTR course details, guidance & support. CoreBTR academic team will provide you quick assistance for your queries without any delay."
         />
       </Helmet>
 
