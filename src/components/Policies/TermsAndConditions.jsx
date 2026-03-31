@@ -9,7 +9,7 @@ function TermsAndConditions() {
         LIMITED ("SABRSHUKR COCARE", "we", "us", "our"). The website corebtr.com
         is owned and managed by SABRSHUKR COCARE PRIVATE LIMITED. CIN:
         U86201DL2025PTC446602. These Terms govern your access to and use of
-        corebtr.com, our mobile apps, coreBTR Centre facilities, and all
+        corebtr.com, our mobile apps, CoreBTR Centre facilities, and all
         content, courses, tests, and features (the "Services"). By accessing or
         using the Services, you agree to these Terms and our Privacy Policy.
       </p>{" "}
@@ -70,7 +70,7 @@ function TermsAndConditions() {
             time-stamps and anomaly detection to maintain integrity.
           </li>
           <li>
-            At the coreBTR Centre, you must follow staff instructions; refrain
+            At the CoreBTR Centre, you must follow staff instructions; refrain
             from installing software on centre computers or connecting
             unauthorised peripherals; and comply with posted rules.
           </li>
@@ -81,7 +81,7 @@ function TermsAndConditions() {
         </ul>
       </p>
       <br />
-      <h2>4. Centre rules (coreBTR Centre)</h2>{" "}
+      <h2>4. Centre rules (CoreBTR Centre)</h2>{" "}
       <p>
         <ul>
           <li>
