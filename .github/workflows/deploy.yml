@@ -6,7 +6,6 @@ on:
       - main
 
 env:
-  # 🔥 Force GitHub Actions to use Node.js 24
   FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
 
 jobs:
@@ -14,26 +13,21 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      # Checkout latest code
       - name: Checkout code
         uses: actions/checkout@v4
 
-      # Setup Node.js (use 22 or 24)
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
           node-version: 22
           cache: "npm"
 
-      # Install dependencies
       - name: Install dependencies
         run: npm ci
 
-      # Build project
       - name: Build project
         run: npm run build
 
-      # Deploy via FTP
       - name: Sync files to Hostinger
         uses: SamKirkland/FTP-Deploy-Action@v4.3.5
         with:
@@ -41,13 +35,12 @@ jobs:
           username: ${{ secrets.FTP_USERNAME }}
           password: ${{ secrets.FTP_PASSWORD }}
 
-          # Vite React → dist
-          # CRA React → build
           local-dir: ./dist/
 
-          # Your FTP root
-          server-dir: ./
+          # ✅ FIXED PATH
+          server-dir: /home/u753001013/domains/corebtr.com/public_html/
 
           protocol: ftp
+          port: 21
           security: loose
           dangerous-clean-slate: false
