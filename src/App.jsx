@@ -147,6 +147,7 @@ import GalleryPage from "./pages/GalleryPage";
 import PlanPricesPage from "./pages/PlanPricesPage";
 import Face404 from "./components/face404/Face404";
 import AuthPage from "./components/authPage/AuthPage";
+import FairUsagePolicyPage from "./pages/FairUsagePolicyPage";
 
 function App() {
   return (
@@ -162,6 +163,7 @@ function App() {
           <Route path="/workbooks" element={<WorkbookPage />} />
           <Route path="/gallery" element={<GalleryPage />} />
           <Route path="/plan-prices" element={<PlanPricesPage />} />
+          <Route path="/fair-usage-policy" element={<FairUsagePolicyPage />} />
           <Route path="/reviews" element={<StudentReviewsPage />} />
           <Route path="/faq" element={<FaqsPage />} />
           <Route path="/contact" element={<ContactUsPage />} />
@@ -174,6 +176,7 @@ function App() {
             path="/shipping-delivery"
             element={<ShippingAndDeliveryPolicyPage />}
           />
+
           <Route path="*" element={<Face404 />} />
           <Route path="/testingpage" element={<AuthPage />} />
         </Routes>

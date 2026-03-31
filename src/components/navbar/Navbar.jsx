@@ -155,10 +155,10 @@ function Navbar() {
         <NavLink to="/plan-prices" onClick={handleCloseNav}>
           Buy New Plans
         </NavLink>
-        {/* <NavLink to="/reviews" onClick={handleCloseNav}>
-          Reviews
+        <NavLink to="/fair-usage-policy" onClick={handleCloseNav}>
+          Fair Usage Policy
         </NavLink>
-        <NavLink to="/gallery" onClick={handleCloseNav}>
+        {/* <NavLink to="/gallery" onClick={handleCloseNav}>
           Gallery
         </NavLink>
         <NavLink to="/faqs" onClick={handleCloseNav}>
