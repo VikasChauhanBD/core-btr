@@ -32,8 +32,8 @@ function FairUsagePolicy() {
 
       <h2>1. Supported Devices & Platforms</h2>
       <p>
-        CoreBTR is designed exclusively for a mobile learning experience. The
-        application is authorized for use on the following platforms:
+        CoreBTR is designed exclusively for learning experience. The application
+        is authorized for use on the following platforms:
         <br />
         <ul>
           <li>

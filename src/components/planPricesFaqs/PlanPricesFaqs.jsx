@@ -328,8 +328,10 @@ const device = [
     id: 4,
     question: "Which devices support CoreBTR?",
     answer: `CoreBTR works only on: </br>
-    ✔ Android phones &amp; tablets </br>
-    ✔ iPhones &amp; iPads`,
+    ✔ Android phones &amp; tablets (Android Version - 10 or Above) </br>
+    ✔ iPhones &amp; iPads (IOS Version - 14) <br/>
+     For More Information - <a href="https://corebtr.com/fair-usage-policy">Click Here</a>
+    `,
   },
   {
     id: 5,

@@ -9,34 +9,34 @@ const plans = [
     duration: "3 Months",
     originalPrice: "Rs. 11,999",
     introPrice: "Rs. 7,399",
-    launchPrice: "5,179",
-    withBooks: "7,939",
+    launchPrice: "Rs. 5,179",
+    books: "Rs. 2,760",
     badge: null,
     order: 3,
-    cta: "#",
+    cta: "https://portal.corebtr.com/subscription/packages?redirect_to_app=refresh",
   },
   {
     tier: "PRO ANNUAL",
     duration: "12 Months",
     originalPrice: "Rs. 19,999",
     introPrice: "Rs. 17,399",
-    launchPrice: "12,179",
-    withBooks: "14,939",
+    launchPrice: "Rs. 12,179",
+    books: "Rs. 2,760",
     badge: "BEST VALUE",
     featured: true,
     order: 1,
-    cta: "#",
+    cta: "https://portal.corebtr.com/subscription/packages?redirect_to_app=refresh",
   },
   {
     tier: "GROWTH",
     duration: "6 Months",
     originalPrice: "Rs. 14,999",
     introPrice: "Rs. 11,599",
-    launchPrice: "8,119",
-    withBooks: "10,879",
+    launchPrice: "Rs. 8,119",
+    books: "Rs. 2,760",
     badge: "POPULAR",
     order: 2,
-    cta: "#",
+    cta: "https://portal.corebtr.com/subscription/packages?redirect_to_app=refresh",
   },
 ];
 
@@ -53,7 +53,7 @@ export default function PlanPrices() {
 
       <h6>Checkout Plans & Prices</h6>
 
-      <div className="plans-cards">
+      {/* <div className="plans-cards">
         <div className="plans-card">
           <NavLink
             to="https://portal.corebtr.com/subscription/packages?redirect_to_app=refresh"
@@ -87,9 +87,9 @@ export default function PlanPrices() {
             />
           </NavLink>
         </div>
-      </div>
+      </div> */}
 
-      {/* <div className="plans-grid">
+      <div className="plans-grid">
         {plans.map((plan) => (
           <div
             key={plan.tier}
@@ -130,35 +130,54 @@ export default function PlanPrices() {
                 Launch offer Flat <span>30%</span> off + <span>2 Months</span>{" "}
                 Extra Free
               </p>
+
               <div className="plan-launch-price-row">
                 <span className="plan-launch-price">
-                  <span className="plan-currency">Rs.</span>
-                  {plan.launchPrice}{" "}
-                  <span className="plan-text">(without Books)</span>
-                  <br />
-                  <p className="plan-extra">+ 2 Months Extra</p>
+                  <p className="plan-text">
+                    Launch Price (After 30% off){" "}
+                    <span className="plan-launch-price">
+                      {plan.launchPrice}
+                    </span>
+                  </p>
+                  <h5 className="plan-extra">(without Books)</h5>
+                </span>
+              </div>
+
+              <div className="plan-launch-price-row">
+                <span className="plan-launch-price">
+                  <p className="plan-launch-bookset">
+                    Launch offer on Bookset - Flat <span>40%</span> off
+                  </p>
+                  <p className="plan-text">
+                    Price of Bookset (5 Books){" "}
+                    <span className="plan-launch-price">
+                      {plan.books}{" "}
+                      {/* <span className="plan-40"> (After 40% Off)</span> */}
+                    </span>
+                  </p>
+                  <h5 className="plan-extra">(After 40% Off)</h5>
                 </span>
               </div>
 
               <p className="plan-launch-label"></p>
               <div className="plan-launch-price-row">
-                <span className="plan-launch-price">
-                  <span className="plan-currency">Rs.</span>
-                  {plan.withBooks}{" "}
-                  <span className="plan-text">(with 5 Books)</span>
-                  <p className="plan-extra">+ 2 Months Extra</p>
-                </span>
+                <p className="plan-separately">
+                  You need to purchase <br />
+                  Plan and Book separately
+                </p>
               </div>
             </div>
             <p className="plan-prices-valid">
               Offer valid till 16<sup>th</sup> April 2026
             </p>
             <div className="plan-savings">
-              <NavLink to={plan.cta}>Buy Now</NavLink>
+              <NavLink to={plan.cta} target="_blank">
+                Buy Now
+              </NavLink>
             </div>
           </div>
         ))}
-      </div> */}
+      </div>
 
       <div className="plan-prices-help-div">
         <p className="plan-prices-register">
