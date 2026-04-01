@@ -24,6 +24,8 @@
 // import Face404 from "./components/face404/Face404";
 // import AuthPage from "./components/authPage/AuthPage";
 // import FairUsagePolicyPage from "./pages/FairUsagePolicyPage";
+// import AppDownload from "./components/appdownload/AppDownload";
+// import SchedulePage from "./pages/SchedulePage";
 
 // function App() {
 //   const [showIntro, setShowIntro] = useState(false);
@@ -99,6 +101,7 @@
 //           <Route path="/workbooks" element={<WorkbookPage />} />
 //           <Route path="/gallery" element={<GalleryPage />} />
 //           <Route path="/plan-prices" element={<PlanPricesPage />} />
+//           <Route path="/schedule" element={<SchedulePage />} />
 //           <Route path="/fair-usage-policy" element={<FairUsagePolicyPage />} />
 //           <Route path="/reviews" element={<StudentReviewsPage />} />
 //           <Route path="/faq" element={<FaqsPage />} />
@@ -108,6 +111,7 @@
 //           <Route path="/terms" element={<TermsAndConditions />} />
 //           <Route path="/cancellation-refund" element={<CancellationPolicy />} />
 //           <Route path="/device-policy" element={<DevicePolicyPage />} />
+//  <Route path="/download-app" element={<AppDownload />} />
 //           <Route
 //             path="/shipping-delivery"
 //             element={<ShippingAndDeliveryPolicyPage />}
@@ -151,6 +155,7 @@ import Face404 from "./components/face404/Face404";
 import AuthPage from "./components/authPage/AuthPage";
 import FairUsagePolicyPage from "./pages/FairUsagePolicyPage";
 import AppDownload from "./components/appdownload/AppDownload";
+import SchedulePage from "./pages/SchedulePage";
 
 function App() {
   return (
@@ -166,6 +171,7 @@ function App() {
           <Route path="/workbooks" element={<WorkbookPage />} />
           <Route path="/gallery" element={<GalleryPage />} />
           <Route path="/plan-prices" element={<PlanPricesPage />} />
+          <Route path="/schedule" element={<SchedulePage />} />
           <Route path="/fair-usage-policy" element={<FairUsagePolicyPage />} />
           <Route path="/reviews" element={<StudentReviewsPage />} />
           <Route path="/faq" element={<FaqsPage />} />
@@ -180,7 +186,6 @@ function App() {
             path="/shipping-delivery"
             element={<ShippingAndDeliveryPolicyPage />}
           />
-
           <Route path="*" element={<Face404 />} />
           <Route path="/testingpage" element={<AuthPage />} />
         </Routes>

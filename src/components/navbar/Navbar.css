@@ -168,7 +168,7 @@
 
 /* -------------------------- Responsive Style -------------------------- */
 
-@media (max-width: 1024px) {
+@media (max-width: 1400px) {
   .web-nav {
     display: none;
   }
