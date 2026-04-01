@@ -24,7 +24,7 @@
 // import Face404 from "./components/face404/Face404";
 // import AuthPage from "./components/authPage/AuthPage";
 // import FairUsagePolicyPage from "./pages/FairUsagePolicyPage";
-// import AppDownload from "./components/appdownload/AppDownload";
+// import AppDownloadPage from "./pages/AppDownloadPage";
 // import SchedulePage from "./pages/SchedulePage";
 
 // function App() {
@@ -111,7 +111,7 @@
 //           <Route path="/terms" element={<TermsAndConditions />} />
 //           <Route path="/cancellation-refund" element={<CancellationPolicy />} />
 //           <Route path="/device-policy" element={<DevicePolicyPage />} />
-//  <Route path="/download-app" element={<AppDownload />} />
+//  <Route path="/download-app" element={<AppDownloadPage />} />
 //           <Route
 //             path="/shipping-delivery"
 //             element={<ShippingAndDeliveryPolicyPage />}
@@ -154,7 +154,7 @@ import PlanPricesPage from "./pages/PlanPricesPage";
 import Face404 from "./components/face404/Face404";
 import AuthPage from "./components/authPage/AuthPage";
 import FairUsagePolicyPage from "./pages/FairUsagePolicyPage";
-import AppDownload from "./components/appdownload/AppDownload";
+import AppDownloadPage from "./pages/AppDownloadPage";
 import SchedulePage from "./pages/SchedulePage";
 
 function App() {
@@ -181,7 +181,7 @@ function App() {
           <Route path="/terms" element={<TermsAndConditions />} />
           <Route path="/cancellation-refund" element={<CancellationPolicy />} />
           <Route path="/device-policy" element={<DevicePolicyPage />} />
-          <Route path="/download-app" element={<AppDownload />} />
+          <Route path="/download-app" element={<AppDownloadPage />} />
           <Route
             path="/shipping-delivery"
             element={<ShippingAndDeliveryPolicyPage />}

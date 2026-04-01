@@ -6,7 +6,7 @@ function SchedulePage() {
   return (
     <div>
       <Helmet>
-        <title>Schedule INI-CET May 2026- CoreBTR</title>
+        <title>Schedule INI-CET May 2026 - CoreBTR</title>
 
         <meta
           name="description"
