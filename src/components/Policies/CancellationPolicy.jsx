@@ -21,7 +21,15 @@ function CancellationPolicy() {
       </p>
       <br />
       <h2>2. Refund Policy</h2>
-      <p>No Refund</p>
+      <ul>
+        <li>
+          Online Plans: No cancellation or refund is permitted once the plan is
+          purchased.{" "}
+        </li>
+        <li>
+          Hardcopy Notes: Orders cannot be cancelled or refunded once placed.
+        </li>
+      </ul>
       <br />
       <h2>3. Rescheduling</h2>
       <p>

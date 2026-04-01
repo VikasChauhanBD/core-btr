@@ -92,6 +92,10 @@ function ShippingAndDeliveryPolicy() {
         caused by courier partners, weather conditions, or other unforeseen
         circumstances. If your order is delayed beyond a reasonable period,
         please contact us for assistance.
+        <br />
+        For any issues related to book delivery (incorrect items, missing items,
+        misprints, etc.), students must report the concern within 36 hours of
+        delivery.
       </p>
       <br />
       <br />

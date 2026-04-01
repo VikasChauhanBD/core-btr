@@ -341,6 +341,16 @@ function PrivacyPolicy() {
         therefore be retained for limited purposes even after account deletion,
         in accordance with law and this Policy.
       </p>
+      <ul>
+        <li>
+          If a student deletes their account, the associated subscription is
+          permanently removed.{" "}
+        </li>
+        <li>
+          Access cannot be restored. A new subscription must be purchased to
+          regain access.{" "}
+        </li>
+      </ul>
       <br />
       <br />
 
@@ -375,7 +385,25 @@ function PrivacyPolicy() {
       <br />
       <br />
 
-      <h2>17. Contact details</h2>
+      <h2>17. Login Details</h2>
+
+      <p>
+        The registered phone number & Email Id cannot be changed, as it serves
+        as the primary login credential.
+      </p>
+      <br />
+      <br />
+
+      <h2>18. Account Transfer</h2>
+
+      <p>
+        Subscriptions are strictly non-transferable and intended for individual
+        use only.
+      </p>
+      <br />
+      <br />
+
+      <h2>19. Contact details</h2>
 
       <p>
         <b>Privacy contact:</b>
