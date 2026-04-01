@@ -24,7 +24,7 @@ const AppDownload = () => {
 
           {/* Apple App Store */}
           <a
-            href="https://apps.apple.com"
+            href="https://apps.apple.com/in/app/corebtr/id6760164235"
             target="_blank"
             rel="noopener noreferrer"
             className="app-download__btn"
@@ -39,7 +39,7 @@ const AppDownload = () => {
 
           {/* Google Play Store */}
           <a
-            href="https://play.google.com"
+            href="https://play.google.com/store/apps/details?id=com.corebtr"
             target="_blank"
             rel="noopener noreferrer"
             className="app-download__btn"
