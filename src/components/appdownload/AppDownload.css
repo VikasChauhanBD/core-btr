@@ -1,0 +1,157 @@
+/* ===========================
+   AppDownload.css
+   Mobile-first responsive styles
+   =========================== */
+
+/* ---------- Base (Mobile first) ---------- */
+.app-download {
+  width: 100%;
+  min-height: 100dvh;          /* dynamic viewport height — safe on mobile */
+  background-color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px 20px;
+  box-sizing: border-box;
+  font-family: "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+}
+
+.app-download__content {
+  width: 100%;
+  max-width: 940px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0;
+}
+
+/* ---------- Title ---------- */
+.app-download__title {
+  font-size: 1.65rem;          /* comfortable mobile read */
+  font-weight: 800;
+  color: #0d1b2a;
+  line-height: 1.28;
+  margin: 0 0 16px 0;
+  letter-spacing: -0.4px;
+}
+
+.app-download__brand {
+  color: #0d1b2a;              /* same colour — bold weight carries the brand */
+}
+
+/* ---------- Subtitle ---------- */
+.app-download__subtitle {
+  font-size: 0.9rem;
+  color: #6b7480;
+  line-height: 1.75;
+  margin: 0 0 36px 0;
+  max-width: 400px;
+  font-weight: 400;
+}
+
+/* ---------- Button row ---------- */
+.app-download__buttons {
+  display: flex;
+  flex-direction: column;      /* stack on mobile */
+  align-items: center;
+  gap: 14px;
+  width: 100%;
+}
+
+/* ---------- Each button link ---------- */
+.app-download__btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  -webkit-tap-highlight-color: transparent;  /* remove tap flash on iOS */
+  border-radius: 10px;
+  overflow: hidden;
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.12);
+  /* width fills column on small screens */
+  width: 100%;
+  max-width: 260px;
+}
+
+.app-download__btn:active {
+  transform: scale(0.97);
+  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* ---------- Badge image ---------- */
+.app-download__badge-img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 10px;
+  /* prevents tiny gap below inline image */
+  vertical-align: middle;
+}
+
+/* ===========================
+   Tablet  ≥ 480px
+   =========================== */
+@media (min-width: 480px) {
+  .app-download__title {
+    font-size: 2rem;
+  }
+
+  .app-download__subtitle {
+    font-size: 0.95rem;
+  }
+
+  .app-download__buttons {
+    flex-direction: row;       /* side-by-side on tablet+ */
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .app-download__btn {
+    width: auto;
+    max-width: 200px;
+  }
+}
+
+/* ===========================
+   Desktop  ≥ 768px
+   =========================== */
+@media (min-width: 768px) {
+  .app-download {
+    padding: 80px 40px;
+  }
+
+  .app-download__title {
+    font-size: 2.6rem;
+    margin-bottom: 20px;
+  }
+
+  .app-download__subtitle {
+    font-size: 1rem;
+    margin-bottom: 44px;
+    max-width: 480px;
+  }
+
+  .app-download__btn {
+    max-width: 210px;
+    transition: transform 0.18s ease, box-shadow 0.18s ease;
+  }
+
+  .app-download__btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 22px rgba(0, 0, 0, 0.18);
+  }
+
+  .app-download__btn:active {
+    transform: translateY(0);
+  }
+}
+
+/* ===========================
+   Large Desktop  ≥ 1024px
+   =========================== */
+@media (min-width: 1024px) {
+  .app-download__title {
+    font-size: 2.9rem;
+  }
+}
