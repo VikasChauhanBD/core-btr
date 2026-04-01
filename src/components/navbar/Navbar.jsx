@@ -164,7 +164,12 @@ function Navbar() {
         <NavLink to="/faqs" onClick={handleCloseNav}>
           FAQ's
         </NavLink> */}
-        <NavLink className="login-signup-cta" to="#" onClick={handleCloseNav}>
+        <NavLink
+          className="login-signup-cta"
+          to="https://portal.corebtr.com/subscription/packages?redirect_to_app=refresh"
+          target="_blank"
+          onClick={handleCloseNav}
+        >
           Login | Signup
         </NavLink>
       </nav>
