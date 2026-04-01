@@ -26,7 +26,9 @@ function WorkBooksPrices() {
           </h6>
           <br />
 
-          <NavLink to="#">Buy Now</NavLink>
+          <NavLink to="https://portal.corebtr.com/books" target="_blank">
+            Buy Now
+          </NavLink>
 
           <br />
 

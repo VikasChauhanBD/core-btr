@@ -27,7 +27,12 @@ function OurVision() {
           <strong>Revise Smart. Revise Core.</strong>
         </p>
 
-        <NavLink to="#">Get Started with CoreBTR</NavLink>
+        <NavLink
+          to="https://portal.corebtr.com/subscription/packages?redirect_to_app=refresh"
+          target="_blank"
+        >
+          Get Started with CoreBTR
+        </NavLink>
       </section>
     </div>
   );
