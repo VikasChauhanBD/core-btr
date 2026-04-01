@@ -2,9 +2,6 @@ import React from "react";
 import { Sparkles, Star } from "lucide-react";
 import "./PlanPrices.css";
 import { NavLink } from "react-router-dom";
-import Plan3 from "../../assets/images/plan-3m.jpg";
-import Plan6 from "../../assets/images/plan-6m.jpg";
-import Plan12 from "../../assets/images/plan-12m.jpg";
 
 const plans = [
   {
@@ -62,7 +59,10 @@ export default function PlanPrices() {
             to="https://portal.corebtr.com/subscription/packages?redirect_to_app=refresh"
             target="_blank"
           >
-            <img src={Plan3} alt="" />
+            <img
+              src="https://cdn.dribbble.com/userupload/47238065/file/5847b484c12b92885d6d3daf95ad5ae8.png"
+              alt=""
+            />
           </NavLink>
         </div>
         <div className="plans-card">
@@ -70,7 +70,10 @@ export default function PlanPrices() {
             to="https://portal.corebtr.com/subscription/packages?redirect_to_app=refresh"
             target="_blank"
           >
-            <img src={Plan6} alt="" />
+            <img
+              src="https://cdn.dribbble.com/userupload/47238066/file/4f84477f1784d52f6b32930aebc59c23.png"
+              alt=""
+            />
           </NavLink>
         </div>
         <div className="plans-card">
@@ -78,7 +81,10 @@ export default function PlanPrices() {
             to="https://portal.corebtr.com/subscription/packages?redirect_to_app=refresh"
             target="_blank"
           >
-            <img src={Plan12} alt="" />
+            <img
+              src="https://cdn.dribbble.com/userupload/47238067/file/042d440810c03dcc58bb347eaaa60526.png"
+              alt=""
+            />
           </NavLink>
         </div>
       </div>
@@ -121,7 +127,8 @@ export default function PlanPrices() {
             </div>
             <div className="plan-launch-box">
               <p className="plan-launch-label">
-                Launch offer Flat 30% off
+                Launch offer Flat <span>30%</span> off + <span>2 Months</span>{" "}
+                Extra Free
               </p>
               <div className="plan-launch-price-row">
                 <span className="plan-launch-price">
@@ -133,8 +140,7 @@ export default function PlanPrices() {
                 </span>
               </div>
 
-              <p className="plan-launch-label">
-              </p>
+              <p className="plan-launch-label"></p>
               <div className="plan-launch-price-row">
                 <span className="plan-launch-price">
                   <span className="plan-currency">Rs.</span>
@@ -152,47 +158,6 @@ export default function PlanPrices() {
             </div>
           </div>
         ))}
-      </div> */}
-
-      {/* <h2 className="plan-prices-heading">Set of 5 Books</h2>
-      <h4 className="plan-prices-sub-heading">
-        Unannotated Workbooks - Set of 2 Books | Annotated Notes - Set of 3
-        Books
-      </h4> */}
-
-      {/* <div className="plan-prices-book">
-        <div className="plan-meta-row">
-          <p className="plan-meta-label">
-            Original Price:{" "}
-            <span className="plan-meta-value--strike">Rs 5,700</span>
-          </p>
-        </div>
-
-        <div className="plan-launch-box">
-          <p className="plan-launch-label">
-            <Sparkles size={13} strokeWidth={2.5} /> Introductory Price:
-          </p>
-          <div className="plan-launch-price-row">
-            <span className="plan-launch-price">
-              <span className="plan-currency">Rs</span>
-              4,600
-            </span>
-          </div>
-
-          <div className="plan-extra-btn">
-            <p className="plan-launch-offer">
-              Launch offer <br /> Avail Flat <b>40%</b> off
-            </p>
-          </div>
-        </div>
-
-        <div className="plan-savings">
-          <NavLink to="#">Buy Now</NavLink>
-        </div>
-
-        <p className="plan-launch-valid">
-          Valid till 16<sup>th</sup> April 2026
-        </p>
       </div> */}
 
       <div className="plan-prices-help-div">
