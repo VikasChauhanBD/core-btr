@@ -2,6 +2,9 @@ import React from "react";
 import { Sparkles, Star } from "lucide-react";
 import "./PlanPrices.css";
 import { NavLink } from "react-router-dom";
+import Plan3 from "../../assets/images/plan-3m.jpg";
+import Plan6 from "../../assets/images/plan-6m.jpg";
+import Plan12 from "../../assets/images/plan-12m.jpg";
 
 const plans = [
   {
@@ -53,7 +56,34 @@ export default function PlanPrices() {
 
       <h6>Checkout Plans & Prices</h6>
 
-      <div className="plans-grid">
+      <div className="plans-cards">
+        <div className="plans-card">
+          <NavLink
+            to="https://portal.corebtr.com/subscription/packages?redirect_to_app=refresh"
+            target="_blank"
+          >
+            <img src={Plan3} alt="" />
+          </NavLink>
+        </div>
+        <div className="plans-card">
+          <NavLink
+            to="https://portal.corebtr.com/subscription/packages?redirect_to_app=refresh"
+            target="_blank"
+          >
+            <img src={Plan6} alt="" />
+          </NavLink>
+        </div>
+        <div className="plans-card">
+          <NavLink
+            to="https://portal.corebtr.com/subscription/packages?redirect_to_app=refresh"
+            target="_blank"
+          >
+            <img src={Plan12} alt="" />
+          </NavLink>
+        </div>
+      </div>
+
+      {/* <div className="plans-grid">
         {plans.map((plan) => (
           <div
             key={plan.tier}
@@ -91,8 +121,7 @@ export default function PlanPrices() {
             </div>
             <div className="plan-launch-box">
               <p className="plan-launch-label">
-                <Sparkles size={11} strokeWidth={2.5} /> Launch Price (after 30%
-                off)
+                Launch offer Flat 30% off
               </p>
               <div className="plan-launch-price-row">
                 <span className="plan-launch-price">
@@ -105,8 +134,6 @@ export default function PlanPrices() {
               </div>
 
               <p className="plan-launch-label">
-                {/* <Sparkles size={11} strokeWidth={2.5} /> Launch Price with 5
-                Books */}
               </p>
               <div className="plan-launch-price-row">
                 <span className="plan-launch-price">
@@ -116,13 +143,6 @@ export default function PlanPrices() {
                   <p className="plan-extra">+ 2 Months Extra</p>
                 </span>
               </div>
-
-              {/* <div className="plan-extra-btn">
-                <p className="plan-launch-offer">
-                  Launch offer <br /> Avail Flat <b>30%</b> off +{" "}
-                  <b>2 Months</b> Extra
-                </p>
-              </div> */}
             </div>
             <p className="plan-prices-valid">
               Offer valid till 16<sup>th</sup> April 2026
@@ -132,7 +152,7 @@ export default function PlanPrices() {
             </div>
           </div>
         ))}
-      </div>
+      </div> */}
 
       {/* <h2 className="plan-prices-heading">Set of 5 Books</h2>
       <h4 className="plan-prices-sub-heading">

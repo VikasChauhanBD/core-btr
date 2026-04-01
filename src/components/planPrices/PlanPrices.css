@@ -161,6 +161,7 @@
   letter-spacing: 0.12em;
   color: #000000;
   margin: 0;
+  text-align: center;
 }
 
 .plan-launch-offer {
@@ -241,7 +242,7 @@
   color: red;
 }
 
-.plan-prices-wrapper a {
+/* .plan-prices-wrapper a {
   text-decoration: none;
   padding: 8px 16px;
   background-color: #1767be;
@@ -249,7 +250,7 @@
   font-size: 16px;
   font-weight: 600;
   border-radius: 10px;
-}
+} */
 
 .plan-prices-wrapper h6 {
   font-size: 24px;
@@ -298,16 +299,31 @@
     transform 0.25s ease;
 }
 
+.plans-cards {
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.plans-card {
+  width: 32%;
+}
+
+.plans-card img {
+  width: 100%;
+}
 /* -------------------------- Responsive Style -------------------------- */
 
 @media (max-width: 1440px) {
-  .plans-grid {
+  .plans-grid,
+  .plans-cards {
     width: 85%;
   }
 }
 
 @media (max-width: 1280px) {
-  .plans-grid {
+  .plans-grid,
+  .plans-cards {
     width: 90%;
   }
 }
@@ -327,13 +343,28 @@
     gap: 30px;
   }
 
-  .plan-card {
-    order: var(--mobile-order);
+  .plans-cards {
+    width: 80%;
+    flex-wrap: wrap;
+    gap: 20px;
   }
+
+  .plans-card {
+    width: 48%;
+  }
+
+  /* .plan-card {
+    order: var(--mobile-order);
+  } */
 }
 
 @media (max-width: 568px) {
-  .plans-grid {
+  .plans-grid,
+  .plans-cards {
+    width: 100%;
+  }
+
+  .plans-card {
     width: 100%;
   }
 
