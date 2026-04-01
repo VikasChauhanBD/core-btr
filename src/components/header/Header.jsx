@@ -94,8 +94,22 @@ export default function Header() {
           <h3 className="hdr__p2-sub">From Revision to Revolution</h3>
           <h3 className="hdr__p2-sub2">Launching on 2nd April </h3>
           <div className="hdr__p2-store">
-            <img src={PlayStore} alt="Get it on Google Play" />
-            <img src={AppStore} alt="Download on App Store" />
+            <a
+                        href="https://apps.apple.com/in/app/corebtr/id6760164235"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        
+                      >
+                        <img src={AppStore} alt="Download on App Store" />
+                      </a>
+            <a
+                        href="https://play.google.com/store/apps/details?id=com.corebtr"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        <img src={PlayStore} alt="Get it on Google Play" />
+                      </a>
+            
           </div>
         </div>
         <div className="hdr__p2-phone">
