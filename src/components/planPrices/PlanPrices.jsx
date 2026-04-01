@@ -51,6 +51,11 @@ export default function PlanPrices() {
       <h5>Avail Launch Offer Flat 30% off on any plan + 2 Months Extra FREE</h5>
       <h5>Also Get Flat 40% off on Book Set </h5>
 
+      <h3>
+        Apply <span>Coupon Code</span> to Avail the Offer :-{" "}
+        <span>COREBTR</span>
+      </h3>
+
       <h6>Checkout Plans & Prices</h6>
 
       <div className="plans-grid">
