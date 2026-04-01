@@ -53,42 +53,6 @@ export default function PlanPrices() {
 
       <h6>Checkout Plans & Prices</h6>
 
-      {/* <div className="plans-cards">
-        <div className="plans-card">
-          <NavLink
-            to="https://portal.corebtr.com/subscription/packages?redirect_to_app=refresh"
-            target="_blank"
-          >
-            <img
-              src="https://cdn.dribbble.com/userupload/47238065/file/5847b484c12b92885d6d3daf95ad5ae8.png"
-              alt=""
-            />
-          </NavLink>
-        </div>
-        <div className="plans-card">
-          <NavLink
-            to="https://portal.corebtr.com/subscription/packages?redirect_to_app=refresh"
-            target="_blank"
-          >
-            <img
-              src="https://cdn.dribbble.com/userupload/47238066/file/4f84477f1784d52f6b32930aebc59c23.png"
-              alt=""
-            />
-          </NavLink>
-        </div>
-        <div className="plans-card">
-          <NavLink
-            to="https://portal.corebtr.com/subscription/packages?redirect_to_app=refresh"
-            target="_blank"
-          >
-            <img
-              src="https://cdn.dribbble.com/userupload/47238067/file/042d440810c03dcc58bb347eaaa60526.png"
-              alt=""
-            />
-          </NavLink>
-        </div>
-      </div> */}
-
       <div className="plans-grid">
         {plans.map((plan) => (
           <div
@@ -150,16 +114,12 @@ export default function PlanPrices() {
                   </p>
                   <p className="plan-text">
                     Price of Bookset (5 Books){" "}
-                    <span className="plan-launch-price">
-                      {plan.books}{" "}
-                      {/* <span className="plan-40"> (After 40% Off)</span> */}
-                    </span>
+                    <span className="plan-launch-price">{plan.books} </span>
                   </p>
                   <h5 className="plan-extra">(After 40% Off)</h5>
                 </span>
               </div>
 
-              <p className="plan-launch-label"></p>
               <div className="plan-launch-price-row">
                 <p className="plan-separately">
                   You need to purchase <br />
