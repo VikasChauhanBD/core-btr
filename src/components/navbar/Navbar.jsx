@@ -169,7 +169,7 @@ function Navbar() {
         </NavLink> */}
         <NavLink
           className="login-signup-cta"
-          to="https://portal.corebtr.com/subscription/packages?redirect_to_app=refresh"
+          to="https://portal.corebtr.com/login"
           target="_blank"
           onClick={handleCloseNav}
         >
