@@ -28,6 +28,7 @@ import AppDownloadPage from "./pages/AppDownloadPage";
 import SchedulePage from "./pages/SchedulePage";
 import LeadFormPage from "./pages/LeadFormPage";
 import NeetPgSchedulePage from "./pages/NeetPgSchedulePage";
+import InterestCapsule from "./components/interestCapsule/InterestCapsule";
 
 function App() {
   const [showIntro, setShowIntro] = useState(false);
@@ -92,6 +93,7 @@ function App() {
       <BrowserRouter>
         <Navbar />
         <ScrollToTop />
+        <InterestCapsule />
         <Routes>
           <Route
             path="/"
@@ -119,9 +121,9 @@ function App() {
             path="/shipping-delivery"
             element={<ShippingAndDeliveryPolicyPage />}
           />
+          <Route path="/interested" element={<LeadFormPage />} />
           <Route path="*" element={<Face404 />} />
           <Route path="/testingpage" element={<AuthPage />} />
-          <Route path="/testlead" element={<LeadFormPage />} />
         </Routes>
 
         <Footer />
