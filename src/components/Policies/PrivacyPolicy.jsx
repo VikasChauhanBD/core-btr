@@ -17,12 +17,12 @@ function PrivacyPolicy() {
         For privacy-related questions, rights requests, or complaints, please
         contact us at privacy@corebtr.com. For grievance redressal under
         applicable law, you may contact the Grievance Officer, Mr Ritesh Kapoor
-        at grievance@corebtr.com (Email:
-        <a href="mailto:admin@corebtr.com"> admin@corebtr.com</a>). <br />
+        at grievance@corebtr.com (Email:{" "}
+        <a href="mailto:support@corebtr.com">support@corebtr.com</a>).
         <br />
         Registered office: Institutional Plot No. 6, Knowledge Park - 1, Greater
-        Noida, Gautam Buddha Nagar, Uttar Pradesh 201310. CIN:
-        U86201DL2025PTC446602.
+        Noida, Gautam Buddha Nagar, Uttar Pradesh 201310. <br />
+        CIN: U86201DL2025PTC446602.
       </p>
       <br />
       <br />
@@ -324,8 +324,8 @@ function PrivacyPolicy() {
       <p>
         If the Services allow account creation, you may request deletion of your
         CoreBTR account and associated personal data through the in-app account
-        deletion pathway and through our web-based deletion request page at
-        <a href="/delete-account"> https://corebtr.com/delete-account.</a>
+        deletion pathway and through our web-based deletion request page at{" "}
+        <a href="/delete-account">https://corebtr.com/delete-account.</a>
         <br />
         <br />
         Deleting your account will permanently remove your access to the

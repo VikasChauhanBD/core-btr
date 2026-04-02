@@ -55,10 +55,9 @@ function CancellationPolicy() {
       <p>
         SABRSHUKR COCARE PRIVATE LIMITED
         <br />
-        📧 Email: <a href="mailto:tech@corebtr.com">tech@corebtr.com</a>| |{" "}
-        <a href="mailto:admin@corebtr.com">admin@corebtr.com</a>
+        📧 Email: <a href="mailto:support@corebtr.com">support@corebtr.com</a>
         <br />
-        📞 Phone: +91-9911469399
+        📞 Phone: <a href="tel:7428581909">7428581909</a> (Only For Calling)
         <br />
         🌐 Website:{" "}
         <a href="https://www.corebtr.com ">https://www.corebtr.com </a>

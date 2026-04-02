@@ -116,20 +116,15 @@ function ShippingAndDeliveryPolicy() {
         <div className="contact-row">
           <span className="contact-icon">📧</span>
           <span>
-            Email: <a href="mailto:tech@corebtr.com">tech@corebtr.com</a>
-            {" | "}
-            <a href="mailto:admin@corebtr.com">admin@corebtr.com</a>
+            Email: <a href="mailto:support@corebtr.com">support@corebtr.com</a>
           </span>
         </div>
 
         <div className="contact-row">
           <span className="contact-icon">📞</span>
-          <span>Phone:</span>
-        </div>
-
-        <div className="contact-row">
-          <span className="contact-icon">📞</span>
-          <span>Phone: +91-7428581909</span>
+          <span>
+            Phone: <a href="tel:7428581909">7428581909</a> (Only For Calling)
+          </span>
         </div>
 
         <div className="contact-row">

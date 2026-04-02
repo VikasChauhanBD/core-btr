@@ -217,8 +217,8 @@ function TermsAndConditions() {
         <br />
         Phone: <a href="tel:7428581909">7428581909</a> (Only For Calling)
         <br />
-        Address: Vidya Jeevan, Institutional Plot No. 6, Knowledge Park - 1,
-        Greater Noida, Gautam Buddha Nagar, Uttar Pradesh 201310
+        Address: Institutional Plot No. 6, Knowledge Park - 1, Greater Noida,
+        Gautam Buddha Nagar, Uttar Pradesh 201310
         <br />
         CIN: U86201DL2025PTC446602
       </p>
