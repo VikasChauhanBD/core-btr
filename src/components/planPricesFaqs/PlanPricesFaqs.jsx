@@ -423,6 +423,67 @@ Violation may result in:
   },
 ];
 
+const mission = [
+  {
+    id: 1,
+    question:
+      "I do not have my old registered number for the Cerebellum app. How can I log in to the new app?",
+    answer: `We will provide you with an OTP for login after verification between <b>9:30 AM to 6:00 PM.</b>`,
+  },
+  {
+    id: 2,
+    question:
+      "I have given consent but have not received any email. What should I do?",
+    answer: `Please check your Spam and “All Mail” folders. If you still haven’t received it, contact support.`,
+  },
+  {
+    id: 3,
+    question:
+      "I gave consent after 31st March. Will I still be able to log in?",
+    answer: `Please share your registered details along with a screenshot of the consent confirmation with the support team for verification.`,
+  },
+  {
+    id: 4,
+    question: "Will Champions subscribers get access to Core BTR?",
+    answer: `Yes, Champions subscribers will get access to Core BTR.`,
+  },
+  {
+    id: 5,
+    question:
+      "The Cerebellum app is working on my device, but Core BTR is not working. Why?",
+    answer: `This may be due to updated security features or device compatibility requirements in the Core BTR app. Please ensure your app and device are updated.`,
+  },
+  {
+    id: 6,
+    question:
+      "I am an active subscriber in Cerebellum. When will I get access to the Core BTR app?",
+    answer: `Access will be provided from <b>2nd April, 11:30 PM onwards.</b>`,
+  },
+  {
+    id: 7,
+    question:
+      "I have a 3-year Cerebellum plan and have also taken Core BTR. When will my plan get activated?",
+    answer: `You will be able to access the app from <b>2nd April 2026 11:30 PM onwards.</b> However, if your subscription in Cerebellum is ending post <b>March 2027</b>, then app access in CoreBTR will be till <b>31st March 2027 only.</b>`,
+  },
+  {
+    id: 8,
+    question:
+      "Do we need to follow the old BTR group, or will a new group be created? How will I get access?",
+    answer: `There is no update yet. Please wait for the official announcement.`,
+  },
+  {
+    id: 9,
+    question:
+      "Will we be able to watch Dr. Zainab Ma’am’s old videos in the Cerebellum app? If yes, till when?",
+    answer: `Yes, you can watch them as long as your Cerebellum plan remains active.`,
+  },
+  {
+    id: 10,
+    question: "I have a BTR plan. Will I be able to watch videos on both apps?",
+    answer: `Yes, you can access both apps. However, all new videos will be available only on the Core BTR app.`,
+  },
+];
+
 function FaqItem({ faq, index }) {
   const [open, setOpen] = useState(false);
 
@@ -490,6 +551,15 @@ function PlanPricesFaqs() {
 
         <div className="faq-list">
           {device.map((faq, i) => (
+            <FaqItem key={faq.id} faq={faq} index={i} />
+          ))}
+        </div>
+      </div>
+
+      <div className="plan-faq-main">
+        <h4>5. FAQs for Mission & BTR Subscribers - Cerebellum Academy</h4>
+        <div className="faq-list">
+          {mission.map((faq, i) => (
             <FaqItem key={faq.id} faq={faq} index={i} />
           ))}
         </div>
