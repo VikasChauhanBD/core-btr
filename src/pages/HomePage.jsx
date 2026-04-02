@@ -22,8 +22,8 @@ function HomePage({ introComplete }) {
         />
       </Helmet>
 
-      {/* <Header introComplete={introComplete} /> */}
-      <Header />
+      <Header introComplete={introComplete} />
+      {/* <Header /> */}
       <CoreBTR />
       <ThePlatform />
       <WhyCoreBTR />

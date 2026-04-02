@@ -13,7 +13,7 @@ function IntroVideo({ onEnd }) {
         onEnded={onEnd}
       >
         <source
-          src="https://cdn.dribbble.com/userupload/47132304/file/large-fa9460e6f9bc26cfcf2490ffffa144d5.mp4"
+          src="https://res.cloudinary.com/dyih24tl8/video/upload/v1775111070/core_BTR_Logo_1_uchwve.mp4"
           type="video/mp4"
         />
       </video>
