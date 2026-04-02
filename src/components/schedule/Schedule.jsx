@@ -170,7 +170,7 @@ const Schedule = () => {
           <thead>
             <tr>
               <th>Dates</th>
-              <th>Cover Subject with Videos</th>
+              <th>Cover Subjects with Videos</th>
             </tr>
           </thead>
           <tbody>

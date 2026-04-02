@@ -65,45 +65,6 @@ function Navbar() {
 
         {/* <div
           className="dropdown-container"
-          onMouseEnter={() => !showNav && setShowAbout(true)}
-          onMouseLeave={() => !showNav && setShowAbout(false)}
-        >
-          <button className="dropdown-trigger" onClick={handleAboutClick}>
-            <span className="dropdown-text">About</span>
-            <IoIosArrowDown
-              className={`arrow-icon ${showAbout ? "rotate" : ""}`}
-              onClick={handleAboutArrowClick}
-            />
-          </button>
-
-          {showAbout && (
-            <div
-              className="dropdown-menu level-1"
-              onMouseEnter={() => !showNav && setShowAbout(true)}
-              onMouseLeave={() => !showNav && setShowAbout(false)}
-            >
-              <NavLink
-                to="https://drzainabvora.com/about"
-                target="_blank"
-                onClick={handleCloseNav}
-                className="dropdown-link"
-              >
-                Dr. ZV
-              </NavLink>
-              <NavLink
-                to="https://www.vidyajeevan.com/"
-                target="_blank"
-                onClick={handleCloseNav}
-                className="dropdown-link"
-              >
-                Vidya Jeevan <br /> Experience Center
-              </NavLink>
-            </div>
-          )}
-        </div> */}
-
-        {/* <div
-          className="dropdown-container"
           onMouseEnter={() => !showNav && setShowBTRMenu(true)}
           onMouseLeave={() => !showNav && setShowBTRMenu(false)}
         >
@@ -155,9 +116,44 @@ function Navbar() {
         <NavLink to="/plan-prices" onClick={handleCloseNav}>
           Buy New Plans
         </NavLink>
-        <NavLink to="/schedule" onClick={handleCloseNav}>
-          Schedule
-        </NavLink>
+
+        <div
+          className="dropdown-container"
+          onMouseEnter={() => !showNav && setShowAbout(true)}
+          onMouseLeave={() => !showNav && setShowAbout(false)}
+        >
+          <button className="dropdown-trigger" onClick={handleAboutClick}>
+            <span className="dropdown-text">Schedule</span>
+            <IoIosArrowDown
+              className={`arrow-icon ${showAbout ? "rotate" : ""}`}
+              onClick={handleAboutArrowClick}
+            />
+          </button>
+
+          {showAbout && (
+            <div
+              className="dropdown-menu level-1"
+              onMouseEnter={() => !showNav && setShowAbout(true)}
+              onMouseLeave={() => !showNav && setShowAbout(false)}
+            >
+              <NavLink
+                to="/online-classes-schedule"
+                onClick={handleCloseNav}
+                className="dropdown-link"
+              >
+                Online Classes Schedule
+              </NavLink>
+              <NavLink
+                to="/bootcamp-schedule"
+                onClick={handleCloseNav}
+                className="dropdown-link"
+              >
+                Bootcamp Schedule
+              </NavLink>
+            </div>
+          )}
+        </div>
+
         <NavLink to="/fair-usage-policy" onClick={handleCloseNav}>
           Fair Usage Policy
         </NavLink>

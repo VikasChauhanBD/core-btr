@@ -26,6 +26,8 @@ import AuthPage from "./components/authPage/AuthPage";
 import FairUsagePolicyPage from "./pages/FairUsagePolicyPage";
 import AppDownloadPage from "./pages/AppDownloadPage";
 import SchedulePage from "./pages/SchedulePage";
+import LeadFormPage from "./pages/LeadFormPage";
+import NeetPgSchedulePage from "./pages/NeetPgSchedulePage";
 
 function App() {
   const [showIntro, setShowIntro] = useState(false);
@@ -101,7 +103,8 @@ function App() {
           <Route path="/workbooks" element={<WorkbookPage />} />
           <Route path="/gallery" element={<GalleryPage />} />
           <Route path="/plan-prices" element={<PlanPricesPage />} />
-          <Route path="/schedule" element={<SchedulePage />} />
+          <Route path="/online-classes-schedule" element={<SchedulePage />} />
+          <Route path="/bootcamp-schedule" element={<NeetPgSchedulePage />} />
           <Route path="/fair-usage-policy" element={<FairUsagePolicyPage />} />
           <Route path="/reviews" element={<StudentReviewsPage />} />
           <Route path="/faq" element={<FaqsPage />} />
@@ -118,6 +121,7 @@ function App() {
           />
           <Route path="*" element={<Face404 />} />
           <Route path="/testingpage" element={<AuthPage />} />
+          <Route path="/testlead" element={<LeadFormPage />} />
         </Routes>
 
         <Footer />
