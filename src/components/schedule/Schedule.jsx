@@ -5,6 +5,15 @@ const scheduleData = [
   {
     dates: (
       <>
+        3<sup>rd</sup> April
+      </>
+    ),
+    subject: "Grand Test 1",
+    highlight: true,
+  },
+  {
+    dates: (
+      <>
         4<sup>th</sup>-6<sup>th</sup> April
       </>
     ),
@@ -138,15 +147,6 @@ const scheduleData = [
   {
     dates: (
       <>
-        11<sup>th</sup> May
-      </>
-    ),
-    subject: "Mini Test 4",
-    highlight: true,
-  },
-  {
-    dates: (
-      <>
         13<sup>th</sup> May
       </>
     ),
@@ -185,9 +185,9 @@ const Schedule = () => {
           </tbody>
         </table>
 
-        <div className="mock-test">
+        {/* <div className="mock-test">
           Grand Test 1 will be available in the app from 2<sup>nd</sup> April
-        </div>
+        </div> */}
       </div>
     </div>
   );
