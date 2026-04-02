@@ -58,7 +58,7 @@ const scheduleData = [
         15<sup>th</sup> April
       </>
     ),
-    subject: "Grand Test 1",
+    subject: "Grand Test 2",
     highlight: true,
   },
   {
@@ -108,7 +108,7 @@ const scheduleData = [
         29<sup>th</sup> April
       </>
     ),
-    subject: "Grand Test 2",
+    subject: "Grand Test 3",
     highlight: true,
   },
   {
