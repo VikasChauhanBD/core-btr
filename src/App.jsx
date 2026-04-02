@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import "./App.css";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { BrowserRouter, Routes, Route, useLocation } from "react-router-dom";
 import IntroVideo from "./components/introVideo/IntroVideo";
 import Navbar from "./components/navbar/Navbar";
 import HomePage from "./pages/HomePage";
@@ -29,6 +29,11 @@ import SchedulePage from "./pages/SchedulePage";
 import LeadFormPage from "./pages/LeadFormPage";
 import NeetPgSchedulePage from "./pages/NeetPgSchedulePage";
 import InterestCapsule from "./components/interestCapsule/InterestCapsule";
+
+function ConditionalInterestCapsule() {
+  const location = useLocation();
+  return location.pathname !== "/interested" ? <InterestCapsule /> : null;
+}
 
 function App() {
   const [showIntro, setShowIntro] = useState(false);
@@ -59,10 +64,10 @@ function App() {
           if (!hasSeenVideo) {
             setShowIntro(true);
           } else {
-            setIntroComplete(true); // ADD THIS — skip intro case
+            setIntroComplete(true);
           }
         } else {
-          setIntroComplete(true); // ADD THIS — other tab case
+          setIntroComplete(true);
         }
       }, 100);
 
@@ -93,7 +98,7 @@ function App() {
       <BrowserRouter>
         <Navbar />
         <ScrollToTop />
-        <InterestCapsule />
+        <ConditionalInterestCapsule />
         <Routes>
           <Route
             path="/"
@@ -125,7 +130,6 @@ function App() {
           <Route path="*" element={<Face404 />} />
           <Route path="/testingpage" element={<AuthPage />} />
         </Routes>
-
         <Footer />
       </BrowserRouter>
     </>
