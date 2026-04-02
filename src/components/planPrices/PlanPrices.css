@@ -213,12 +213,6 @@
   text-align: end !important;
 }
 
-.plan-40 {
-  font-size: 12px !important;
-  font-weight: 600;
-  margin-top: 6px;
-}
-
 .plan-launch-bookset {
   font-size: 16px;
   font-weight: 600;
@@ -381,5 +375,9 @@
 
   .plan-prices-book {
     width: 100%;
+  }
+
+  .plan-launch-price {
+    text-align: end;
   }
 }

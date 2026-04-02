@@ -13,7 +13,7 @@ const plans = [
     books: "Rs. 2,760",
     badge: null,
     order: 3,
-    cta: "https://portal.corebtr.com/subscription/packages?redirect_to_app=refresh",
+    cta: "https://portal.corebtr.com/login",
   },
   {
     tier: "PRO ANNUAL",
@@ -25,7 +25,7 @@ const plans = [
     badge: "BEST VALUE",
     featured: true,
     order: 1,
-    cta: "https://portal.corebtr.com/subscription/packages?redirect_to_app=refresh",
+    cta: "https://portal.corebtr.com/login",
   },
   {
     tier: "GROWTH",
@@ -36,7 +36,7 @@ const plans = [
     books: "Rs. 2,760",
     badge: "POPULAR",
     order: 2,
-    cta: "https://portal.corebtr.com/subscription/packages?redirect_to_app=refresh",
+    cta: "https://portal.corebtr.com/login",
   },
 ];
 

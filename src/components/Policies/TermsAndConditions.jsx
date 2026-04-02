@@ -213,13 +213,12 @@ function TermsAndConditions() {
       <h2>14. Contact</h2>
       <p>
         SABRSHUKR COCARE PRIVATE LIMITED <br />
-        Email:<a href="mailto:tech@corebtr.com"> tech@corebtr.com</a> |
-        <a href="mailto:admin@corebtr.com"> admin@corebtr.com</a>
+        Email: <a href="mailto:support@corebtr.com">support@corebtr.com</a>
         <br />
-        Phone: +91-9911469399
+        Phone: <a href="tel:7428581909">7428581909</a> (Only For Calling)
         <br />
-        Address: INSTITUTIONAL PLOT NO. 6, Knowledge Park - 1, Greater Noida,
-        Gautambuddha Nagar, Uttar Pradesh 201310
+        Address: Vidya Jeevan, Institutional Plot No. 6, Knowledge Park - 1,
+        Greater Noida, Gautam Buddha Nagar, Uttar Pradesh 201310
         <br />
         CIN: U86201DL2025PTC446602
       </p>
