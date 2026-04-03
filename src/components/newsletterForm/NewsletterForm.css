@@ -1,0 +1,19 @@
+.newsletter-form-container {
+  padding: 4rem 1rem;
+}
+
+.newsletter-form-container iframe {
+  display: block;
+  width: 100%;
+  max-width: 600px;
+  height: 600px;
+  margin: 0 auto;
+}
+
+/* --------------------------- Responsive --------------------- */
+
+@media (max-width: 568px) {
+  .newsletter-form-container iframe {
+    height: 650px;
+  }
+}

@@ -106,6 +106,9 @@ function Footer() {
             <li>
               <NavLink to="/faq">FAQ's</NavLink>
             </li>
+            <li>
+              <NavLink to="/newsletter-form">Newsletter</NavLink>
+            </li>
           </ul>
         </div>
       </div>
