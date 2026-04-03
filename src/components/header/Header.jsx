@@ -1,37 +1,3 @@
-// import React from "react";
-// import "./Header.css";
-// import AppStore from "../../assets/images/app-store-icon.png";
-// import PlayStore from "../../assets/images/play-store-icon.png";
-// import HeroHeader from "./HeroHeader";
-
-// function Header() {
-//   return (
-
-//     <div className="header-container animate">
-
-//       <h4>
-//         <span>core</span>BTR – Believe. Trust. Revise
-//       </h4>
-//       <h1>
-//         The Ultimate Revision App for <br />
-//         NEET PG | INI-CET | FMGE
-//       </h1>
-//       <p>From Revision to Revolution</p>
-//       <div className="header-store">
-//         <img src={AppStore} alt="App Store icon" />
-//         <img src={PlayStore} alt="Play Store icon" />
-//       </div>
-//       <div className="header-image">
-//         <img
-//           src="https://cdn.dribbble.com/userupload/47131956/file/a46228b741eadc654b1cd0323eb48723.png"
-//           alt="App mock-ups"
-//         />
-//       </div>
-//     </div>
-//   );
-// }
-
-// export default Header;
 import React, { useEffect, useState } from "react";
 import "./Header.css";
 import AppStore from "../../assets/images/app.png";
@@ -43,13 +9,14 @@ const PHONE_P1 =
 const PHONE_P2 =
   "https://cdn.dribbble.com/userupload/47148505/file/a7a8840b96f525cfebb3ccab6716a225.png";
 
-export default function Header() {
+export default function Header({ introComplete }) {
   const [phase, setPhase] = useState("phase1");
 
   useEffect(() => {
+    if (!introComplete) return;
     const t = setTimeout(() => setPhase("phase2"), 2000);
     return () => clearTimeout(t);
-  }, []);
+  }, [introComplete]);
 
   return (
     <div className={`hdr hdr--${phase}`}>
@@ -92,7 +59,7 @@ export default function Header() {
             NEET PG | INI-CET | FMGE
           </h1>
           <h3 className="hdr__p2-sub">From Revision to Revolution</h3>
-          <h3 className="hdr__p2-sub2">Launching on 2nd April </h3>
+          <h3 className="hdr__p2-sub2">Launching on 2nd April</h3>
           <div className="hdr__p2-store">
             <a
               href="https://apps.apple.com/in/app/corebtr/id6760164235"

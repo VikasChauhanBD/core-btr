@@ -1,5 +1,6 @@
 import React from "react";
 import NewsletterForm from "../components/newsletterForm/NewsletterForm";
+import { Helmet } from "react-helmet";
 
 function NewsletterFormPage() {
   return (
