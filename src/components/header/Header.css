@@ -268,11 +268,11 @@
   
 }
 .hdr__p2-sub2 {
-  font-size: clamp(15px, 2vw, 20px);
+  font-size: clamp(15px, 2vw, 30px);
   font-weight: 600;
   color: #1d204b;
   margin: 0;
-  margin-left: 4%;
+  margin-left: 5%;
   margin-bottom: -5px;
   letter-spacing: 0.04em;
   
@@ -475,6 +475,16 @@
     font-size: 10px;
     padding: 5px 12px;
     gap: 6px;
+  }
+  .hdr__p2-sub2 {
+    font-size: clamp(15px, 2vw, 30px);
+    font-weight: 600;
+    color: #1d204b;
+    margin: 0;
+    margin-left: 0;
+    margin-bottom: -5px;
+    letter-spacing: 0.04em;
+    
   }
 }
 

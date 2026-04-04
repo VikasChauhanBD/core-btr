@@ -59,7 +59,7 @@ export default function Header({ introComplete }) {
             NEET PG | INI-CET | FMGE
           </h1>
           <h3 className="hdr__p2-sub">From Revision to Revolution</h3>
-          <h3 className="hdr__p2-sub2">Launching on 2nd April</h3>
+          <h3 className="hdr__p2-sub2">CoreBTR is LIVE</h3>
           <div className="hdr__p2-store">
             <a
               href="https://apps.apple.com/in/app/corebtr/id6760164235"
