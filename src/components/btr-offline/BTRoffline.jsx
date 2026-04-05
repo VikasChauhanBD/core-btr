@@ -1,5 +1,6 @@
 import React from "react";
 import "./BTRoffline.css";
+import { NavLink } from "react-router-dom";
 
 const highlights = [
   {
@@ -43,6 +44,24 @@ function BTRoffline() {
           <b>what to remember, how to apply, and what not to miss.</b>
         </p>
         <h6>"Kahani tumhaari hai, Ho sake toh kamaal likhna."</h6>
+      </div>
+
+      <div className="btr-offline-event">
+        <h2>BTR INICET Offline at Vidya Jeevan, Greater Noida</h2>
+        <h3>
+          3 Day Offline Course from 3rd to 5th May | INICET Mock Test with
+          Discussion on 6th May
+        </h3>
+        {/* <p>
+          Dates: <span>3rd - 5th May 2026</span>
+        </p>
+        <p>
+          T&D Session: <span>5th May 2026</span>
+        </p>
+        <p>
+          Venue: <span>Vidya Jeevan, Greater Noida</span>
+        </p> */}
+        <NavLink to="#">Registration Starts Soon</NavLink>
       </div>
 
       <div className="btr-offline-highlights-sections">
