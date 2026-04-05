@@ -49,8 +49,8 @@ function BTRoffline() {
       <div className="btr-offline-event">
         <h2>BTR INICET Offline at Vidya Jeevan, Greater Noida</h2>
         <h3>
-          3 Day Offline Course from 3rd to 5th May | INICET Mock Test with
-          Discussion on 6th May
+          3 Day Offline Course from 3<sup>rd</sup> to 5<sup>th</sup> May |
+          INICET Mock Test with Discussion on 6<sup>th</sup> May
         </h3>
         {/* <p>
           Dates: <span>3rd - 5th May 2026</span>
