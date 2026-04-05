@@ -918,6 +918,62 @@ export const reviewsData = [
     Rank: "11k",
     Exam: "NEET PG 2025",
   },
+  {
+    feedback:
+      "Ma'am, I genuinely want to take a moment to appreciate the extraordinary effort behind the Core BTR app. What you’ve created goes far beyond a typical study platform—it feels like something built with immense vision, precision, and relentless dedication.",
+    name: "Dr. Anonymous",
+    image: AvatarFemale,
+    Rank: "",
+    Exam: "",
+  },
+  {
+    feedback:
+      "Thank you so much for responding and solving this issue ..i really thought that i wouldnt get access to btr for 1 weekto 10 days ...but responding to 1000s of queries each hour and listening patiently and messaging personally in group itself tells that the whole team is dedicated to make studies and this transition easy... Kuddos to the whole team especially @drravi_neurosurg @kunalwaliaa and zainab mam",
+    name: "Dr. Anonymous",
+    image: AvatarFemale,
+    Rank: "",
+    Exam: "",
+  },
+  {
+    feedback:
+      "Ma'am you have set a massive benchmark with ravi sir That integrated system is just mesmerising really crisp concepts and short and everything in it literally everything 🤞🏼♥️ hats off to you n ravi sir and the whole team of core btr🙏🏻 No need to read fa for me now 🙌everything in notes",
+    name: "Dr. Anonymous",
+    image: AvatarFemale,
+    Rank: "",
+    Exam: "",
+  },
+  {
+    feedback:
+      "For an app that has been launched just 3 days back, I think coreBtr is doing great. The payment was smooth; the videos are working fine. If not, then the issues are getting resolved in hours. Trust me the issues are getting resolved overnight. I have had used apps where payment takes 3 days to reflect! This app has not taken anything away! In fact it has blessed us with an opportunity to learn in a better way. This is what some of us truly needed in our preparation at this point.",
+    name: "Dr. Anonymous",
+    image: AvatarFemale,
+    Rank: "",
+    Exam: "",
+  },
+  {
+    feedback:
+      "What you have done for us by making this corebtr app is none less than a miracle for average students like us, now we don’t need to hop to different apps and sources, corebtr is enough. I request everyone to please be patient and maintain calm; ma’am is already working in our favour more than ourselves. Give a little time and this corebtr will do wonders.",
+    name: "Dr. Anonymous",
+    image: AvatarFemale,
+    Rank: "",
+    Exam: "",
+  },
+  {
+    feedback:
+      "Congratulations mam. The app is amazing. Love the pyq section mam. Thank you for making all arrangements without charging us , as most institutes would charge extra for such a upgrade . Thank you so much mam.. 🩷♾️",
+    name: "Dr. Anonymous",
+    image: AvatarFemale,
+    Rank: "",
+    Exam: "",
+  },
+  {
+    feedback:
+      "7. Maam.... Thank you sooo sooo much for everything you do for us.... After heavy work day, strees day... Feels soo relaxing just by seeing you in class❤... Thank you for everything.... App is just awesome Everything at one place.... With soo reasonable prices.... Always stay happy and healthy madam ❤❤",
+    name: "Dr. Anonymous",
+    image: AvatarFemale,
+    Rank: "",
+    Exam: "",
+  },
 
   ////////////////////////////////////////////////////////////////////////////////////////////////
   ///////////////////////////////////////////////////////////////////////////////////////////////
