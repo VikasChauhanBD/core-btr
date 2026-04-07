@@ -47,9 +47,9 @@
 
 .plans-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 20px;
-  width: 80%;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 25px;
+  width: 65%;
   align-items: start;
   margin: 3rem 0;
 }
@@ -303,30 +303,19 @@
     transform 0.25s ease;
 }
 
-.plans-cards {
-  width: 80%;
-  display: flex;
-  justify-content: space-between;
-}
-
-.plans-card {
-  width: 32%;
-}
-
-.plans-card img {
-  width: 100%;
-}
 /* -------------------------- Responsive Style -------------------------- */
 
 @media (max-width: 1440px) {
-  .plans-grid,
-  .plans-cards {
-    width: 100%;
+  .plans-grid {
+    width: 85%;
   }
 }
 
-/* @media (max-width: 1024px) {
-} */
+@media (max-width: 1024px) {
+  .plans-grid {
+    width: 100%;
+  }
+}
 
 @media (max-width: 868px) {
   .plan-prices-heading {
@@ -341,16 +330,6 @@
     width: 80%;
     grid-template-columns: 1fr;
     gap: 30px;
-  }
-
-  .plans-cards {
-    width: 80%;
-    flex-wrap: wrap;
-    gap: 20px;
-  }
-
-  .plans-card {
-    width: 48%;
   }
 
   .plan-card {
