@@ -20,6 +20,11 @@ function HomePage({ introComplete }) {
           name="description"
           content="CoreBTR is designed for fast concept revision with high-yield topics, integrated learning, and exam-oriented strategies to help medical PG aspirants."
         />
+
+        {/* <meta
+          name="viewport"
+          content="width=device-width, initial-scale=1, minimum-scale=1"
+        /> */}
       </Helmet>
 
       <Header introComplete={introComplete} />

@@ -7,7 +7,10 @@
       type="image/svg+xml"
       href="./src/assets/images/coreBTR-logo.svg"
     />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, minimum-scale=1"
+    />
 
     <title>CoreBTR - Concept-Based Rapid Revision for Medical PG Success</title>
 
@@ -43,5 +46,30 @@
   <body>
     <div id="root"></div>
     <script type="module" src="/src/main.jsx"></script>
+
+    <!-- Salesforce Embedded Messaging -->
+    <script type="text/javascript">
+      function initEmbeddedMessaging() {
+        try {
+          embeddedservice_bootstrap.settings.language = "en_US";
+
+          embeddedservice_bootstrap.init(
+            "00DdN00000sQYJx",
+            "CB_Web_Embedded_Chat",
+            "https://corebtr.my.site.com/ESWCBWebEmbeddedChat1775064788307",
+            {
+              scrt2URL: "https://corebtr.my.salesforce-scrt.com",
+            },
+          );
+        } catch (err) {
+          console.error("Error loading Embedded Messaging: ", err);
+        }
+      }
+    </script>
+    <script
+      type="text/javascript"
+      src="https://corebtr.my.site.com/ESWCBWebEmbeddedChat1775064788307/assets/js/bootstrap.min.js"
+      onload="initEmbeddedMessaging()"
+    ></script>
   </body>
 </html>

@@ -4,10 +4,10 @@ import AppStore from "../../assets/images/app.png";
 import PlayStore from "../../assets/images/ps1.png";
 
 const PHONE_P1 =
-  "https://cdn.dribbble.com/userupload/47151821/file/eb0487235a3d27d1c8bb0d38541aa2b6.png";
+  "https://cdn.dribbble.com/userupload/47131956/file/6620d28342d913b5ff632161b6aeed92.png";
 
 const PHONE_P2 =
-  "https://cdn.dribbble.com/userupload/47148505/file/a7a8840b96f525cfebb3ccab6716a225.png";
+  "https://cdn.dribbble.com/userupload/47302315/file/44243ee76a10621c1859f0f2bc231e18.png";
 
 export default function Header({ introComplete }) {
   const [phase, setPhase] = useState("phase1");
