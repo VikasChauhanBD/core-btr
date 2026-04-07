@@ -45,10 +45,10 @@ const LeadForm = () => {
 
             <div className="lead-form-group">
               <label>
-                Phone<span className="lead-form-required">*</span>
+                Mobile<span className="lead-form-required">*</span>
               </label>
               <input
-                name="phone"
+                name="mobile"
                 type="tel"
                 pattern="[0-9]{10}"
                 maxLength="10"
