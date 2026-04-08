@@ -13,7 +13,7 @@ function IntroVideo({ onEnd }) {
         onEnded={onEnd}
       >
         <source
-          src="https://cdn.dribbble.com/userupload/47317390/file/large-567afd63b9e1ddf5898a4b464cde6a98.mp4"
+          src="https://cdn.dribbble.com/userupload/47317390/file/a03d164a0b109ccb719ca1304b882663.mp4"
           type="video/mp4"
         />
       </video>
