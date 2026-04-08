@@ -42,7 +42,9 @@ function HelpCenterPage() {
   }, []);
 
   return (
-    <div>
+    <div
+      style={{ height: "100dvh", alignContent: "center", textAlign: "center" }}
+    >
       <h1>Help Center</h1>
     </div>
   );
