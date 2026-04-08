@@ -30,6 +30,7 @@ import LeadFormPage from "./pages/LeadFormPage";
 import NeetPgSchedulePage from "./pages/NeetPgSchedulePage";
 import InterestCapsule from "./components/interestCapsule/InterestCapsule";
 import NewsletterFormPage from "./pages/NewsletterFormPage";
+import HelpCenterPage from "./pages/HelpCenterPage";
 
 function ConditionalInterestCapsule() {
   const location = useLocation();
@@ -131,6 +132,7 @@ function App() {
           <Route path="/newsletter-form" element={<NewsletterFormPage />} />
           <Route path="*" element={<Face404 />} />
           <Route path="/testingpage" element={<AuthPage />} />
+          <Route path="/help" element={<HelpCenterPage />} />
         </Routes>
         <Footer />
       </BrowserRouter>

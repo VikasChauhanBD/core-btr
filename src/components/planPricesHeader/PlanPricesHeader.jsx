@@ -47,7 +47,7 @@ function PlanPricesHeader() {
             </div>
             <div className="prices-header-who-card2">
               <img
-                src="https://cdn.dribbble.com/userupload/47198292/file/b4eb801598a59af8b94317c0168fa00a.png"
+                src="https://cdn.dribbble.com/userupload/47198292/file/ee40bc9cba655ca4cfb50ec13f4d2d78.png"
                 alt=""
               />
             </div>
