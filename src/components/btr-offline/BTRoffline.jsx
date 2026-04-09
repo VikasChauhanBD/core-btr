@@ -61,7 +61,9 @@ function BTRoffline() {
         <p>
           Venue: <span>Vidya Jeevan, Greater Noida</span>
         </p> */}
-        <NavLink to="#">Registration Starts Soon</NavLink>
+        <NavLink to="#">
+          Registration Starts from Monday 13<sup>th</sup> April 12PM (Afternoon)
+        </NavLink>
       </div>
 
       <div className="btr-offline-highlights-sections">

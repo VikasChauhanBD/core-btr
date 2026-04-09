@@ -31,6 +31,51 @@
   color: #3f3f3f;
 }
 
+.bootcamp-event {
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+.bootcamp-event h4 {
+  font-size: 20px;
+  font-weight: 600;
+  color: #ff2a00;
+}
+
+.bootcamp-event h2 {
+  font-size: 28px;
+  color: #3f3f3f;
+  margin: 4px 0;
+}
+
+.bootcamp-event h3 {
+  font-size: 20px;
+  font-weight: 400;
+  color: #3f3f3f;
+  margin-bottom: 24px;
+}
+
+/* .bootcamp-event p {
+  font-size: 18px;
+  color: #1767be;
+  font-weight: 700;
+  margin-bottom: 4px;
+}
+
+.bootcamp-event span {
+  color: #feb122;
+} */
+
+.bootcamp-event a {
+  text-decoration: none;
+  padding: 8px 16px;
+  background-color: #1767be;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 600;
+  border-radius: 10px;
+}
+
 .bootcamp-sections {
   background: #f5f6ff;
   color: #1a1a2e;
@@ -207,15 +252,15 @@
 }
 
 .bootcamp-section-sub-heading-img {
-  position: absolute;  /* puts text on image */
-  top: 10px;           /* adjust vertical position */
+  position: absolute; /* puts text on image */
+  top: 10px; /* adjust vertical position */
   left: 50%;
   transform: translateX(-50%);
-  
+
   font-size: 28px;
   font-weight: 700;
-  color:  #e4ab01;      /* white text */
-  
+  color: #e4ab01; /* white text */
+
   text-align: center;
   z-index: 2;
 }
@@ -258,7 +303,7 @@
     width: 95%;
   }
   .bootcamp-section-sub-heading-img {
-    font-size: 18px ;
+    font-size: 18px;
   }
   .bootcamp-subtitle-top {
     font-size: 14px !important;
@@ -274,7 +319,7 @@
   .bootcamp-section-sub-heading-img {
     font-size: 12px;
   }
-   .bootcamp-subtitle-top {
+  .bootcamp-subtitle-top {
     font-size: 24px;
   }
 
@@ -367,7 +412,6 @@
   text-transform: uppercase;
   margin-bottom: 8px;
 }
-
 
 .bootcamp-title {
   font-size: 38px;

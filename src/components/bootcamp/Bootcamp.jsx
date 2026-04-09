@@ -45,6 +45,15 @@ function Bootcamp() {
         </p>
       </div>
 
+      <div className="bootcamp-event">
+        <h4>Attention NEET PG 2026 Aspiratns</h4>
+        <h2>CoreBTR Bootcamp at Vidya Jeevan, Greater Noida</h2>
+        <h3>Starting from 28th May 2026 till NEET PG 2026</h3>
+        <NavLink to="#">
+          Registration Starts from Monday 13<sup>th</sup> April 12PM (Afternoon)
+        </NavLink>
+      </div>
+
       {/* <div className="bootcamp-sections">
         <section className="bootcamp-highlights">
           <div className="bootcamp-eyebrow">
