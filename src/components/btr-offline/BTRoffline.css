@@ -50,7 +50,7 @@
 
 .btr-offline-event {
   text-align: center;
-  margin-bottom: 4rem;
+  margin: 0 1rem 4rem 1rem;
 }
 
 .btr-offline-event h2 {
@@ -297,5 +297,12 @@
 
   .btr-offline-highlight-image img {
     height: 220px;
+  }
+
+  .btr-offline-event a {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
   }
 }

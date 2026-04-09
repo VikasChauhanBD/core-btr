@@ -169,7 +169,14 @@
 
 /* -------------------------- Responsive Style -------------------------- */
 
-@media (max-width: 1400px) {
+@media (max-width: 1440px) {
+  .navbar-container a {
+    font-size: 15px;
+    padding: 8px;
+  }
+}
+
+@media (max-width: 1300px) {
   .web-nav {
     display: none;
   }
@@ -252,7 +259,7 @@
   }
 
   .login-signup-cta {
-    width: 130px;
+    width: 120px;
     margin-left: 10px;
   }
 }
@@ -263,7 +270,7 @@
   }
 
   .mobile-nav {
-    top: 5.5rem;
+    top: 4.5rem;
   }
 }
 
