@@ -1,0 +1,503 @@
+.bh-wrapper {
+  width: 100%;
+  background: #f7f8fc;
+  font-family: "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+  color: #3f3f3f;
+}
+
+/* ---------- Banner ---------- */
+
+.bh-banner {
+  width: 100%;
+}
+
+.bh-banner img {
+  width: 100%;
+}
+
+/* ---------- Breadcrumb ---------- */
+.bh-breadcrumb {
+  background: #ffffff;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.06);
+  padding: 12px 5%;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 13px;
+}
+
+.bh-bc-link {
+  font-size: 16px;
+  color: #1767be;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.bh-bc-link:hover {
+  text-decoration: underline;
+}
+
+.bh-bc-sep {
+  color: #aaaaaa;
+}
+
+.bh-bc-current {
+  color: #1d204b;
+  font-weight: 500;
+}
+
+/* ---------- Filter Bar ---------- */
+.bh-filter-bar {
+  background: #ffffff;
+  padding: 18px 5%;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.06);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.bh-filter-tabs {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.bh-filter-tab {
+  padding: 7px 16px;
+  border-radius: 20px;
+  font-size: 13px;
+  font-weight: 400;
+  cursor: pointer;
+  border: 1px solid rgba(0, 0, 0, 0.12);
+  background: #ffffff;
+  color: #3f3f3f;
+  transition: all 0.2s;
+}
+
+.bh-filter-tab.active {
+  background: #1d204b;
+  color: #ffffff;
+  border-color: #1d204b;
+}
+
+.bh-filter-tab:hover:not(.active) {
+  border-color: #1767be;
+  color: #1767be;
+}
+
+/* ---------- Main Content ---------- */
+.bh-main {
+  width: 80%;
+  margin: 0 auto;
+  padding: 4rem 0;
+}
+
+/* Section Header */
+.bh-section-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.bh-section-label {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.bh-section-accent {
+  width: 4px;
+  height: 22px;
+  background: #feb122;
+  border-radius: 2px;
+}
+
+.bh-section-title {
+  font-size: 20px;
+  font-weight: 600;
+  color: #1d204b;
+}
+
+.bh-section-count {
+  font-size: 14px;
+  color: #3f3f3f;
+}
+
+/* ---------- Blog Cards Grid ---------- */
+.bh-blogs-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  margin-bottom: 32px;
+}
+
+.bh-blog-card {
+  background: #ffffff;
+  border: 1px solid rgba(0, 0, 0, 0.07);
+  border-radius: 12px;
+  overflow: hidden;
+  text-decoration: none;
+  color: inherit;
+  display: flex;
+  flex-direction: column;
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.bh-blog-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 24px rgba(29, 32, 75, 0.1);
+}
+
+.bh-blog-card-img {
+  overflow: hidden;
+}
+
+.bh-blog-card-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.bh-blog-card:hover .bh-blog-card-img img {
+  transform: scale(1.04);
+}
+
+.bh-blog-card .bh-card-body {
+  padding: 14px 16px 16px;
+}
+
+.bh-card-body {
+  display: flex;
+  flex-direction: column;
+}
+
+.bh-card-tag {
+  font-size: 15px;
+  font-weight: 500;
+  padding: 3px 10px;
+  border-radius: 20px;
+  margin-bottom: 10px;
+  width: fit-content;
+}
+
+.bh-tag-navy {
+  background: #e8eaf6;
+  color: #1d204b;
+}
+
+.bh-tag-blue {
+  background: #e8f0fb;
+  color: #1767be;
+}
+
+.bh-tag-red {
+  background: #fde8e8;
+  color: #b91c1c;
+}
+
+.bh-tag-purple {
+  background: #ede9fe;
+  color: #5b21b6;
+}
+
+.bh-tag-amber {
+  background: #fff3d6;
+  color: #b8780e;
+}
+
+.bh-tag-green {
+  background: #e8f5ed;
+  color: #1a7a3c;
+}
+
+.bh-tag-teal {
+  background: #e1f5ee;
+  color: #0f6e56;
+}
+
+.bh-blog-card-title {
+  font-size: 18px;
+  font-weight: 600;
+  color: #1d204b;
+  line-height: 1.4;
+  margin-bottom: 6px;
+}
+
+.bh-blog-card-excerpt {
+  font-size: 15px;
+  color: #3f3f3f;
+  line-height: 1.6;
+  margin-bottom: 12px;
+  flex: 1;
+}
+
+.bh-card-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: auto;
+}
+
+.bh-card-meta {
+  font-size: 14px;
+  color: #3f3f3f;
+  display: flex;
+  gap: 12px;
+}
+
+.bh-card-read-more {
+  font-size: 14px;
+  color: #1767be;
+  font-weight: 500;
+}
+
+.bh-no-results {
+  font-size: 18px;
+  text-align: center;
+  padding: 60px 10px;
+  color: #3f3f3f;
+}
+
+/* ---------- Per-category filter tab colors ---------- */
+
+/* All Topics — navy (default brand) */
+.bh-filter-tab.tab-all {
+  color: #1d204b;
+  border-color: #1d204b;
+}
+.bh-filter-tab.tab-all.active,
+.bh-filter-tab.tab-all:hover:not(.active) {
+  background: #1d204b;
+  color: #ffffff;
+  border-color: #1d204b;
+}
+
+/* Medicine — blue */
+.bh-filter-tab.tab-medicine {
+  color: #1767be;
+  border-color: #1767be;
+}
+.bh-filter-tab.tab-medicine.active {
+  background: #1767be;
+  color: #ffffff;
+  border-color: #1767be;
+}
+.bh-filter-tab.tab-medicine:hover:not(.active) {
+  background: #e8f0fb;
+  color: #1767be;
+  border-color: #1767be;
+}
+
+/* Surgery — red */
+.bh-filter-tab.tab-surgery {
+  color: #b91c1c;
+  border-color: #b91c1c;
+}
+.bh-filter-tab.tab-surgery.active {
+  background: #b91c1c;
+  color: #ffffff;
+  border-color: #b91c1c;
+}
+.bh-filter-tab.tab-surgery:hover:not(.active) {
+  background: #fde8e8;
+  color: #b91c1c;
+  border-color: #b91c1c;
+}
+
+/* Pharmacology — purple */
+.bh-filter-tab.tab-pharmacology {
+  color: #5b21b6;
+  border-color: #5b21b6;
+}
+.bh-filter-tab.tab-pharmacology.active {
+  background: #5b21b6;
+  color: #ffffff;
+  border-color: #5b21b6;
+}
+.bh-filter-tab.tab-pharmacology:hover:not(.active) {
+  background: #ede9fe;
+  color: #5b21b6;
+  border-color: #5b21b6;
+}
+
+/* Pathology — amber */
+.bh-filter-tab.tab-pathology {
+  color: #b8780e;
+  border-color: #b8780e;
+}
+.bh-filter-tab.tab-pathology.active {
+  background: #b8780e;
+  color: #ffffff;
+  border-color: #b8780e;
+}
+.bh-filter-tab.tab-pathology:hover:not(.active) {
+  background: #fff3d6;
+  color: #b8780e;
+  border-color: #b8780e;
+}
+
+/* Biochemistry — green */
+.bh-filter-tab.tab-biochemistry {
+  color: #1a7a3c;
+  border-color: #1a7a3c;
+}
+.bh-filter-tab.tab-biochemistry.active {
+  background: #1a7a3c;
+  color: #ffffff;
+  border-color: #1a7a3c;
+}
+.bh-filter-tab.tab-biochemistry:hover:not(.active) {
+  background: #e8f5ed;
+  color: #1a7a3c;
+  border-color: #1a7a3c;
+}
+
+/* Exam Strategy — teal */
+.bh-filter-tab.tab-examstrategy {
+  color: #0f6e56;
+  border-color: #0f6e56;
+}
+.bh-filter-tab.tab-examstrategy.active {
+  background: #0f6e56;
+  color: #ffffff;
+  border-color: #0f6e56;
+}
+.bh-filter-tab.tab-examstrategy:hover:not(.active) {
+  background: #e1f5ee;
+  color: #0f6e56;
+  border-color: #0f6e56;
+}
+
+/* ---------- Pagination ---------- */
+.bh-pagination {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 12px;
+  flex-wrap: wrap;
+}
+
+.bh-page-numbers {
+  display: flex;
+  gap: 6px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.bh-page-btn {
+  padding: 8px 16px;
+  border-radius: 8px;
+  font-size: 13px;
+  font-weight: 500;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  background: #ffffff;
+  color: #3f3f3f;
+  cursor: pointer;
+  transition: all 0.2s;
+  min-width: 40px;
+}
+
+.bh-page-btn.active {
+  background: #1d204b;
+  color: #ffffff;
+  border-color: #1d204b;
+}
+
+.bh-page-btn:hover:not(.active) {
+  border-color: #1767be;
+  color: #1767be;
+}
+
+.bh-page-nav {
+  padding: 8px 18px;
+  border-radius: 8px;
+  font-size: 13px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  background: #ffffff;
+  color: #1767be;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.bh-page-nav:hover:not(:disabled) {
+  background: #f0f4fb;
+}
+
+.bh-page-nav:disabled {
+  color: #cccccc;
+  cursor: not-allowed;
+}
+
+/* ---------- Newsletter Strip ---------- */
+.bh-newsletter-strip {
+  background: #1d204b;
+  padding: 36px 5%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  flex-wrap: wrap;
+}
+
+.bh-newsletter-text h3 {
+  font-size: 20px;
+  font-weight: 600;
+  color: #ffffff;
+  margin-bottom: 6px;
+}
+
+.bh-newsletter-text p {
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.bh-newsletter-btn {
+  text-decoration: none;
+  background: #feb122;
+  color: #1d204b;
+  border: none;
+  padding: 12px 18px;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+.bh-newsletter-btn:hover {
+  background-color: #1767be;
+  color: #ffffff;
+}
+
+/* --------------------------------- RESPONSIVE --------------------------------- */
+
+@media (max-width: 1440px) {
+  .bh-main {
+    width: 90%;
+  }
+}
+
+@media (max-width: 1024px) {
+  .bh-main {
+    width: 95%;
+  }
+}
+
+@media (max-width: 868px) {
+  .bh-blogs-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 568px) {
+  .bh-blogs-grid {
+    grid-template-columns: 1fr;
+  }
+}
