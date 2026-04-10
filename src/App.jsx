@@ -33,6 +33,7 @@ import NewsletterFormPage from "./pages/NewsletterFormPage";
 import HelpCenterPage from "./pages/HelpCenterPage";
 import BlogHome from "./components/blog/BlogHome";
 import BlogPage from "./components/blog/BlogPage";
+import BtrBootcamp from "./components/bootcamp/btrbootcamp/BtrBootcamp";
 
 function ConditionalInterestCapsule() {
   const location = useLocation();
@@ -137,6 +138,7 @@ function App() {
           <Route path="*" element={<Face404 />} />
           <Route path="/testingpage" element={<AuthPage />} />
           <Route path="/help" element={<HelpCenterPage />} />
+          <Route path="/neetpg-bootcamp-schedule" element={<BtrBootcamp />} />
         </Routes>
         <Footer />
       </BrowserRouter>

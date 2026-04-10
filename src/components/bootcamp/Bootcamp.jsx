@@ -6,6 +6,8 @@ import WhyDiff2 from "./WhyDifferent/WhyDiff2";
 import BootcampFeatures from "./BootcampFeatures/BootcampFeatures";
 import BootcampCTA from "./BootcampCTA/BootcampCTA";
 import MentorSection from "./MentorSection/MentorSection";
+import BtrBootcamp from "./btrbootcamp/BtrBootcamp";
+import CoreBtrPrograms from "./btrbootcamp/CoreBtrPrograms";
 
 const highlights = [
   {
@@ -45,14 +47,29 @@ function Bootcamp() {
         </p>
       </div>
 
-      <div className="bootcamp-event">
+      {/* <div className="bootcamp-event">
         <h4>Attention NEET PG 2026 Aspiratns</h4>
         <h2>CoreBTR Bootcamp at Vidya Jeevan, Greater Noida</h2>
         <h3>Starting from 28th May 2026 till NEET PG 2026</h3>
         <NavLink to="#">
           Registration Starts from Monday 13<sup>th</sup> April 12PM (Afternoon)
         </NavLink>
-      </div>
+      </div> */}
+
+ <CoreBtrPrograms />
+  
+    <div className="btr-bootcamp-section-home">
+  <h1 className="btr-bootcamp-section-heading">
+    CoreBTR NEET PG T&D <span>BOOTCAMP SCHEDULE</span>
+  </h1>
+  <a href="/neetpg-bootcamp-schedule" className="corebtr-schedule-btn">
+                            Check Schedule 
+                        </a>
+                         </div>
+  
+
+
+      {/* <BtrBootcamp /> */}
 
       {/* <div className="bootcamp-sections">
         <section className="bootcamp-highlights">
@@ -94,7 +111,7 @@ function Bootcamp() {
         </section> */}
       <div className="bootcamp-sections">
         <section className="bootcamp-highlights">
-          <div className="bootcamp-eyebrow">
+          {/* <div className="bootcamp-eyebrow">
             <span className="bootcamp-eyebrow-line" />
             <span className="bootcamp-eyebrow-text">Overview</span>
           </div>
@@ -110,10 +127,10 @@ function Bootcamp() {
             </b>{" "}
             disciplined preparation, and a completely distraction-free
             environment.
-          </p>
+          </p> */}
 
           {/* POINTERS IN MIDDLE */}
-          <div className="bootcamp-highlight-grid">
+          {/* <div className="bootcamp-highlight-grid">
             {highlights.map((h) => (
               <div className="bootcamp-highlight-card" key={h.title}>
                 <h3>{h.title}</h3>
@@ -127,7 +144,7 @@ function Bootcamp() {
                 )}
               </div>
             ))}
-          </div>
+          </div> */}
 
           {/* TOP IMAGE */}
           <div className="bootcamp-highlight-image bootcamp-highlight-image--top">
