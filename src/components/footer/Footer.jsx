@@ -24,7 +24,7 @@ function Footer() {
               <FaInstagram />
             </NavLink>
             <NavLink
-              to="https://www.youtube.com/@btrbyzainabvora"
+              to="https://www.youtube.com/@corebtrbyzainabvora"
               target="_blank"
               className="social-icon"
               aria-label="YouTube"

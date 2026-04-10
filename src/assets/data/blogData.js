@@ -32,10 +32,10 @@ const blogData = [
 
 <p>How often do we delay studying because:</p>
 
-<li>• The chair isn't comfortable</li>
-<li>• The room isn't perfect</li>
-<li>• The library seat isn't available</li>
-<li>• There's too much noise</li>
+<li>The chair isn't comfortable</li>
+<li>The room isn't perfect</li>
+<li>The library seat isn't available</li>
+<li>There's too much noise</li>
 
 <p>But the truth is - <b>toppers don't wait for perfect conditions.</b></p>
 
@@ -49,15 +49,15 @@ const blogData = [
 
 <p><b>Adjustment</b></p>
 
-<li>• Studying even when conditions are not perfect</li>
-<li>• Managing time smartly</li>
-<li>• Being flexible with surroundings</li>
+<li>Studying even when conditions are not perfect</li>
+<li>Managing time smartly</li>
+<li>Being flexible with surroundings</li>
 
 <p><b>Sacrifice</b></p>
 
-<li>• Letting go of comfort</li>
-<li>• Missing out on entertainment</li>
-<li>• Choosing long-term goals over short-term happiness</li>
+<li>Letting go of comfort</li>
+<li>Missing out on entertainment</li>
+<li>Choosing long-term goals over short-term happiness</li>
 
 <p>He emphasizes that both are important - but they are not the same.</p>
 
@@ -73,10 +73,10 @@ const blogData = [
 
 <p>Not just waking up, but owning those early morning hours.</p>
 
-<li>• No distractions</li>
-<li>• No noise</li>
-<li>• No competition</li>
-<li>• Just you and your goal.</li>
+<li>No distractions</li>
+<li>No noise</li>
+<li>No competition</li>
+<li>Just you and your goal.</li>
 
 <p>That simple habit gave him a head start every single day - something most students ignore.</p>
 
@@ -90,10 +90,10 @@ const blogData = [
 
 <p>It reflects in:</p>
 
-<li>• Doing your own work</li>
-<li>• Managing your routine</li>
-<li>• Respecting time</li>
-<li>• Taking responsibility</li>
+<li>Doing your own work</li>
+<li>Managing your routine</li>
+<li>Respecting time</li>
+<li>Taking responsibility</li>
 
 <p>These small behaviors shape your mindset - and that mindset decides your consistency.</p>
 
@@ -107,14 +107,14 @@ const blogData = [
 
 <p>They keep thinking:</p>
 
-<li>• Where should I sit?</li>
-<li>• Which notes should I use?</li>
-<li>• Which batch is better?</li>
+<li>Where should I sit?</li>
+<li>Which notes should I use?</li>
+<li>Which batch is better?</li>
 
 <p>But toppers think differently:</p>
 
-<li>• What do I want?</li>
-<li>• Where am I going?</li>
+<li>What do I want?</li>
+<li>Where am I going?</li>
 
 <p>Dr. Apurv Mehra beautifully compares it to a Google Maps destination.</p>
 
@@ -128,9 +128,9 @@ const blogData = [
 
 <p>But they often lose consistency because of:</p>
 
-<li>• Small distractions</li>
-<li>• Minor discomforts</li>
-<li>• Overthinking</li>
+<li>Small distractions</li>
+<li>Minor discomforts</li>
+<li>Overthinking</li>
 
 <p><b>"Don't lose what you've built because of small things."</b></p>
 
@@ -144,9 +144,9 @@ const blogData = [
 
 <p>He reminds us that success doesn't come from one big decision. It comes from hundreds of small, almost invisible choices you make every day.</p>
 
-<li>• Choosing to study even when things aren't perfect</li>
-<li>• Choosing discipline over comfort</li>
-<li>• Choosing your goal over distractions</li>
+<li>Choosing to study even when things aren't perfect</li>
+<li>Choosing discipline over comfort</li>
+<li>Choosing your goal over distractions</li>
 
 <p>If you can master these small adjustments, you won't just prepare better - you'll move closer, step by step, to that dream medical seat.</p>
 
@@ -184,10 +184,10 @@ const blogData = [
 
 <p>Your mentor doesn't have to be some famous professor or celebrity teacher. Could be:</p>
 
-<li>• A parent who checks in</li>
-<li>• A teacher who gets you</li>
-<li>• A friend who won't let you quit</li>
-<li>• Even a partner who keeps you honest</li>
+<li>A parent who checks in</li>
+<li>A teacher who gets you</li>
+<li>A friend who won't let you quit</li>
+<li>Even a partner who keeps you honest</li>
 
 <p>What matters is having someone who calls you out when you're slipping, gives you real feedback (not the nice kind), and actually cares whether you succeed.</p>
 
@@ -237,9 +237,9 @@ const blogData = [
 
 <p>You can't just passively absorb lectures and hope it sticks. You need to:</p>
 
-<li>• Ask questions that bug your teachers</li>
-<li>• Challenge yourself beyond the syllabus</li>
-<li>• Push limits instead of staying comfortable</li>
+<li>Ask questions that bug your teachers</li>
+<li>Challenge yourself beyond the syllabus</li>
+<li>Push limits instead of staying comfortable</li>
 
 <p>A student studying completely alone either knows everything or knows nothing. There's no middle ground. And if you're not asking questions, which one do you think you are?</p>
 
@@ -253,9 +253,9 @@ const blogData = [
 
 <p>What tips it at the last moment? Usually comes down to:</p>
 
-<li>• <b>Commitment</b> - Did you keep the promise you made to yourself?</li>
-<li>• <b>Clarity</b> - Did you actually know what you wanted?</li>
-<li>• <b>Courage</b> - Did you let fear or pressure knock you off course?</li>
+<li><b>Commitment</b> - Did you keep the promise you made to yourself?</li>
+<li><b>Clarity</b> - Did you actually know what you wanted?</li>
+<li><b>Courage</b> - Did you let fear or pressure knock you off course?</li>
 
 <p>And that one person who refused to let you quit when it got hard.</p>
 
@@ -267,8 +267,8 @@ const blogData = [
 
 <p>But you absolutely need:</p>
 
-<li>• One promise to yourself that you'll stick to</li>
-<li>• One person who keeps you honest</li>
+<li>One promise to yourself that you'll stick to</li>
+<li>One person who keeps you honest</li>
 
 <p>Without those two things, all the intelligence and resources in the world won't save you.</p>
 
@@ -276,11 +276,11 @@ const blogData = [
 
 <p>Medical education success isn't about being the smartest person in the room. It's about:</p>
 
-<li>• Finding that one person who won't let you fail</li>
-<li>• Making one solid promise to yourself and keeping it</li>
-<li>• Putting in both quantity and quality (not just one)</li>
-<li>• Getting back up every time you fall</li>
-<li>• Staying curious and engaged instead of passive</li>
+<li>Finding that one person who won't let you fail</li>
+<li>Making one solid promise to yourself and keeping it</li>
+<li>Putting in both quantity and quality (not just one)</li>
+<li>Getting back up every time you fall</li>
+<li>Staying curious and engaged instead of passive</li>
 
 <p>With the right person in your corner and real commitment from you, every obstacle becomes manageable. Every challenge turns into something you can actually work through.</p>
 
@@ -346,9 +346,9 @@ const blogData = [
 
 <p>Focus is what helps you sort through all that chaos. It's the filter that lets you decide:</p>
 
-<li>• Which thoughts actually matter</li>
-<li>• What distractions you can safely ignore</li>
-<li>• Where your energy should actually go</li>
+<li>Which thoughts actually matter</li>
+<li>What distractions you can safely ignore</li>
+<li>Where your energy should actually go</li>
 
 <p>Without that filtering system, you just drown in mental noise. Nothing productive gets done.</p>
 
@@ -362,10 +362,10 @@ const blogData = [
 
 <p>Your mind works the same way. You have to train it daily:</p>
 
-<li>• Practice deep work on important tasks</li>
-<li>• Cut out unnecessary distractions</li>
-<li>• Keep coming back to your goals</li>
-<li>• Learn to say no to things that don't serve your purpose</li>
+<li>Practice deep work on important tasks</li>
+<li>Cut out unnecessary distractions</li>
+<li>Keep coming back to your goals</li>
+<li>Learn to say no to things that don't serve your purpose</li>
 
 <p>Over time, your mental stamina improves. You stop reacting to every little thing and start acting with intention.</p>
 
@@ -379,10 +379,10 @@ const blogData = [
 
 <p>Let's say you want to become an orthopedic surgeon. That means your daily actions need to line up with that vision:</p>
 
-<li>• Studying surgical techniques</li>
-<li>• Watching live surgeries</li>
-<li>• Learning from experienced mentors</li>
-<li>• Keeping up with new technologies</li>
+<li>Studying surgical techniques</li>
+<li>Watching live surgeries</li>
+<li>Learning from experienced mentors</li>
+<li>Keeping up with new technologies</li>
 
 <p>You can't just wake up one day and expect to be excellent at something without putting in years of deliberate work. Excellence builds up over time.</p>
 
@@ -392,11 +392,11 @@ const blogData = [
 
 <p>Distractions come from everywhere:</p>
 
-<li>• Social obligations</li>
-<li>• Money worries</li>
-<li>• Family drama</li>
-<li>• Toxic environments</li>
-<li>• Your own spiraling thoughts</li>
+<li>Social obligations</li>
+<li>Money worries</li>
+<li>Family drama</li>
+<li>Toxic environments</li>
+<li>Your own spiraling thoughts</li>
 
 <p>Some distractions you can't avoid - life happens. But focus means you keep finding your way back to your path, no matter what.</p>
 
@@ -404,15 +404,15 @@ const blogData = [
 
 <p><b>External discipline:</b></p>
 
-<li>• Limit how much negativity you let in</li>
-<li>• Surround yourself with people who are growing and moving forward</li>
-<li>• Guard your time like it's precious (because it is)</li>
+<li>Limit how much negativity you let in</li>
+<li>Surround yourself with people who are growing and moving forward</li>
+<li>Guard your time like it's precious (because it is)</li>
 
 <p><b>Internal discipline:</b></p>
 
-<li>• Stop overthinking everything</li>
-<li>• Control how you react emotionally</li>
-<li>• Prevent your thoughts from bouncing around endlessly and draining your energy</li>
+<li>Stop overthinking everything</li>
+<li>Control how you react emotionally</li>
+<li>Prevent your thoughts from bouncing around endlessly and draining your energy</li>
 
 <p>Most people don't fail because they lack talent. They fail because they lose control of what's happening inside their own heads.</p>
 
@@ -436,9 +436,9 @@ const blogData = [
 
 <p>So take a minute and ask yourself:</p>
 
-<li>• What's my actual target?</li>
-<li>• Where am I pointing my spotlight?</li>
-<li>• Am I training my mind, or just letting it wander wherever it wants?</li>
+<li>What's my actual target?</li>
+<li>Where am I pointing my spotlight?</li>
+<li>Am I training my mind, or just letting it wander wherever it wants?</li>
 
 <p>Because here's the truth: your reality won't be determined by random chance. It'll be determined by where you consistently put your focus.</p>
 `,
@@ -470,10 +470,10 @@ const blogData = [
 
 <p>Orthopedic trauma care is constantly progressing, also it is demanding not just theoretical knowledge but also refined surgical judgment, exactness, and adaptability. The <b>CO Trauma Pinnacle Course</b> is basically structured to fill this gap by offering:</p>
 
-<li>• An advanced, hands-on surgical subjection</li>
-<li>• important and typical trauma case discussions</li>
-<li>• Mentorship from India's top orthopedic trauma experts</li>
-<li>• There will be practical decision-making in real-life scenarios</li>
+<li>An advanced, hands-on surgical subjection</li>
+<li>important and typical trauma case discussions</li>
+<li>Mentorship from India's top orthopedic trauma experts</li>
+<li>There will be practical decision-making in real-life scenarios</li>
 
 <p>This program is one of the most ideal surgeons who are ready to move forward to foundational learning and master advanced trauma management.</p>
 
@@ -481,8 +481,8 @@ const blogData = [
 
 <p>Participants can also get the utmost benefit from the <b>Ultimate Combo</b>, which combines:</p>
 
-<li>• CO Trauma Foundation Course</li>
-<li>• CO Trauma Pinnacle Course</li>
+<li>CO Trauma Foundation Course</li>
+<li>CO Trauma Pinnacle Course</li>
 
 <p>This one will be the Super Saver Combo, which is specifically designed for learners who really want a structured continuation, from fundamentals to advanced trauma expertise, under one adhering academic pathway.</p>
 
@@ -490,8 +490,8 @@ const blogData = [
 
 <p>The <:>CO Trauma Pinnacle Course</b> is:</p>
 
-<li>• The course eligibility is <b>Exclusively for Premium Subscribers</b></li>
-<li>• Open only to those who have already <b>attended and completed their CO Trauma Foundation Course</b></li>
+<li>The course eligibility is <b>Exclusively for Premium Subscribers</b></li>
+<li>Open only to those who have already <b>attended and completed their CO Trauma Foundation Course</b></li>
 
 <p>This will make sure about a high-level learning environment where all the participants share a strong foundational understanding.</p>
 
@@ -501,18 +501,18 @@ const blogData = [
 
 <p><b>Registration Fee:</b></p>
 
-<li>• It will be <b>₹20,000</b> for the <b>first 50 seats</b></li>
-<li>• <b>₹25,001</b> after the <b>first 50 seats are filled</b></li>
+<li>It will be <b>₹20,000</b> for the <b>first 50 seats</b></li>
+<li><b>₹25,001</b> after the <b>first 50 seats are filled</b></li>
 
 <p><b>Note:</b> Registrations are <b>open exclusively through the eConceptual App.</b></p>
 
 <h4>What Makes This Course Unique?</h4>
 
-<li>• There will be total three-day intensive training format</li>
-<li>• Also, it has advanced trauma modules and surgical strategies</li>
-<li>• Residents will get high-level peer interaction</li>
-<li>• Uncovering to cutting-edge orthopedic trauma techniques</li>
-<li>• The focused should be on learning for serious trauma practitioners</li>
+<li>There will be total three-day intensive training format</li>
+<li>Also, it has advanced trauma modules and surgical strategies</li>
+<li>Residents will get high-level peer interaction</li>
+<li>Uncovering to cutting-edge orthopedic trauma techniques</li>
+<li>The focused should be on learning for serious trauma practitioners</li>
 
 <p>This is not just another workshop; it's a career-defining experience for orthopedic surgeons who want to stay ahead in trauma care.</p>
 
@@ -546,11 +546,11 @@ const blogData = [
 
 <h4>The Three Pillars of Medicine</h4>
 
-<li>• <b>A Heart That Cares Unconditionally:</b> To think beyond caste, creed, and economic status. To see only a patient who has to be healed.</li>
+<li><b>A Heart That Cares Unconditionally:</b> To think beyond caste, creed, and economic status. To see only a patient who has to be healed.</li>
 
-<li>• <b>A Prayer to Alleviate Pain:</b> Every physician has an unconscious prayer-to minimise suffering, repair malformations, and preserve dignity.</li>
+<li><b>A Prayer to Alleviate Pain:</b> Every physician has an unconscious prayer-to minimise suffering, repair malformations, and preserve dignity.</li>
 
-<li>• <b>Hands That Heal:</b> These two hands can shed light on the worst times of one's life. Hold them firm, secure, and holy.</li>
+<li><b>Hands That Heal:</b> These two hands can shed light on the worst times of one's life. Hold them firm, secure, and holy.</li>
 
 <p>Being a physician is not about coming first in all races. It's about arriving, staying in the race, and doing your best-even when you're last.</p>
 
@@ -670,8 +670,8 @@ const blogData = [
 
 <p>The result day was brutal, not because I failed, but because everyone around me succeeded.</p>
 
-<li>• My roommate got an All India Rank.</li>
-<li>• My closest friends were selected.</li>
+<li>My roommate got an All India Rank.</li>
+<li>My closest friends were selected.</li>
 
 <p>And I was left staring at an old rank on the screen.</p>
 
@@ -717,10 +717,10 @@ const blogData = [
 
 <p>From that day:</p>
 
-<li>• I studied with focus, not panic.</li>
-<li>• I followed one teacher till the end.</li>
-<li>• I stopped comparing my journey with others.</li>
-<li>• I focused only on making today better than yesterday.</li>
+<li>I studied with focus, not panic.</li>
+<li>I followed one teacher till the end.</li>
+<li>I stopped comparing my journey with others.</li>
+<li>I focused only on making today better than yesterday.</li>
 
 <p>Six months later, there was only <b>one seat</b> in the general category.</p>
 
@@ -734,12 +734,12 @@ const blogData = [
 
 <p>This journey taught me lessons far bigger than any rank:</p>
 
-<li>• An experience is when you can laugh at something that once broke you</li>
-<li>• Comparison destroys clarity</li>
-<li>• Doctors should never measure their worth by paychecks or ranks</li>
-<li>• Saving a human life has no price tag</li>
-<li>• Respect for doctors exists everywhere - don't let social media fool you</li>
-<li>• Your brain that thinks only of the patient, and your heart that feels for them, make you priceless</li>
+<li>An experience is when you can laugh at something that once broke you</li>
+<li>Comparison destroys clarity</li>
+<li>Doctors should never measure their worth by paychecks or ranks</li>
+<li>Saving a human life has no price tag</li>
+<li>Respect for doctors exists everywhere - don't let social media fool you</li>
+<li>Your brain that thinks only of the patient, and your heart that feels for them, make you priceless</li>
 
 <h4>You Are a Kohinoor - Don't Forget That</h4>
 
@@ -753,11 +753,11 @@ const blogData = [
 
 <p>If you're reading this and feeling stuck, disappointed, or left behind - remember this:</p>
 
-<li>• Write your goal.</li>
-<li>• Believe in it.</li>
-<li>• Commit to it.</li>
-<li>• Follow the rules of the game.</li>
-<li>• And stay honest with your effort.</li>
+<li>Write your goal.</li>
+<li>Believe in it.</li>
+<li>Commit to it.</li>
+<li>Follow the rules of the game.</li>
+<li>And stay honest with your effort.</li>
 
 <p>Because the journey you truly believe in <b>always finds its destination.</b></p>
 
@@ -786,10 +786,10 @@ const blogData = [
 
 <h4>First: the mindset that wins</h4>
 
-<li>• <b>Decide to fight.</b> Talent helps, but persistence wins. The person who refuses to give up is the one who gets through. Promise yourself: “I will fight.”</li>
-<li>• <b>Value every 15 minutes.</b> Tiny chunks add up. Wasted minutes become lost rank.</li>
-<li>• <b>Remember why you started.</b> Remind yourself daily of your goal - whether it’s a license, a seat, or simply proving you can.</li>
-<li>• <b>Stay calm and humble-quiet,</b> steady effort > loud panic.</li>
+<li><b>Decide to fight.</b> Talent helps, but persistence wins. The person who refuses to give up is the one who gets through. Promise yourself: “I will fight.”</li>
+<li><b>Value every 15 minutes.</b> Tiny chunks add up. Wasted minutes become lost rank.</li>
+<li><b>Remember why you started.</b> Remind yourself daily of your goal - whether it’s a license, a seat, or simply proving you can.</li>
+<li><b>Stay calm and humble-quiet,</b> steady effort > loud panic.</li>
 
 <h4>What really matters in the last 30 days</h4>
 
@@ -809,14 +809,14 @@ const blogData = [
 
 <h4>Weeks 1 & 2 - Build the base & daily MCQ habit</h4>
 
-<li>• <b>Goal:</b> Finish 2 full revisions of your chosen core notes/books for high-yield topics; start daily timed MCQs.</li>
-<li>• <b>Daily routine (6-8 hours study):</b></li>
-<li>• <b>Weekly:</b> Do one full subject-wise mock (2-3 hours) and analyse errors. Note recurring weak topics.</li>
+<li><b>Goal:</b> Finish 2 full revisions of your chosen core notes/books for high-yield topics; start daily timed MCQs.</li>
+<li><b>Daily routine (6-8 hours study):</b></li>
+<li><b>Weekly:</b> Do one full subject-wise mock (2-3 hours) and analyse errors. Note recurring weak topics.</li>
 
 <h4>Week 3 - Consolidate weaknesses & exam-craft</h4>
 
-<li>• <b>Goal:</b> Turn weak topics into “manageable” topics; sharpen MCQ techniques.</li>
-<li>• <b>Daily routine:</b>
+<li><b>Goal:</b> Turn weak topics into “manageable” topics; sharpen MCQ techniques.</li>
+<li><b>Daily routine:</b>
   <ul>
     <li><b>Morning:</b> Weak topic revision + active recall (teach it aloud).</li>
     <li><b>Midday:</b> Timed full-length MCQ test (simulate exam timing).</li>
@@ -824,12 +824,12 @@ const blogData = [
     <li><b>Evening:</b> Rapid revision of what you studied in the morning.</li>
   </ul>
 </li>
-<li>• <b>Focus:</b> Technique - ruling out wrong options, recognizing trap patterns, and time management.</li>
+<li><b>Focus:</b> Technique - ruling out wrong options, recognizing trap patterns, and time management.</li>
 
 <h4>Week 4 (final 7 days) - Memory anchors & exam simulation</h4>
 
-<li>• <b>Goal:</b> Fix high-yield facts and mental map of where things are in your resources.</li>
-<li>• <b>Daily routine:</b>
+<li><b>Goal:</b> Fix high-yield facts and mental map of where things are in your resources.</li>
+<li><b>Daily routine:</b>
   <ul>
     <li><b>Morning:</b> Rapid revision (pick a single booklet/topic to run through).</li>
     <li><b>Midday:</b> One full mock exam (simulate exam conditions).</li>
@@ -837,33 +837,33 @@ const blogData = [
     <li><b>Evening:</b> Light relaxation + short, confident recall (flashcards/one-page cheat sheets).</li>
   </ul>
 </li>
-<li>• Last 48 hours: No cramming. Light review, sleep well, eat properly. Visualize: “I will play.”</li>
+<li>Last 48 hours: No cramming. Light review, sleep well, eat properly. Visualize: “I will play.”</li>
 
 <h4>Concrete exam tactics (the craft)</h4>
 
-<li>• <b>Read the stem carefully.</b> Identify what the question really asks.</li>
-<li>• <b>Read ALL options before choosing.</b> Don’t autoskip.</li>
-<li>• <b>Rule out confidently.</b> Eliminate the obviously wrong first; then choose between the best two.</li>
-<li>• <b>If unsure, move on - then return.</b> Don’t burn time on a single question early on.</li>
-<li>• <b>Accept that you’ll lose some points.</b> Like tennis: you may lose more points overall but still win the match. Prioritize high-value questions.</li>
-<li>• <b>Use time blocks in the paper.</b> Allocate time per section and stick to it.</li>
+<li><b>Read the stem carefully.</b> Identify what the question really asks.</li>
+<li><b>Read ALL options before choosing.</b> Don’t autoskip.</li>
+<li><b>Rule out confidently.</b> Eliminate the obviously wrong first; then choose between the best two.</li>
+<li><b>If unsure, move on - then return.</b> Don’t burn time on a single question early on.</li>
+<li><b>Accept that you’ll lose some points.</b> Like tennis: you may lose more points overall but still win the match. Prioritize high-value questions.</li>
+<li><b>Use time blocks in the paper.</b> Allocate time per section and stick to it.</li>
 
 <h4>Daily micro-promises (build these habits)</h4>
 
-<li>• Study the first hour of your day - your best energy belongs to study.</li>
-<li>• Do at least one timed MCQ block daily.</li>
-<li>• Spend 15 minutes reviewing yesterday’s mistakes - do this every day.</li>
-<li>• Speak to your two positive people (parents or mentors) - share feelings, not distractions.</li>
-<li>• End each day with a one-line note: “Today I improved on ___.” Small wins matter.</li>
+<li>Study the first hour of your day - your best energy belongs to study.</li>
+<li>Do at least one timed MCQ block daily.</li>
+<li>Spend 15 minutes reviewing yesterday’s mistakes - do this every day.</li>
+<li>Speak to your two positive people (parents or mentors) - share feelings, not distractions.</li>
+<li>End each day with a one-line note: “Today I improved on ___.” Small wins matter.</li>
 
 <h4>Practical checklist (pin this somewhere)</h4>
 
-<li>• Choose 1 core book per subject and stick with it.</li>
-<li>• Daily MCQ practice: 50-150 Qs (timed).</li>
-<li>• Weekly full mock + error analysis.</li>
-<li>• Error log maintained and revised.</li>
-<li>• Sleep 7-8 hours in last week.</li>
-<li>• Pack exam day essentials 2 days before.</li>
+<li>Choose 1 core book per subject and stick with it.</li>
+<li>Daily MCQ practice: 50-150 Qs (timed).</li>
+<li>Weekly full mock + error analysis.</li>
+<li>Error log maintained and revised.</li>
+<li>Sleep 7-8 hours in last week.</li>
+<li>Pack exam day essentials 2 days before.</li>
 
 <h4>Final note</h4>
 
@@ -907,9 +907,9 @@ Long-term studies show that the closer an implant mimics the natural joint, the 
 
 <p>Most high-quality knee implants use:</p>
 
-<li>• Cobalt</li>
-<li>• Chromium</li>
-<li>• Molybdenum</li>
+<li>Cobalt</li>
+<li>Chromium</li>
+<li>Molybdenum</li>
 
 <p>These materials have been tested for decades and offer high durability.</p>
 
@@ -935,13 +935,13 @@ A good implant should offer multiple size options.</br> Why?
 
 Robotic surgery adds several advantages:
 
-<li>• Higher precision</li>
-<li>• Less bone loss</li>
-<li>• Less blood loss</li>
-<li>• Potentially smaller incisions</li>
-<li>• Less post-operative pain</li>
-<li>• Faster recovery</li>
-<li>• Better bone conservation</li>
+<li>Higher precision</li>
+<li>Less bone loss</li>
+<li>Less blood loss</li>
+<li>Potentially smaller incisions</li>
+<li>Less post-operative pain</li>
+<li>Faster recovery</li>
+<li>Better bone conservation</li>
 
 <p>But the most important point is this: <b>Your implant must be robot-compatible.</b></p>
 
@@ -951,9 +951,9 @@ Robotic surgery adds several advantages:
 
 Dr. Apurv Mehra emphasises that any implant used on human beings must have <b>US FDA approval.</b> This ensures:
 
-<li>• Safety</li>
-<li>• Quality</li>
-<li>• Long-term reliability</li>
+<li>Safety</li>
+<li>Quality</li>
+<li>Long-term reliability</li>
 
 <p>Without this approval, an implant should never be used for surgical procedures.</p>
 
@@ -963,10 +963,10 @@ A knee replacement is done for one simple reason: <b>The knee has become an obst
 
 <p>A high-quality implant, combined with advanced technology like robotics, aims to:</p>
 
-<li>• Restore natural movement</li>
-<li>• Reduce pain</li>
-<li>• Provide long-term function</li>
-<li>• Improve overall quality of life</li>
+<li>Restore natural movement</li>
+<li>Reduce pain</li>
+<li>Provide long-term function</li>
+<li>Improve overall quality of life</li>
 
 <p>Technology exists to guide the surgeon precisely, just like using Google Maps instead of asking for directions. When navigation improves, outcomes improve.</p>
 

@@ -111,7 +111,7 @@ function BlogPage() {
     return (
       <div className="bp-not-found">
         <Helmet>
-          <title>Blog Not Found | NEET PG</title>
+          <title>Blog Not Found</title>
         </Helmet>
         <h2>Blog not found</h2>
         <NavLink to="/blogs" className="bp-back-btn">
@@ -124,7 +124,7 @@ function BlogPage() {
   return (
     <>
       <Helmet>
-        <title>{blog.metaTitle} | NEET PG & INICET</title>
+        <title>{blog.metaTitle}</title>
         <meta name="description" content={blog.metaDesc} />
         <meta property="og:title" content={blog.metaTitle} />
         <meta property="og:description" content={blog.metaDesc} />
@@ -139,54 +139,6 @@ function BlogPage() {
       </Helmet>
 
       <div className="bp-wrapper">
-        {/* Top Bar */}
-        <div className="bp-topbar">
-          NEET PG 2025 &nbsp;•&nbsp; INICET &nbsp;•&nbsp; PG Medical Entrance
-          Guidance
-        </div>
-
-        {/* Navbar */}
-        <nav className="bp-nav">
-          <div className="bp-nav-logo" onClick={() => navigate("/")}>
-            <div className="bp-nav-logo-icon">M</div>
-            <div>
-              <div className="bp-nav-logo-name">MedPrep Hub</div>
-              <div className="bp-nav-logo-sub">NEET PG · INICET Coaching</div>
-            </div>
-          </div>
-          <div className="bp-nav-links">
-            <NavLink
-              to="/"
-              end
-              className={({ isActive }) =>
-                isActive ? "bp-nav-link active" : "bp-nav-link"
-              }
-            >
-              Home
-            </NavLink>
-            <NavLink
-              to="/blogs"
-              className={({ isActive }) =>
-                isActive ? "bp-nav-link active" : "bp-nav-link"
-              }
-            >
-              Blogs
-            </NavLink>
-            <NavLink to="/courses" className="bp-nav-link">
-              Courses
-            </NavLink>
-            <NavLink to="/test-series" className="bp-nav-link">
-              Test Series
-            </NavLink>
-            <NavLink to="/about" className="bp-nav-link">
-              About
-            </NavLink>
-          </div>
-          <button className="bp-nav-cta" onClick={() => navigate("/contact")}>
-            Free Demo Class
-          </button>
-        </nav>
-
         {/* Breadcrumb */}
         <div className="bp-breadcrumb">
           <span className="bp-bc-link" onClick={() => navigate("/")}>
@@ -197,30 +149,23 @@ function BlogPage() {
             Blogs
           </span>
           <span className="bp-bc-sep">›</span>
-          <span className="bp-bc-current">
-            {blog.metaTitle.substring(0, 55)}...
-          </span>
-          <button className="bp-bc-back-btn" onClick={() => navigate("/blogs")}>
-            ← Back to Blogs
-          </button>
+          <span className="bp-bc-current">{blog.metaTitle}</span>
         </div>
 
         {/* Article Hero */}
         <div className="bp-hero">
           <div className="bp-hero-text">
-            <div className="bp-hero-tags">
+            {/* <div className="bp-hero-tags">
               <span className="bp-hero-tag bp-tag-blue">
                 {blog.category || "Medicine"}
               </span>
               <span className="bp-hero-tag bp-tag-amber">High Yield</span>
-            </div>
+            </div> */}
             <h1 className="bp-hero-title">{blog.metaTitle}</h1>
             <div className="bp-hero-meta">
-              <span>📅 {blog.blogDate}</span>
+              <p>📅 {blog.blogDate}</p>
               <span className="bp-meta-sep"></span>
-              <span>⏱ {readingTime}</span>
-              <span className="bp-meta-sep"></span>
-              <span>👁 12,400 views</span>
+              <p>⏱ {readingTime}</p>
             </div>
           </div>
           <div className="bp-hero-img-wrap">
@@ -230,9 +175,7 @@ function BlogPage() {
 
         {/* Main Layout */}
         <div className="bp-layout">
-          {/* Article Body */}
           <article className="bp-article">
-            {/* Share bar */}
             <div className="bp-share-bar">
               <span className="bp-share-label">
                 Found this useful? Share it —
@@ -241,8 +184,6 @@ function BlogPage() {
                 <button className="bp-share-btn" onClick={handleShare}>
                   🔗 Copy Link
                 </button>
-                <button className="bp-share-btn">📤 WhatsApp</button>
-                <button className="bp-share-btn">🐦 Twitter</button>
               </div>
             </div>
 
@@ -297,36 +238,6 @@ function BlogPage() {
               </div>
             </div>
 
-            {/* Quick Stats */}
-            <div className="bp-sidebar-widget">
-              <div className="bp-sw-header">
-                <div className="bp-sw-accent"></div>
-                <div className="bp-sw-title">Article Stats</div>
-              </div>
-              <div className="bp-sw-body">
-                <div className="bp-quick-stats">
-                  <div className="bp-qs-item">
-                    <div className="bp-qs-val">{readingTime.split(" ")[0]}</div>
-                    <div className="bp-qs-label">Min read</div>
-                  </div>
-                  <div className="bp-qs-item">
-                    <div className="bp-qs-val">12.4K</div>
-                    <div className="bp-qs-label">Views</div>
-                  </div>
-                  <div className="bp-qs-item">
-                    <div className="bp-qs-val">
-                      {tableOfContents.length || "—"}
-                    </div>
-                    <div className="bp-qs-label">Sections</div>
-                  </div>
-                  <div className="bp-qs-item">
-                    <div className="bp-qs-val">2025</div>
-                    <div className="bp-qs-label">Updated</div>
-                  </div>
-                </div>
-              </div>
-            </div>
-
             {/* CTA Widget */}
             <div className="bp-cta-widget">
               <div className="bp-cta-icon">🎯</div>
@@ -335,12 +246,8 @@ function BlogPage() {
                 Test your understanding with 40+ curated NEET PG questions on
                 this subject.
               </p>
-              <button
-                className="bp-cta-btn"
-                onClick={() => navigate("/test-series")}
-              >
-                Start Practice Test →
-              </button>
+              {/* <button className="bp-cta-btn" onClick={() => navigate("/#")}> */}
+              <button className="bp-cta-btn">Start Practice Test →</button>
             </div>
           </aside>
         </div>
