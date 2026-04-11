@@ -503,7 +503,7 @@
 }
 
 .bp-related-card {
-  flex: 0 0 calc(34% - 12px);
+  flex: 0 0 calc(33% - 12px);
   scroll-snap-align: start;
   background: #ffffff;
   border-radius: 12px;
@@ -521,13 +521,11 @@
 }
 
 .bp-related-card-img {
-  height: 140px;
   overflow: hidden;
 }
 
 .bp-related-card-img img {
   width: 100%;
-  height: 100%;
   object-fit: cover;
   transition: transform 0.3s ease;
 }
@@ -625,9 +623,7 @@
   font-weight: 500;
 }
 
-/* =========================================
-   RESPONSIVE
-   ========================================= */
+/* --------------------------- RESPONSIVE --------------------------- */
 
 @media (max-width: 1440px) {
   .bp-layout {
@@ -697,7 +693,7 @@
   }
 
   .bp-related-card {
-    flex: 0 0 calc(80% - 12px);
+    flex: 0 0 calc(48% - 12px);
   }
 }
 
