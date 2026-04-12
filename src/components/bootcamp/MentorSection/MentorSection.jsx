@@ -81,7 +81,7 @@ export default function MentorSection() {
             You <span className="ms-h1-accent">Steady</span>
           </h1>
           <p className="ms-subhead">
-            Guided by Dr. Zainab Vora along with Dr.Ravi Sharm & Dr.Apurv Mehra, you stay consistent, focused, and steady through every phase.
+            Guided by Dr. Zainab Vora along with Dr.Ravi Sharma & Dr.Apurv Mehra, you stay consistent, focused, and steady through every phase.
           </p>
         </div>
 
