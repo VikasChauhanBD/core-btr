@@ -47,105 +47,19 @@ function Bootcamp() {
         </p>
       </div>
 
-      {/* <div className="bootcamp-event">
-        <h4>Attention NEET PG 2026 Aspiratns</h4>
-        <h2>CoreBTR Bootcamp at Vidya Jeevan, Greater Noida</h2>
-        <h3>Starting from 28th May 2026 till NEET PG 2026</h3>
-        <NavLink to="#">
-          Registration Starts from Monday 13<sup>th</sup> April 12PM (Afternoon)
-        </NavLink>
-      </div> */}
+      <CoreBtrPrograms />
 
- <CoreBtrPrograms />
-  
-    <div className="btr-bootcamp-section-home">
-  <h1 className="btr-bootcamp-section-heading">
-    CoreBTR NEET PG T&D <span>BOOTCAMP SCHEDULE</span>
-  </h1>
-  <a href="/neetpg-bootcamp-schedule" className="corebtr-schedule-btn">
-                            Check Schedule 
-                        </a>
-                         </div>
-  
+      <div className="btr-bootcamp-section-home">
+        <h1 className="btr-bootcamp-section-heading">
+          CoreBTR NEET PG T&D <span>BOOTCAMP SCHEDULE</span>
+        </h1>
+        <a href="/neetpg-bootcamp-schedule" className="corebtr-schedule-btn">
+          Check Schedule
+        </a>
+      </div>
 
-
-      {/* <BtrBootcamp /> */}
-
-      {/* <div className="bootcamp-sections">
-        <section className="bootcamp-highlights">
-          <div className="bootcamp-eyebrow">
-            <span className="bootcamp-eyebrow-line" />
-            <span className="bootcamp-eyebrow-text">Overview</span>
-          </div>
-          <h2 className="bootcamp-section-heading">
-            Program <span>Highlights</span>
-          </h2>
-          <p className="bootcamp-lead">
-            A structured, intensive offline program designed to give NEET PG
-            &amp; INI-CET aspirants the revision, testing, and mentorship they
-            need to crack the exam.
-          </p>
-
-          <div className="bootcamp-highlight-grid">
-            <div className="bootcamp-highlight-image">
-              <img
-                src="https://cdn.dribbble.com/userupload/46394035/file/bd0a89a0a1b12002437146371728adee.webp"
-                alt="coreBTR BootCamp Class 2026"
-              />
-            </div>
-
-            {highlights.map((h) => (
-              <div className="bootcamp-highlight-card" key={h.title}>
-                <h3>{h.title}</h3>
-                <ul className="bootcamp-highlight-list">
-                  {h.points.map((p, i) => (
-                    <li key={i}>{p}</li>
-                  ))}
-                </ul>
-                {h.badge && (
-                  <span className="bootcamp-highlight-badge">{h.badge}</span>
-                )}
-              </div>
-            ))}
-          </div>
-        </section> */}
       <div className="bootcamp-sections">
         <section className="bootcamp-highlights">
-          {/* <div className="bootcamp-eyebrow">
-            <span className="bootcamp-eyebrow-line" />
-            <span className="bootcamp-eyebrow-text">Overview</span>
-          </div>
-          <h2 className="bootcamp-section-heading">
-            Program <span>Highlights</span>
-          </h2>
-          <p className="bootcamp-lead">
-            An intensive, high-impact offline program for serious
-            <b>
-              {" "}
-              NEET PG &amp; INI-CET Aspirants.
-              <br /> Designed for focused learning,
-            </b>{" "}
-            disciplined preparation, and a completely distraction-free
-            environment.
-          </p> */}
-
-          {/* POINTERS IN MIDDLE */}
-          {/* <div className="bootcamp-highlight-grid">
-            {highlights.map((h) => (
-              <div className="bootcamp-highlight-card" key={h.title}>
-                <h3>{h.title}</h3>
-                <ul className="bootcamp-highlight-list">
-                  {h.points.map((p, i) => (
-                    <li key={i}>{p}</li>
-                  ))}
-                </ul>
-                {h.badge && (
-                  <span className="bootcamp-highlight-badge">{h.badge}</span>
-                )}
-              </div>
-            ))}
-          </div> */}
-
           {/* TOP IMAGE */}
           <div className="bootcamp-highlight-image bootcamp-highlight-image--top">
             <img
@@ -183,23 +97,6 @@ function Bootcamp() {
             </p>
           </div>
 
-          {/* POINTERS IN MIDDLE */}
-          {/* <div className="bootcamp-highlight-grid">
-      {highlights.map((h) => (
-        <div className="bootcamp-highlight-card" key={h.title}>
-          <h3>{h.title}</h3>
-          <ul className="bootcamp-highlight-list">
-            {h.points.map((p, i) => (
-              <li key={i}>{p}</li>
-            ))}
-          </ul>
-          {h.badge && (
-            <span className="bootcamp-highlight-badge">{h.badge}</span>
-          )}
-        </div>
-      ))}
-    </div> */}
-
           {/* BOTTOM IMAGE */}
           <div className="bootcamp-highlight-image bootcamp-highlight-image--bottom">
             <img
@@ -225,18 +122,13 @@ function Bootcamp() {
               of solving MCQs
             </p>
 
-            {/* <ul className="bootcamp-points">
-              <li>High-yield focus for NEET PG, INI-CET & FMGE</li>
-              <li>System-wise structured preparation</li>
-              <li>Built for retention, recall & real exam pressure</li>
-            </ul> */}
-
             <p className="bootcamp-tagline">
               So practice becomes consistent,<span>not occasional.</span>
             </p>
           </div>
         </section>
       </div>
+
       <BootcampFeatures />
 
       <WhyDiff2 />

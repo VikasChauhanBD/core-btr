@@ -1,36 +1,9 @@
 import React, { useEffect, useState } from "react";
 import "./BootcampHero.css";
 
-/**
- * IMAGE NOTE:
- * Use a PNG with transparent background.
- * The image is composited over pure black — her outline
- * naturally bleeds into the dark exactly like BeerBiceps.
- *
- * Replace DR_IMAGE_URL with your hosted transparent-bg PNG.
- */
 const DR_IMAGE_URL =
   "https://cdn.dribbble.com/userupload/47126326/file/a48085bc495e7b166b68b527cfcd1c4b.png";
 
-/**
- * ANIMATION SEQUENCE
- * ──────────────────────────────────────────────────────────
- * Phase "intro"  (0s)
- *   · Pure black screen
- *   · Image rises from bottom — only face visible (top 40%)
- *   · "DR. ZAINAB VORA" fades in centre-screen
- *
- * Phase "hold"   (~0.3s → 2.5s)
- *   · Everything holds still
- *
- * Phase "expand" (2.5s)
- *   · Centre name fades OUT
- *   · Image slides UP → full body visible
- *   · Left block slides in from left
- *   · "NEET PG BOOTCAMP" slides in from right/centre
- *   · Tagline + scroll appear
- * ──────────────────────────────────────────────────────────
- */
 export default function BootcampHero() {
   const [phase, setPhase] = useState("intro");
 
@@ -71,12 +44,19 @@ export default function BootcampHero() {
         <span className="bch__r-cta">
           When concepts click <br /> everything changes
         </span>
-        {/* <span className="bch__r-cta2">REGISTRATION STARTS ON <br/> 28TH MAY </span> */}
       </div>
       <div className="bch__right">
-        <span className="bch__r-cta2">
+        {/* <span className="bch__r-cta2">
           REGISTRATION STARTS ON <br /> 13TH APRIL{" "}
+        </span> */}
+
+        <span className="bch__r-cta2">
+          REGISTRATION STARTS FOR <br /> NEET PG BOOTCAMP
         </span>
+
+        {/* <span className="bch__r-cta2">
+          REGISTRATION CLOSED FOR NEET PG BOOTCAMP
+        </span> */}
       </div>
 
       {/* ── LEFT: CoreBTR BOOTCAMP big — expand only ── */}
@@ -111,7 +91,14 @@ export default function BootcampHero() {
         <span className="bch__mob-bottom-cta">
           When concepts click, everything changes
         </span>
-        <span className="bch__mob-cta">REGISTRATION STARTS ON 13TH APRIL </span>
+
+        {/* <span className="bch__mob-cta">REGISTRATION STARTS ON 13TH APRIL </span> */}
+
+        <span className="bch__mob-cta">
+          REGISTRATION STARTS FOR NEET PG BOOTCAMP
+        </span>
+
+        {/* <span className="bch__mob-cta">REGISTRATION CLOSED FOR NEET PG BOOTCAMP</span> */}
       </div>
     </section>
   );
