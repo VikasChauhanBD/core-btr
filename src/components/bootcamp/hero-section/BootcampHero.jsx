@@ -68,12 +68,15 @@ export default function BootcampHero() {
         {/* <span className="bch__r-place">
           at Vidya Jeevan, Greater Noida
         </span> */}
-        <span className="bch__r-cta">When concepts click <br/> everything changes</span>
+        <span className="bch__r-cta">
+          When concepts click <br /> everything changes
+        </span>
         {/* <span className="bch__r-cta2">REGISTRATION STARTS ON <br/> 28TH MAY </span> */}
       </div>
       <div className="bch__right">
-        
-        <span className="bch__r-cta2">REGISTRATION STARTS ON <br/> 28TH MAY </span>
+        <span className="bch__r-cta2">
+          REGISTRATION STARTS ON <br /> 13TH APRIL{" "}
+        </span>
       </div>
 
       {/* ── LEFT: CoreBTR BOOTCAMP big — expand only ── */}
@@ -83,9 +86,7 @@ export default function BootcampHero() {
           <br />
           BOOTCAMP
         </span>
-        <span className="bch__r-place">
-          at Vidya Jeevan, Greater Noida
-        </span>
+        <span className="bch__r-place">at Vidya Jeevan, Greater Noida</span>
       </div>
 
       {/* ── Bottom tagline ── */}
@@ -107,8 +108,10 @@ export default function BootcampHero() {
         <span className="bch__mob-bottom-sub">
           at Vidya Jeevan, Greater Noida
         </span>
-        <span className="bch__mob-bottom-cta">When concepts click, everything changes</span>
-        <span className="bch__mob-cta">REGISTRATION STARTS ON 28TH MAY </span>
+        <span className="bch__mob-bottom-cta">
+          When concepts click, everything changes
+        </span>
+        <span className="bch__mob-cta">REGISTRATION STARTS ON 13TH APRIL </span>
       </div>
     </section>
   );
