@@ -53,16 +53,16 @@ function CoreBtrPrograms() {
             Registration Starts on Monday, 13 April at 12 PM
           </NavLink> */}
 
-          <NavLink
+          {/* <NavLink
             to="https://portal.corebtr.com/login"
             className="corebtr-enroll-btn"
           >
             Register now
-          </NavLink>
-
-          {/* <NavLink to="#" className="corebtr-enroll-btn">
-            Registration Closed
           </NavLink> */}
+
+          <NavLink to="#" className="corebtr-enroll-btn">
+            Registration Closed
+          </NavLink>
         </div>
 
         {/* Program 2 - Left Side */}
@@ -95,16 +95,16 @@ function CoreBtrPrograms() {
             Registration Starts on Monday, 13 April at 12 PM
           </NavLink> */}
 
-          <NavLink
+          {/* <NavLink
             to="https://portal.corebtr.com/login"
             className="corebtr-enroll-btn"
           >
             Register now
-          </NavLink>
-
-          {/* <NavLink to="#" className="corebtr-enroll-btn">
-            Registration Closed
           </NavLink> */}
+
+          <NavLink to="#" className="corebtr-enroll-btn">
+            Registration Closed
+          </NavLink>
         </div>
       </div>
       <div className="corebtr-registration-box">

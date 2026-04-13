@@ -19,7 +19,7 @@ const cities = [
     cta: "Register now",
     // cta: "Registration Closed",
     // url: "#",
-    // url: "https://portal.corebtr.com/login",
+    url: "https://portal.corebtr.com/login",
   },
   {
     name: "Mumbai",

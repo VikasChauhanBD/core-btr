@@ -50,13 +50,13 @@ export default function BootcampHero() {
           REGISTRATION STARTS ON <br /> 13TH APRIL{" "}
         </span> */}
 
-        <span className="bch__r-cta2">
-          REGISTRATION STARTS FOR <br /> NEET PG BOOTCAMP
-        </span>
-
         {/* <span className="bch__r-cta2">
-          REGISTRATION CLOSED FOR NEET PG BOOTCAMP
+          REGISTRATION STARTS FOR <br /> NEET PG BOOTCAMP
         </span> */}
+
+        <span className="bch__r-cta2">
+          REGISTRATION CLOSED FOR <br /> NEET PG BOOTCAMP
+        </span>
       </div>
 
       {/* ── LEFT: CoreBTR BOOTCAMP big — expand only ── */}
@@ -94,11 +94,13 @@ export default function BootcampHero() {
 
         {/* <span className="bch__mob-cta">REGISTRATION STARTS ON 13TH APRIL </span> */}
 
-        <span className="bch__mob-cta">
+        {/* <span className="bch__mob-cta">
           REGISTRATION STARTS FOR NEET PG BOOTCAMP
-        </span>
+        </span> */}
 
-        {/* <span className="bch__mob-cta">REGISTRATION CLOSED FOR NEET PG BOOTCAMP</span> */}
+        <span className="bch__mob-cta">
+          REGISTRATION CLOSED FOR NEET PG BOOTCAMP
+        </span>
       </div>
     </section>
   );
