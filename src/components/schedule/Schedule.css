@@ -1,97 +1,32 @@
-.schedule-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.online-schedule-container {
   padding: 4rem 1rem;
 }
 
-.schedule-card {
-  background: white;
-  padding: 24px;
-  border-radius: 16px;
-  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+.online-schedule-image {
+  width: 50%;
+  margin: 0 auto;
+}
+
+.online-schedule-image img {
   width: 100%;
-  max-width: 700px;
-}
-
-.brand-title {
-  text-align: center;
-  font-size: 38px;
-  line-height: 1.15;
-  color: #1d204b;
-  margin-bottom: 16px;
-}
-
-.brand-highlight {
-  color: #1767be;
-}
-
-.schedule-title {
-  text-align: center;
-  font-size: 22px;
-  font-weight: 600;
-  margin-bottom: 16px;
-  color: #1767be;
-}
-
-.schedule-table {
-  width: 100%;
-  border-collapse: collapse;
-  margin-bottom: 16px;
-}
-
-.schedule-table th {
-  color: #3f3f3f;
-  background-color: #e6e6e6;
-  padding: 10px;
-  border: 1px solid #ccc;
-  text-align: left;
-  font-weight: 600;
-}
-
-.schedule-table td {
-  padding: 10px;
-  border: 1px solid #ccc;
-  font-size: 16px;
-}
-
-.highlight-row {
-  background-color: #1767be;
-  color: white;
-}
-
-.bold-text {
-  font-weight: 700;
-}
-
-.mock-test {
-  text-align: center;
-  background-color: black;
-  color: white;
-  padding: 10px;
   border-radius: 10px;
-  font-weight: 600;
-  font-size: 16px;
 }
-
 /* ---------------------------- Responsive Style ------------------------ */
 @media (max-width: 1440px) {
+  .online-schedule-image {
+    width: 65%;
+  }
 }
 
 @media (max-width: 1024px) {
+  .online-schedule-image {
+    width: 80%;
+  }
 }
 
 @media (max-width: 868px) {
-  .schedule-card {
-    padding: 24px 12px;
-  }
-
-  .brand-title {
-    font-size: 32px;
-  }
-
-  .schedule-title {
-    font-size: 20px;
+  .online-schedule-image {
+    width: 100%;
   }
 }
 
