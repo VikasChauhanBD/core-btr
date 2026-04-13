@@ -16,10 +16,10 @@ const cities = [
     image:
       "https://cdn.dribbble.com/userupload/47138862/file/92bdb222e6fe2257afb9d7f6165f9b11.webp",
     // cta: "Registration Starts Soon",
-    cta: "Register now",
-    // cta: "Registration Closed",
-    // url: "#",
-    url: "https://portal.corebtr.com/login",
+    // cta: "Register now",
+    cta: "Registration Closed",
+    url: "#",
+    // url: "https://portal.corebtr.com/login",
   },
   {
     name: "Mumbai",

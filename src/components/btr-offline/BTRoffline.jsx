@@ -66,9 +66,9 @@ function BTRoffline() {
           Registration Starts from Monday 13<sup>th</sup> April 12PM (Afternoon)
         </NavLink> */}
 
-        <NavLink to="https://portal.corebtr.com/login">Register now</NavLink>
+        {/* <NavLink to="https://portal.corebtr.com/login">Register now</NavLink> */}
 
-        {/* <NavLink to="#">Registration Closed</NavLink> */}
+        <NavLink to="#">Registration Closed</NavLink>
       </div>
 
       <div className="btr-offline-highlights-sections">
