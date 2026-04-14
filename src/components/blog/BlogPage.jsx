@@ -246,8 +246,13 @@ function BlogPage() {
                 Test your understanding with 40+ curated NEET PG questions on
                 this subject.
               </p>
-              {/* <button className="bp-cta-btn" onClick={() => navigate("/#")}> */}
-              <button className="bp-cta-btn">Start Practice Test →</button>
+              <NavLink
+                className="bp-cta-btn"
+                to="https://portal.corebtr.com/tests"
+                target="_blank"
+              >
+                Start Practice Test →
+              </NavLink>
             </div>
           </aside>
         </div>

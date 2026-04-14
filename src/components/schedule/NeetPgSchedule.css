@@ -1,157 +1,64 @@
-.btr-schedule-container {
-  width: 100%;
-  padding: 4rem 0;
-}
-
-.btr-schedule-wrapper {
-  width: 70%;
-  margin: 0 auto;
-}
-
-.btr-schedule-header {
+.neetpg-schedule-container {
+  padding: 4rem 0.5rem;
   text-align: center;
-  margin-bottom: 3rem;
 }
 
-.btr-schedule-title {
+.neetpg-schedule-heading {
   font-size: 38px;
-  font-weight: 700;
   color: #1d204b;
 }
 
-.btr-schedule-description {
-  font-size: 18px;
-  font-weight: 600;
-  color: #3f3f3f;
+.neetpg-schedule-heading span {
+  color: #1767be;
 }
 
-.btr-schedule-list {
+.neetpg-schedule-section {
   display: flex;
-  flex-wrap: wrap;
   justify-content: space-between;
+  width: 80%;
+  margin: 0 auto;
 }
 
-.btr-schedule-day {
+.neetpg-schedule-image {
   width: 49%;
-  color: #ffffff;
-  background-color: #1767be;
-  border-radius: 1rem;
-  padding: 1.5rem;
-  margin-top: 1rem;
-  transition: box-shadow 0.3s ease;
 }
 
-.btr-schedule-day:hover {
-  box-shadow:
-    0 10px 15px -3px rgba(0, 0, 0, 0.1),
-    0 4px 6px -2px rgba(0, 0, 0, 0.05);
+.neetpg-schedule-image img {
+  width: 100%;
+  border-radius: 10px;
 }
 
-.btr-schedule-day-content {
-  display: flex;
-  align-items: center;
-  gap: 1.5rem;
-}
-
-.btr-schedule-day-name {
-  display: flex;
-  align-items: center;
-  gap: 0.75rem;
-  min-width: 160px;
-}
-
-.btr-schedule-day-name .btr-schedule-icon-small {
-  width: 1.25rem;
-  height: 1.25rem;
-}
-
-.btr-schedule-day-text {
-  font-weight: 700;
-  font-size: 1.125rem;
-}
-
-.btr-sessions-grid {
-  flex: 1;
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 1rem;
-}
-
-.btr-session-item {
-  display: flex;
-  align-items: center;
-  flex-wrap: wrap;
-  gap: 0.75rem;
-}
-
-.btr-session-time {
-  display: flex;
-  align-items: center;
-  gap: 0.5rem;
-}
-
-.btr-session-icon-tiny {
-  width: 1rem;
-  height: 1rem;
-}
-
-.btr-session-subject {
-  display: flex;
-  align-items: center;
-  gap: 0.5rem;
-  flex-wrap: wrap;
-}
-
-.btr-session-subject-name {
-  font-weight: 600;
-}
-
-.btr-session-badge {
-  padding: 0.25rem 0.75rem;
-  border-radius: 9999px;
-  font-size: 0.75rem;
-  font-weight: 500;
-}
-
-.btr-session-badge-live {
-  background-color: #ffedd6;
-  color: #9a3412;
-}
-
-.btr-session-badge-interactive {
-  background-color: #ffedd6;
-  color: #9a3412;
-}
-
-/* -------------------------- Responsive Style -------------------------- */
-
+/* ---------------------------- Responsive Style ------------------------ */
 @media (max-width: 1440px) {
-  .btr-schedule-wrapper {
+  .neetpg-schedule-section {
     width: 85%;
   }
 }
 
 @media (max-width: 1024px) {
-  .btr-schedule-wrapper {
-    width: 95%;
+  .neetpg-schedule-section {
+    width: 90%;
   }
 }
 
 @media (max-width: 868px) {
-  .btr-schedule-title {
+  .neetpg-schedule-heading {
     font-size: 32px;
   }
 
-  .btr-schedule-day-content {
-    flex-direction: column;
-    align-items: start;
-    gap: 10px;
-    word-break: break-word;
+  .neetpg-schedule-section {
+    width: 95%;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+
+  .neetpg-schedule-image {
+    width: 100%;
   }
 }
 
 @media (max-width: 568px) {
-  .btr-schedule-day {
+  .neetpg-schedule-section {
     width: 100%;
   }
 }

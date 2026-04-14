@@ -53,9 +53,12 @@ function Bootcamp() {
         <h1 className="btr-bootcamp-section-heading">
           CoreBTR NEET PG T&D <span>BOOTCAMP SCHEDULE</span>
         </h1>
-        <a href="/neetpg-bootcamp-schedule" className="corebtr-schedule-btn">
+        <NavLink
+          to="/neetpg-bootcamp-schedule"
+          className="corebtr-schedule-btn"
+        >
           Check Schedule
-        </a>
+        </NavLink>
       </div>
 
       <div className="bootcamp-sections">

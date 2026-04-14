@@ -25,15 +25,15 @@ import Face404 from "./components/face404/Face404";
 import AuthPage from "./components/authPage/AuthPage";
 import FairUsagePolicyPage from "./pages/FairUsagePolicyPage";
 import AppDownloadPage from "./pages/AppDownloadPage";
-import SchedulePage from "./pages/SchedulePage";
 import LeadFormPage from "./pages/LeadFormPage";
-import NeetPgSchedulePage from "./pages/NeetPgSchedulePage";
+import OnlineClassSchedule from "./components/schedule/OnlineClassSchedule";
+import InicetSchedule from "./components/schedule/InicetSchedule";
+import NeetPgSchedule from "./components/schedule/NeetPgSchedule";
 import InterestCapsule from "./components/interestCapsule/InterestCapsule";
 import NewsletterFormPage from "./pages/NewsletterFormPage";
 import HelpCenterPage from "./pages/HelpCenterPage";
 import BlogHome from "./components/blog/BlogHome";
 import BlogPage from "./components/blog/BlogPage";
-import BtrBootcamp from "./components/bootcamp/btrbootcamp/BtrBootcamp";
 
 function ConditionalInterestCapsule() {
   const location = useLocation();
@@ -115,8 +115,18 @@ function App() {
           <Route path="/workbooks" element={<WorkbookPage />} />
           <Route path="/gallery" element={<GalleryPage />} />
           <Route path="/plan-prices" element={<PlanPricesPage />} />
-          <Route path="/online-classes-schedule" element={<SchedulePage />} />
-          <Route path="/bootcamp-schedule" element={<NeetPgSchedulePage />} />
+          <Route
+            path="/online-classes-schedule"
+            element={<OnlineClassSchedule />}
+          />
+          <Route
+            path="/inicet-bootcamp-schedule"
+            element={<InicetSchedule />}
+          />
+          <Route
+            path="/neetpg-bootcamp-schedule"
+            element={<NeetPgSchedule />}
+          />
           <Route path="/fair-usage-policy" element={<FairUsagePolicyPage />} />
           <Route path="/reviews" element={<StudentReviewsPage />} />
           <Route path="/faq" element={<FaqsPage />} />
@@ -138,7 +148,6 @@ function App() {
           <Route path="*" element={<Face404 />} />
           <Route path="/testingpage" element={<AuthPage />} />
           <Route path="/help" element={<HelpCenterPage />} />
-          <Route path="/neetpg-bootcamp-schedule" element={<BtrBootcamp />} />
         </Routes>
         <Footer />
       </BrowserRouter>

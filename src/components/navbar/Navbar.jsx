@@ -123,7 +123,7 @@ function Navbar() {
           onMouseLeave={() => !showNav && setShowAbout(false)}
         >
           <button className="dropdown-trigger" onClick={handleAboutClick}>
-            <span className="dropdown-text">Schedule</span>
+            <span className="dropdown-text">Schedules</span>
             <IoIosArrowDown
               className={`arrow-icon ${showAbout ? "rotate" : ""}`}
               onClick={handleAboutArrowClick}
@@ -143,12 +143,21 @@ function Navbar() {
               >
                 Online Classes Schedule
               </NavLink>
+
               <NavLink
-                to="/bootcamp-schedule"
+                to="/inicet-bootcamp-schedule"
                 onClick={handleCloseNav}
                 className="dropdown-link"
               >
-                Bootcamp Schedule
+                INICET May Bootcamp Schedule
+              </NavLink>
+
+              <NavLink
+                to="/neetpg-bootcamp-schedule"
+                onClick={handleCloseNav}
+                className="dropdown-link"
+              >
+                NEET PG Bootcamp Schedule
               </NavLink>
             </div>
           )}
@@ -157,12 +166,7 @@ function Navbar() {
         <NavLink to="/fair-usage-policy" onClick={handleCloseNav}>
           Fair Usage Policy
         </NavLink>
-        {/* <NavLink to="/gallery" onClick={handleCloseNav}>
-          Gallery
-        </NavLink>
-        <NavLink to="/faqs" onClick={handleCloseNav}>
-          FAQ's
-        </NavLink> */}
+
         <NavLink
           className="login-signup-cta"
           to="https://portal.corebtr.com/login"

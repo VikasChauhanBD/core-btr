@@ -40,19 +40,11 @@ function Footer() {
             <li>
               <NavLink to="/">Home</NavLink>
             </li>
-            {/* <li>
-              <NavLink to="https://drzainabvora.com/about" target="_blank">
-                About Dr. ZV
-              </NavLink>
-            </li> */}
             <li>
               <NavLink to="/workbooks">Workbooks</NavLink>
             </li>
             <li>
               <NavLink to="/plan-prices">Buy New Plans</NavLink>
-            </li>
-            <li>
-              <NavLink to="/schedule">Schedule</NavLink>
             </li>
             <li>
               <NavLink to="/reviews">Reviews</NavLink>
