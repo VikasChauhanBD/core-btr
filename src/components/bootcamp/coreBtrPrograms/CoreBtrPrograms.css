@@ -1,38 +1,58 @@
 .corebtr-programs-container {
-  max-width: 1400px;
-  margin: 0 auto;
-  padding: 20px 20px;
-}
-
-.corebtr-header {
-  text-align: center;
-  margin-bottom: 50px;
-}
-.corebtr-header span {
-  color: #2196f3;
-  font-weight: 700;
-}
-
-.corebtr-header h1 {
-  font-size: 2.5rem;
+  background: #f5f6ff;
   color: #1a1a2e;
-  margin-bottom: 10px;
-  font-weight: 700;
+  padding: 4rem 1rem;
+  position: relative;
+}
+
+.corebtr-programs-container::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image:
+    linear-gradient(#d6d8f5 1px, transparent 1px),
+    linear-gradient(90deg, #d6d8f5 1px, transparent 1px);
+  background-size: 48px 48px;
+  opacity: 0.3;
+  pointer-events: none;
+}
+
+.corebtr-programs-header {
+  text-align: center;
   position: relative;
   z-index: 1;
 }
 
-.corebtr-header h2 {
-  font-size: 1.5rem;
-  color: #16213e;
-  font-weight: 500;
+.corebtr-programs-header h2 {
+  font-size: 38px;
+  color: #1d204b;
+  margin-bottom: 10px;
+  font-weight: 700;
+}
+
+.corebtr-programs-header span {
+  color: #1767be;
+  font-weight: 700;
+}
+
+.corebtr-programs-header h3 {
+  font-size: 24px;
+  color: #3f3f3f;
+  font-weight: 600;
+}
+
+.corebtr-programs-lead {
+  font-size: 16px;
+  line-height: 1.78;
+  color: #3f3f3f;
 }
 
 .corebtr-programs-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 30px;
-  margin-bottom: 40px;
+  width: 80%;
+  margin: 2rem auto;
 }
 
 .corebtr-program-card {
@@ -58,12 +78,12 @@
 }
 
 .corebtr-program-card.program2 {
-  border-color: #2196f3;
+  border-color: #1767be;
 }
 
 .corebtr-program-title {
   font-size: 1.5rem;
-  color: #1a1a2e;
+  color: #1d204b;
   margin-bottom: 20px;
   padding-bottom: 15px;
   border-bottom: 3px solid;
@@ -76,7 +96,7 @@
 }
 
 .program2 .corebtr-program-title {
-  border-color: #2196f3;
+  border-color: #1767be;
   color: #1565c0;
 }
 
@@ -143,7 +163,7 @@
 
 .corebtr-fees-amount {
   font-size: 1.25rem;
-  color: #1a1a2e;
+  color: #1d204b;
   font-weight: 700;
 }
 
@@ -182,7 +202,7 @@
 }
 
 .program2 .corebtr-enroll-btn {
-  background: linear-gradient(135deg, #2196f3 0%, #1976d2 100%);
+  background: linear-gradient(135deg, #1767be 0%, #1976d2 100%);
 }
 
 .program2 .corebtr-enroll-btn:hover {
@@ -191,7 +211,7 @@
 }
 
 .corebtr-common-info {
-  background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+  background: linear-gradient(135deg, #1d204b 0%, #16213e 100%);
   color: white;
   padding: 40px 30px;
   border-radius: 16px;
@@ -199,100 +219,45 @@
 }
 
 .corebtr-registration-box {
+  width: 80%;
+  margin: 0 auto;
   text-align: center;
-  margin-bottom: 30px;
-  padding: 25px;
-  background: #196aad;
-  border-radius: 12px;
+  padding: 24px 12px;
+  background: #1767be;
+  border-radius: 10px;
   backdrop-filter: blur(10px);
 }
 
 .corebtr-registration-box h3 {
-  font-size: 1.8rem;
-  margin-bottom: 15px;
+  font-size: 28px;
+  margin-bottom: 16px;
   color: #fff;
 }
 
 .corebtr-registration-time {
-  font-size: 1.3rem;
+  font-size: 20px;
   color: #ffd700;
   font-weight: 600;
   margin-bottom: 20px;
 }
 
-.corebtr-reg-cta-btn {
-  display: inline-block;
-  padding: 15px 40px;
-  background: linear-gradient(135deg, #ffd700 0%, #ffed4e 100%);
-  color: #1a1a2e;
-  text-decoration: none;
-  border-radius: 8px;
-  font-weight: 700;
-  font-size: 1.1rem;
-  transition: all 0.3s ease;
-  margin-top: 15px;
-}
-
-.corebtr-reg-cta-btn:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 8px 20px rgba(255, 215, 0, 0.4);
-}
-
-.corebtr-platform-info {
-  text-align: center;
-  margin-bottom: 25px;
-  font-size: 1.1rem;
-}
-
-.corebtr-platform-info a {
-  color: #feb122;
-  text-decoration: none;
-  font-weight: 600;
-}
-
-.corebtr-platform-info a:hover {
-  text-decoration: underline;
-}
-
-.corebtr-terms {
-  list-style: none;
-  padding: 0;
-  margin: 25px 0;
-  text-align: center;
-}
-
-.corebtr-terms li {
-  padding: 8px 0;
-  font-size: 0.95rem;
-  color: #ccc;
-}
-
-.corebtr-helpline {
-  text-align: center;
-  margin-top: 25px;
-  padding-top: 25px;
-  border-top: 1px solid rgba(255, 255, 255, 0.2);
-}
-
-.corebtr-helpline-label {
-  font-size: 1rem;
-  color: #aaa;
-  margin-bottom: 8px;
-}
 .corebtr-registration-box-imp {
-  margin: 2rem 0;
+  width: 80%;
+  margin: 2rem auto;
   border-bottom: 2px solid red;
-  padding-bottom: 1rem;
+  padding: 1rem;
 }
 
 .corebtr-registration-box-imp h3 {
   color: red;
   margin-bottom: 12px;
 }
+
 .corebtr-registration-box-imp li {
   margin-left: 32px;
   margin-bottom: 8px;
 }
+
 .corebtr-helpline-number {
   font-size: 1.5rem;
   color: #feb122;
@@ -300,34 +265,73 @@
   letter-spacing: 1px;
 }
 
-@media (max-width: 968px) {
+.corebtr-programs-schedule {
+  text-align: center;
+  margin-bottom: 2rem;
+  padding: 1rem;
+}
+
+.corebtr-programs-schedule h2 {
+  font-size: 38px;
+  color: #1d204b;
+  margin-bottom: 20px;
+  font-weight: 700;
+}
+
+.corebtr-programs-schedule span {
+  color: #1767be;
+  font-weight: 700;
+}
+
+.corebtr-programs-schedule-btn {
+  display: inline-block;
+  text-align: center;
+  margin: 0 auto;
+  padding: 12px 24px;
+  background-color: #1767be;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 600;
+  border-radius: 10px;
+  text-decoration: none;
+}
+
+/* ---------------------------- Responsive Style ------------------------ */
+@media (max-width: 1440px) {
+  .corebtr-programs-grid,
+  .corebtr-registration-box,
+  .corebtr-registration-box-imp {
+    width: 85%;
+  }
+}
+
+@media (max-width: 1024px) {
+  .corebtr-programs-grid,
+  .corebtr-registration-box,
+  .corebtr-registration-box-imp {
+    width: 95%;
+  }
+}
+
+@media (max-width: 868px) {
+  .corebtr-programs-header h2,
+  .corebtr-programs-schedule h2 {
+    font-size: 32px;
+  }
+
   .corebtr-programs-grid {
     grid-template-columns: 1fr;
   }
 
-  .corebtr-header h1 {
-    font-size: 2rem;
-  }
-
-  .corebtr-header h2 {
-    font-size: 1.2rem;
+  .corebtr-registration-box h3 {
+    font-size: 24px;
   }
 }
 
-@media (max-width: 480px) {
-  .corebtr-programs-container {
-    padding: 40px 15px;
-  }
-
-  .corebtr-program-card {
-    padding: 30px 20px;
-  }
-
-  .corebtr-fees-amount {
-    font-size: 1.5rem;
-  }
-
-  .corebtr-registration-time {
-    font-size: 1.1rem;
+@media (max-width: 568px) {
+  .corebtr-programs-grid,
+  .corebtr-registration-box,
+  .corebtr-registration-box-imp {
+    width: 100%;
   }
 }

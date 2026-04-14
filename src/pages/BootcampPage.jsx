@@ -1,5 +1,12 @@
 import React from "react";
+import BootcampHero from "../components/bootcamp/hero-section/BootcampHero";
 import Bootcamp from "../components/bootcamp/Bootcamp";
+import CoreBtrPrograms from "../components/bootcamp/coreBtrPrograms/CoreBtrPrograms";
+import BootcampHighlights from "../components/bootcamp/bootcampHighlights/BootcampHighlights";
+import BootcampFeatures from "../components/bootcamp/BootcampFeatures/BootcampFeatures";
+import MentorSection from "../components/bootcamp/MentorSection/MentorSection";
+import WhyDiff2 from "../components/bootcamp/WhyDifferent/WhyDiff2";
+import BootcampCTA from "../components/bootcamp/BootcampCTA/BootcampCTA";
 import { Helmet } from "react-helmet";
 
 function BootcampPage() {
@@ -14,7 +21,14 @@ function BootcampPage() {
         />
       </Helmet>
 
+      <BootcampHero />
       <Bootcamp />
+      <CoreBtrPrograms />
+      <BootcampHighlights />
+      <BootcampFeatures />
+      <MentorSection />
+      <WhyDiff2 />
+      <BootcampCTA />
     </div>
   );
 }

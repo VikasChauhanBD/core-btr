@@ -1,10 +1,3 @@
-/* ================================================
-   WhyDiff2.css  |  CoreBTR Bootcamp — Why Different
-   No images • No emoji • Card-based • Responsive
-================================================ */
-
-@import url("https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700;800&family=Manrope:wght@400;500;600&display=swap");
-
 /* ---------- Tokens ---------- */
 :root {
   --wd2-blue: #1a6dff;
@@ -23,7 +16,6 @@
   background: #f5f6ff;
   color: #1a1a2e;
   padding: 4rem 1rem;
-  font-family: "Manrope", sans-serif;
   position: relative;
 }
 
@@ -234,7 +226,7 @@
 
 .wd2-banner-quote {
   font-size: 16px;
-  color:  #e4ab01;
+  color: #e4ab01;
   line-height: 1.65;
   margin: 0;
   border-left: 3px solid #feb122;
