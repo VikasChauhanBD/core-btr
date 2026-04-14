@@ -155,12 +155,6 @@ function BlogPage() {
         {/* Article Hero */}
         <div className="bp-hero">
           <div className="bp-hero-text">
-            {/* <div className="bp-hero-tags">
-              <span className="bp-hero-tag bp-tag-blue">
-                {blog.category || "Medicine"}
-              </span>
-              <span className="bp-hero-tag bp-tag-amber">High Yield</span>
-            </div> */}
             <h1 className="bp-hero-title">{blog.metaTitle}</h1>
             <div className="bp-hero-meta">
               <p>📅 {blog.blogDate}</p>
@@ -178,7 +172,7 @@ function BlogPage() {
           <article className="bp-article">
             <div className="bp-share-bar">
               <span className="bp-share-label">
-                Found this useful? Share it —
+                Found this useful? Share it -
               </span>
               <div className="bp-share-btns">
                 <button className="bp-share-btn" onClick={handleShare}>
@@ -258,7 +252,7 @@ function BlogPage() {
         </div>
 
         {/* Recommended / Related Section */}
-        <section className="bp-related">
+        {/* <section className="bp-related">
           <div className="bp-related-header">
             <div className="bp-related-accent"></div>
             <h2 className="bp-related-title">You Might Also Like</h2>
@@ -304,7 +298,7 @@ function BlogPage() {
               Next →
             </button>
           </div>
-        </section>
+        </section> */}
       </div>
     </>
   );

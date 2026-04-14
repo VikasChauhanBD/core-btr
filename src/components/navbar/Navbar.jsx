@@ -167,6 +167,10 @@ function Navbar() {
           Fair Usage Policy
         </NavLink>
 
+        <NavLink to="/blogs" onClick={handleCloseNav}>
+          Blogs
+        </NavLink>
+
         <NavLink
           className="login-signup-cta"
           to="https://portal.corebtr.com/login"

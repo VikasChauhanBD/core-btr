@@ -60,7 +60,13 @@
   </url>
 
   <url>
-    <loc>https://corebtr.com/bootcamp-schedule</loc>
+    <loc>https://corebtr.com/inicet-bootcamp-schedule</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <url>
+    <loc>https://corebtr.com/neetpg-bootcamp-schedule</loc>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
@@ -127,6 +133,18 @@
 
    <url>
     <loc>https://corebtr.com/newsletter-form</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+ <url>
+    <loc>https://corebtr.com/blogs</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <url>
+    <loc>https://corebtr.com/how-a-medical-student-became-one-of-the-most-loved-faculties-the-journey-of-dr-zainab-vora</loc>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>

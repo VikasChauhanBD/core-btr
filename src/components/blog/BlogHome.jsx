@@ -8,22 +8,24 @@ const BLOGS_PER_PAGE = 6;
 
 const CATEGORIES = [
   { label: "All Topics", colorClass: "tab-all" },
-  { label: "Medicine", colorClass: "tab-medicine" },
-  { label: "Surgery", colorClass: "tab-surgery" },
-  { label: "Biochemistry", colorClass: "tab-biochemistry" },
-  { label: "Pharmacology", colorClass: "tab-pharmacology" },
-  { label: "Pathology", colorClass: "tab-pathology" },
-  { label: "Exam Strategy", colorClass: "tab-examstrategy" },
+  // { label: "Medicine", colorClass: "tab-medicine" },
+  // { label: "Surgery", colorClass: "tab-surgery" },
+  // { label: "Biochemistry", colorClass: "tab-biochemistry" },
+  // { label: "Pharmacology", colorClass: "tab-pharmacology" },
+  // { label: "Pathology", colorClass: "tab-pathology" },
+  { label: "Journey", colorClass: "tab-pathology" },
+  // { label: "Exam Strategy", colorClass: "tab-examstrategy" },
 ];
 
 const CATEGORY_TAG_CLASS = {
   "All Topics": "bh-tag-navy",
-  Medicine: "bh-tag-blue",
-  Surgery: "bh-tag-red",
-  Pharmacology: "bh-tag-purple",
-  Pathology: "bh-tag-amber",
-  Biochemistry: "bh-tag-green",
-  "Exam Strategy": "bh-tag-teal",
+  // Medicine: "bh-tag-blue",
+  // Surgery: "bh-tag-red",
+  // Pharmacology: "bh-tag-purple",
+  // Pathology: "bh-tag-amber",
+  Journey: "bh-tag-amber",
+  // Biochemistry: "bh-tag-green",
+  // "Exam Strategy": "bh-tag-teal",
 };
 
 const BlogHome = () => {
@@ -67,10 +69,10 @@ const BlogHome = () => {
   return (
     <>
       <Helmet>
-        <title>Blogs — NEET PG & INICET Preparation</title>
+        <title>Blogs — CoreBTR</title>
         <meta
           name="description"
-          content="High-yield articles, exam strategies, and clinical pearls for NEET PG and INICET aspirants."
+          content="CoreBTR blogs break down concepts into simple, helping students strengthen basics, revise efficiently, and gain confidence for exams and clinics."
         />
       </Helmet>
 
@@ -78,7 +80,7 @@ const BlogHome = () => {
         {/* Blog Banner */}
         <div className="bh-banner">
           <img
-            src="https://cdn.dribbble.com/userupload/47178135/file/3272e8bd649b03e27e2ab07b03944e5b.jpg"
+            src="https://cdn.dribbble.com/userupload/47391567/file/bbf0aaf6510d6aa56744a96f33f8093a.jpg"
             alt="CoreBTR Workbook by Dr. Zainab Vora"
           />
         </div>

@@ -6,7 +6,7 @@ function NeetPgSchedule() {
   return (
     <>
       <Helmet>
-        <title>NEET PG Bootcamp Schedule - CoreBTR</title>
+        <title>NEET PG 2026 Bootcamp Schedule - CoreBTR</title>
 
         <meta
           name="description"

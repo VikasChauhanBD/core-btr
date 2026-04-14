@@ -5,14 +5,14 @@ import { Helmet } from "react-helmet";
 function OnlineClassSchedule() {
   return (
     <>
-      {/* <Helmet>
-        <title>Schedule INI-CET May 2026 - CoreBTR</title>
+      <Helmet>
+        <title>INICET May 2026 Classes Schedule - CoreBTR</title>
 
         <meta
           name="description"
-          content="Schedule INI CET May 2026 with CoreBTR and stay ahead with a focused revision plan designed to strengthen concepts and improve exam readiness for aspirants."
+          content="INICET May 2026 Classes Schedule by CoreBTR offers a structured plan with focused concepts, smart revision, and guidance to boost preparation and confidence"
         />
-      </Helmet> */}
+      </Helmet>
 
       <div className="online-schedule-container">
         <div className="online-schedule-image">

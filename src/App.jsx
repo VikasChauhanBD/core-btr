@@ -143,7 +143,7 @@ function App() {
           />
           <Route path="/interested" element={<LeadFormPage />} />
           <Route path="/newsletter-form" element={<NewsletterFormPage />} />
-          <Route path="/blogss" element={<BlogHome />} />
+          <Route path="/blogs" element={<BlogHome />} />
           <Route path="/blog/:blogId" element={<BlogPage />} />
           <Route path="*" element={<Face404 />} />
           <Route path="/testingpage" element={<AuthPage />} />

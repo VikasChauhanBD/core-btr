@@ -70,7 +70,7 @@ function InicetSchedule() {
   return (
     <>
       <Helmet>
-        <title>Schedule INI-CET May 2026 - CoreBTR</title>
+        <title>INI-CET May 2026 Bootcamp Schedule - CoreBTR</title>
 
         <meta
           name="description"
