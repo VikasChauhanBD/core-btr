@@ -69,7 +69,7 @@ const BlogHome = () => {
   return (
     <>
       <Helmet>
-        <title>Blogs — CoreBTR</title>
+        <title>Blogs - CoreBTR</title>
         <meta
           name="description"
           content="CoreBTR blogs break down concepts into simple, helping students strengthen basics, revise efficiently, and gain confidence for exams and clinics."

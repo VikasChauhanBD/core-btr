@@ -1,9 +1,9 @@
-.our-CTA-container {
+.bootcamp-cta-container {
   width: 100%;
   padding: 4rem 1rem;
 }
 
-.our-CTA-info {
+.bootcamp-cta-info {
   width: 80%;
   margin: 0 auto;
   background: linear-gradient(135deg, #1d204b 0%, #1767be 50%, #feb122 100%);
@@ -16,7 +16,7 @@
   text-align: center;
 }
 
-.our-CTA-info::before {
+.bootcamp-cta-info::before {
   content: "";
   position: absolute;
   top: -60px;
@@ -28,7 +28,7 @@
   pointer-events: none;
 }
 
-.our-CTA-info::after {
+.bootcamp-cta-info::after {
   content: "";
   position: absolute;
   bottom: -80px;
@@ -40,7 +40,7 @@
   pointer-events: none;
 }
 
-.our-CTA-info-label {
+.bootcamp-cta-info-label {
   font-size: 18px;
   font-weight: 700;
   letter-spacing: 0.22em;
@@ -53,15 +53,15 @@
   gap: 12px;
 }
 
-.our-CTA-info-label::before,
-.our-CTA-info-label::after {
+.bootcamp-cta-info-label::before,
+.bootcamp-cta-info-label::after {
   content: "";
   flex: 1;
   height: 1px;
   background: #feb122;
 }
 
-.our-CTA-info-exams {
+.bootcamp-cta-info-exams {
   display: flex;
   justify-content: center;
   gap: 12px;
@@ -71,7 +71,7 @@
   z-index: 1;
 }
 
-.our-CTA-info-exam-tag {
+.bootcamp-cta-info-exam-tag {
   font-size: 12px;
   font-weight: 700;
   letter-spacing: 0.1em;
@@ -82,7 +82,7 @@
   padding: 5px 14px;
 }
 
-.our-CTA-info-CTA {
+.bootcamp-cta-info-CTA {
   font-size: 20px;
   color: #fff;
   line-height: 1.5;
@@ -91,7 +91,7 @@
   z-index: 1;
 }
 
-.our-CTA-info a {
+.bootcamp-cta-info a {
   text-decoration: none;
   padding: 8px 16px;
   background-color: #fff;
@@ -103,13 +103,13 @@
 
 /* ---------------------------- Responsive Style ------------------------ */
 @media (max-width: 1440px) {
-  .our-CTA-info {
+  .bootcamp-cta-info {
     width: 85%;
   }
 }
 
 @media (max-width: 1024px) {
-  .our-CTA-info {
+  .bootcamp-cta-info {
     width: 95%;
   }
 }
@@ -118,7 +118,7 @@
 } */
 
 @media (max-width: 568px) {
-  .our-CTA-info {
+  .bootcamp-cta-info {
     width: 100%;
   }
 }

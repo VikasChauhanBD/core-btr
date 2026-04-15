@@ -26,13 +26,13 @@ function CoreBtrPrograms() {
 
         <div className="corebtr-programs-grid">
           {/* Program 1 - Right Side */}
-          <div className="corebtr-program-card program1">
-            <h3 className="corebtr-program-title">Program 1</h3>
-            <p className="corebtr-program-subtitle">
+          <div className="corebtr-programs-card program1">
+            <h3 className="corebtr-programs-title">Program 1</h3>
+            <p className="corebtr-programs-subtitle">
               Live Classes + Personal Cubicle with Desktop for CBT / self study
             </p>
 
-            <ul className="corebtr-features-list">
+            <ul className="corebtr-programs-list">
               <li>
                 Subject wise computer based test followed by live discussion
               </li>
@@ -42,36 +42,37 @@ function CoreBtrPrograms() {
               <li>Personal Desktop access for self study</li>
             </ul>
 
-            <div className="corebtr-fees">
-              <div className="corebtr-fees-label">
-                Fees: <span className="corebtr-fees-amount">Rs 37,000</span>
+            <div className="corebtr-programs-fees">
+              <div className="corebtr-programs-fees-label">
+                Fees:{" "}
+                <span className="corebtr-programs-fees-amount">Rs 37,000</span>
               </div>
             </div>
 
-            {/* <NavLink to="#" className="corebtr-enroll-btn">
+            {/* <NavLink to="#" className="corebtr-programs-enroll-btn">
             Registration Starts on Monday, 13 April at 12 PM
           </NavLink> */}
 
             {/* <NavLink
             to="https://portal.corebtr.com/login"
-            className="corebtr-enroll-btn"
+            className="corebtr-programs-enroll-btn"
           >
             Register now
           </NavLink> */}
 
-            <NavLink to="#" className="corebtr-enroll-btn">
+            <NavLink to="#" className="corebtr-programs-enroll-btn">
               Registration Closed
             </NavLink>
           </div>
 
           {/* Program 2 - Left Side */}
-          <div className="corebtr-program-card program2">
-            <h3 className="corebtr-program-title">Program 2</h3>
-            <p className="corebtr-program-subtitle">
+          <div className="corebtr-programs-card program2">
+            <h3 className="corebtr-programs-title">Program 2</h3>
+            <p className="corebtr-programs-subtitle">
               Relay Classes + Personal Cubicle for self study (No desktop)
             </p>
 
-            <ul className="corebtr-features-list">
+            <ul className="corebtr-programs-list">
               <li>
                 Subject wise computer based test on Desktop followed by
                 discussion through relay
@@ -84,41 +85,42 @@ function CoreBtrPrograms() {
               </li>
             </ul>
 
-            <div className="corebtr-fees">
-              <div className="corebtr-fees-label">
-                Fees: <span className="corebtr-fees-amount">Rs 32,000</span>
+            <div className="corebtr-programs-fees">
+              <div className="corebtr-programs-fees-label">
+                Fees:{" "}
+                <span className="corebtr-programs-fees-amount">Rs 32,000</span>
               </div>
             </div>
 
-            {/* <NavLink to="#" className="corebtr-enroll-btn">
+            {/* <NavLink to="#" className="corebtr-programs-enroll-btn">
             Registration Starts on Monday, 13 April at 12 PM
           </NavLink> */}
 
             {/* <NavLink
             to="https://portal.corebtr.com/login"
-            className="corebtr-enroll-btn"
+            className="corebtr-programs-enroll-btn"
           >
             Register now
           </NavLink> */}
 
-            <NavLink to="#" className="corebtr-enroll-btn">
+            <NavLink to="#" className="corebtr-programs-enroll-btn">
               Registration Closed
             </NavLink>
           </div>
         </div>
 
-        <div className="corebtr-registration-box">
+        <div className="corebtr-programs-registration-box">
           <h3>Registrations will be on First come-first serve basis</h3>
-          <div className="corebtr-registration-time">
+          <div className="corebtr-programs-registration-time">
             Registration may close anytime without prior notice <br />
             No refund / No transfer after registration
           </div>
         </div>
       </div>
 
-      <div className="corebtr-registration-box-imp">
+      <div className="corebtr-programs-registration-imp">
         <h3>Important Notice</h3>
-        <ul className="corebtr-features-list-imp">
+        <ul>
           <li>
             Seats cannot be cancelled or transferred to anyone, including
             friends.

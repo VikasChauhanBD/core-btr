@@ -24,175 +24,8 @@
   z-index: 1;
 }
 
-.bootcamp-eyebrow {
-  display: flex;
-  align-items: center;
-  gap: 12px;
-  margin-bottom: 16px;
-}
-
-.bootcamp-eyebrow-line {
-  width: 36px;
-  height: 2px;
-  background: #feb122;
-  border-radius: 2px;
-  flex-shrink: 0;
-}
-
-.bootcamp-eyebrow-text {
-  font-size: 16px;
-  font-weight: 700;
-  letter-spacing: 0.22em;
-  text-transform: uppercase;
-  color: #feb122;
-}
-
-.bootcamp-section-heading {
-  font-size: 38px;
-  line-height: 1.15;
-  color: #1d204b;
-  margin-bottom: 14px;
-}
-
-.bootcamp-section-heading span {
-  color: #1767be;
-}
-
-.bootcamp-lead {
-  font-size: 16px;
-  line-height: 1.78;
-  color: #3f3f3f;
-  margin-bottom: 36px;
-}
-
-.bootcamp-highlight-grid {
-  display: grid;
-  grid-template-columns: 1fr;
-  margin-bottom: 10px;
-  gap: 20px;
-}
-
-.bootcamp-highlight-image {
-  border-radius: 12px;
-  overflow: hidden;
-  box-shadow:
-    0 4px 20px rgba(39, 24, 126, 0.18),
-    0 1px 4px rgba(39, 24, 126, 0.1);
-  align-self: stretch;
-}
-
-.bootcamp-highlight-image img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  display: block;
-}
-
-.bootcamp-highlight-card {
-  background: #fff;
-  border: 1px solid #1767be;
-  border-radius: 10px;
-  padding: 28px 26px;
-  position: relative;
-  overflow: hidden;
-  box-shadow:
-    0 4px 16px rgba(39, 24, 126, 0.12),
-    0 1px 4px rgba(39, 24, 126, 0.07);
-  transition:
-    transform 0.24s ease,
-    box-shadow 0.24s ease;
-}
-
-.bootcamp-highlight-card::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  height: 3px;
-  background: #1767be;
-}
-
-.bootcamp-highlight-card:hover {
-  transform: translateY(-4px);
-  box-shadow:
-    0 12px 40px rgba(39, 24, 126, 0.2),
-    0 4px 12px rgba(39, 24, 126, 0.1);
-}
-
-.bootcamp-highlight-card h3 {
-  font-size: 18px;
-  font-weight: 700;
-  color: #1767be;
-  margin-bottom: 16px;
-}
-
-.bootcamp-highlight-list {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-}
-
-.bootcamp-highlight-list li {
-  font-size: 16px;
-  line-height: 1.65;
-  color: #3f3f3f;
-  padding-left: 24px;
-  position: relative;
-}
-
-.bootcamp-highlight-list li::before {
-  content: "✔";
-  position: absolute;
-  left: 0;
-  top: 1px;
-  color: #28a745;
-  font-size: 13px;
-}
-
-.bootcamp-highlight-badge {
-  display: inline-block;
-  margin-top: 16px;
-  font-size: 13.5px;
-  font-weight: 600;
-  color: #e35336;
-  background: #fff3f1;
-  border: 1px solid #e35336;
-  border-radius: 6px;
-  padding: 4px 12px;
-}
-.bootcamp-highlight-image {
-  position: relative;
-}
-
-.bootcamp-highlight-image img {
-  width: 100%;
-  display: block;
-}
-
-.bootcamp-section-sub-heading-img {
-  position: absolute;
-  top: 10px;
-  left: 50%;
-  transform: translateX(-50%);
-
-  font-size: 28px;
-  font-weight: 700;
-  color: #e4ab01; /* white text */
-
-  text-align: center;
-  z-index: 2;
-}
-.bootcamp-section-sub-heading-img-2 {
-  font-size: 28px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: #3f3f3f;
-  margin-top: -1rem;
+.bootcamp-highlights {
+  animation: bootcamp-fadeUp 0.55s 0.05s ease both;
 }
 
 /* ── Animations ── */
@@ -207,47 +40,21 @@
   }
 }
 
-.bootcamp-highlights {
-  animation: bootcamp-fadeUp 0.55s 0.05s ease both;
-}
-
-.bootcamp-highlight-image {
-  width: 100%;
-
-  margin: 0 auto;
-  border-radius: 12px;
+.bootcamp-highlights-image {
+  position: relative;
   overflow: hidden;
-  box-shadow:
-    0 4px 20px rgba(39, 24, 126, 0.18),
-    0 1px 4px rgba(39, 24, 126, 0.1);
+  height: 500px;
 }
 
-.bootcamp-highlight-image--top {
-  margin-bottom: 32px;
-}
-
-.bootcamp-highlight-image--bottom {
-  margin-top: 32px;
-}
-
-.bootcamp-highlight-image img {
+.bootcamp-highlights-image img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  object-fit: fill;
   display: block;
+  border-radius: 10px;
 }
 
-.bootcamp-highlight-content {
-  max-width: 900px;
-  margin: 20px auto 0;
-  text-align: center;
-  padding: 10px;
-}
-.bootcamp-highlight-image {
-  position: relative;
-}
-
-.bootcamp-subtitle-top {
+.bootcamp-highlights-subtitle-top {
   position: absolute;
   bottom: 20px;
   left: 20px;
@@ -259,20 +66,18 @@
   z-index: 2;
 }
 
-.highlight-yellow {
-  color: #e4ab01; /* change to any yellow you prefer */
+.bootcamp-highlights-yellow {
+  color: #e4ab01;
 }
 
-.bootcamp-subtitle {
-  font-size: 16px;
-  font-weight: 600;
-  color: #3f3f3f;
-  letter-spacing: 1px;
-  text-transform: uppercase;
-  margin-bottom: 8px;
+.bootcamp-highlights-content {
+  max-width: 900px;
+  margin: 20px auto 0;
+  text-align: center;
+  padding: 10px;
 }
 
-.bootcamp-title {
+.bootcamp-highlights-title {
   font-size: 38px;
   font-weight: 700;
   color: #1d204b;
@@ -280,42 +85,63 @@
   margin-top: -20px;
 }
 
-.bootcamp-description {
+.bootcamp-highlights-description {
   font-size: 16px;
   color: #3f3f3f;
   line-height: 1.6;
   margin-bottom: 20px;
 }
 
-.bootcamp-points {
+.bootcamp-highlights-points {
   list-style: none;
   padding: 0;
   margin: 20px 0;
 }
 
-.bootcamp-points li {
+.bootcamp-highlights-points li {
   font-size: 16px;
   color: #3f3f3f;
   margin-bottom: 10px;
   position: relative;
 }
 
-.bootcamp-points li::before {
+.bootcamp-highlights-points li::before {
   content: "✔";
   color: #2563eb;
   margin-right: 8px;
 }
 
-.bootcamp-tagline {
+.bootcamp-highlights-tagline {
   margin-top: 20px;
   font-size: 16px;
   font-weight: 500;
   color: #1d204b;
 }
 
-.bootcamp-tagline span {
+.bootcamp-highlights-tagline span {
   color: #1767be;
   font-weight: 700;
+}
+
+.bootcamp-highlights-sub-heading-img {
+  position: absolute;
+  top: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 28px;
+  font-weight: 700;
+  color: #e4ab01;
+  text-align: center;
+  z-index: 2;
+}
+
+.bootcamp-highlights-sub-heading-img-2 {
+  font-size: 28px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #3f3f3f;
+  margin-top: -1rem;
 }
 
 /* ---------------------------- Responsive Styles ------------------------ */
@@ -329,25 +155,37 @@
   .bootcamp-highlights {
     width: 95%;
   }
-  .bootcamp-section-sub-heading-img {
+
+  .bootcamp-highlights-image {
+    height: 400px;
+  }
+
+  .bootcamp-highlights-sub-heading-img {
     font-size: 18px;
   }
-  .bootcamp-subtitle-top {
-    font-size: 14px !important;
+
+  .bootcamp-highlights-subtitle-top {
+    font-size: 24px;
   }
 }
 
 @media (max-width: 868px) {
   .bootcamp-content h1,
   .bootcamp-section-heading,
-  .bootcamp-title {
+  .bootcamp-highlights-title {
     font-size: 32px;
   }
-  .bootcamp-section-sub-heading-img {
+
+  .bootcamp-highlights-image {
+    height: 300px;
+  }
+
+  .bootcamp-highlights-sub-heading-img {
     font-size: 12px;
   }
-  .bootcamp-subtitle-top {
-    font-size: 24px;
+
+  .bootcamp-highlights-subtitle-top {
+    font-size: 20px;
   }
 
   .bootcamp-highlight-grid {
@@ -358,6 +196,10 @@
 @media (max-width: 568px) {
   .bootcamp-highlights {
     width: 100%;
+  }
+
+  .bootcamp-highlights-image {
+    height: 200px;
   }
 
   .bootcamp-event a {
