@@ -10,6 +10,14 @@ import {
 } from "react-router-dom";
 import { Helmet } from "react-helmet";
 
+const CATEGORY_TAG_CLASS = {
+  "All Topics": "bp-tag-navy",
+  "NEET PG": "bp-tag-blue",
+  "INI-CET": "bp-tag-red",
+  FMGE: "bp-tag-purple",
+  Journey: "bp-tag-amber",
+};
+
 function BlogPage() {
   const { blogId } = useParams();
   const blog = blogData.find((b) => String(b.id) === String(blogId));
@@ -252,7 +260,7 @@ function BlogPage() {
         </div>
 
         {/* Recommended / Related Section */}
-        {/* <section className="bp-related">
+        <section className="bp-related">
           <div className="bp-related-header">
             <div className="bp-related-accent"></div>
             <h2 className="bp-related-title">You Might Also Like</h2>
@@ -269,8 +277,10 @@ function BlogPage() {
                   <img src={data.image} alt={data.alt} />
                 </div>
                 <div className="bp-related-card-body">
-                  <span className="bp-card-tag bp-tag-blue">
-                    {data.category || "Medicine"}
+                  <span
+                    className={`bp-card-tag ${CATEGORY_TAG_CLASS[blog.category] || "bp-tag-blue"}`}
+                  >
+                    {blog.category || "Medicine"}
                   </span>
                   <div className="bp-related-card-title">{data.metaTitle}</div>
                   <div className="bp-related-card-meta">
@@ -298,7 +308,7 @@ function BlogPage() {
               Next →
             </button>
           </div>
-        </section> */}
+        </section>
       </div>
     </>
   );

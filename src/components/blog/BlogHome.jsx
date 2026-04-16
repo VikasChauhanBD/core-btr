@@ -8,24 +8,18 @@ const BLOGS_PER_PAGE = 6;
 
 const CATEGORIES = [
   { label: "All Topics", colorClass: "tab-all" },
-  // { label: "Medicine", colorClass: "tab-medicine" },
-  // { label: "Surgery", colorClass: "tab-surgery" },
-  // { label: "Biochemistry", colorClass: "tab-biochemistry" },
-  // { label: "Pharmacology", colorClass: "tab-pharmacology" },
-  // { label: "Pathology", colorClass: "tab-pathology" },
-  { label: "Journey", colorClass: "tab-pathology" },
-  // { label: "Exam Strategy", colorClass: "tab-examstrategy" },
+  { label: "NEET PG", colorClass: "tab-neetpg" },
+  { label: "INI-CET", colorClass: "tab-inicet" },
+  { label: "FMGE", colorClass: "tab-fmge" },
+  { label: "Journey", colorClass: "tab-journey" },
 ];
 
 const CATEGORY_TAG_CLASS = {
   "All Topics": "bh-tag-navy",
-  // Medicine: "bh-tag-blue",
-  // Surgery: "bh-tag-red",
-  // Pharmacology: "bh-tag-purple",
-  // Pathology: "bh-tag-amber",
+  "NEET PG": "bh-tag-blue",
+  "INI-CET": "bh-tag-red",
+  FMGE: "bh-tag-purple",
   Journey: "bh-tag-amber",
-  // Biochemistry: "bh-tag-green",
-  // "Exam Strategy": "bh-tag-teal",
 };
 
 const BlogHome = () => {

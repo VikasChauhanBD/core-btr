@@ -55,7 +55,7 @@ export default function PlanPrices() {
     <div className="plan-prices-wrapper">
       <h2 className="plan-prices-heading">Choose Your Plan</h2>
       <h4 className="plan-prices-sub-heading">
-        We have duration based plans 3 Months | 6 Months | 12 Months
+        We have duration based plans 3 Months | 6 Months | 12 Months | 24 Months
       </h4>
 
       <h5>Avail Launch Offer Flat 30% off on any plan + 2 Months Extra FREE</h5>

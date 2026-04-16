@@ -215,11 +215,6 @@
   color: #1a7a3c;
 }
 
-.bh-tag-teal {
-  background: #e1f5ee;
-  color: #0f6e56;
-}
-
 .bh-blog-card-title {
   font-size: 18px;
   font-weight: 600;
@@ -277,65 +272,65 @@
   border-color: #1d204b;
 }
 
-/* Medicine — blue */
-.bh-filter-tab.tab-medicine {
+/* NEET PG — blue */
+.bh-filter-tab.tab-neetpg {
   color: #1767be;
   border-color: #1767be;
 }
-.bh-filter-tab.tab-medicine.active {
+.bh-filter-tab.tab-neetpg.active {
   background: #1767be;
   color: #ffffff;
   border-color: #1767be;
 }
-.bh-filter-tab.tab-medicine:hover:not(.active) {
+.bh-filter-tab.tab-neetpg:hover:not(.active) {
   background: #e8f0fb;
   color: #1767be;
   border-color: #1767be;
 }
 
-/* Surgery — red */
-.bh-filter-tab.tab-surgery {
+/* INICET — red */
+.bh-filter-tab.tab-inicet {
   color: #b91c1c;
   border-color: #b91c1c;
 }
-.bh-filter-tab.tab-surgery.active {
+.bh-filter-tab.tab-inicet.active {
   background: #b91c1c;
   color: #ffffff;
   border-color: #b91c1c;
 }
-.bh-filter-tab.tab-surgery:hover:not(.active) {
+.bh-filter-tab.tab-inicet:hover:not(.active) {
   background: #fde8e8;
   color: #b91c1c;
   border-color: #b91c1c;
 }
 
-/* Pharmacology — purple */
-.bh-filter-tab.tab-pharmacology {
+/* FMGE — purple */
+.bh-filter-tab.tab-fmge {
   color: #5b21b6;
   border-color: #5b21b6;
 }
-.bh-filter-tab.tab-pharmacology.active {
+.bh-filter-tab.tab-fmge.active {
   background: #5b21b6;
   color: #ffffff;
   border-color: #5b21b6;
 }
-.bh-filter-tab.tab-pharmacology:hover:not(.active) {
+.bh-filter-tab.tab-fmge:hover:not(.active) {
   background: #ede9fe;
   color: #5b21b6;
   border-color: #5b21b6;
 }
 
-/* Pathology — amber */
-.bh-filter-tab.tab-pathology {
+/* Journey — amber */
+.bh-filter-tab.tab-journey {
   color: #b8780e;
   border-color: #b8780e;
 }
-.bh-filter-tab.tab-pathology.active {
+.bh-filter-tab.tab-journey.active {
   background: #b8780e;
   color: #ffffff;
   border-color: #b8780e;
 }
-.bh-filter-tab.tab-pathology:hover:not(.active) {
+.bh-filter-tab.tab-journey:hover:not(.active) {
   background: #fff3d6;
   color: #b8780e;
   border-color: #b8780e;
@@ -355,22 +350,6 @@
   background: #e8f5ed;
   color: #1a7a3c;
   border-color: #1a7a3c;
-}
-
-/* Exam Strategy — teal */
-.bh-filter-tab.tab-examstrategy {
-  color: #0f6e56;
-  border-color: #0f6e56;
-}
-.bh-filter-tab.tab-examstrategy.active {
-  background: #0f6e56;
-  color: #ffffff;
-  border-color: #0f6e56;
-}
-.bh-filter-tab.tab-examstrategy:hover:not(.active) {
-  background: #e1f5ee;
-  color: #0f6e56;
-  border-color: #0f6e56;
 }
 
 /* ---------- Pagination ---------- */
@@ -490,12 +469,20 @@
 }
 
 @media (max-width: 868px) {
+  .bh-banner img {
+    height: 320px;
+  }
+
   .bh-blogs-grid {
     grid-template-columns: repeat(2, 1fr);
   }
 }
 
 @media (max-width: 568px) {
+  .bh-banner img {
+    height: 200px;
+  }
+
   .bh-blogs-grid {
     grid-template-columns: 1fr;
   }
