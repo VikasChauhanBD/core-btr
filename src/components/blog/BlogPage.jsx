@@ -278,9 +278,9 @@ function BlogPage() {
                 </div>
                 <div className="bp-related-card-body">
                   <span
-                    className={`bp-card-tag ${CATEGORY_TAG_CLASS[blog.category] || "bp-tag-blue"}`}
+                    className={`bp-card-tag ${CATEGORY_TAG_CLASS[data.category] || "bp-tag-blue"}`}
                   >
-                    {blog.category || "Medicine"}
+                    {data.category || "Medicine"}
                   </span>
                   <div className="bp-related-card-title">{data.metaTitle}</div>
                   <div className="bp-related-card-meta">

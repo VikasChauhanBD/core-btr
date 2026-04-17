@@ -1,5 +1,176 @@
 const blogData = [
   {
+    id: "what-is-ini-cet-complete-guide-for-aspirants-2026",
+    blogDate: "April 17, 2026",
+    image:
+      "https://cdn.dribbble.com/userupload/47425347/file/d0f24ef88c2f7e3b37a176bf4cd1057d.jpg",
+    alt: "What is INI-CET by Dr. Zainab Vora - CoreBTR",
+    metaTitle: "What is INI-CET? Complete Guide for Aspirants (2026)",
+    metaDesc:
+      "Understand INI CET 2026 with exam pattern, eligibility, syllabus, & preparation tips to help aspirants plan smart & achieve top ranks in medical entrance exams.",
+    author: "Dr. Zainab Vora",
+    category: "INI-CET",
+    tags: ["INI-CET", "NEET PG", "Medical Education", "AIIMS", "Exam Guide"],
+    para: `If you're a medical graduate thinking about giving <b>INI-CET 2026</b>, chances are you've already searched a few things online-and probably ended up more confused than before.
+
+<p>There's information everywhere, but it's either too technical, too scattered, or just not explained in a way that helps you understand what to do next.</p>
+
+<p>So instead of overcomplicating things, let's keep it simple here.</p>
+
+<p>In this blog, you'll find everything you actually need-what INI-CET is, how the process works, INICET important dates, how to register for INICET, what the paper looks like, how results are declared, and what happens after that. Nothing extra, nothing confusing. Just the things that matter when you're planning your next step.</p>
+
+<h4>Why INI-CET Gets So Much Attention</h4>
+
+<p>It's not just about the exam. It's about where it can take you.</p>
+
+<p>INI-CET is your entry into some of the most respected medical institutes in the country. That's the reason the competition feels intense. But more than competition, what makes it different is the way the exam is designed.</p>
+
+<p>You can't rely only on memory here. If your concepts aren't clear, it shows.</p>
+
+<h4>What Exactly is INI-CET?</h4>
+
+<p>INI-CET stands for <b>Institute of National Importance Combined Entrance Test.</b> It is conducted by AIIMS New Delhi.</p>
+
+<p>In simple terms, it's a single exam through which you can get admission into postgraduate and some super-specialty courses like MD, MS, MDS, DM (6-year), and MCh (6-year).</p>
+
+<p>It covers institutes like:</p>
+
+<li>All AIIMS campuses</li>
+<li>JIPMER Puducherry</li>
+<li>PGIMER Chandigarh</li>
+<li>NIMHANS Bengaluru</li>
+<li>SCTIMST Trivandrum</li>
+
+<p>Earlier, these institutes had separate exams. Now, everything is combined into one.</p>
+
+<h4>What Did the 2026 Notification Say?</h4>
+
+<p>The official notice for the <b>July 2026 session</b> was released by <b>AIIMS New Delhi in March.</b></p>
+
+<p>Applications started towards the end of March, and everything-from form filling to admit card-was handled online.</p>
+
+<p>One thing students often miss is this: almost all updates come only on the official website. There's no separate communication, so checking it regularly is part of the process.</p>
+
+<h4>Important Dates You Should Not Ignore</h4>
+
+<p>For the July 2026 session, here's how the timeline looked:</p>
+
+<li>Registration started on <b>28 March 2026</b></li>
+<li>Last date to apply was <b>25 April 2026 (5 PM)</b></li>
+<li>Correction window was open from <b>30 April to 2 May 2026</b></li>
+<li>Admit card came out on <b>9 May 2026</b></li>
+<li>Exam was held on <b>16 May 2026</b></li>
+
+<p>These dates are strict. There's usually no second chance if you miss something.</p>
+
+<h4>How Does Registration Actually Work?</h4>
+
+<p>INICET registration process is online, but you need to be careful at each step.</p>
+
+<p>You start with basic registration on the official portal. Then you fill in your details-personal, academic, everything. After that, you upload documents like your photo, signature, and thumb impression.</p>
+
+<p>The final step is fee payment.</p>
+
+<p>And this is important-if the fee isn't paid, your form isn't considered complete. A lot of students overlook this and face rejection.</p>
+
+<h4>What is the INI-CET Exam Pattern Like?</h4>
+
+<p>The exam is conducted online.</p>
+
+<li>Total duration is <b>3 hours</b></li>
+<li>There are <b>200 questions</b></li>
+
+<p>Each correct answer gives you <b>one mark.</b> For every wrong answer, <b>one-third of a mark</b> is deducted.</p>
+
+<p>Some questions may not be as straightforward as they look. So reading carefully matters more than rushing.</p>
+
+<h4>What Kind of Questions Should You Expect?</h4>
+
+<p>This is where INI-CET feels different.</p>
+
+<p>You won't just see direct questions. Many of them are based on clinical situations. Some include images. Others may combine concepts from more than one subject.</p>
+
+<p>So if you're used to just memorizing facts, this exam can feel a bit uncomfortable at first.</p>
+
+<p>But once you start thinking conceptually, it becomes manageable.</p>
+
+<h4>Which Institutes Accept INI-CET?</h4>
+
+<p>Through this exam, you can get into:</p>
+
+<li>All AIIMS institutes</li>
+<li>JIPMER Puducherry</li>
+<li>PGIMER Chandigarh</li>
+<li>NIMHANS Bengaluru</li>
+<li>SCTIMST Trivandrum</li>
+
+<p>These are among the top institutes in India, which is why the exam carries so much weight.</p>
+
+<h4>Who is Eligible?</h4>
+
+<p>You need to have an MBBS or BDS degree.</p>
+
+<p>Minimum marks required are:</p>
+
+<li><b>55 percent</b> for General, OBC, and EWS</li>
+<li><b>50 percent</b> for SC and ST</li>
+
+<p>You also need to complete your internship before the given deadline.</p>
+
+<h4>What Happens After the Result?</h4>
+
+<p>Results are usually declared within a few days.</p>
+
+<p>After that:</p>
+
+<li>A rank list is published</li>
+<li>Counseling starts</li>
+<li>Seats are allotted based on your rank and choices</li>
+
+<p>This stage is just as important as the exam. Many students don't plan their choices properly and regret it later.</p>
+
+<h4>How Should You Prepare Without Overthinking It?</h4>
+
+<p>You don't need a complicated plan.</p>
+
+<p>Start with understanding the basics properly. Then revise. And revise again.</p>
+
+<p>Solve questions every day, but don't just check answers-try to understand why you got something wrong.</p>
+
+<p>Mock tests help, but only if you review them seriously.</p>
+
+<p>Consistency matters more than doing everything at once.</p>
+
+<h4>Common Mistakes Students Make</h4>
+
+<p>A few things that often go wrong:</p>
+
+<li>Studying without clarity</li>
+<li>Not revising enough</li>
+<li>Ignoring mock test analysis</li>
+<li>Relying too much on shortcuts</li>
+<li>Jumping between too many resources</li>
+
+<p>Avoiding these itself can improve your performance.</p>
+
+<h4>Is INI-CET Really That Tough?</h4>
+
+<p>It is challenging, yes.</p>
+
+<p>But it's not impossible or unpredictable. Most of the difficulty comes from not being used to the question style.</p>
+
+<p>Once your concepts are clear, the paper starts making more sense.</p>
+
+<h4>Final Thoughts</h4>
+
+<p>At the beginning, INI-CET can feel like a lot to handle. But once you break it down, it's just a process-understand the exam, follow the timeline, and prepare with clarity.</p>
+
+<p>You don't have to be perfect. You just have to be consistent and a little more focused than before.</p>
+
+<p><b>That's usually enough to move ahead.</b></p>
+`,
+  },
+  {
     id: "how-a-medical-student-became-one-of-the-most-loved-faculties-the-journey-of-dr-zainab-vora",
     blogDate: "April 14, 2026",
     image:
@@ -56,8 +227,8 @@ Instead of adding more books to the table, she chose clarity.</p>
 
 <p>For her, it was 2015.</p>
 
-<p><b>AIR 1 – NIMHANS (March 2015)</b><br/>
-<b>AIR 1 – AIIMS PG (May 2015)</b></p>
+<p><b>AIR 1 - NIMHANS (March 2015)</b><br/>
+<b>AIR 1 - AIIMS PG (May 2015)</b></p>
 
 <p>Two of the toughest exams.<br/>
 Two All India Rank 1s.<br/>

@@ -546,19 +546,19 @@
 }
 
 .bp-related-card-title {
-  font-size: 13px;
+  font-size: 16px;
   font-weight: 600;
   color: #1d204b;
   line-height: 1.4;
-  margin-bottom: 10px;
+  margin: 10px 0;
 }
 
 .bp-related-card-meta {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  font-size: 11px;
-  color: #aaaaaa;
+  font-size: 14px;
+  color: #3f3f3f;
 }
 
 .bp-rc-read {
