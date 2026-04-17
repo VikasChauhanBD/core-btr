@@ -18,11 +18,11 @@ function WorkBooksPrices() {
           </p>
 
           <p>
-            Launch Offer : Flat 40% off <br />
-            Launch Price: Rs. 2760/- ( after 40% off)
+            Launch Offer : Flat 25% off <br />
+            Launch Price: Rs. 3450/- ( after 25% off)
           </p>
           <h6>
-            This offer is valid till 16<sup>th</sup> April 2026
+            This offer is valid till 25<sup>th</sup> April 2026
           </h6>
           <br />
 
@@ -32,15 +32,15 @@ function WorkBooksPrices() {
 
           <br />
 
-          <p className="plan-prices-dispatch">
+          {/* <p className="plan-prices-dispatch">
             Dispatch will start from 15<sup>th</sup> April, on first come first
             serve basis.
-          </p>
+          </p> */}
 
           <div className="plan-prices-help-div">
-            <p className="plan-prices-register">
+            {/* <p className="plan-prices-register">
               Registration starts from 11:00 AM on 1<sup>st</sup> April 2026
-            </p>
+            </p> */}
             <p className="plan-prices-help">
               For any queries, feel free to contact our Helpline:{" "}
               <a href="tel:7428581909">7428581909</a> (Only For Calling)
