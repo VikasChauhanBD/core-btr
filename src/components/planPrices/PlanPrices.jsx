@@ -7,10 +7,10 @@ const plans = [
   {
     tier: "STARTER",
     duration: "3 Months",
-    originalPrice: "Rs. 11,999",
-    introPrice: "Rs. 7,399",
-    launchPrice: "Rs. 5,179",
-    books: "Rs. 2,760",
+    originalPrice: "Rs. 11999",
+    introPrice: "Rs. 7399",
+    launchPrice: "Rs. 5549",
+    books: "Rs. 3450",
     badge: null,
     order: 4,
     cta: "https://portal.corebtr.com/login",
@@ -18,20 +18,20 @@ const plans = [
   {
     tier: "GROWTH",
     duration: "6 Months",
-    originalPrice: "Rs. 14,999",
-    introPrice: "Rs. 11,599",
-    launchPrice: "Rs. 8,119",
-    books: "Rs. 2,760",
+    originalPrice: "Rs. 14999",
+    introPrice: "Rs. 11599",
+    launchPrice: "Rs. 8699",
+    books: "Rs. 3450",
     order: 3,
     cta: "https://portal.corebtr.com/login",
   },
   {
     tier: "PRO ANNUAL",
     duration: "12 Months",
-    originalPrice: "Rs. 19,999",
-    introPrice: "Rs. 17,399",
-    launchPrice: "Rs. 12,179",
-    books: "Rs. 2,760",
+    originalPrice: "Rs. 19999",
+    introPrice: "Rs. 17399",
+    launchPrice: "Rs. 13149",
+    books: "Rs. 3450",
     badge: "POPULAR",
     order: 2,
     cta: "https://portal.corebtr.com/login",
@@ -39,10 +39,10 @@ const plans = [
   {
     tier: "For Interns | Post Interns",
     duration: "24 Months",
-    originalPrice: "Rs. 39,999",
-    introPrice: "Rs. 34,999",
-    launchPrice: "Rs. 24,499",
-    books: "Rs. 2,760",
+    originalPrice: "Rs. 39999",
+    introPrice: "Rs. 34999",
+    launchPrice: "Rs. 26249",
+    books: "Rs. 3450",
     badge: "BEST VALUE",
     featured: true,
     order: 1,
@@ -58,8 +58,8 @@ export default function PlanPrices() {
         We have duration based plans 3 Months | 6 Months | 12 Months | 24 Months
       </h4>
 
-      <h5>Avail Launch Offer Flat 30% off on any plan + 2 Months Extra FREE</h5>
-      <h5>Also Get Flat 40% off on Book Set </h5>
+      <h5>Avail Launch Offer Flat 25% off on any plan + 2 Months Extra Free</h5>
+      <h5>Also Get Flat 25% off on Book Set </h5>
 
       <h3>
         Apply <span>Coupon Code</span> to Avail the Offer :-{" "}
@@ -106,14 +106,14 @@ export default function PlanPrices() {
             </div>
             <div className="plan-launch-box">
               <p className="plan-launch-label">
-                Launch offer Flat <span>30%</span> off + <span>2 Months</span>{" "}
+                Launch offer Flat <span>25%</span> off + <span>2 Months</span>{" "}
                 Extra Free
               </p>
 
               <div className="plan-launch-price-row">
                 <span className="plan-launch-price">
                   <p className="plan-text">
-                    Launch Price (After 30% off){" "}
+                    Launch Price (After 25% off){" "}
                     <span className="plan-launch-price">
                       {plan.launchPrice}
                     </span>
@@ -125,13 +125,13 @@ export default function PlanPrices() {
               <div className="plan-launch-price-row">
                 <span className="plan-launch-price">
                   <p className="plan-launch-bookset">
-                    Launch offer on Bookset - Flat <span>40%</span> off
+                    Launch offer on Bookset - Flat <span>25%</span> off
                   </p>
                   <p className="plan-text">
                     Price of Bookset (5 Books){" "}
                     <span className="plan-launch-price">{plan.books} </span>
                   </p>
-                  <h5 className="plan-extra">(After 40% Off)</h5>
+                  <h5 className="plan-extra">(After 25% Off)</h5>
                 </span>
               </div>
 
@@ -143,7 +143,7 @@ export default function PlanPrices() {
               </div>
             </div>
             <p className="plan-prices-valid">
-              Offer valid till 16<sup>th</sup> April 2026
+              Offer valid till 25<sup>th</sup> April 2026
             </p>
             <div className="plan-savings">
               <NavLink to={plan.cta} target="_blank">
@@ -155,9 +155,9 @@ export default function PlanPrices() {
       </div>
 
       <div className="plan-prices-help-div">
-        <p className="plan-prices-register">
+        {/* <p className="plan-prices-register">
           Registration starts from 11:00 AM on 1<sup>st</sup> April 2026
-        </p>
+        </p> */}
         <p className="plan-prices-help">
           For any queries, feel free to contact our Helpline:{" "}
           <a href="tel:7428581909">7428581909</a> (Only For Calling)
