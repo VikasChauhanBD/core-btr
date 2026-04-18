@@ -1,5 +1,213 @@
 const blogData = [
   {
+    id: "corebtr-plan-for-ini-cet-may-2026-a-realistic-revision-strategy-that-works",
+    blogDate: "April 18, 2026",
+    image:
+      "https://cdn.dribbble.com/userupload/47435346/file/9eb17d7d90b7340fec94d3ef5801be4f.jpg",
+    alt: "CoreBTR Plan for INI-CET May 2026 - CoreBTR",
+    metaTitle:
+      "CoreBTR Plan for INI-CET May 2026: A Realistic Revision Strategy That Works",
+    metaDesc:
+      "Boost your INI CET May 2026 prep with the CoreBTR plan. A realistic revision strategy focused on consistency, high yield topics, and smart practice.",
+    author: "Dr. Zainab Vora",
+    category: "INI-CET",
+    keywords: [
+      "ini cet exam",
+      "ini cet preparation",
+      "revision schedule",
+      "ini cet may 2026",
+      "preparation strategy",
+      "ini cet study plan",
+      "inicet preparation strategy",
+      "medical pg exams",
+      "neet pg preparation",
+      "inicet 2026",
+      "neet pg 2026",
+      "fmge 2026",
+      "medical pg preparation",
+      "fmge exam",
+      "fmge preparation",
+      "pg entrance exam",
+      "neet pg exam",
+    ],
+    para: `Many students have already joined the CoreBTR plan, and the momentum is clearly building. In a recent session, Dr. Zainab Vora walked everyone through how she plans to cover the entire syllabus in a structured, subject-wise manner over the coming weeks.
+
+<p>What stood out wasn't just the schedule-but the clarity. Instead of overwhelming students with too many resources, she explained exactly what to do, when to do it, and how to revise each subject properly.</p>
+
+<p>Here's a simplified version of that subject-wise approach, adapted into a practical plan that you can follow.</p>
+
+<h4>Watch First: The Strategy Explained</h4>
+
+<p><b>Watch Video:</b> <a href="https://youtu.be/_kTHLuxf3e8?si=MJfYoJeP46SXaZnc" target="_blank">CoreBTR 45-Day Plan Revealed | INI-CET May 2026 Revision Schedule</a></p>
+
+<h4>Before You Start: Set Your Baseline</h4>
+
+<p>Before jumping into subject-wise prep, take a <b>Grand Test (GT).</b></p>
+
+<li>Don't overthink it</li>
+<li>Don't wait to "complete syllabus"</li>
+<li>Just attempt it</li>
+
+<p>This gives you:</p>
+
+<li>Your current level</li>
+<li>Weak areas</li>
+<li>Real exam exposure</li>
+
+<p>Think of it as your <b>starting point, not judgment day.</b></p>
+
+<h4>The Core Idea of This Plan</h4>
+
+<p>Instead of trying to cover everything randomly, this plan follows a <b>repeat-recall-reinforce approach:</b></p>
+
+<li>Watch core content</li>
+<li>Revise it actively</li>
+<li>Solve questions from the same topics</li>
+
+<p>That's it. No extra clutter.</p>
+
+<h4>How to Study Each Subject (This Is Important)</h4>
+
+<p>For every subject you pick, follow this exact method:</p>
+
+<p><b>Step 1: Watch the Core Video (First Pass)</b></p>
+
+<li>Watch at 1-1.25x speed</li>
+<li>Don't try to memorize</li>
+<li>Just understand the flow</li>
+
+<p><b>Step 2: Watch Again (Second Pass)</b></p>
+
+<li>Now focus on retention</li>
+<li>Things will feel more familiar</li>
+
+<p><b>Step 3: Active Recall</b></p>
+
+<li>Close the video</li>
+<li>Try to speak or write what you remember</li>
+<li>Fill gaps using notes</li>
+
+<p><b>Step 4: Solve PYQs + QBank</b></p>
+
+<li>Solve topic-wise questions</li>
+<li>Don't read every solution</li>
+<li>Only review what you don't know</li>
+
+<p>This cycle is what actually builds memory-not passive watching.</p>
+
+<h4>45-Day Subject Plan (Compact & Practical)</h4>
+
+<p><b>Core BTR GT-1: Available from April 2</b></p>
+
+<li>Attempt this as your baseline test</li>
+<li>Don't delay it</li>
+<li>This helps you understand where you stand</li>
+
+<h4>Subject-Wise Plan</h4>
+
+<p><b>April 4-5-6: Surgery</b></p>
+
+<li>Cover surgery in 3 days</li>
+<li>Follow: video → rewatch → recall → PYQs + QBank</li>
+
+<p><b>April 7-8-9-10: Orthopedics + Radiology + FMT</b></p>
+
+<li>These are shorter subjects, grouped together</li>
+<li>Keep pace fast</li>
+<li>Focus on high-yield areas + questions</li>
+
+<p><b>April 11-12: Biochemistry</b></p>
+
+<li>Concept + memory mix</li>
+<li>Revise actively</li>
+<li>Practice PYQs alongside</li>
+
+<p><b>April 13: MINI TEST 1</b></p>
+
+<li>Attempt test</li>
+<li>Review same day or next day</li>
+<li>Focus on mistakes only</li>
+
+<p><b>April 14-15-16: Microbiology</b></p>
+
+<li>Don't try to memorize everything at once</li>
+<li>Use repeated revision + recall</li>
+
+<p><b>April 15: Core BTR GT-2</b></p>
+
+<li>Second Grand Test</li>
+<li>Track improvement from GT-1</li>
+
+<p><b>April 17-18-19: Anatomy</b></p>
+
+<li>Focus on high-yield topics</li>
+<li>PYQs are very important here</li>
+
+<p><b>April 20-21: Psychiatry + ENT</b></p>
+
+<li>Short subjects</li>
+<li>Keep it simple and focused</li>
+
+<p><b>April 22: MINI TEST 2</b></p>
+
+<li>Quick test + quick review</li>
+<li>Identify weak zones</li>
+
+<p><b>April 23-28: Integrated Systems</b></p>
+
+<li>One of the most important phases</li>
+<li>Combine subjects and revise in an integrated way</li>
+<li>Focus on clinical application</li>
+
+<p><b>April 29: Core BTR GT-3</b></p>
+
+<li>Full-length test</li>
+<li>Attempt seriously</li>
+
+<p><b>April 29-30: Dermatology + Anesthesia</b></p>
+
+<li>Short, high-yield subjects</li>
+<li>Quick revision works best</li>
+
+<p><b>May 1: MINI TEST 3</b></p>
+
+<li>Evaluate progress</li>
+<li>Don't over-analyze</li>
+
+<p><b>May 2-3-4: PSM</b></p>
+
+<li>Concept-heavy</li>
+<li>Focus on clarity + PYQs</li>
+
+<p><b>May 5-6-7: Ophthalmology + Pediatrics</b></p>
+
+<li>Balanced approach</li>
+<li>Revise + practice together</li>
+
+<p><b>May 8-9-10: Obstetrics & Gynecology</b></p>
+
+<li>Keep it structured</li>
+<li>Don't get stuck on one topic</li>
+
+<p><b>May 11: MINI TEST 4</b></p>
+
+<li>Final mini test</li>
+<li>Focus on weak areas only</li>
+
+<h4>Final Phase</h4>
+
+<p><b>May 13: Core BTR GT-4 (Mock INI-CET)</b></p>
+
+<li>Treat this like the actual exam</li>
+<li>Follow proper timing</li>
+<li>This is your final performance check</li>
+
+<h4>Joining Late? Here's What You Should Do</h4>
+
+<p><b>Note:</b> If you're joining late, don't panic. Start following the plan from where it is right now and put in a little extra effort each day to cover the topics you've missed. Stay consistent-that matters more than trying to catch up all at once.</p>
+`,
+  },
+  {
     id: "what-is-ini-cet-complete-guide-for-aspirants-2026",
     blogDate: "April 17, 2026",
     image:
@@ -10,7 +218,20 @@ const blogData = [
       "Understand INI CET 2026 with exam pattern, eligibility, syllabus, & preparation tips to help aspirants plan smart & achieve top ranks in medical entrance exams.",
     author: "Dr. Zainab Vora",
     category: "INI-CET",
-    tags: ["INI-CET", "NEET PG", "Medical Education", "AIIMS", "Exam Guide"],
+    keywords: [
+      "ini cet exam",
+      "inicet preparation",
+      "ini cet 2026",
+      "ini cet questions",
+      "ini cet admit card",
+      "inicet",
+      "ini cet exam pattern",
+      "ini cet syllabus",
+      "ini cet preparation strategy",
+      "pg medical exams",
+      "inicet previous year question paper",
+      "inicet question paper",
+    ],
     para: `If you're a medical graduate thinking about giving <b>INI-CET 2026</b>, chances are you've already searched a few things online-and probably ended up more confused than before.
 
 <p>There's information everywhere, but it's either too technical, too scattered, or just not explained in a way that helps you understand what to do next.</p>
@@ -182,12 +403,17 @@ const blogData = [
       "From a dedicated medical student to a beloved mentor, her journey reflects passion, resilience, and a commitment to making learning simple and impactful.",
     author: "Dr. Zainab Vora",
     category: "Journey",
-    tags: [
-      "Medical Education",
-      "NEET PG",
-      "INI-CET",
-      "Dr. Zainab Vora",
-      "Motivation",
+    keywords: [
+      "neet pg",
+      "ini-cet",
+      "neet pg preparation",
+      "inicet preparation",
+      "medical pg preparation",
+      "medical pg exam",
+      "pg preparation",
+      "exam preparation",
+      "md radiology",
+      "radiology",
     ],
     para: `There are some teachers you study from… and then there are those you remember long after exams are over.
 

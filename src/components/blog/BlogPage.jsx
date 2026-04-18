@@ -164,6 +164,7 @@ function BlogPage() {
         <div className="bp-hero">
           <div className="bp-hero-text">
             <h1 className="bp-hero-title">{blog.metaTitle}</h1>
+            <h2 className="bp-hero-desc">{blog.metaDesc}</h2>
             <div className="bp-hero-meta">
               <p>📅 {blog.blogDate}</p>
               <span className="bp-meta-sep"></span>
@@ -192,14 +193,14 @@ function BlogPage() {
             {/* Content */}
             <div className="bp-article-content">{formatContent(blog.para)}</div>
 
-            {/* Tags */}
-            {blog.tags && blog.tags.length > 0 && (
-              <div className="bp-tags-section">
-                <div className="bp-tags-label">RELATED TAGS</div>
-                <div className="bp-tags-row">
-                  {blog.tags.map((tag, i) => (
-                    <span key={i} className="bp-tag-pill">
-                      {tag}
+            {/* Keywords */}
+            {blog.keywords && blog.keywords.length > 0 && (
+              <div className="bp-keywords-section">
+                <div className="bp-keywords-label">RELATED KEYWORDS</div>
+                <div className="bp-keywords-row">
+                  {blog.keywords.map((keyword, i) => (
+                    <span key={i} className="bp-keyword-pill">
+                      {keyword}
                     </span>
                   ))}
                 </div>
@@ -243,11 +244,13 @@ function BlogPage() {
             {/* CTA Widget */}
             <div className="bp-cta-widget">
               <div className="bp-cta-icon">🎯</div>
-              <div className="bp-cta-title">Practice MCQs on This Topic</div>
-              <p className="bp-cta-desc">
+              <div className="bp-cta-title">
+                Practice with our <br /> Grand Test (GT) and Mini-Test
+              </div>
+              {/* <p className="bp-cta-desc">
                 Test your understanding with 40+ curated NEET PG questions on
                 this subject.
-              </p>
+              </p> */}
               <NavLink
                 className="bp-cta-btn"
                 to="https://portal.corebtr.com/tests"
@@ -283,6 +286,7 @@ function BlogPage() {
                     {data.category || "Medicine"}
                   </span>
                   <div className="bp-related-card-title">{data.metaTitle}</div>
+                  <div className="bp-related-card-desc">{data.metaDesc}</div>
                   <div className="bp-related-card-meta">
                     <span>📅 {data.blogDate}</span>
                     <span className="bp-rc-read">Read →</span>
