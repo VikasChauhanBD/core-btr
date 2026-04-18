@@ -32,17 +32,33 @@ function WorkBooksPrices() {
 
           <br />
 
-          {/* <p className="plan-prices-dispatch">
-            Dispatch will start from 15<sup>th</sup> April, on first come first
-            serve basis.
-          </p> */}
+          <p className="plan-prices-dispatch">
+            <span>Please Note: </span>
+            Orders are typically dispatched within 7-10 business days from the
+            date of purchase.
+          </p>
+
+          <p className="plan-prices-register">
+            Delivery timelines vary by location - metro cities usually receive
+            orders within 7-10 days; other areas may take up to 14 days.
+            <br />
+            <span>
+              You'll receive a tracking link via email/WhatsApp once your book
+              set is dispatched.
+            </span>
+            <br />
+            Books are non-returnable unless there's a printing defect or
+            shipping damage.
+          </p>
 
           <div className="plan-prices-help-div">
-            {/* <p className="plan-prices-register">
-              Registration starts from 11:00 AM on 1<sup>st</sup> April 2026
-            </p> */}
             <p className="plan-prices-help">
-              For any queries, feel free to contact our Helpline:{" "}
+              For any book-related queries, contact / WhatsApp:{" "}
+              <a href="tel:9217363112">+91-9217363112</a>
+            </p>
+
+            <p className="plan-prices-help">
+              For any other query call us at:{" "}
               <a href="tel:7428581909">7428581909</a> (Only For Calling)
             </p>
             <p className="plan-prices-help">

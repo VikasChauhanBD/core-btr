@@ -78,6 +78,10 @@
   margin-top: 2rem !important;
 }
 
+.plan-prices-dispatch span {
+  color: red;
+}
+
 .plan-prices-help-div {
   text-align: center;
   margin-top: 1.5rem;
@@ -87,6 +91,10 @@
   font-size: 20px;
   font-weight: 600;
   margin-bottom: 1rem;
+}
+
+.plan-prices-register span {
+  color: #1767be;
 }
 
 .plan-prices-help {
