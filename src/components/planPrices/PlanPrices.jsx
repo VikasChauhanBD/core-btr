@@ -2,6 +2,7 @@ import React from "react";
 import { Sparkles, Star } from "lucide-react";
 import "./PlanPrices.css";
 import { NavLink } from "react-router-dom";
+import CountdownTimer from "../countdownTimer/CountdownTimer";
 
 const plans = [
   {
@@ -65,6 +66,8 @@ export default function PlanPrices() {
         Apply <span>Coupon Code</span> to Avail the Offer :-{" "}
         <span>COREBTR</span>
       </h3>
+
+      <CountdownTimer />
 
       <h6>Checkout Plans & Prices</h6>
 
