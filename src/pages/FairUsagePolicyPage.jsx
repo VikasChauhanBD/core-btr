@@ -10,7 +10,7 @@ function FairUsagePolicyPage() {
 
         <meta
           name="description"
-          content="Core BTR Fair Usage Policy ensures balanced access to learning resources, maintaining quality performance and uninterrupted academic support for all students."
+          content="To ensure a high-quality experience for all students to prevent automated scraping or account sharing, usage is monitored under our Fair Usage Policy."
         />
       </Helmet>
 

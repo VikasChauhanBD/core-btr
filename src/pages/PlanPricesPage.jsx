@@ -12,7 +12,7 @@ function PlanPricesPage() {
 
         <meta
           name="description"
-          content="Check out CoreBTR plan prices designed for flexible learning, structured revision programs, quality content and value driven preparation options."
+          content="NEET PG & INICET aspirants can choose plan prices for preparation. CoreBTR have duration-based plans. Avail launch offers & coupon to save money."
         />
       </Helmet>
 

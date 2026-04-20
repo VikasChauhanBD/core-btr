@@ -66,7 +66,7 @@ const BlogHome = () => {
         <title>Blogs - CoreBTR</title>
         <meta
           name="description"
-          content="CoreBTR blogs break down concepts into simple, helping students strengthen basics, revise efficiently, and gain confidence for exams and clinics."
+          content="Explore CoreBTR blogs for expert insights, exam strategies, concept clarity & practical tips to boost preparation for NEET PG and INICET aspirants."
         />
       </Helmet>
 

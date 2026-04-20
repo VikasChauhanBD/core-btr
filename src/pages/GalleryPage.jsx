@@ -10,7 +10,7 @@ function GalleryPage() {
 
         <meta
           name="description"
-          content="Explore the CoreBTR Gallery to view highlights of learning moments, success snapshots that reflect focused preparation & smart revision strategies."
+          content="Browse CoreBTR gallery showcasing snapshots of student's thrilling moments, learning highlights, Re-Union 2025, Diwali Party 2025 & Boot Camp 3.0."
         />
       </Helmet>
 

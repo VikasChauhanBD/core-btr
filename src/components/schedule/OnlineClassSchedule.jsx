@@ -6,11 +6,11 @@ function OnlineClassSchedule() {
   return (
     <>
       <Helmet>
-        <title>INICET May 2026 Classes Schedule - CoreBTR</title>
+        <title>INICET May 2026 Schedule - CoreBTR</title>
 
         <meta
           name="description"
-          content="INICET May 2026 Classes Schedule by CoreBTR offers a structured plan with focused concepts, smart revision, and guidance to boost preparation and confidence"
+          content="Access CoreBTR INICET May 2026 schedule having structured classes, focused revision with a vast coverage of syllabus & supporting for exam readiness."
         />
       </Helmet>
 

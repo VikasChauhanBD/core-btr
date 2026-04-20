@@ -10,7 +10,7 @@ function NeetPgSchedule() {
 
         <meta
           name="description"
-          content="Check the CoreBTR Bootcamp Schedule to plan your revision, attend high yield sessions, and stay aligned with a structured strategy for NEET PG success."
+          content="Be the part of CoreBTR NEET PG & Bootcamp schedule for structured exam readiness with revisions & strategic practice to strengthen knowledge & skills."
         />
       </Helmet>
 

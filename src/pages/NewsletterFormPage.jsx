@@ -10,7 +10,7 @@ function NewsletterFormPage() {
 
         <meta
           name="description"
-          content="Subscribe to the CoreBTR newsletter for exam updates, high yield concepts, study tips, and important alerts designed to support your smart NEET PG preparation."
+          content="Stay ahead with CoreBTR newsletter featuring latest updates, exam insights, key announcements & high yield content to support preparation journey."
         />
       </Helmet>
 

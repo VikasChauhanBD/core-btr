@@ -70,11 +70,11 @@ function InicetSchedule() {
   return (
     <>
       <Helmet>
-        <title>INI-CET May 2026 Bootcamp Schedule - CoreBTR</title>
+        <title>INICET Bootcamp Schedule - CoreBTR</title>
 
         <meta
           name="description"
-          content="Schedule INI CET May 2026 with CoreBTR and stay ahead with a focused revision plan designed to strengthen concepts and improve exam readiness for aspirants."
+          content="Check CoreBTR INICET Bootcamp schedule with intensive sessions, rapid revision, focused practice to boost confidence and maximize exam performance."
         />
       </Helmet>
 
