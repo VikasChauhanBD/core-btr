@@ -17,7 +17,7 @@ function OnlineClassSchedule() {
       <div className="online-schedule-container">
         <div className="online-schedule-image">
           <img
-            src="https://cdn.dribbble.com/userupload/47379232/file/cac381744cdc662e2f3cd8c515e240c1.jpeg"
+            src="https://cdn.dribbble.com/userupload/47379232/file/35ac6930f926e54d7bd797719e6d077c.jpeg"
             alt="Online Classes Schedule - CoreBTR"
           />
         </div>
