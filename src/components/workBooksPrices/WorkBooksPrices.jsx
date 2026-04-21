@@ -32,12 +32,12 @@ function WorkBooksPrices() {
 
           <br />
 
-          <p className="plan-prices-dispatch">
+          {/* <p className="plan-prices-dispatch">
             Dispatch has started from 15th April, on first come first serve
             basis.
-          </p>
+          </p> */}
 
-          <p className="plan-prices-register">
+          {/* <p className="plan-prices-register">
             <span>Please Note: </span>
             Orders are typically dispatched within 7-10 business days from the
             date of purchase.
@@ -52,7 +52,37 @@ function WorkBooksPrices() {
             <br />
             Books are non-returnable unless there's a printing defect or
             shipping damage.
-          </p>
+          </p> */}
+
+          <div className="plan-prices-points">
+            <p>Please Note:</p>
+            <ul>
+              <li>
+                Books are dispatched on a <b>first-come, first-served basis</b>.
+              </li>
+              <li>
+                Dispatch timelines may be slightly extended{" "}
+                <b>due to high demand</b>.
+              </li>
+              <li>
+                Delivery timelines begin{" "}
+                <b>after the tracking details are shared</b>.
+              </li>
+              <li>
+                Metro cities usually receive orders within{" "}
+                <b>7-10 working days after dispatch</b>; other areas may take up
+                to <b>14 working days</b>.
+              </li>
+              <li>
+                You will receive a tracking link via <b>Email/WhatsApp</b> once
+                your book set is dispatched.
+              </li>
+              <li>
+                Books are <b>non-returnable</b>, unless there is a printing
+                defect or shipping damage.
+              </li>
+            </ul>
+          </div>
 
           <div className="plan-prices-help-div">
             <p className="plan-prices-help">

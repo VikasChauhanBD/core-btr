@@ -99,6 +99,27 @@
   color: #1767be;
 }
 
+.plan-prices-points {
+  text-align: start;
+  max-width: 860px;
+  margin: 0 auto;
+  margin-top: 2rem;
+  background: #fff;
+  padding: 1rem;
+  border-radius: 10px;
+}
+
+.plan-prices-points p {
+  color: red;
+}
+
+.plan-prices-points li {
+  font-size: 17px;
+  color: #3f3f3f;
+  line-height: 1.5;
+  margin-left: 30px;
+}
+
 .plan-prices-help {
   font-size: 16px;
   color: #3f3f3f;
@@ -140,5 +161,13 @@
 @media (max-width: 568px) {
   .workbook-prices-highlights {
     width: 100%;
+  }
+
+  .plan-prices-points p {
+    line-height: 1.8;
+  }
+
+  .plan-prices-points li {
+    font-size: 16px;
   }
 }
