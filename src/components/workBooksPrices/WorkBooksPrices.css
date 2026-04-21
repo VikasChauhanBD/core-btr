@@ -51,6 +51,7 @@
 
 .workbook-prices-highlights h6 {
   font-size: 18px;
+  font-weight: 600;
   color: red;
   padding: 4px 8px;
   border-radius: 10px;
@@ -72,7 +73,8 @@
 .plan-prices-dispatch {
   background-color: #fff;
   display: inline-block;
-  color: #3f3f3f;
+  /* color: #3f3f3f; */
+  color: red !important;
   padding: 4px 8px;
   border-radius: 10px;
   margin-top: 2rem !important;

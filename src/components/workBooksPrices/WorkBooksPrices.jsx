@@ -33,12 +33,15 @@ function WorkBooksPrices() {
           <br />
 
           <p className="plan-prices-dispatch">
-            <span>Please Note: </span>
-            Orders are typically dispatched within 7-10 business days from the
-            date of purchase.
+            Dispatch has started from 15th April, on first come first serve
+            basis.
           </p>
 
           <p className="plan-prices-register">
+            <span>Please Note: </span>
+            Orders are typically dispatched within 7-10 business days from the
+            date of purchase.
+            <br />
             Delivery timelines vary by location - metro cities usually receive
             orders within 7-10 days; other areas may take up to 14 days.
             <br />
