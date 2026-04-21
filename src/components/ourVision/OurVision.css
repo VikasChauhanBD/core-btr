@@ -114,11 +114,19 @@
   }
 }
 
-/* @media (max-width: 868px) {
-} */
+@media (max-width: 868px) {
+  .our-vision-info-vision {
+    font-size: 18px;
+  }
+}
 
 @media (max-width: 568px) {
   .our-vision-info {
     width: 100%;
+    padding: 2rem 1rem;
+  }
+
+  .our-vision-info-vision {
+    font-size: 16px;
   }
 }
