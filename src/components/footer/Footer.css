@@ -1,4 +1,4 @@
-.footer-container {
+/* .footer-container {
   width: 100%;
   background-color: #000000;
 }
@@ -140,9 +140,9 @@
 
 .footer-bottom a {
   color: #ffffff;
-}
+} */
 
-/* .footer-container {
+.footer-container {
   width: 100%;
   background-color: #000000;
 }
@@ -288,11 +288,11 @@
 
 .footer-bottom a {
   color: #ffffff;
-} */
+}
 
 /* -------------------------- Responsive Styles -------------------------- */
 
-@media (max-width: 1440px) {
+/* @media (max-width: 1440px) {
   .footer-content {
     width: 95%;
   }
@@ -329,9 +329,9 @@
   .footer-logo img {
     width: 250px;
   }
-}
+} */
 
-/* @media (max-width: 1024px) {
+@media (max-width: 1024px) {
   .footer-content {
     width: 100%;
     gap: 1rem;
@@ -361,4 +361,4 @@
   .footer-logo img {
     width: 250px;
   }
-} */
+}
