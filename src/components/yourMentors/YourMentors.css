@@ -172,7 +172,11 @@
 
   .dr-zainab-vora-image img,
   .your-mentors-card img {
-    width: 310px;
+    width: 100%;
     height: 300px;
+  }
+
+  .dr-zainab-vora-info h4 {
+    margin-top: -12px;
   }
 }

@@ -4,7 +4,7 @@ import CoreBTR from "../components/coreBTR/CoreBTR";
 import ThePlatform from "../components/thePlatform/ThePlatform";
 import WhyCoreBTR from "../components/whyCoreBTR/WhyCoreBTR";
 import TargetAudience from "../components/targetAudience/TargetAudience";
-import YourMentors from "../components/mentors/YourMentors";
+import YourMentors from "../components/yourMentors/YourMentors";
 import OurVision from "../components/ourVision/OurVision";
 import { Helmet } from "react-helmet";
 
