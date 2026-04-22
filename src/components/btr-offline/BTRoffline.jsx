@@ -71,6 +71,22 @@ function BTRoffline() {
         <NavLink to="#">Registration Closed</NavLink>
       </div>
 
+      <div className="corebtr-programs-registration-imp">
+        <h3>Important Notice</h3>
+        <ul>
+          <li>
+            Seats cannot be cancelled or transferred to anyone, including
+            friends.
+          </li>
+          <li>Seats cannot be shifted to any online plans.</li>
+          <li>
+            Registrations made using someone else’s account will not be
+            accepted.
+          </li>
+          <li>Registration will be accepted only your own account and name</li>
+        </ul>
+      </div>
+
       <div className="btr-offline-highlights-sections">
         <section className="btr-offline-highlights">
           <div className="btr-offline-highlights-content">
