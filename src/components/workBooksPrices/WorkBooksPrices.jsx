@@ -58,7 +58,8 @@ function WorkBooksPrices() {
             <p>Please Note:</p>
             <ul>
               <li>
-                Books are dispatched on a <b>first-come, first-served basis</b>.
+                Dispatch has started from <b>15th April</b> and Books are
+                dispatched on a <b>first-come, first-served basis</b>.
               </li>
               <li>
                 Dispatch timelines may be slightly extended{" "}
@@ -70,8 +71,11 @@ function WorkBooksPrices() {
               </li>
               <li>
                 Metro cities usually receive orders within{" "}
-                <b>7-10 working days after dispatch</b>; other areas may take up
-                to <b>14 working days</b>.
+                <b>
+                  7-10 working days (excluding Saturday and Sunday) after
+                  dispatch
+                </b>
+                ; other areas may take up to <b>14 working days</b>.
               </li>
               <li>
                 You will receive a tracking link via <b>Email/WhatsApp</b> once

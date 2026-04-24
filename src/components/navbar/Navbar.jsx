@@ -45,7 +45,7 @@ function Navbar() {
       <div className="navbar-logo">
         <NavLink to="/">
           <img
-            src="https://cdn.dribbble.com/userupload/47136926/file/f77686c97121b5cd4268f9979f308699.png"
+            src="https://cdn.dribbble.com/userupload/47136926/file/6e3c858d724c38b09a2dfa9cb026e084.png"
             alt="website logo"
           />
         </NavLink>
