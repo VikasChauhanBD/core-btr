@@ -51,7 +51,7 @@ function ShippingAndDeliveryPolicy() {
       <p>
         <ul>
           <li>
-            Standard orders are usually delivered within 3-10 business days.
+            Metro cities usually receive orders within 7-10 working days (excluding Saturday and Sunday) after dispatch; other areas may take up to 14 working days.
           </li>
           <li>
             Delivery times may vary depending on your location and external
