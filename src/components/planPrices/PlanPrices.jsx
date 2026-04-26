@@ -10,8 +10,8 @@ const plans = [
     duration: "3 Months",
     originalPrice: "Rs. 11999",
     introPrice: "Rs. 7399",
-    launchPrice: "Rs. 5549",
-    books: "Rs. 3450",
+    launchPrice: "Rs. 6289",
+    books: "Rs. 4140",
     badge: null,
     order: 4,
     cta: "https://portal.corebtr.com/login",
@@ -21,8 +21,8 @@ const plans = [
     duration: "6 Months",
     originalPrice: "Rs. 14999",
     introPrice: "Rs. 11599",
-    launchPrice: "Rs. 8699",
-    books: "Rs. 3450",
+    launchPrice: "Rs. 9859",
+    books: "Rs. 4140",
     order: 3,
     cta: "https://portal.corebtr.com/login",
   },
@@ -31,8 +31,8 @@ const plans = [
     duration: "12 Months",
     originalPrice: "Rs. 19999",
     introPrice: "Rs. 17399",
-    launchPrice: "Rs. 13149",
-    books: "Rs. 3450",
+    launchPrice: "Rs. 14789",
+    books: "Rs. 4140",
     badge: "POPULAR",
     order: 2,
     cta: "https://portal.corebtr.com/login",
@@ -41,9 +41,9 @@ const plans = [
     tier: "For Interns | Post Interns",
     duration: "24 Months",
     originalPrice: "Rs. 39999",
-    introPrice: "Rs. 34999",
-    launchPrice: "Rs. 26249",
-    books: "Rs. 3450",
+    introPrice: "Rs. 32999",
+    launchPrice: "Rs. 28049",
+    books: "Rs. 4140",
     badge: "BEST VALUE",
     featured: true,
     order: 1,
@@ -59,8 +59,8 @@ export default function PlanPrices() {
         We have duration based plans 3 Months | 6 Months | 12 Months | 24 Months
       </h4>
 
-      <h5>Avail Launch Offer Flat 25% off on any plan + 2 Months Extra Free</h5>
-      <h5>Also Get Flat 25% off on Book Set </h5>
+      <h5>Avail Launch Offer Flat 15% off on any plan + 2 Months Extra Free</h5>
+      <h5>Also Get Flat 10% off on Book Set </h5>
 
       <h3>
         Apply <span>Coupon Code</span> to Avail the Offer :-{" "}
@@ -109,14 +109,14 @@ export default function PlanPrices() {
             </div>
             <div className="plan-launch-box">
               <p className="plan-launch-label">
-                Launch offer Flat <span>25%</span> off + <span>2 Months</span>{" "}
+                Launch offer Flat <span>15%</span> off + <span>2 Months</span>{" "}
                 Extra Free
               </p>
 
               <div className="plan-launch-price-row">
                 <span className="plan-launch-price">
                   <p className="plan-text">
-                    Launch Price (After 25% off){" "}
+                    Launch Price (After 15% off){" "}
                     <span className="plan-launch-price">
                       {plan.launchPrice}
                     </span>
@@ -128,13 +128,13 @@ export default function PlanPrices() {
               <div className="plan-launch-price-row">
                 <span className="plan-launch-price">
                   <p className="plan-launch-bookset">
-                    Launch offer on Bookset - Flat <span>25%</span> off
+                    Launch offer on Bookset - Flat <span>10%</span> off
                   </p>
                   <p className="plan-text">
                     Price of Bookset (5 Books){" "}
                     <span className="plan-launch-price">{plan.books} </span>
                   </p>
-                  <h5 className="plan-extra">(After 25% Off)</h5>
+                  <h5 className="plan-extra">(After 10% Off)</h5>
                 </span>
               </div>
 
@@ -146,7 +146,7 @@ export default function PlanPrices() {
               </div>
             </div>
             <p className="plan-prices-valid">
-              Offer valid till 25<sup>th</sup> April 2026
+              Offer valid till 30<sup>th</sup> April 2026
             </p>
             <div className="plan-savings">
               <NavLink to={plan.cta} target="_blank">

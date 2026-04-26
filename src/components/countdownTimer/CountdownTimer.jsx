@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import "./CountdownTimer.css";
 
 const CountdownTimer = () => {
-  const targetDate = new Date("April 25, 2026 23:59:59").getTime();
+  const targetDate = new Date("April 30, 2026 23:59:59").getTime();
 
   const [timeLeft, setTimeLeft] = useState(getTimeRemaining());
 
@@ -50,7 +50,7 @@ const CountdownTimer = () => {
       </div>
 
       <p className="countdown-subtext">
-        Offer ends on April 25<sup>th</sup> at 11:59 PM
+        Offer ends on April 30<sup>th</sup> at 11:59 PM
       </p>
     </div>
   );

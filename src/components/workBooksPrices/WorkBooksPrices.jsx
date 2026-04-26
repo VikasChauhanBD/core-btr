@@ -18,11 +18,11 @@ function WorkBooksPrices() {
           </p>
 
           <p>
-            Launch Offer : Flat 25% off <br />
-            Launch Price: Rs. 3450/- ( after 25% off)
+            Launch Offer : Flat 10% off <br />
+            Launch Price: Rs. 4140/- ( after 10% off)
           </p>
           <h6>
-            This offer is valid till 25<sup>th</sup> April 2026
+            This offer is valid till 30<sup>th</sup> April 2026
           </h6>
           <br />
 
