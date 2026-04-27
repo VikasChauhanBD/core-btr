@@ -1,5 +1,123 @@
 const blogData = [
   {
+    id: "corebtr-offline-the-much-needed-course-before-ini-cet-may-2026",
+    blogDate: "April 27, 2026",
+    image:
+      "https://cdn.dribbble.com/userupload/47533271/file/e155d14c53668a9930c26a641d434930.jpg",
+    alt: "CoreBTR Offline: The Much-Needed Course Before INI-CET May 2026 - CoreBTR",
+    metaTitle:
+      "CoreBTR Offline: The Much-Needed Course Before INI-CET May 2026",
+    metaDesc:
+      "CoreBTR Offline offers focused INI CET May 2026 prep with structured revision, rapid recall, and guided practice before the final sprint.",
+    author: "Dr. Zainab Vora",
+    category: "INI-CET",
+    keywords: [
+      "medical pg exam",
+      "btr offline",
+      "medical pg preparation",
+      "neet pg exam",
+      "inicet exam",
+      "fmge exam",
+      "high yield topics for neet pg",
+      "high yield topics for fmge",
+      "high yield topics for inicet",
+      "high yield topics",
+      "exam pattern",
+      "NEET PG",
+      "FMGE",
+      "INICET",
+      "preparation strategy",
+    ],
+    para: `<p>As just a few days left for INI-CET, this phase feels different.</p>
+
+<p>There's pressure, of course-but more than that, there's a constant thought running in the background: "Have I revised enough? Will I be able to recall everything in the exam?"</p>
+
+<p>If you've enrolled for the <b>4-Day CoreBTR Offline program</b>, you've already taken a strong step in the right direction.</p>
+
+<p>Now it's about showing up, staying focused, and making these 4 days count.</p>
+
+<h4>What to Expect from These 4 Days</h4>
+
+<p>This isn't about starting anything new. </br>It's about <b>bringing everything together</b>-quickly, clearly, and in the right order.</p>
+
+<li><b>Location:</b> Vidya Jeevan, Greater Noida</li>
+<li><b>3rd to 5th May:</b> Teaching Days</li>
+<li><b>6th May:</b> Grand Test + Discussion</li>
+
+<h4>Day 1 to Day 3: The Revision Sprint</h4>
+
+<p>These three days are going to be intense-but in a good way.</p>
+
+<li><b>Time:</b> 8:30 AM to 9:30 PM</li>
+<li><b>Mode:</b> Face-to-face sessions</li>
+
+<p>You'll be revising:</p>
+
+<li>All <b>19 subjects</b></li>
+<li>Only <b>high-yield topics</b></li>
+<li>Based on <b>PYQs and exam trends</b></li>
+
+<p>There won't be unnecessary theory or extra clutter. Just the kind of revision that helps you <b>remember things when it actually matters</b>.</p>
+
+<h4>How the Subjects Are Lined Up</h4>
+
+<p>The flow is designed so you don't feel overwhelmed, even with long hours.</p>
+
+<p><b>Day 1</b></p>
+<li>Micro, Dermatology, OBG, ENT, Ophthalmology</li>
+
+<p><b>Day 2</b></p>
+<li>Surgery, PSM, Biochemistry, FMT, Orthopedics, Anesthesia</li>
+
+<p><b>Day 3</b></p>
+<li>Integrated systems, Radiology, Pediatrics, Anatomy</li>
+
+<p>It's a mix of major and short subjects-so your pace stays steady.</p>
+
+<h4>Day 4: Test Yourself</h4>
+
+<p>On <b>6th May</b>, you'll sit for a <b>3-hour INI-CET pattern Grand Test</b>.</p>
+
+<p>This is your moment to:</p>
+
+<li>Check where you stand</li>
+<li>Experience exam-like pressure</li>
+<li>Understand what still needs attention</li>
+
+<p>And right after that, the discussion helps you fix those gaps immediately.</p>
+
+<h4>What You'll Actually Take Home</h4>
+
+<p>By the end of these 4 days, the goal is simple:</p>
+
+<li>You know <b>what's important</b></li>
+<li>You've revised <b>what you had forgotten</b></li>
+<li>Your thoughts are <b>less scattered</b></li>
+<li>And you walk into the exam with <b>more clarity</b></li>
+
+<p>You'll also have your <b>BTR booklet and notes</b>, which become your go-to for the last few days.</p>
+
+<h4>A Small but Important Reminder</h4>
+
+<p>Try not to overdo things alongside this.</p>
+
+<li>Come in well-rested.</li>
+<li>Stay present during the sessions.</li>
+<li>And don't worry about completing everything else on the side.</li>
+
+<p>These 4 days are meant to <b>give you direction</b>, not add more pressure.</p>
+
+<h4>Final Thoughts</h4>
+
+<p>At this stage, nothing you do needs to be dramatic or extreme. You don't need a brand-new plan or another pile of notes. What you really need is alignment, of what you already know, what you tend to forget, and what the exam actually demands.</p>
+
+<p>These 4 days are not about perfection. They're about getting your head in the right place before the exam. Sitting through structured revision, listening, recalling, correcting yourself, and slowly feeling that confidence come back-that's what will make the difference.</p>
+
+<p>You might walk in on Day 1 feeling unsure, a little scattered, maybe even overwhelmed. That's normal but if you will stay present, trust the process, and give these sessions your full attention, you'll walk out with something far more valuable than just notes-you'll walk out with clarity.</p>
+
+<p>And in the last few days before <b>INI-CET May 2026</b>, clarity is everything.</p>`,
+  },
+  {
     id: "corebtr-plan-for-ini-cet-may-2026-a-realistic-revision-strategy-that-works",
     blogDate: "April 18, 2026",
     image:
